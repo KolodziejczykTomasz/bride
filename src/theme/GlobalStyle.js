@@ -1,12 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:300,600');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
   
   *, *::before, *::after {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
   }
   
   html {
@@ -14,10 +17,11 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    padding-left: 150px;
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1250px;
     font-size: 1.6rem;
-    font-family: "Montserrat", sans-serif;
-    max-weight: 1200px;
+    font-family: 'Roboto', sans-serif;  
   }
 `;
 

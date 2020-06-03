@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import MainTemplate from '../templates/MainTemplate';
+import GlobalStyle from '../theme/GlobalStyle';
 import HomePage from '../views/HomePage';
 
 
 const Root = () => (
   <BrowserRouter>
-    <MainTemplate>
+    <GlobalStyle />
       <Switch>
-        <Route exact path="/" component={HomePage} />     
+        <Route exact path="/" component={HomePage} />       
       </Switch>
-    </MainTemplate>
+
   </BrowserRouter>
 );
 
