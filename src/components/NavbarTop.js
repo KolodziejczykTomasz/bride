@@ -1,4 +1,5 @@
 import React from 'react';
+import BarndMark from '../assets/images/logotypy/brendmark.jpg';
 
 const NavbarTop = () => (
   <>
@@ -6,10 +7,10 @@ const NavbarTop = () => (
       <div classNameName="navbar-brand">
         <a className="navbar-item" href="https://bulma.io">
           <img
-            src="https://bulma.io/images/bulma-logo.png"
+            src={BarndMark}
             alt="brand logo"
-            width="112"
-            height="28"
+            width="40"
+            height="90"
           />
         </a>
 
