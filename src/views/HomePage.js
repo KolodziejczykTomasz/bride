@@ -5,6 +5,7 @@ import Breadcrumb from '../components/Breadcrumb';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import SocialMediaBar from '../components/SocialMediaBar';
+import PressBar from '../components/PressBar';
 
 const WrapperView = styled.div``;
 
@@ -16,6 +17,7 @@ class HomePage extends Component {
         <Hero />
         <Breadcrumb />
         coś 
+        <PressBar />
         <SocialMediaBar />
         <Footer />
       </WrapperView>
