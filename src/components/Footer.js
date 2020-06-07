@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const FooterWrapper = styled.div``;
+const FooterWrapper = styled.div`
+background-color: white;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  color: #4a4a4a;
+  max-width: 100%;`;
 
 const FooterWrapperMultibox = styled.div`
   display: grid;
@@ -10,22 +14,25 @@ const FooterWrapperMultibox = styled.div`
 `;
 
 const FooterWrapperSingleboxFirst = styled.div`
-  background-color: #813030;
+
 `;
 
 const FooterWrapperSingleboxSecond = styled.div`
-  background-color: #818181;
+
 `;
 
 const FooterWrapperSingleboxThird = styled.div`
-  background-color: #819090;
+
 `;
 
 const FooterWrapperCopyright = styled.div`
-  display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(1, 1fr);
-  background-color: #808080;
+`;
+
+const FooterWrapperCopyrightText = styled.p`
+  text-align: center;
+  line-height: 3rem;
 `;
 
 const Footer = () => (
@@ -33,9 +40,11 @@ const Footer = () => (
     <FooterWrapperMultibox>
       <FooterWrapperSingleboxFirst>1</FooterWrapperSingleboxFirst>
       <FooterWrapperSingleboxSecond>2</FooterWrapperSingleboxSecond>
-      <FooterWrapperSingleboxThird>3</FooterWrapperSingleboxThird>
+      <FooterWrapperSingleboxThird>Napisz do nas</FooterWrapperSingleboxThird>
     </FooterWrapperMultibox>
-    <FooterWrapperCopyright>Copyright &copy; ATOM</FooterWrapperCopyright>
+    <FooterWrapperCopyright>
+      <FooterWrapperCopyrightText>Copyright &copy; ATOM</FooterWrapperCopyrightText>
+    </FooterWrapperCopyright>
   </FooterWrapper>
 );
 

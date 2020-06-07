@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   height: 7rem;
+  margin: 3rem 0;
 `;
 
 const SocialBox = styled.div`

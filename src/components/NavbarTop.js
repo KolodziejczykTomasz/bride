@@ -1,62 +1,54 @@
-import React from 'react';
+
+import React, { Fragment } from "react";
+import { Navbar, Nav } from "react-bootstrap";
+import { FaPhone } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 import BarndMark from '../assets/images/logotypy/brendmark.jpg';
+import styled from 'styled-components';
+
+
 
 const NavbarTop = () => (
-  <>
-    <nav className="navbar" role="navigation" aria-label="main navigation">
-      <div classNameName="navbar-brand">
-        <a className="navbar-item" href="https://bulma.io">
-          <img
-            src={BarndMark}
-            alt="brand logo"
-            width="40"
-            height="90"
-          />
-        </a>
-
-        <a
-          role="button"
-          className="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
+  <Fragment>
+    <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
+      <Navbar.Brand
+        style={{ width: '150px',  textTransform: 'uppercase',}}
+         href="#home"
+ 
+      >
+        <img src={BarndMark} alt="BarndMark" /> Ślub z Klasą
+      </Navbar.Brand>
+     
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav
+          className="mr-auto justify-content-center"
+          style={{
+            width: '60vw',
+            marginTop: 20,
+            marginBottom: 20,
+            backgroundColor: '#fff',
+            textTransform: 'uppercase',
+          }}
         >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbarBasicExample" className="navbar-menu">
-        <div className="navbar-start">
-          <a className="navbar-item">Home</a>
-          <a className="navbar-item">Documentation</a>
-          <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">More</a>
-
-            <div className="navbar-dropdown">
-              <a className="navbar-item">About</a>
-              <a className="navbar-item">Jobs</a>
-              <a className="navbar-item">Contact</a>
-              <hr className="navbar-divider" />
-              <a className="navbar-item">Report an issue</a>
-            </div>
-          </div>
-        </div>
-
-        <div className="navbar-end">
-          <div className="navbar-item">
-            <div className="buttons">
-              <a className="button is-primary">
-                <strong>Sign up</strong>
-              </a>
-              <a className="button is-light">Log in</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </>
+          <NavLink style={{ width: '100px', textDecoration: 'none', color: 'black' }} to="/">
+            Home
+          </NavLink>
+          <NavLink style={{ width: '100px', textDecoration: 'none', color: 'black' }} to="/about">
+            About
+          </NavLink>
+          <NavLink style={{ width: '100px', textDecoration: 'none', color: 'black' }} to="/contact">
+            Contact
+          </NavLink>
+        </Nav>
+      </Navbar.Collapse>
+      <Navbar.Collapse className="mr-auto justify-content-end">
+        <Navbar.Text style={{ width: '250px', backgroundColor: '#fff' }}>
+          <FaPhone style={{ marginRight: '15px' }} />
+          +48 123 456 789
+        </Navbar.Text>
+      </Navbar.Collapse>
+    </Navbar>
+  </Fragment>
 );
-
 export default NavbarTop;

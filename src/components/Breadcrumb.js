@@ -5,13 +5,7 @@ const Breadcrumb = () => (
     <ul>
       <li>
         <a href="#">Home</a>
-      </li>
-
-      <li className="is-active">
-        <a href="#" aria-current="page">
-          Breadcrumb
-        </a>
-      </li>
+      </li>      
     </ul>
   </nav>
 );
