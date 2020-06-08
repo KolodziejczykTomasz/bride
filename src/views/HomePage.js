@@ -7,6 +7,8 @@ import Hero from '../components/Hero';
 import SocialMediaBar from '../components/SocialMediaBar';
 import PressBar from '../components/PressBar';
 import HeaderBreake from '../components/HeaderBreake';
+import CompanyBar from '../components/CompanyBar';
+import FairMain from '../components/FairMain';
 
 const WrapperView = styled.div``;
 
@@ -17,8 +19,11 @@ class HomePage extends Component {
         <NavbarTop />
         <Hero />
         <Breadcrumb />
-        coś 
-        <HeaderBreake/>
+        coś
+        <HeaderBreake>Targi ślubne</HeaderBreake> 
+        <FairMain />
+        <CompanyBar />        
+        <HeaderBreake>Inspiracje</HeaderBreake> 
         <PressBar />
         <SocialMediaBar />
         <Footer />

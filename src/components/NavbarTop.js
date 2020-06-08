@@ -12,7 +12,7 @@ const NavbarTop = () => (
   <Fragment>
     <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
       <Navbar.Brand
-        style={{ width: '150px',  textTransform: 'uppercase',}}
+        style={{ width: '130px',  textTransform: 'uppercase',}}
          href="#home"
  
       >
@@ -43,7 +43,7 @@ const NavbarTop = () => (
         </Nav>
       </Navbar.Collapse>
       <Navbar.Collapse className="mr-auto justify-content-end">
-        <Navbar.Text style={{ width: '250px', backgroundColor: '#fff' }}>
+        <Navbar.Text style={{ width: '180px', backgroundColor: '#fff' }}>
           <FaPhone style={{ marginRight: '15px' }} />
           +48 123 456 789
         </Navbar.Text>

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: grid;
+  margin: 3rem 0;
 `;
 
 const WrapperItemLeft = styled.div`
@@ -26,13 +27,13 @@ const WrapperText = styled.p`
   text-align: center;
 `;
 
-const HeaderBreake = () => (
+const HeaderBreake = ({children}) => (
   <Wrapper>
     <WrapperItemLeft>
       <hr />
     </WrapperItemLeft>
     <WrapperItemCentral>
-      <WrapperText>Inspiracje</WrapperText>
+      <WrapperText>{children}</WrapperText>
     </WrapperItemCentral>
     <WrapperItemRight>
       <hr />
