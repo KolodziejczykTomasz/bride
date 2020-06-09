@@ -1,10 +1,8 @@
-
 import React, { Fragment } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { FaPhone } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import BarndMark from '../assets/images/logotypy/brendmark.jpg';
-import styled from 'styled-components';
 
 
 

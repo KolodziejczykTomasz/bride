@@ -1,5 +1,5 @@
 import React from 'react';
-import CompanyItem from './CompanyItem';
+import FairItem from './FairItem';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -15,13 +15,13 @@ const WrapperItem = styled.div`
 const CompanyBar = () => (
   <Wrapper>
     <WrapperItem>
-      <CompanyItem />
+      <FairItem />
     </WrapperItem>
     <WrapperItem>
-      <CompanyItem />
+      <FairItem />
     </WrapperItem>
     <WrapperItem>
-      <CompanyItem />
+      <FairItem />
     </WrapperItem> 
   </Wrapper>
 );
