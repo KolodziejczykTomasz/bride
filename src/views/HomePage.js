@@ -8,6 +8,7 @@ import PressBar from '../components/PressBar';
 import HeaderBreake from '../components/HeaderBreake';
 import FairBar from '../components/FairBar';
 import FairMain from '../components/FairMain';
+import CompaniesDatabase from '../components/CompaniesDatabase';
 
 const WrapperView = styled.div``;
 
@@ -25,6 +26,7 @@ class HomePage extends Component {
         <HeaderBreake>Inspiracje</HeaderBreake> 
         <PressBar />
         <HeaderBreake>Katalog firm</HeaderBreake> 
+        <CompaniesDatabase />
         <SocialMediaBar />
         <Footer />
       </WrapperView>
