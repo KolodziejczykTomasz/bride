@@ -100,6 +100,16 @@ const CompaniesDatabase = (props) => {
               toggle('7');
             }}
           >
+            Lokale
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === '8' })}
+            onClick={() => {
+              toggle('8');
+            }}
+          >
             Pozostałe
           </NavLink>
         </NavItem>
@@ -426,10 +436,57 @@ const CompaniesDatabase = (props) => {
                   </Card>
                 </Col>
               </Row>
+            </WrapperTabRow>            
+          </TabPane>
+          <TabPane tabId="8">
+            <WrapperTabRow>
+              <Row>
+                <Col sm="6">
+                  <Card body>
+                    <CardTitle>Special Title Treatment</CardTitle>
+                    <CardText>
+                      With supporting text below as a natural lead-in to additional content.
+                    </CardText>
+                    <Button>Go somewhere</Button>
+                  </Card>
+                </Col>
+                <Col sm="6">
+                  <Card body>
+                    <CardTitle>Special Title Treatment</CardTitle>
+                    <CardText>
+                      With supporting text below as a natural lead-in to additional content.
+                    </CardText>
+                    <Button>Go somewhere</Button>
+                  </Card>
+                </Col>
+              </Row>
+            </WrapperTabRow>
+            <WrapperTabRow>
+              <Row>
+                <Col sm="6">
+                  <Card body>
+                    <CardTitle>Special Title Treatment</CardTitle>
+                    <CardText>
+                      With supporting text below as a natural lead-in to additional content.
+                    </CardText>
+                    <Button>Go somewhere</Button>
+                  </Card>
+                </Col>
+                <Col sm="6">
+                  <Card body>
+                    <CardTitle>Special Title Treatment</CardTitle>
+                    <CardText>
+                      With supporting text below as a natural lead-in to additional content.
+                    </CardText>
+                    <Button>Go somewhere</Button>
+                  </Card>
+                </Col>
+              </Row>
             </WrapperTabRow>
           </TabPane>
         </TabContent>
       </WrapperTabContent>
+      
     </div>
   );
 };
