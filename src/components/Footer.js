@@ -38,9 +38,9 @@ const FooterWrapperCopyrightText = styled.p`
 const Footer = () => (
   <FooterWrapper>
     <FooterWrapperMultibox>
-      <FooterWrapperSingleboxFirst>1</FooterWrapperSingleboxFirst>
-      <FooterWrapperSingleboxSecond>2</FooterWrapperSingleboxSecond>
-      <FooterWrapperSingleboxThird>Napisz do nas</FooterWrapperSingleboxThird>
+      <FooterWrapperSingleboxFirst>Panna Młoda</FooterWrapperSingleboxFirst>
+      <FooterWrapperSingleboxSecond>Pan Młody</FooterWrapperSingleboxSecond>
+      <FooterWrapperSingleboxThird>Przygotowania</FooterWrapperSingleboxThird>
     </FooterWrapperMultibox>
     <FooterWrapperCopyright>
       <FooterWrapperCopyrightText>Copyright &copy; ATOM</FooterWrapperCopyrightText>

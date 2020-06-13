@@ -2,31 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import press1 from '../assets/images/press/bc_2_2019.jpg';
 
-
-
-const CardTitle = styled.p``;
-
-const CardHeroText = styled.div`
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 20%;
-  top: 50%;
-  left: 0%;
-  background-color: rgba(192, 192, 192, 0.8);
-  opacity: 0;
-
-`;
-const Wrapper = styled.div`
-cursor: pointer;
-:hover ${CardHeroText} {
-    opacity: 1;
-  } `;
+const Wrapper = styled.div``;
 const Card = styled.div`
   position: relative;
 `;
-
-
+const CardText = styled.p``;
+const CardHeroText = styled.div`
+  display: block;
+  position: absolute;
+  width: 80%;
+  height: 20%;
+  top: 50%;
+  left: 10%;
+  background-color: rgba(192, 192, 192, 0.8);
+`;
 
 const CardHeroTextTitle = styled.p`
   display: block;
@@ -35,12 +24,12 @@ const CardHeroTextTitle = styled.p`
   font-size: 2.2rem;
 `;
 
-const PressItem = () => (
+const ExtrasItem = () => (
   <Wrapper className="card">
     <Card class="card-content">
-      <CardTitle className="title">
+      <CardText className="title">
         <img src={press1} alt="press" />
-      </CardTitle>
+      </CardText>
     </Card>
     <CardHeroText>
       <CardHeroTextTitle>1/2020</CardHeroTextTitle>
@@ -48,4 +37,4 @@ const PressItem = () => (
   </Wrapper>
 );
 
-export default PressItem;
+export default ExtrasItem;

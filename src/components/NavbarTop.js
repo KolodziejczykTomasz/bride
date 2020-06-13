@@ -29,14 +29,14 @@ const NavbarTop = () => (
             textTransform: 'uppercase',
           }}
         >
-          <NavLink style={{ width: '100px', textDecoration: 'none', color: 'black' }} to="/">
-            Home
+          <NavLink style={{ width: '160px', textDecoration: 'none', color: 'black' }} to="/">
+            Przygotowania
           </NavLink>
-          <NavLink style={{ width: '100px', textDecoration: 'none', color: 'black' }} to="/about">
-            About
+          <NavLink style={{ width: '140px', textDecoration: 'none', color: 'black' }} to="/about">
+            Katalog firm
           </NavLink>
-          <NavLink style={{ width: '100px', textDecoration: 'none', color: 'black' }} to="/contact">
-            Contact
+          <NavLink style={{ width: '120px', textDecoration: 'none', color: 'black' }} to="/contact">
+            Kontakt
           </NavLink>
         </Nav>
       </Navbar.Collapse>

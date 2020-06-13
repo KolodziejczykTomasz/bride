@@ -14,6 +14,7 @@ import {
 } from 'reactstrap';
 import classnames from 'classnames';
 import styled from 'styled-components';
+import DekoracjeNo1 from '../assets/images/companies/slubnaalejka.png';
 
 const WrapperTabContent = styled.div`
   margin-top: 1.2rem;
@@ -119,44 +120,55 @@ const CompaniesDatabase = (props) => {
           <TabPane tabId="1">
             <WrapperTabRow>
               <Row>
-                <Col sm="6">
+                <Col sm="4">
                   <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
+                    <CardTitle>
+                      <h1>Dekoracje ślubne</h1>
+                    </CardTitle>
+                    <img src={DekoracjeNo1} alt="DekoracjeNo1" />
                     <CardText>
-                      With supporting text below as a natural lead-in to additional content.
+                      Ozdoby weselne, które znaleźć można w naszej ofercie to także latające
+                      lampiony, które tworzą niesamowity klimat. Dekoracje na wesele dostępne w
+                      naszym sklepie to także szalenie modne gadżety do Fotobudki. Mogą to być usta,
+                      wąsy, okulary lub różnego rodzaju napisy, które rozbawiają gości. Warto
+                      zwrócić uwagę na wszystkie dekoracje na wesele, które dostępne są w
+                      prezentowanym przez nas asortymencie.
                     </CardText>
-                    <Button>Go somewhere</Button>
+                    <Button>Przejdź</Button>
                   </Card>
                 </Col>
-                <Col sm="6">
+                <Col sm="4">
                   <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
+                    <CardTitle>
+                      <h1>Dekoracje ślubne</h1>
+                    </CardTitle>
+                    <img src={DekoracjeNo1} alt="DekoracjeNo1" />
                     <CardText>
-                      With supporting text below as a natural lead-in to additional content.
+                      Ozdoby weselne, które znaleźć można w naszej ofercie to także latające
+                      lampiony, które tworzą niesamowity klimat. Dekoracje na wesele dostępne w
+                      naszym sklepie to także szalenie modne gadżety do Fotobudki. Mogą to być usta,
+                      wąsy, okulary lub różnego rodzaju napisy, które rozbawiają gości. Warto
+                      zwrócić uwagę na wszystkie dekoracje na wesele, które dostępne są w
+                      prezentowanym przez nas asortymencie.
                     </CardText>
-                    <Button>Go somewhere</Button>
+                    <Button>Przejdź</Button>
                   </Card>
                 </Col>
-              </Row>
-            </WrapperTabRow>
-            <WrapperTabRow>
-              <Row>
-                <Col sm="6">
+                <Col sm="4">
                   <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
+                    <CardTitle>
+                      <h1>Dekoracje ślubne</h1>
+                    </CardTitle>
+                    <img src={DekoracjeNo1} alt="DekoracjeNo1" />
                     <CardText>
-                      With supporting text below as a natural lead-in to additional content.
+                      Ozdoby weselne, które znaleźć można w naszej ofercie to także latające
+                      lampiony, które tworzą niesamowity klimat. Dekoracje na wesele dostępne w
+                      naszym sklepie to także szalenie modne gadżety do Fotobudki. Mogą to być usta,
+                      wąsy, okulary lub różnego rodzaju napisy, które rozbawiają gości. Warto
+                      zwrócić uwagę na wszystkie dekoracje na wesele, które dostępne są w
+                      prezentowanym przez nas asortymencie.
                     </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
+                    <Button>Przejdź</Button>
                   </Card>
                 </Col>
               </Row>
@@ -165,44 +177,55 @@ const CompaniesDatabase = (props) => {
           <TabPane tabId="2">
             <WrapperTabRow>
               <Row>
-                <Col sm="6">
+                <Col sm="4">
                   <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
+                    <CardTitle>
+                      <h1>Dekoracje ślubne</h1>
+                    </CardTitle>
+                    <img src={DekoracjeNo1} alt="DekoracjeNo1" />
                     <CardText>
-                      With supporting text below as a natural lead-in to additional content.
+                      Ozdoby weselne, które znaleźć można w naszej ofercie to także latające
+                      lampiony, które tworzą niesamowity klimat. Dekoracje na wesele dostępne w
+                      naszym sklepie to także szalenie modne gadżety do Fotobudki. Mogą to być usta,
+                      wąsy, okulary lub różnego rodzaju napisy, które rozbawiają gości. Warto
+                      zwrócić uwagę na wszystkie dekoracje na wesele, które dostępne są w
+                      prezentowanym przez nas asortymencie.
                     </CardText>
-                    <Button>Go somewhere</Button>
+                    <Button>Przejdź</Button>
                   </Card>
                 </Col>
-                <Col sm="6">
+                <Col sm="4">
                   <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
+                    <CardTitle>
+                      <h1>Dekoracje ślubne</h1>
+                    </CardTitle>
+                    <img src={DekoracjeNo1} alt="DekoracjeNo1" />
                     <CardText>
-                      With supporting text below as a natural lead-in to additional content.
+                      Ozdoby weselne, które znaleźć można w naszej ofercie to także latające
+                      lampiony, które tworzą niesamowity klimat. Dekoracje na wesele dostępne w
+                      naszym sklepie to także szalenie modne gadżety do Fotobudki. Mogą to być usta,
+                      wąsy, okulary lub różnego rodzaju napisy, które rozbawiają gości. Warto
+                      zwrócić uwagę na wszystkie dekoracje na wesele, które dostępne są w
+                      prezentowanym przez nas asortymencie.
                     </CardText>
-                    <Button>Go somewhere</Button>
+                    <Button>Przejdź</Button>
                   </Card>
                 </Col>
-              </Row>
-            </WrapperTabRow>
-            <WrapperTabRow>
-              <Row>
-                <Col sm="6">
+                <Col sm="4">
                   <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
+                    <CardTitle>
+                      <h1>Dekoracje ślubne</h1>
+                    </CardTitle>
+                    <img src={DekoracjeNo1} alt="DekoracjeNo1" />
                     <CardText>
-                      With supporting text below as a natural lead-in to additional content.
+                      Ozdoby weselne, które znaleźć można w naszej ofercie to także latające
+                      lampiony, które tworzą niesamowity klimat. Dekoracje na wesele dostępne w
+                      naszym sklepie to także szalenie modne gadżety do Fotobudki. Mogą to być usta,
+                      wąsy, okulary lub różnego rodzaju napisy, które rozbawiają gości. Warto
+                      zwrócić uwagę na wszystkie dekoracje na wesele, które dostępne są w
+                      prezentowanym przez nas asortymencie.
                     </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
+                    <Button>Przejdź</Button>
                   </Card>
                 </Col>
               </Row>
@@ -436,7 +459,7 @@ const CompaniesDatabase = (props) => {
                   </Card>
                 </Col>
               </Row>
-            </WrapperTabRow>            
+            </WrapperTabRow>
           </TabPane>
           <TabPane tabId="8">
             <WrapperTabRow>
@@ -486,7 +509,6 @@ const CompaniesDatabase = (props) => {
           </TabPane>
         </TabContent>
       </WrapperTabContent>
-      
     </div>
   );
 };

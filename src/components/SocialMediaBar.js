@@ -12,9 +12,14 @@ const Wrapper = styled.div`
 
 const SocialBox = styled.div`
   display: flexbox;
-  width: 41px;
-  height: 41px;
+  width: 40px;
+  height: 40px;
   margin: auto auto;
+  cursor: pointer;
+  :hover {
+    background-color: orange;
+  border-radius: 23px;
+  }
 `;
 
 const SocialMediaBar = () => (
