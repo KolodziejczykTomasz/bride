@@ -12,6 +12,7 @@ import CompaniesDatabase from '../components/CompaniesDatabase';
 import GlobalStyle from '../theme/GlobalStyle';
 import ExtrasBar from '../components/ExtrasBar';
 import MainBar from '../components/MainBar';
+import DressBar from '../components/DressBar';
 
 const WrapperView = styled.div``;
 
@@ -21,16 +22,18 @@ class HomePage extends Component {
       <WrapperView>
         <GlobalStyle />
         <NavbarTop />
-        <CarouselBar />  
+        <CarouselBar />
         <MainBar />
-        <HeaderBreake>Dodatki ślubne</HeaderBreake> 
+        <HeaderBreake>Suknie ślubne</HeaderBreake>
+        <DressBar />
+        <HeaderBreake>Dodatki ślubne</HeaderBreake>
         <ExtrasBar />
-        <HeaderBreake>Targi ślubne</HeaderBreake> 
+        <HeaderBreake>Targi ślubne</HeaderBreake>
         <FairMain />
-        <FairBar />        
-        <HeaderBreake>Inspiracje</HeaderBreake> 
+        <FairBar />
+        <HeaderBreake>Inspiracje</HeaderBreake>
         <PressBar />
-        <HeaderBreake>Katalog firm</HeaderBreake> 
+        <HeaderBreake>Katalog firm</HeaderBreake>
         <CompaniesDatabase />
         <SocialMediaBar />
         <Footer />

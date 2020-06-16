@@ -9,7 +9,7 @@ width: 100%;
 max-height: 53.6rem;
 `;
 const CardImg = styled.img`
-width: 40%;
+min-width: 40%;
 padding: 2rem 2rem;
 `;
 const CardBody = styled.div``;
