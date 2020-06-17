@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import press1 from '../assets/images/press/bc_2_2019.jpg';
-
 
 
 const CardTitle = styled.p``;
@@ -35,15 +33,16 @@ const CardHeroTextTitle = styled.p`
   font-size: 2.2rem;
 `;
 
-const PressItem = () => (
+const PressItem = (id, url, title, number) => (
   <Wrapper className="card">
     <Card class="card-content">
       <CardTitle className="title">
-        <img src={press1} alt="press" />
+        {title}
+        <img src={url} alt="press" />
       </CardTitle>
     </Card>
     <CardHeroText>
-      <CardHeroTextTitle>1/2020</CardHeroTextTitle>
+      <CardHeroTextTitle>{number}</CardHeroTextTitle>
     </CardHeroText>
   </Wrapper>
 );

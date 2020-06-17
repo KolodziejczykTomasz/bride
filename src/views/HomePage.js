@@ -14,6 +14,7 @@ import ExtrasBar from '../components/ExtrasBar';
 import MainBar from '../components/MainBar';
 import DressBar from '../components/DressBar';
 
+
 const WrapperView = styled.div``;
 
 class HomePage extends Component {
@@ -23,7 +24,7 @@ class HomePage extends Component {
         <GlobalStyle />
         <NavbarTop />
         <CarouselBar />
-        <MainBar />
+        <MainBar />      
         <HeaderBreake>Suknie ślubne</HeaderBreake>
         <DressBar />
         <HeaderBreake>Dodatki ślubne</HeaderBreake>

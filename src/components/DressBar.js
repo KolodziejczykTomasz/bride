@@ -30,20 +30,20 @@ function Carousel() {
       reloadOnUpdate
       static
     >
-      <ImageItem src={suknia_slubna_1} alt=" suknia ślubna" />
-      <ImageItem src={suknia_slubna_2} alt=" suknia ślubna" />
-      <ImageItem src={suknia_slubna_3} alt=" suknia ślubna" />
-      <ImageItem src={suknia_slubna_4} alt=" suknia ślubna" />
-      <ImageItem src={suknia_slubna_5} alt=" suknia ślubna" />
-      <ImageItem src={suknia_slubna_6} alt=" suknia ślubna" />
-      <ImageItem src={suknia_slubna_7} alt=" suknia ślubna" />
-      <ImageItem src={suknia_slubna_1} alt=" suknia ślubna" />
-      <ImageItem src={suknia_slubna_2} alt=" suknia ślubna" />
-      <ImageItem src={suknia_slubna_3} alt=" suknia ślubna" />
-      <ImageItem src={suknia_slubna_4} alt=" suknia ślubna" />
-      <ImageItem src={suknia_slubna_5} alt=" suknia ślubna" />
-      <ImageItem src={suknia_slubna_6} alt=" suknia ślubna" />
-      <ImageItem src={suknia_slubna_7} alt=" suknia ślubna" />
+      <ImageItem src={suknia_slubna_1} alt="suknia ślubna" />
+      <ImageItem src={suknia_slubna_2} alt="suknia ślubna" />
+      <ImageItem src={suknia_slubna_3} alt="suknia ślubna" />
+      <ImageItem src={suknia_slubna_4} alt="suknia ślubna" />
+      <ImageItem src={suknia_slubna_5} alt="suknia ślubna" />
+      <ImageItem src={suknia_slubna_6} alt="suknia ślubna" />
+      <ImageItem src={suknia_slubna_7} alt="suknia ślubna" />
+      <ImageItem src={suknia_slubna_1} alt="suknia ślubna" />
+      <ImageItem src={suknia_slubna_2} alt="suknia ślubna" />
+      <ImageItem src={suknia_slubna_3} alt="suknia ślubna" />
+      <ImageItem src={suknia_slubna_4} alt="suknia ślubna" />
+      <ImageItem src={suknia_slubna_5} alt="suknia ślubna" />
+      <ImageItem src={suknia_slubna_6} alt="suknia ślubna" />
+      <ImageItem src={suknia_slubna_7} alt="suknia ślubna" />
     </Flickity>
   );
 }
