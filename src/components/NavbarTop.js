@@ -9,9 +9,10 @@ import BarndMark from '../assets/images/logotypy/brendmark.jpg';
 const NavbarTop = () => (
   <Fragment>
     <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
-      <Navbar.Brand style={{ width: '130px', textTransform: 'uppercase' }} href="#home">
+      <NavLink to="/">
+      <Navbar.Brand style={{ width: '130px', textTransform: 'uppercase' }} >
         <img src={BarndMark} alt="BarndMark" /> Ślub z Klasą
-      </Navbar.Brand>
+      </Navbar.Brand></NavLink>
 
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">

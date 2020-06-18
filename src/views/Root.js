@@ -5,18 +5,23 @@ import HomePage from '../views/HomePage';
 import ContactPage from './ContactPage';
 import CompanyPage from './CompanyPage';
 import PreparePage from './PreparePage';
-
+import store from '../store';
+import { Provider } from 'react-redux';
 
 const Root = () => (
-  <BrowserRouter>
-    <GlobalStyle />
-    <Switch>
-      <Route exact path="/" component={HomePage} />
-      <Route path="/prepare" component={PreparePage} />
-      <Route path="/contact" component={ContactPage} />
-      <Route path="/company" component={CompanyPage} />
-    </Switch>
-  </BrowserRouter>
+  <>
+    <Provider store={store}>
+      <BrowserRouter>
+        <GlobalStyle />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/prepare" component={PreparePage} />
+          <Route path="/contact" component={ContactPage} />
+          <Route path="/company" component={CompanyPage} />
+        </Switch>
+      </BrowserRouter>
+    </Provider>
+  </>
 );
 
 export default Root;

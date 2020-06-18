@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 import styled from 'styled-components';
-import fairLogo from '../assets/images/fair/kielce.png';
 
 const Wrapper = styled.div``;
 
@@ -10,18 +9,20 @@ const CardImgWrapper = styled.div`
   margin: 15px auto;
 `;
 
-const CompanyItem = (props) => {
+const CompanyItem = ({ url, city, data, place }) => {
   return (
     <Wrapper>
       <Card>
         <CardImgWrapper>
-          <CardImg src={fairLogo} alt="Card image cap" />
+          <CardImg src={url} alt={city} />
         </CardImgWrapper>
         <hr />
         <CardBody>
-          <CardTitle>Kraków </CardTitle>
-          <CardSubtitle>11.10.2020</CardSubtitle>
-          <CardText>Tauron Arena Kraków</CardText>
+          <CardText>{place}</CardText>
+          <CardTitle>
+            {city} - {data}
+          </CardTitle>
+
           <Button>Więcej</Button>
         </CardBody>
       </Card>
