@@ -1,8 +1,15 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, Button } from 'reactstrap';
 import styled from 'styled-components';
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  cursor: pointer;
+  transition: 0.5s;
+  :hover {
+    scale: 1.1;
+    z-index: 999;
+  }
+`;
 
 const CardImgWrapper = styled.div`
   width: 40%;
@@ -22,7 +29,6 @@ const CompanyItem = ({ url, city, data, place }) => {
           <CardTitle>
             {city} - {data}
           </CardTitle>
-
           <Button>Więcej</Button>
         </CardBody>
       </Card>

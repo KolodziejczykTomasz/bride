@@ -12,6 +12,11 @@ import TargiLodz from '../assets/images/fair/lodz-expo.png';
 import TargiRybnik from '../assets/images/fair/rybnik-zseu.png';
 import TargiHalaOrbita from '../assets/images/fair/spartan-hala-orbita.png';
 
+import acces2 from '../assets/images/accesories/no2.jpg';
+import acces3 from '../assets/images/accesories/no3.jpg';
+import acces4 from '../assets/images/accesories/no4.jpg';
+import acces5 from '../assets/images/accesories/no5.jpg';
+
 const initialState = {
   mlodapara: [
     {
@@ -121,6 +126,28 @@ const initialState = {
       street: '',
       place: '',
       data: '',
+    },
+  ],
+  accesories: [
+      {
+      id: 2,
+      url: acces2,
+      name: '',
+    },
+    {
+      id: 3,
+      url: acces3,
+      name: '',
+    },
+    {
+      id: 4,
+      url: acces4,
+      name: '',
+    },
+    {
+      id: 5,
+      url: acces5,
+      name: '',
     },
   ],
 };

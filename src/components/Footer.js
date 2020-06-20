@@ -1,11 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.div`
-background-color: white;
+  background-color: white;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   color: #4a4a4a;
-  max-width: 100%;`;
+  max-width: 100%;
+`;
 
 const FooterWrapperMultibox = styled.div`
   display: grid;
@@ -13,17 +15,11 @@ const FooterWrapperMultibox = styled.div`
   grid-template-columns: repeat(3, 1fr);
 `;
 
-const FooterWrapperSingleboxFirst = styled.div`
+const FooterWrapperSingleboxFirst = styled.div``;
 
-`;
+const FooterWrapperSingleboxSecond = styled.div``;
 
-const FooterWrapperSingleboxSecond = styled.div`
-
-`;
-
-const FooterWrapperSingleboxThird = styled.div`
-
-`;
+const FooterWrapperSingleboxThird = styled.div``;
 
 const FooterWrapperCopyright = styled.div`
   grid-template-rows: 1fr;
@@ -35,12 +31,35 @@ const FooterWrapperCopyrightText = styled.p`
   line-height: 3rem;
 `;
 
+const FooterTitle = styled.h1`
+  margin: 2rem 0 2rem 1rem;
+`;
+
+const FooterListLink = styled.ul``;
+
+const FooterItemLink = styled.li`
+  margin-left: 2.5rem;
+`;
+
 const Footer = () => (
   <FooterWrapper>
     <FooterWrapperMultibox>
-      <FooterWrapperSingleboxFirst>Panna Młoda</FooterWrapperSingleboxFirst>
-      <FooterWrapperSingleboxSecond>Pan Młody</FooterWrapperSingleboxSecond>
-      <FooterWrapperSingleboxThird>Przygotowania</FooterWrapperSingleboxThird>
+      <FooterWrapperSingleboxFirst>
+        <FooterTitle>Panna Młoda</FooterTitle>
+      </FooterWrapperSingleboxFirst>
+      <FooterWrapperSingleboxSecond>
+        <FooterTitle>Pan Młody</FooterTitle>
+      </FooterWrapperSingleboxSecond>
+      <FooterWrapperSingleboxThird>
+        <FooterTitle>Przygotowania </FooterTitle>
+        <FooterListLink>
+          <FooterItemLink>
+            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church">
+              Czytania w Kościele
+            </NavLink>
+          </FooterItemLink>
+        </FooterListLink>
+      </FooterWrapperSingleboxThird>
     </FooterWrapperMultibox>
     <FooterWrapperCopyright>
       <FooterWrapperCopyrightText>Copyright &copy; ATOM</FooterWrapperCopyrightText>

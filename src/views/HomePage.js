@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import NavbarTop from '../components/NavbarTop';
 import Footer from '../components/Footer';
-import CarouselBar from '../components/CarouselBar';
+import SliderBar from '../components/SliderBar';
 import SocialMediaBar from '../components/SocialMediaBar';
 import PressBar from '../components/PressBar';
 import HeaderBreake from '../components/HeaderBreake';
@@ -23,8 +23,8 @@ class HomePage extends Component {
       <WrapperView>
         <GlobalStyle />
         <NavbarTop />
-        <CarouselBar />
-        <MainBar />      
+        <SliderBar />
+        <MainBar />
         <HeaderBreake>Suknie ślubne</HeaderBreake>
         <DressBar />
         <HeaderBreake>Dodatki ślubne</HeaderBreake>

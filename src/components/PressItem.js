@@ -13,18 +13,25 @@ const CardHeroText = styled.div`
   background-color: rgba(192, 192, 192, 0.8);
   opacity: 0;
 `;
+const ImageItem = styled.img`
+  height: 28rem;
+  filter: grayscale(80%) blur(0.5px);
+`;
 const Wrapper = styled.div`
   cursor: pointer;
+  transition: 0.7s;
+  :hover {
+    scale: 1.2;
+  }
   :hover ${CardHeroText} {
     opacity: 1;
+  }
+  :hover ${ImageItem} {
+    filter: none;
   }
 `;
 const Card = styled.div`
   position: relative;
-`;
-
-const ImageItem = styled.img`
-  height: 28rem;
 `;
 
 const CardHeroTextTitle = styled.p`
@@ -42,7 +49,7 @@ const PressItem = ({ url, number }) => (
       </CardTitle>
     </Card>
     <CardHeroText>
-      <CardHeroTextTitle>{number}</CardHeroTextTitle>
+      <CardHeroTextTitle>Numer: {number}</CardHeroTextTitle>
     </CardHeroText>
   </Wrapper>
 );

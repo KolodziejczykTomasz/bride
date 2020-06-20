@@ -7,6 +7,7 @@ import CompanyPage from './CompanyPage';
 import PreparePage from './PreparePage';
 import store from '../store';
 import { Provider } from 'react-redux';
+import ChurchReadingsPage from './ChurchReadingsPage';
 
 const Root = () => (
   <>
@@ -18,6 +19,7 @@ const Root = () => (
           <Route path="/prepare" component={PreparePage} />
           <Route path="/contact" component={ContactPage} />
           <Route path="/company" component={CompanyPage} />
+          <Route path="/church" component={ChurchReadingsPage} />
         </Switch>
       </BrowserRouter>
     </Provider>
