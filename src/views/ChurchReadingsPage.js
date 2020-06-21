@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import NavbarTop from '../components/NavbarTop';
 import JumbotronBar from '../components/JumbotronBar';
 import HeaderBreake from '../components/HeaderBreake';
@@ -7,7 +8,7 @@ import styled from 'styled-components';
 
 const MainWarpper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 3rem;
   margin-bottom: 5rem;
 `;
@@ -24,10 +25,9 @@ const MainItem = styled.div`
 `;
 
 const MainItemText = styled.span`
-display: block;
-margin: auto auto;
+  display: block;
+  margin: auto auto;
 `;
-
 
 const ChurchReadingsPage = () => (
   <>
@@ -36,94 +36,206 @@ const ChurchReadingsPage = () => (
     <HeaderBreake>Pierwsze czytanie</HeaderBreake>
     <MainWarpper>
       <MainItem>
-        <MainItemText>Stworzenie mężczyzny i niewiasty</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post1">
+            Stworzenie mężczyzny i niewiasty
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Stworzenie kobiety</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post2">
+            Stworzenie kobiety
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Rebeka</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post3">
+            Rebeka
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Czytanie z Księgi Tobiasza</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post4">
+            Czytanie z Księgi Tobiasza
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Modlitwa Tobiasza i Sary</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post5">
+            Modlitwa Tobiasza i Sary
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Pieśń na pieśniami</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post6">
+            Pieśń na pieśniami
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Dobra żona</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post7">
+            Dobra żona
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Przymierze</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post8">
+            Przymierze
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Gody Baranka</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post9">
+            Gody Baranka
+          </NavLink>
+        </MainItemText>
       </MainItem>
     </MainWarpper>
     <HeaderBreake>Drugie czytanie</HeaderBreake>
     <MainWarpper>
       <MainItem>
-        <MainItemText>Miłość Boża</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post10">
+            Miłość Boża
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Życie chrześcijanina</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post11">
+            Życie chrześcijanina
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Ciało człowieka</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post12">
+            Ciało człowieka
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Hymn do miłości</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post13">
+            Hymn do miłości
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Miłość małżeńska</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post14">
+            Miłość małżeńska
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Droga małżonków do świętości</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post15">
+            Droga małżonków do świętości
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Nauki do żony i męża</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post16">
+            Nauki do żony i męża
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Życie według przykazań</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post17">
+            Życie według przykazań
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Bóg nas umiłował</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post18">
+            Bóg nas umiłował
+          </NavLink>
+        </MainItemText>
       </MainItem>
     </MainWarpper>
     <HeaderBreake>Ewangelie</HeaderBreake>
     <MainWarpper>
       <MainItem>
-        <MainItemText>8 Błogosławieństw</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post19">
+            8 Błogosławieństw
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Sól ziemi</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post20">
+            Sól ziemi
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Trwałość małżeństwa</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post21">
+            Trwałość małżeństwa
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Nierozerwalność małżeństwa</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post22">
+            Nierozerwalność małżeństwa
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Największe przykazanie</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post23">
+            Największe przykazanie
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Jedność małżonków</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post24">
+            Jedność małżonków
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Wesele w Kanie Galilejskiej</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post25">
+            Wesele w Kanie Galilejskiej
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Miłość Chrystusowa</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post26">
+            Miłość Chrystusowa
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Przykazanie miłości</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post27">
+            Przykazanie miłości
+          </NavLink>
+        </MainItemText>
       </MainItem>
       <MainItem>
-        <MainItemText>Zjednoczenie małżonków</MainItemText>
+        <MainItemText>
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church/post28">
+            Zjednoczenie małżonków
+          </NavLink>
+        </MainItemText>
       </MainItem>
     </MainWarpper>
     <Footer />
