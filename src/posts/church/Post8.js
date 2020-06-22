@@ -7,27 +7,33 @@ import NavbarTop from '../../components/NavbarTop';
 import Footer from '../../components/Footer';
 import JumbotronBar from '../../components/JumbotronBar';
 
-
-const Post1 = () => (
+const Post8 = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    
-        <PostTitle>Stworzenie mężczyzny i niewiasty</PostTitle> 
-        <PostSubtitle>Rdz 1,26-28.31</PostSubtitle>
-        
-        <PostParagraph> A Czytanie z Księgi Rodzaju Bóg rzekł: „Uczyńmy
-        człowieka na Nasz obraz, podobnego Nam. Niech panuje nad rybami morskimi, nad ptactwem
-        powietrznym, nad bydłem, nad całą ziemią i nad wszelkim zwierzęciem pełzającym po ziemi”.
-        Stworzył więc Bóg człowieka na swój obraz, na obraz Boży go stworzył: stworzył mężczyznę i
-        niewiastę. Po czym Bóg im błogosławił, mówiąc do nich: „Bądźcie płodni i rozmnażajcie się,
-        abyście zaludnili ziemię i uczynili ją sobie poddaną, abyście panowali nad rybami morskimi, nad
-        ptactwem powietrznym i nad wszystką istotą żywą, która chodzi po ziemi”. A Bóg widział, że
-        wszystko, co uczynił, było bardzo dobre. </PostParagraph>
-        
+    <PostTitle>Przymierze</PostTitle>
+    <PostSubtitle>Jr 31, 31-32A, 33-34A</PostSubtitle>
+    <PostParagraph>
+      <PostParagraph>Czytanie z Księgi Proroka Jeremiasza</PostParagraph>
+      <PostParagraph>Pan mówi: </PostParagraph>
+      <PostParagraph>
+        Oto nadchodzą dni, kiedy zawrę z domem Izraela i z domem judzkim nowe przymierze. Nie jak
+        przymierze, które zawierałem z ich przodkami, kiedy ująłem ich za rękę, by wyprowadzić z
+        ziemi egipskiej.
+      </PostParagraph>
+      <PostParagraph>
+        Lecz takie będzie przymierze, jakie zawrę z domem Izraela po tych dniach, mówi Pan.
+        Umieszczę swe prawo w głębi ich jestestwa, wypiszę na ich sercu. Będę im Bogiem, oni zaś
+        będą Mi narodem.
+      </PostParagraph>
+      <PostParagraph>
+        I nie będą się musieli wzajemnie pouczać jeden mówiąc do drugiego: „Poznajcie Pana!” Wszyscy
+        bowiem, od najmniejszego do największego, poznają Mnie.
+      </PostParagraph>
+    </PostParagraph>
     <PostFooter>Oto słowo Boże.</PostFooter>
-    <Footer/>
+    <Footer />
   </>
 );
 
-export default Post1;
+export default Post8;

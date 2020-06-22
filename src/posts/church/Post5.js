@@ -7,27 +7,35 @@ import NavbarTop from '../../components/NavbarTop';
 import Footer from '../../components/Footer';
 import JumbotronBar from '../../components/JumbotronBar';
 
-
-const Post1 = () => (
+const Post5 = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    
-        <PostTitle>Stworzenie mężczyzny i niewiasty</PostTitle> 
-        <PostSubtitle>Rdz 1,26-28.31</PostSubtitle>
-        
-        <PostParagraph> A Czytanie z Księgi Rodzaju Bóg rzekł: „Uczyńmy
-        człowieka na Nasz obraz, podobnego Nam. Niech panuje nad rybami morskimi, nad ptactwem
-        powietrznym, nad bydłem, nad całą ziemią i nad wszelkim zwierzęciem pełzającym po ziemi”.
-        Stworzył więc Bóg człowieka na swój obraz, na obraz Boży go stworzył: stworzył mężczyznę i
-        niewiastę. Po czym Bóg im błogosławił, mówiąc do nich: „Bądźcie płodni i rozmnażajcie się,
-        abyście zaludnili ziemię i uczynili ją sobie poddaną, abyście panowali nad rybami morskimi, nad
-        ptactwem powietrznym i nad wszystką istotą żywą, która chodzi po ziemi”. A Bóg widział, że
-        wszystko, co uczynił, było bardzo dobre. </PostParagraph>
-        
+    <PostTitle>Modlitwa Tobiasza i Sary</PostTitle>
+    <PostSubtitle>Tb 8, 5-10 (WLG)</PostSubtitle>
+    <PostParagraph>
+      <PostParagraph>Czytanie z Księgi Tobiasza</PostParagraph>
+      <PostParagraph>
+        Po uroczystościach weselnych Tobiasz rzekł do Sary: „Jesteśmy synami świętych i nie możemy
+        tak się łączyć jak narody, które nie znają Boga”. I wstawszy pilnie się oboje razem modlili,
+        aby dostąpić ocalenia.
+      </PostParagraph>
+      <PostParagraph>
+        Rzekł Tobiasz: „Panie, Boże ojców naszych, niech Cię błogosławią niebiosa i ziemia, morze,
+        źródła, rzeki i wszystkie stworzenia Twoje, które w nich są. Tyś stworzył Adama z mułu ziemi
+        i dałeś mu na pomoc Ewę.
+      </PostParagraph>
+      <PostParagraph>
+        A teraz, Panie, Ty wiesz, że nie dla namiętności biorę siostrę moją za żonę, ale tylko dla
+        miłości potomstwa, w którym by było błogosławione imię Twoje na wieki wieków”.
+      </PostParagraph>
+      <PostParagraph>
+        Sara też mówiła: „Zmiłuj się nad nami i niech się oboje wespół zestarzejemy w zdrowiu”.
+      </PostParagraph>
+    </PostParagraph>
     <PostFooter>Oto słowo Boże.</PostFooter>
-    <Footer/>
+    <Footer />
   </>
 );
 
-export default Post1;
+export default Post5;

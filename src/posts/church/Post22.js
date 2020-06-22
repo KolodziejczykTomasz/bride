@@ -7,27 +7,28 @@ import NavbarTop from '../../components/NavbarTop';
 import Footer from '../../components/Footer';
 import JumbotronBar from '../../components/JumbotronBar';
 
-
-const Post1 = () => (
+const Post22 = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    
-        <PostTitle>Stworzenie mężczyzny i niewiasty</PostTitle> 
-        <PostSubtitle>Rdz 1,26-28.31</PostSubtitle>
-        
-        <PostParagraph> A Czytanie z Księgi Rodzaju Bóg rzekł: „Uczyńmy
-        człowieka na Nasz obraz, podobnego Nam. Niech panuje nad rybami morskimi, nad ptactwem
-        powietrznym, nad bydłem, nad całą ziemią i nad wszelkim zwierzęciem pełzającym po ziemi”.
-        Stworzył więc Bóg człowieka na swój obraz, na obraz Boży go stworzył: stworzył mężczyznę i
-        niewiastę. Po czym Bóg im błogosławił, mówiąc do nich: „Bądźcie płodni i rozmnażajcie się,
-        abyście zaludnili ziemię i uczynili ją sobie poddaną, abyście panowali nad rybami morskimi, nad
-        ptactwem powietrznym i nad wszystką istotą żywą, która chodzi po ziemi”. A Bóg widział, że
-        wszystko, co uczynił, było bardzo dobre. </PostParagraph>
-        
-    <PostFooter>Oto słowo Boże.</PostFooter>
-    <Footer/>
+    <PostTitle>Nierozerwalność małżeństwa</PostTitle>
+    <PostSubtitle>Mt 19, 3-6</PostSubtitle>
+    <PostParagraph>
+      <PostParagraph>Słowa Ewangelii według świętego Mateusza</PostParagraph>
+      <PostParagraph>
+        Faryzeusze przystąpili do Jezusa, chcąc Go wystawić na próbę, i zadali Mu pytanie: „Czy
+        wolno oddalić swoją żonę z jakiegokolwiek powodu?”
+      </PostParagraph>
+      <PostParagraph>    
+        On odpowiedział: „Czy nie czytaliście, że Stwórca od początku stworzył ich jako mężczyznę i
+        kobietę? I rzekł: Dlatego opuści człowiek ojca i matkę i złączy się ze swoją żoną, i będą
+        dwoje jednym ciałem. A tak już nie są dwoje, lecz jedno ciało.
+      </PostParagraph>
+      <PostParagraph>Co więc Bóg złączył, niech człowiek nie rozdziela”.</PostParagraph>
+    </PostParagraph>
+    <PostFooter>Oto słowo Pańskie.</PostFooter>
+    <Footer />
   </>
 );
 
-export default Post1;
+export default Post22;

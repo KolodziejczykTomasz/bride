@@ -7,27 +7,41 @@ import NavbarTop from '../../components/NavbarTop';
 import Footer from '../../components/Footer';
 import JumbotronBar from '../../components/JumbotronBar';
 
-
-const Post1 = () => (
+const Post6 = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    
-        <PostTitle>Stworzenie mężczyzny i niewiasty</PostTitle> 
-        <PostSubtitle>Rdz 1,26-28.31</PostSubtitle>
-        
-        <PostParagraph> A Czytanie z Księgi Rodzaju Bóg rzekł: „Uczyńmy
-        człowieka na Nasz obraz, podobnego Nam. Niech panuje nad rybami morskimi, nad ptactwem
-        powietrznym, nad bydłem, nad całą ziemią i nad wszelkim zwierzęciem pełzającym po ziemi”.
-        Stworzył więc Bóg człowieka na swój obraz, na obraz Boży go stworzył: stworzył mężczyznę i
-        niewiastę. Po czym Bóg im błogosławił, mówiąc do nich: „Bądźcie płodni i rozmnażajcie się,
-        abyście zaludnili ziemię i uczynili ją sobie poddaną, abyście panowali nad rybami morskimi, nad
-        ptactwem powietrznym i nad wszystką istotą żywą, która chodzi po ziemi”. A Bóg widział, że
-        wszystko, co uczynił, było bardzo dobre. </PostParagraph>
-        
+    <PostTitle>Pieśń na pieśniami</PostTitle>
+    <PostSubtitle></PostSubtitle>
+    <PostParagraph>
+      <PostParagraph> Czytanie z Pieśni nad Pieśniami</PostParagraph>
+      <PostParagraph>
+        Oto ukochany mój! Oto On! Oto nadchodzi! Biegnie przez góry, skacze po pagórkach. Umiłowany
+      </PostParagraph>
+      <PostParagraph>mój podobny do gazeli, do młodego jelenia.</PostParagraph>
+      <PostParagraph>
+        Oto stoi za naszym murem, patrzy przez okno, zagląda przez kraty.
+      </PostParagraph>
+      <PostParagraph>Miły mój odzywa się i mówi do mnie:</PostParagraph>
+      <PostParagraph>„Powstań, przyjaciółko moja, piękna moja i pójdź!</PostParagraph>
+      <PostParagraph>
+        Gołąbko moja, ukryta w zagłębieniach skały, w szczelinach przepaści,
+      </PostParagraph>
+      <PostParagraph>ukaż mi swą twarz, daj mi usłyszeć swój głos!</PostParagraph>
+      <PostParagraph>Bo słodki jest głos twój i twarz pełna wdzięku”.</PostParagraph>
+      <PostParagraph>Mój miły należy do mnie, a ja do niego. On mi powiedział:</PostParagraph>
+      <PostParagraph>
+        Połóż mię jak pieczęć na twoim sercu, jak pieczęć na twoim ramieniu,
+      </PostParagraph>
+      <PostParagraph>
+        bo jak śmierć potężna jest miłość, a zazdrość jej nieprzejednana jak otchłań,
+      </PostParagraph>
+      <PostParagraph>żar jej to żar ognia, płomień Pana. </PostParagraph>
+      <PostParagraph>Wody wielkie nie zdołają ugasić miłości, nie zatopią jej rzeki.</PostParagraph>
+    </PostParagraph>
     <PostFooter>Oto słowo Boże.</PostFooter>
-    <Footer/>
+    <Footer />
   </>
 );
 
-export default Post1;
+export default Post6;

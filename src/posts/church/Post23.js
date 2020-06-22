@@ -8,26 +8,23 @@ import Footer from '../../components/Footer';
 import JumbotronBar from '../../components/JumbotronBar';
 
 
-const Post1 = () => (
+const Post23 = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    
-        <PostTitle>Stworzenie mężczyzny i niewiasty</PostTitle> 
-        <PostSubtitle>Rdz 1,26-28.31</PostSubtitle>
-        
-        <PostParagraph> A Czytanie z Księgi Rodzaju Bóg rzekł: „Uczyńmy
-        człowieka na Nasz obraz, podobnego Nam. Niech panuje nad rybami morskimi, nad ptactwem
-        powietrznym, nad bydłem, nad całą ziemią i nad wszelkim zwierzęciem pełzającym po ziemi”.
-        Stworzył więc Bóg człowieka na swój obraz, na obraz Boży go stworzył: stworzył mężczyznę i
-        niewiastę. Po czym Bóg im błogosławił, mówiąc do nich: „Bądźcie płodni i rozmnażajcie się,
-        abyście zaludnili ziemię i uczynili ją sobie poddaną, abyście panowali nad rybami morskimi, nad
-        ptactwem powietrznym i nad wszystką istotą żywą, która chodzi po ziemi”. A Bóg widział, że
-        wszystko, co uczynił, było bardzo dobre. </PostParagraph>
-        
-    <PostFooter>Oto słowo Boże.</PostFooter>
-    <Footer/>
+    <PostTitle>Największe przykazanie</PostTitle>
+    <PostSubtitle>Mt 22,35-40</PostSubtitle>
+    <PostParagraph>
+      <PostParagraph>Słowa Ewangelii według świętego Mateusza</PostParagraph>      
+      <PostParagraph>Jeden z faryzeuszów, uczony w Prawie, zapytał Jezusa, wystawiając Go na próbę: „Nauczycielu, które przykazanie w
+      Prawie jest największe?” On mu odpowiedział: „Będziesz miłował Pana Boga swego całym swoim
+      sercem, całą swoją duszą i całym swoim umysłem. To jest największe i pierwsze przykazanie.</PostParagraph>      
+      <PostParagraph>Drugie podobne jest do niego: Będziesz miłował swego bliźniego jak siebie samego. Na tych
+      dwóch przykazaniach opiera się całe Prawo i Prorocy”.</PostParagraph>
+    </PostParagraph>
+    <PostFooter>Oto słowo Pańskie.</PostFooter>
+    <Footer />
   </>
 );
 
-export default Post1;
+export default Post23;

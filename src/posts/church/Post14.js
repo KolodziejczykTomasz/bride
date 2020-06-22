@@ -7,27 +7,31 @@ import NavbarTop from '../../components/NavbarTop';
 import Footer from '../../components/Footer';
 import JumbotronBar from '../../components/JumbotronBar';
 
-
-const Post1 = () => (
+const Post14 = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    
-        <PostTitle>Stworzenie mężczyzny i niewiasty</PostTitle> 
-        <PostSubtitle>Rdz 1,26-28.31</PostSubtitle>
-        
-        <PostParagraph> A Czytanie z Księgi Rodzaju Bóg rzekł: „Uczyńmy
-        człowieka na Nasz obraz, podobnego Nam. Niech panuje nad rybami morskimi, nad ptactwem
-        powietrznym, nad bydłem, nad całą ziemią i nad wszelkim zwierzęciem pełzającym po ziemi”.
-        Stworzył więc Bóg człowieka na swój obraz, na obraz Boży go stworzył: stworzył mężczyznę i
-        niewiastę. Po czym Bóg im błogosławił, mówiąc do nich: „Bądźcie płodni i rozmnażajcie się,
-        abyście zaludnili ziemię i uczynili ją sobie poddaną, abyście panowali nad rybami morskimi, nad
-        ptactwem powietrznym i nad wszystką istotą żywą, która chodzi po ziemi”. A Bóg widział, że
-        wszystko, co uczynił, było bardzo dobre. </PostParagraph>
-        
+    <PostTitle>Miłość małżeńska</PostTitle>
+    <PostSubtitle>Kol 3 12-17</PostSubtitle>
+    <PostParagraph>
+      <PostParagraph>Czytanie z Listu świętego Pawła Apostoła do Kolosan</PostParagraph>
+      <PostParagraph>
+        Bracia: Jako wybrańcy Boży, święci i umiłowani, obleczcie się w serdeczne miłosierdzie,
+        dobroć, pokorę, cichość, cierpliwość, znosząc jedni drugich i wybaczając sobie nawzajem,
+        jeśliby miał ktoś zarzut przeciw drugiemu: jak Pan wybaczył wam, tak i wy.{' '}
+      </PostParagraph>
+      <PostParagraph>
+        Na to zaś wszystko obleczcie się w miłość, która jest więzią doskonałości. A sercami waszymi
+        niech rządzi pokój Chrystusowy, do którego też zostaliśmy wezwani, w jednym ciele. I bądźcie
+        wdzięczni. Słowo Chrystusa niech w was przebywa z całym swym bogactwem: z wszelką mądrością
+        nauczajcie i napominajcie samych siebie przez psalmy, hymny, pieśni pełne ducha, pod wpływem
+        łaski śpiewając Bogu w waszych sercach. I wszystko, cokolwiek działacie słowem lub czynem,
+        wszystko czyńcie w imię Pana Jezusa, dziękując Bogu Ojcu przez Niego.
+      </PostParagraph>
+    </PostParagraph>
     <PostFooter>Oto słowo Boże.</PostFooter>
-    <Footer/>
+    <Footer />
   </>
 );
 
-export default Post1;
+export default Post14;

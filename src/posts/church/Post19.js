@@ -7,27 +7,44 @@ import NavbarTop from '../../components/NavbarTop';
 import Footer from '../../components/Footer';
 import JumbotronBar from '../../components/JumbotronBar';
 
-
-const Post1 = () => (
+const Post19 = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    
-        <PostTitle>Stworzenie mężczyzny i niewiasty</PostTitle> 
-        <PostSubtitle>Rdz 1,26-28.31</PostSubtitle>
-        
-        <PostParagraph> A Czytanie z Księgi Rodzaju Bóg rzekł: „Uczyńmy
-        człowieka na Nasz obraz, podobnego Nam. Niech panuje nad rybami morskimi, nad ptactwem
-        powietrznym, nad bydłem, nad całą ziemią i nad wszelkim zwierzęciem pełzającym po ziemi”.
-        Stworzył więc Bóg człowieka na swój obraz, na obraz Boży go stworzył: stworzył mężczyznę i
-        niewiastę. Po czym Bóg im błogosławił, mówiąc do nich: „Bądźcie płodni i rozmnażajcie się,
-        abyście zaludnili ziemię i uczynili ją sobie poddaną, abyście panowali nad rybami morskimi, nad
-        ptactwem powietrznym i nad wszystką istotą żywą, która chodzi po ziemi”. A Bóg widział, że
-        wszystko, co uczynił, było bardzo dobre. </PostParagraph>
-        
-    <PostFooter>Oto słowo Boże.</PostFooter>
-    <Footer/>
+    <PostTitle>8 Błogosławieństw</PostTitle>
+    <PostSubtitle>Mt 5, L-12A</PostSubtitle>
+    <PostParagraph>
+      <PostParagraph>Słowa Ewangelii według świętego Mateusza</PostParagraph>
+      <PostParagraph>
+        Jezus widząc tłumy, wyszedł na górę. A gdy usiadł, przystąpili do Niego Jego uczniowie.
+        Wtedy otworzył swoje usta i nauczał ich tymi słowami:
+      </PostParagraph>
+      <PostParagraph>       
+        „Błogosławieni ubodzy w duchu, albowiem do nich należy królestwo niebieskie.
+      </PostParagraph>
+      <PostParagraph>Błogosławieni, którzy płaczą, albowiem oni będą pocieszeni. </PostParagraph>
+      <PostParagraph>Błogosławieni cisi, albowiem oni na własność posiądą ziemię.</PostParagraph>
+      <PostParagraph>
+        Błogosławieni, którzy łakną i pragną sprawiedliwości, albowiem oni będą nasyceni.
+      </PostParagraph>
+      <PostParagraph>Błogosławieni miłosierni, albowiem oni miłosierdzia dostąpią.</PostParagraph>
+      <PostParagraph>Błogosławieni czystego serca, albowiem oni Boga oglądać będą.</PostParagraph>
+      <PostParagraph>
+        Błogosławieni, którzy wprowadzają pokój, albowiem oni będą nazwani synami Bożymi.
+      </PostParagraph>
+      <PostParagraph>
+        Błogosławieni, którzy cierpią prześladowania dla sprawiedliwości, albowiem do nich należy
+        królestwo niebieskie.
+      </PostParagraph>
+      <PostParagraph>
+        Błogosławieni jesteście, gdy ludzie wam urągają i prześladują was, i gdy mówią kłamliwie
+        wszystko złe na was z mego powodu. Cieszcie się i radujcie, albowiem wasza nagroda wielka
+        jest w niebie”.
+      </PostParagraph>
+    </PostParagraph>
+    <PostFooter>Oto słowo Pańskie.</PostFooter>
+    <Footer />
   </>
 );
 
-export default Post1;
+export default Post19;

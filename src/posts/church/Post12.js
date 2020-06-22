@@ -7,27 +7,32 @@ import NavbarTop from '../../components/NavbarTop';
 import Footer from '../../components/Footer';
 import JumbotronBar from '../../components/JumbotronBar';
 
-
-const Post1 = () => (
+const Post12 = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    
-        <PostTitle>Stworzenie mężczyzny i niewiasty</PostTitle> 
-        <PostSubtitle>Rdz 1,26-28.31</PostSubtitle>
-        
-        <PostParagraph> A Czytanie z Księgi Rodzaju Bóg rzekł: „Uczyńmy
-        człowieka na Nasz obraz, podobnego Nam. Niech panuje nad rybami morskimi, nad ptactwem
-        powietrznym, nad bydłem, nad całą ziemią i nad wszelkim zwierzęciem pełzającym po ziemi”.
-        Stworzył więc Bóg człowieka na swój obraz, na obraz Boży go stworzył: stworzył mężczyznę i
-        niewiastę. Po czym Bóg im błogosławił, mówiąc do nich: „Bądźcie płodni i rozmnażajcie się,
-        abyście zaludnili ziemię i uczynili ją sobie poddaną, abyście panowali nad rybami morskimi, nad
-        ptactwem powietrznym i nad wszystką istotą żywą, która chodzi po ziemi”. A Bóg widział, że
-        wszystko, co uczynił, było bardzo dobre. </PostParagraph>
-        
+    <PostTitle>Ciało człowieka</PostTitle>
+    <PostSubtitle>1 Kor 6, 13C-15A. 17-20</PostSubtitle>
+    <PostParagraph>
+      <PostParagraph>
+        Czytanie z Pierwszego Listu świętego Pawła Apostoła do Koryntian
+      </PostParagraph>
+      <PostParagraph>
+        Bracia: Ciało nie jest dla rozpusty, lecz dla Pana, a Pan dla ciała. Bóg zaś i Pana
+        wskrzesił, i nas również swą mocą wskrzesi z martwych. Czyż nie wiecie, że ciała wasze są
+        członkami Chrystusa? Ten zaś, kto się łączy z Panem, jest z Nim jednym duchem. Strzeżcie się
+        rozpusty; wszelki grzech popełniony przez człowieka jest na zewnątrz ciała; kto zaś grzeszy
+        rozpustą, przeciwko własnemu ciału grzeszy.
+      </PostParagraph>
+      <PostParagraph>
+        Czyż nie wiecie, że ciało wasze jest przybytkiem Ducha Świętego, który w was jest, a którego
+        macie od Boga, i że już nie należycie do samych siebie? Za wielką bowiem cenę zostaliście
+        nabyci. Chwalcie więc Boga w waszym ciele!
+      </PostParagraph>
+    </PostParagraph>
     <PostFooter>Oto słowo Boże.</PostFooter>
-    <Footer/>
+    <Footer />
   </>
 );
 
-export default Post1;
+export default Post12;

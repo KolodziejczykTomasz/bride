@@ -7,27 +7,36 @@ import NavbarTop from '../../components/NavbarTop';
 import Footer from '../../components/Footer';
 import JumbotronBar from '../../components/JumbotronBar';
 
-
-const Post1 = () => (
+const Post10 = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    
-        <PostTitle>Stworzenie mężczyzny i niewiasty</PostTitle> 
-        <PostSubtitle>Rdz 1,26-28.31</PostSubtitle>
-        
-        <PostParagraph> A Czytanie z Księgi Rodzaju Bóg rzekł: „Uczyńmy
-        człowieka na Nasz obraz, podobnego Nam. Niech panuje nad rybami morskimi, nad ptactwem
-        powietrznym, nad bydłem, nad całą ziemią i nad wszelkim zwierzęciem pełzającym po ziemi”.
-        Stworzył więc Bóg człowieka na swój obraz, na obraz Boży go stworzył: stworzył mężczyznę i
-        niewiastę. Po czym Bóg im błogosławił, mówiąc do nich: „Bądźcie płodni i rozmnażajcie się,
-        abyście zaludnili ziemię i uczynili ją sobie poddaną, abyście panowali nad rybami morskimi, nad
-        ptactwem powietrznym i nad wszystką istotą żywą, która chodzi po ziemi”. A Bóg widział, że
-        wszystko, co uczynił, było bardzo dobre. </PostParagraph>
-        
+    <PostTitle>Miłość Boża</PostTitle>
+    <PostSubtitle>Rz 8, 31B-35. 37-39</PostSubtitle>
+    <PostParagraph>
+      <PostParagraph>Czytanie z Listu świętego Pawła Apostoła do Rzymian</PostParagraph>
+      <PostParagraph>
+        Bracia: Jeżeli Bóg z nami, któż przeciwko nam? On, który nawet własnego Syna nie oszczędził,
+        ale Go za nas wszystkich wydał, jakże miałby wraz z Nim i wszystkiego nam nie darować? Któż
+        może wystąpić z oskarżeniem przeciw tym, których Bóg wybrał? Czyż Bóg, który usprawiedliwia?
+        Któż może wydać wyrok potępienia? Czy Chrystus Jezus, który poniósł za nas śmierć, co
+        więcej: zmartwychwstał, siedzi po prawicy Boga i przyczynia się za nami?
+      </PostParagraph>
+      <PostParagraph>
+        Któż nas może odłączyć od miłości Chrystusowej? Utrapienia, ucisk czy prześladowanie, głód
+        czy nagość, niebezpieczeństwo czy miecz? Ale we wszystkim tym odnosimy pełne zwycięstwo
+        dzięki temu, który nas umiłował.
+      </PostParagraph>
+      <PostParagraph>
+        I jestem pewien, że ani śmierć, ani życie, ani aniołowie, ani zwierzchności, ani rzeczy
+        teraźniejsze, ani przyszłe, ani potęgi, ani co wysokie, ani co głębokie, ani jakiekolwiek
+        inne stworzenie nie zdoła nas odłączyć od miłości Boga, która jest w Chrystusie Jezusie,
+        Panu naszym.
+      </PostParagraph>
+    </PostParagraph>
     <PostFooter>Oto słowo Boże.</PostFooter>
-    <Footer/>
+    <Footer />
   </>
 );
 
-export default Post1;
+export default Post10;

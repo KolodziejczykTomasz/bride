@@ -7,27 +7,35 @@ import NavbarTop from '../../components/NavbarTop';
 import Footer from '../../components/Footer';
 import JumbotronBar from '../../components/JumbotronBar';
 
-
-const Post1 = () => (
+const Post9 = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    
-        <PostTitle>Stworzenie mężczyzny i niewiasty</PostTitle> 
-        <PostSubtitle>Rdz 1,26-28.31</PostSubtitle>
-        
-        <PostParagraph> A Czytanie z Księgi Rodzaju Bóg rzekł: „Uczyńmy
-        człowieka na Nasz obraz, podobnego Nam. Niech panuje nad rybami morskimi, nad ptactwem
-        powietrznym, nad bydłem, nad całą ziemią i nad wszelkim zwierzęciem pełzającym po ziemi”.
-        Stworzył więc Bóg człowieka na swój obraz, na obraz Boży go stworzył: stworzył mężczyznę i
-        niewiastę. Po czym Bóg im błogosławił, mówiąc do nich: „Bądźcie płodni i rozmnażajcie się,
-        abyście zaludnili ziemię i uczynili ją sobie poddaną, abyście panowali nad rybami morskimi, nad
-        ptactwem powietrznym i nad wszystką istotą żywą, która chodzi po ziemi”. A Bóg widział, że
-        wszystko, co uczynił, było bardzo dobre. </PostParagraph>
-        
+    <PostTitle>Gody Baranka</PostTitle>
+    <PostSubtitle>Ap 19, 1.5-9A</PostSubtitle>
+    <PostParagraph>
+      <PostParagraph>Czytanie z Księgi Apokalipsy świętego Jana Apostoła</PostParagraph>
+      <PostParagraph>
+        Ja, Jan, Usłyszałem jak gdyby donośny głos wielkiego tłumu wołającego w niebie: „Alleluja!
+        Zbawienie i chwała, i moc należą do Boga naszego”.
+      </PostParagraph>
+      <PostParagraph>
+        I wyszedł głos od tronu, mówiący: „Chwalcie naszego Boga, wszyscy Jego słudzy, którzy się Go
+        boicie, mali i wielcy!”
+      </PostParagraph>
+      <PostParagraph>
+        I usłyszałem jakby głos wielkiego tłumu i jakby głos mnogich wód, i jakby’ głos potężnych
+        grzmotów, które mówiły: „Alleluja, bo zakrólował Pan Bóg nasz, Wszechmogący. Weselmy się i
+        radujmy i dajmy Mu chwałę, bo nadeszły Gody Baranka, a Jego Małżonka się przystroiła, i dano
+        jej oblec bisior lśniący i czysty”, bisior bowiem oznacza czyny sprawiedliwe świętych.
+      </PostParagraph>
+      <PostParagraph>
+        I mówi mi: „Napisz: Błogosławieni, którzy są wezwani na ucztę Godów Baranka!”
+      </PostParagraph>
+    </PostParagraph>
     <PostFooter>Oto słowo Boże.</PostFooter>
-    <Footer/>
+    <Footer />
   </>
 );
 
-export default Post1;
+export default Post9;

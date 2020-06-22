@@ -8,26 +8,26 @@ import Footer from '../../components/Footer';
 import JumbotronBar from '../../components/JumbotronBar';
 
 
-const Post1 = () => (
+const Post26 = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    
-        <PostTitle>Stworzenie mężczyzny i niewiasty</PostTitle> 
-        <PostSubtitle>Rdz 1,26-28.31</PostSubtitle>
-        
-        <PostParagraph> A Czytanie z Księgi Rodzaju Bóg rzekł: „Uczyńmy
-        człowieka na Nasz obraz, podobnego Nam. Niech panuje nad rybami morskimi, nad ptactwem
-        powietrznym, nad bydłem, nad całą ziemią i nad wszelkim zwierzęciem pełzającym po ziemi”.
-        Stworzył więc Bóg człowieka na swój obraz, na obraz Boży go stworzył: stworzył mężczyznę i
-        niewiastę. Po czym Bóg im błogosławił, mówiąc do nich: „Bądźcie płodni i rozmnażajcie się,
-        abyście zaludnili ziemię i uczynili ją sobie poddaną, abyście panowali nad rybami morskimi, nad
-        ptactwem powietrznym i nad wszystką istotą żywą, która chodzi po ziemi”. A Bóg widział, że
-        wszystko, co uczynił, było bardzo dobre. </PostParagraph>
-        
-    <PostFooter>Oto słowo Boże.</PostFooter>
-    <Footer/>
+
+    <PostTitle>Miłość Chrystusowa</PostTitle>
+    <PostSubtitle>J 15, 9-12</PostSubtitle>
+
+    <PostParagraph>
+      <PostParagraph>Słowa Ewangelii według świętego Jana</PostParagraph> W czasie ostatniej
+      wieczerzy Jezus powiedział do swoich uczniów: „Jak Mnie umiłował Ojciec, tak i Ja was
+      umiłowałem. Wytrwajcie w miłości mojej. Jeśli będziecie zachowywać moje przykazania, będziecie
+      trwać w miłości mojej, tak jak Ja zachowałem przykazania Ojca mego i trwam w Jego miłości. To
+      wam powiedziałem, aby radość moja w was była i aby radość wasza była pełna. To jest moje
+      przykazanie, abyście się wzajemnie miłowali, tak jak Ja was umiłowałem”.
+    </PostParagraph>
+
+    <PostFooter>Oto słowo Pańskie.</PostFooter>
+    <Footer />
   </>
 );
 
-export default Post1;
+export default Post26;

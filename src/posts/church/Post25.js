@@ -7,27 +7,41 @@ import NavbarTop from '../../components/NavbarTop';
 import Footer from '../../components/Footer';
 import JumbotronBar from '../../components/JumbotronBar';
 
-
-const Post1 = () => (
+const Post25 = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    
-        <PostTitle>Stworzenie mężczyzny i niewiasty</PostTitle> 
-        <PostSubtitle>Rdz 1,26-28.31</PostSubtitle>
-        
-        <PostParagraph> A Czytanie z Księgi Rodzaju Bóg rzekł: „Uczyńmy
-        człowieka na Nasz obraz, podobnego Nam. Niech panuje nad rybami morskimi, nad ptactwem
-        powietrznym, nad bydłem, nad całą ziemią i nad wszelkim zwierzęciem pełzającym po ziemi”.
-        Stworzył więc Bóg człowieka na swój obraz, na obraz Boży go stworzył: stworzył mężczyznę i
-        niewiastę. Po czym Bóg im błogosławił, mówiąc do nich: „Bądźcie płodni i rozmnażajcie się,
-        abyście zaludnili ziemię i uczynili ją sobie poddaną, abyście panowali nad rybami morskimi, nad
-        ptactwem powietrznym i nad wszystką istotą żywą, która chodzi po ziemi”. A Bóg widział, że
-        wszystko, co uczynił, było bardzo dobre. </PostParagraph>
-        
-    <PostFooter>Oto słowo Boże.</PostFooter>
-    <Footer/>
+    <PostTitle>Wesele w Kanie Galilejskiej</PostTitle>
+    <PostSubtitle>J 2, 1-11</PostSubtitle>
+    <PostParagraph>
+      <PostParagraph>Słowa Ewangelii według świętego Jana</PostParagraph>W Kanie Galilejskiej
+      odbywało się wesele i była tam matka Jezusa. Zaproszono na to wesele także Jezusa i Jego
+      uczniów. A kiedy zabrakło wina, matka Jezusa mówi do Niego: „Nie mają już wina”.
+      <PostParagraph>
+        Jezus jej odpowiedział: „Czyż to moja lub twoja sprawa, niewiasto? Czyż jeszcze nie nadeszła
+        moja godzina?”.
+      </PostParagraph>
+      <PostParagraph>
+        Wtedy matka Jego powiedziała do sług: „Zróbcie wszystko, cokolwiek wam powie”. Stało zaś tam
+        sześć stągwi kamiennych przeznaczonych do żydowskich oczyszczeń, z których każda mogła
+        pomieścić dwie lub trzy miary.
+      </PostParagraph>
+      <PostParagraph> Rzekł do nich Jezus: „Napełnijcie stągwie wodę”.</PostParagraph>
+      <PostParagraph>
+        I napełnili je aż po brzegi. Potem do nich powiedział: „Zaczerpnijcie teraz i zanieście
+        staroście weselnemu”. Oni zaś zanieśli. A gdy starosta weselny skosztował wody, która stała
+        się winem — nie wiedział bowiem, skąd ono pochodzi, ale słudzy, którzy czerpali wodę,
+        wiedzieli — przywołał pana młodego i powiedział do niego: „Każdy człowiek stawia najpierw
+        dobre wino, a gdy się napiją, wówczas gorsze. Ty zachowałeś dobre wino aż do tej pory”.
+      </PostParagraph>
+      <PostParagraph>
+        Taki to początek znaków uczynił Jezus w Kanie Galilejskiej. Objawił swoją chwałę i uwierzyli
+        w Niego jego uczniowie.
+      </PostParagraph>
+    </PostParagraph>
+    <PostFooter>Oto słowo Pańskie.</PostFooter>
+    <Footer />
   </>
 );
 
-export default Post1;
+export default Post25;

@@ -7,27 +7,40 @@ import NavbarTop from '../../components/NavbarTop';
 import Footer from '../../components/Footer';
 import JumbotronBar from '../../components/JumbotronBar';
 
-
-const Post1 = () => (
+const Post28 = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    
-        <PostTitle>Stworzenie mężczyzny i niewiasty</PostTitle> 
-        <PostSubtitle>Rdz 1,26-28.31</PostSubtitle>
-        
-        <PostParagraph> A Czytanie z Księgi Rodzaju Bóg rzekł: „Uczyńmy
-        człowieka na Nasz obraz, podobnego Nam. Niech panuje nad rybami morskimi, nad ptactwem
-        powietrznym, nad bydłem, nad całą ziemią i nad wszelkim zwierzęciem pełzającym po ziemi”.
-        Stworzył więc Bóg człowieka na swój obraz, na obraz Boży go stworzył: stworzył mężczyznę i
-        niewiastę. Po czym Bóg im błogosławił, mówiąc do nich: „Bądźcie płodni i rozmnażajcie się,
-        abyście zaludnili ziemię i uczynili ją sobie poddaną, abyście panowali nad rybami morskimi, nad
-        ptactwem powietrznym i nad wszystką istotą żywą, która chodzi po ziemi”. A Bóg widział, że
-        wszystko, co uczynił, było bardzo dobre. </PostParagraph>
-        
-    <PostFooter>Oto słowo Boże.</PostFooter>
-    <Footer/>
+
+    <PostTitle>Zjednoczenie małżonków</PostTitle>
+    <PostSubtitle>J 17, 20-26</PostSubtitle>
+    <PostParagraph>
+      <PostParagraph>Słowa Ewangelii według świętego Jana</PostParagraph>
+      <PostParagraph>
+        W czasie ostatniej wieczerzy Jezus podniósłszy oczy ku niebu rzekł: „Ojcze, nie tylko za
+        nimi proszę, ale i za tymi, którzy dzięki ich słowu będą wierzyć we Mnie: aby wszyscy
+        stanowili jedno, jak Ty, Ojcze, we Mnie, a Ja w Tobie, aby i oni stanowili jedno w Nas, aby
+        świat uwierzył, żeś Ty Mnie posłał.
+      </PostParagraph>
+
+      <PostParagraph>
+        I także chwałę, którą Mi dałeś, przekazałem im, aby stanowili jedno, tak jak My jedno
+        stanowimy. Ja w nich, a Ty we Mnie. Oby się tak zespolili w jedno, aby świat poznał, żeś Ty
+        Mnie posłał i żeś Ty ich umiłował tak, jak Mnie umiłowałeś.
+      </PostParagraph>
+
+      <PostParagraph>
+        Ojcze, chcę, aby także ci, których Mi dałeś, byli ze Mną tam, gdzie Ja jestem, aby widzieli
+        chwałę moją, którą Mi dałeś, bo umiłowałeś Mnie przed założeniem świata. Ojcze sprawiedliwy!
+        Świat Ciebie nie poznał, lecz Ja Ciebie poznałem i oni poznali, żeś Ty Mnie posła!.
+        Objawiłem im Twoje imię i nadal będę objawiał, aby miłość, którą Ty Mnie umiłowałeś, w nich
+        była i Ja w nich”.
+      </PostParagraph>
+    </PostParagraph>
+
+    <PostFooter>Oto słowo Pańskie.</PostFooter>
+    <Footer />
   </>
 );
 
-export default Post1;
+export default Post28;
