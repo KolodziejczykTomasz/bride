@@ -46,6 +46,14 @@ const Footer = () => (
     <FooterWrapperMultibox>
       <FooterWrapperSingleboxFirst>
         <FooterTitle>Panna Młoda</FooterTitle>
+        <FooterListLink>
+          <FooterItemLink>
+            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/hairtop">
+              Fryzury na 2020
+            </NavLink>
+          </FooterItemLink>
+        </FooterListLink>
+
       </FooterWrapperSingleboxFirst>
       <FooterWrapperSingleboxSecond>
         <FooterTitle>Pan Młody</FooterTitle>
