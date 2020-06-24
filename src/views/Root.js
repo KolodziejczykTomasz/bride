@@ -37,6 +37,7 @@ import Post26 from '../posts/church/Post26';
 import Post27 from '../posts/church/Post27';
 import Post28 from '../posts/church/Post28';
 import HairTop2020Page from './HairTop2020Page';
+import TravelPage from './TravelPage';
 
 const Root = () => (
   <>
@@ -49,6 +50,7 @@ const Root = () => (
           <Route path="/contact" component={ContactPage} />
           <Route path="/company" component={CompanyPage} />
           <Route path="/hairtop" component={HairTop2020Page} />
+          <Route path="/travel" component={TravelPage} />
           <Route exact path="/church" component={ChurchReadingsPage} />
           <Route exact path="/church/post1" component={Post1} />
           <Route exact path="/church/post2" component={Post2} />

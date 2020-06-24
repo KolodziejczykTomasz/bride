@@ -53,7 +53,6 @@ const Footer = () => (
             </NavLink>
           </FooterItemLink>
         </FooterListLink>
-
       </FooterWrapperSingleboxFirst>
       <FooterWrapperSingleboxSecond>
         <FooterTitle>Pan Młody</FooterTitle>
@@ -64,6 +63,11 @@ const Footer = () => (
           <FooterItemLink>
             <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church">
               Czytania w Kościele
+            </NavLink>          
+          </FooterItemLink>
+          <FooterItemLink>        
+            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/travel">
+              Podróż poślubna
             </NavLink>
           </FooterItemLink>
         </FooterListLink>
