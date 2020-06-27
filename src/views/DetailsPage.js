@@ -1,16 +1,16 @@
 import React from 'react';
 import NavbarTop from '../components/NavbarTop';
 import JumbotronBar from '../components/JumbotronBar';
-import TravelBar from '../components/TravelBar';
 import Footer from '../components/Footer';
+import DetailsCard from '../components/DetailsCard';
 
-const TravelPage = () => (
+const DetailsPage = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    <TravelBar />
+    <DetailsCard />
     <Footer />
   </>
 );
 
-export default TravelPage;
+export default DetailsPage;

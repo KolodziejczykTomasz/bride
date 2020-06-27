@@ -4,33 +4,33 @@ import styled from 'styled-components';
 const Card = styled.div`
   position: relative;
 `;
-const CardText = styled.p``;
+const CardText = styled.p`
+  height: auto;
+`;
 const CardHeroText = styled.div`
   display: block;
   position: absolute;
   width: 80%;
-  height: 20%;
+  height: 50%;
   top: 50%;
   left: 10%;
   background-color: rgba(192, 192, 192, 0.8);
-  opacity: 0;
 `;
 const Wrapper = styled.div`
+  height: 65rem;
+  margin-bottom: 10rem;
   cursor: pointer;
   transition: 0.5s;
   :hover {
-    scale: 1.2;
+    scale: 1.1;
     z-index: 999;
-  }
-  :hover ${CardHeroText} {
-    opacity: 1;
   }
 `;
 const CardHeroTextTitle = styled.p`
   display: block;
   text-align: center;
   margin: 12% auto;
-  font-size: 2.2rem;
+  font-size: 1.2rem;
 `;
 
 const ImageItem = styled.img`
@@ -40,7 +40,7 @@ const ImageItem = styled.img`
   margin: 0 auto;
 `;
 
-const TravelItem = ({ url, pleace, description }) => (
+const TravelItem = ({ url, pleace, price, description }) => (
   <Wrapper className="card">
     <Card class="card-content">
       <CardText className="title">
@@ -52,6 +52,7 @@ const TravelItem = ({ url, pleace, description }) => (
     </CardHeroText>
     <CardHeroText>
       <CardHeroTextTitle>{description}</CardHeroTextTitle>
+      <CardHeroTextTitle>{price}</CardHeroTextTitle>
     </CardHeroText>
   </Wrapper>
 );

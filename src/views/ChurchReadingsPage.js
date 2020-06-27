@@ -4,6 +4,7 @@ import NavbarTop from '../components/NavbarTop';
 import JumbotronBar from '../components/JumbotronBar';
 import HeaderBreake from '../components/HeaderBreake';
 import Footer from '../components/Footer';
+import MainTemplates from '../templates/MainTemplates';
 import styled from 'styled-components';
 
 const MainWarpper = styled.div`
@@ -29,8 +30,8 @@ const MainItemText = styled.span`
   margin: auto auto;
 `;
 
-const ChurchReadingsPage = () => (
-  <>
+const ChurchReadingsPage = ({church}) => ( 
+    <MainTemplates pageType="church">
     <NavbarTop />
     <JumbotronBar />
     <HeaderBreake>Pierwsze czytanie</HeaderBreake>
@@ -238,8 +239,8 @@ const ChurchReadingsPage = () => (
         </MainItemText>
       </MainItem>
     </MainWarpper>
-    <Footer />
-  </>
+    <Footer /></MainTemplates>
+  
 );
 
 export default ChurchReadingsPage;

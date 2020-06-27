@@ -55,7 +55,29 @@ const Footer = () => (
         </FooterListLink>
       </FooterWrapperSingleboxFirst>
       <FooterWrapperSingleboxSecond>
-        <FooterTitle>Pan Młody</FooterTitle>
+        <FooterTitle>Atrakcje weselne</FooterTitle>
+        <FooterListLink>
+          <FooterItemLink>
+            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/extras/post1">
+              post 1
+            </NavLink>
+          </FooterItemLink>
+          <FooterItemLink>
+            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/extras/post2">
+              post 2
+            </NavLink>
+          </FooterItemLink>
+          <FooterItemLink>
+            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/extras/post3">
+              post 3
+            </NavLink>
+          </FooterItemLink>
+          <FooterItemLink>
+            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/extras/post4">
+              post 4
+            </NavLink>
+          </FooterItemLink>
+        </FooterListLink>
       </FooterWrapperSingleboxSecond>
       <FooterWrapperSingleboxThird>
         <FooterTitle>Przygotowania </FooterTitle>
@@ -63,9 +85,9 @@ const Footer = () => (
           <FooterItemLink>
             <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church">
               Czytania w Kościele
-            </NavLink>          
+            </NavLink>
           </FooterItemLink>
-          <FooterItemLink>        
+          <FooterItemLink>
             <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/travel">
               Podróż poślubna
             </NavLink>

@@ -36,8 +36,13 @@ import Post25 from '../posts/church/Post25';
 import Post26 from '../posts/church/Post26';
 import Post27 from '../posts/church/Post27';
 import Post28 from '../posts/church/Post28';
+import PostE1 from '../posts/extras/post1';
+import PostE2 from '../posts/extras/post2';
+import PostE3 from '../posts/extras/post3';
+import PostE4 from '../posts/extras/post4';
 import HairTop2020Page from './HairTop2020Page';
 import TravelPage from './TravelPage';
+import DetailsPage from './DetailsPage';
 
 const Root = () => (
   <>
@@ -52,6 +57,7 @@ const Root = () => (
           <Route path="/hairtop" component={HairTop2020Page} />
           <Route path="/travel" component={TravelPage} />
           <Route exact path="/church" component={ChurchReadingsPage} />
+         
           <Route exact path="/church/post1" component={Post1} />
           <Route exact path="/church/post2" component={Post2} />
           <Route exact path="/church/post3" component={Post3} />
@@ -80,6 +86,12 @@ const Root = () => (
           <Route exact path="/church/post26" component={Post26} />
           <Route exact path="/church/post27" component={Post27} />
           <Route exact path="/church/post28" component={Post28} />
+          <Route exact path="/church" component={ChurchReadingsPage} />
+          <Route exact path="/extras" />
+          <Route exact path="/extras/post1" component={PostE1} />
+          <Route exact path="/extras/post2" component={PostE2} />
+          <Route exact path="/extras/post3" component={PostE3} />
+          <Route exact path="/extras/post4" component={PostE4} />
         </Switch>
       </BrowserRouter>
     </Provider>

@@ -6,6 +6,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   display: flexbox;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 const WrapperItem = styled.div`
@@ -16,7 +17,14 @@ const TravelBar = () => (
   <Wrapper>
     {Travel.map(({ id, url, pleace, price, description }) => (
       <WrapperItem>
-        <TravelItem id={id} url={url} key={id} pleace={pleace} description={description} />
+        <TravelItem
+          id={id}
+          url={url}
+          key={id}
+          pleace={pleace}
+          description={description}
+          price={price}
+        />
       </WrapperItem>
     ))}
   </Wrapper>

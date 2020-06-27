@@ -32,7 +32,7 @@
     "react-spring": "^9.0.0-rc.3",
     "react-spring-3d-carousel": "^1.2.0",
     "react-styled-carousel": "^0.5.1",
-    "reactstrap": "^8.4.1",
+    "reactstrap": "^8.5.1",
     "redux": "^4.0.5",
     "semantic-ui-react": "^0.88.2",
     "styled-components": "^5.1.1"
