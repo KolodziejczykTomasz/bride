@@ -14,8 +14,8 @@ import {
 } from 'reactstrap';
 import classnames from 'classnames';
 import styled from 'styled-components';
-import DekoracjeNo1 from '../assets/images/companies/slubnaalejka.png';
-import dekor1 from '../assets/images/companies/dekor1.jpg';
+import DekoracjeNo1 from 'assets/images/companies/slubnaalejka.png';
+import dekor1 from 'assets/images/companies/dekor1.jpg';
 
 const WrapperTabContent = styled.div`
   margin-top: 1.2rem;

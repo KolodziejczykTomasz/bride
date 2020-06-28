@@ -59,7 +59,7 @@ const Footer = () => (
         <FooterListLink>
           <FooterItemLink>
             <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/extras/post1">
-              post 1
+              Balonowe dekoracje
             </NavLink>
           </FooterItemLink>
           <FooterItemLink>

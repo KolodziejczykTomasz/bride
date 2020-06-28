@@ -2,13 +2,13 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import { Image } from 'semantic-ui-react';
 
-import suknia_slubna_1 from '../assets/images/dress/suknia_slubna_1.jpg';
-import suknia_slubna_2 from '../assets/images/dress/suknia_slubna_2.jpg';
-import suknia_slubna_3 from '../assets/images/dress/suknia_slubna_3.jpg';
-import suknia_slubna_4 from '../assets/images/dress/suknia_slubna_4.jpg';
-import suknia_slubna_5 from '../assets/images/dress/suknia_slubna_5.jpg';
-import suknia_slubna_6 from '../assets/images/dress/suknia_slubna_6.jpg';
-import suknia_slubna_7 from '../assets/images/dress/suknia_slubna_7.jpg';
+import suknia_slubna_1 from 'assets/images/dress/suknia_slubna_1.jpg';
+import suknia_slubna_2 from 'assets/images/dress/suknia_slubna_2.jpg';
+import suknia_slubna_3 from 'assets/images/dress/suknia_slubna_3.jpg';
+import suknia_slubna_4 from 'assets/images/dress/suknia_slubna_4.jpg';
+import suknia_slubna_5 from 'assets/images/dress/suknia_slubna_5.jpg';
+import suknia_slubna_6 from 'assets/images/dress/suknia_slubna_6.jpg';
+import suknia_slubna_7 from 'assets/images/dress/suknia_slubna_7.jpg';
 
 
 const responsive = {

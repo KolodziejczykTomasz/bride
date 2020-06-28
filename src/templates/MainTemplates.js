@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
-import PageContext from '../context';
+import PageContext from 'context';
 
 class MainTemplate extends Component {
   state = {

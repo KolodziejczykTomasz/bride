@@ -1,11 +1,11 @@
 import React from 'react';
-import PostFooter from '../../components/PostFooter';
-import PostTitle from '../../components/PostTitle';
-import PostSubtitle from '../../components/PostSubtitle';
-import PostParagraph from '../../components/PostParagraph';
-import NavbarTop from '../../components/NavbarTop';
-import Footer from '../../components/Footer';
-import JumbotronBar from '../../components/JumbotronBar';
+import PostFooter from 'components/PostFooter';
+import PostTitle from 'components/PostTitle';
+import PostSubtitle from 'components/PostSubtitle';
+import PostParagraph from 'components/PostParagraph';
+import NavbarTop from 'components/NavbarTop';
+import Footer from 'components/Footer';
+import JumbotronBar from 'components/JumbotronBar';
 
 const Post18 = () => (
   <>

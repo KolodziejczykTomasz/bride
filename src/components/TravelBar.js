@@ -1,5 +1,5 @@
 import React from 'react';
-import Travel from '../data/Travel';
+import Travel from 'data/Travel';
 import TravelItem from './TravelItem';
 import styled from 'styled-components';
 

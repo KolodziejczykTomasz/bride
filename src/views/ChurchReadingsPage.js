@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import NavbarTop from '../components/NavbarTop';
-import JumbotronBar from '../components/JumbotronBar';
-import HeaderBreake from '../components/HeaderBreake';
-import Footer from '../components/Footer';
-import MainTemplates from '../templates/MainTemplates';
+import NavbarTop from 'components/NavbarTop';
+import JumbotronBar from 'components/JumbotronBar';
+import HeaderBreake from 'components/HeaderBreake';
+import Footer from 'components/Footer';
+import MainTemplates from 'templates/MainTemplates';
 import styled from 'styled-components';
 
 const MainWarpper = styled.div`
