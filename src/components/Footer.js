@@ -48,7 +48,12 @@ const Footer = () => (
         <FooterTitle>Panna Młoda</FooterTitle>
         <FooterListLink>
           <FooterItemLink>
-            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/hairtop">
+            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/bride/post1">
+              Jak dobrać suknię?
+            </NavLink>
+          </FooterItemLink>
+          <FooterItemLink>
+            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/bride/post2">
               Fryzury na 2020
             </NavLink>
           </FooterItemLink>
@@ -64,17 +69,17 @@ const Footer = () => (
           </FooterItemLink>
           <FooterItemLink>
             <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/extras/post2">
-              post 2
+              4 najczęściej wybierane atrakcje
             </NavLink>
           </FooterItemLink>
           <FooterItemLink>
             <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/extras/post3">
-              post 3
+              Polter przed ślubem - co to i czy warto?
             </NavLink>
           </FooterItemLink>
           <FooterItemLink>
             <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/extras/post4">
-              post 4
+              Fontanna na weselu?
             </NavLink>
           </FooterItemLink>
         </FooterListLink>

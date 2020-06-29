@@ -4,7 +4,7 @@ import JumbotronBar from 'components/JumbotronBar';
 import Footer from 'components/Footer';
 import HairImgViewer from 'components/HairImgViewer';
 
-const HairTop2020Page = () => (
+const Post2 = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
@@ -13,4 +13,4 @@ const HairTop2020Page = () => (
   </>
 );
 
-export default HairTop2020Page;
+export default Post2;

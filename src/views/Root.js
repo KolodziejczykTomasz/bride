@@ -1,13 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import GlobalStyle from 'theme/GlobalStyle';
+import store from 'store';
+
 import HomePage from 'views/HomePage';
 import ContactPage from 'views/ContactPage';
 import CompanyPage from 'views/CompanyPage';
 import PreparePage from 'views/PreparePage';
-import store from 'store';
-import { Provider } from 'react-redux';
 import ChurchReadingsPage from 'views/ChurchReadingsPage';
+import TravelPage from 'views/TravelPage';
+
 import Post1 from 'posts/church/Post1';
 import Post2 from 'posts/church/Post2';
 import Post3 from 'posts/church/Post3';
@@ -40,9 +43,9 @@ import PostE1 from 'posts/extras/post1';
 import PostE2 from 'posts/extras/post2';
 import PostE3 from 'posts/extras/post3';
 import PostE4 from 'posts/extras/post4';
-import HairTop2020Page from 'views/HairTop2020Page';
-import TravelPage from 'views/TravelPage';
 
+import PostB1 from 'posts/bride/post1';
+import PostB2 from 'posts/bride/post2';
 
 const Root = () => (
   <>
@@ -54,10 +57,8 @@ const Root = () => (
           <Route path="/prepare" component={PreparePage} />
           <Route path="/contact" component={ContactPage} />
           <Route path="/company" component={CompanyPage} />
-          <Route path="/hairtop" component={HairTop2020Page} />
           <Route path="/travel" component={TravelPage} />
           <Route exact path="/church" component={ChurchReadingsPage} />
-         
           <Route exact path="/church/post1" component={Post1} />
           <Route exact path="/church/post2" component={Post2} />
           <Route exact path="/church/post3" component={Post3} />
@@ -85,13 +86,15 @@ const Root = () => (
           <Route exact path="/church/post25" component={Post25} />
           <Route exact path="/church/post26" component={Post26} />
           <Route exact path="/church/post27" component={Post27} />
-          <Route exact path="/church/post28" component={Post28} />
-          <Route exact path="/church" component={ChurchReadingsPage} />
- 
+          <Route exact path="/church/post28" component={Post28} />      
+
           <Route path="/extras/post1" component={PostE1} />
           <Route path="/extras/post2" component={PostE2} />
-          <Route  path="/extras/post3" component={PostE3} />
+          <Route path="/extras/post3" component={PostE3} />
           <Route path="/extras/post4" component={PostE4} />
+
+          <Route path="/bride/post1" component={PostB1} />
+          <Route path="/bride/post2" component={PostB2} />
         </Switch>
       </BrowserRouter>
     </Provider>
