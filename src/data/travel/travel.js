@@ -1,17 +1,15 @@
-import pic1 from '../assets/images/travel/1.png';
-import pic2 from '../assets/images/travel/2.png';
-import pic3 from '../assets/images/travel/3.png';
-import pic4 from '../assets/images/travel/4.png';
-import pic5 from '../assets/images/travel/5.png';
-import pic6 from '../assets/images/travel/6.png';
-import pic7 from '../assets/images/travel/7.png';
-import pic8 from '../assets/images/travel/8.png';
-import pic9 from '../assets/images/travel/9.png';
-import pic10 from '../assets/images/travel/10.png';
+import pic1 from 'assets/images/travel/1.png';
+import pic2 from 'assets/images/travel/2.png';
+import pic3 from 'assets/images/travel/3.png';
+import pic4 from 'assets/images/travel/4.png';
+import pic5 from 'assets/images/travel/5.png';
+import pic6 from 'assets/images/travel/6.png';
+import pic7 from 'assets/images/travel/7.png';
+import pic8 from 'assets/images/travel/8.png';
+import pic9 from 'assets/images/travel/9.png';
+import pic10 from 'assets/images/travel/10.png';
 
-
-
-const Travel = [
+export default [
   {
     id: '1',
     url: pic1,
@@ -93,5 +91,3 @@ const Travel = [
       'Japonia jest najbardziej wiosną, gdy kwitnie wiśnia. Co powiecie na obranie za cel Waszej podróży hanami, czyli tradycyjne podziwianie kwiatów? Trudno o bardziej luksusowy pomysł na podróż dla tych, którzy biorą ślub wiosną. Wiśnia w Japonii kwitnie zazwyczaj przez tydzień-dwa na przełomie marca i kwietnia. Aby określić dokładną datę, śledźcie japońskie prognozy. W Japonii, szczególnie w większych miastach, można znaleźć hotele i restauracje na najwyższym światowym poziomie. Większość utrzymanych w minimalistycznej, ekskluzywnej stylistyce. Śniadanie, wspólne podziwianie i wąchanie kwiatów, sushi, tradycyjne SPA – jeśli taki plan dnia wydaje Wam się atrakcyjny, nie czekajcie, tylko wybierzcie Japonię na cel swojej podróży. Na pewno, żadna zaprzyjaźniona para nie będzie mogła pochwalić się podobnym doświadczeniem.',
   },
 ];
-
-export default Travel;

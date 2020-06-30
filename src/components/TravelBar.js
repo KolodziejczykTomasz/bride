@@ -1,7 +1,10 @@
 import React from 'react';
-import Travel from 'data/Travel';
 import TravelItem from './TravelItem';
+
 import styled from 'styled-components';
+
+import travel from 'data/travel/travel';
+
 
 const Wrapper = styled.div`
   display: flexbox;
@@ -15,7 +18,7 @@ const WrapperItem = styled.div`
 
 const TravelBar = () => (
   <Wrapper>
-    {Travel.map(({ id, url, pleace, price, description }) => (
+    {travel.map(({ id, url, pleace, price, description }) => (
       <WrapperItem>
         <TravelItem
           id={id}

@@ -1,155 +1,33 @@
-import press1 from '../assets/images/press/mp_01_2020.jpg';
-import press2 from '../assets/images/press/bc_2_2019.jpg';
-import press3 from '../assets/images/press/w_2_2019.jpg';
-import press4 from '../assets/images/press/u_1112_2019.jpg';
-import press5 from '../assets/images/press/pm_01_2018.jpg';
+import mlodapara from 'data/press/mlodapara';
+import pannamloda from 'data/press/pannamloda';
+import uroczystosc from 'data/press/uroczystosc';
+import wedding from 'data/press/wedding';
+import omsvadba from 'data/press/omsvadba';
 
-import TargiKraków from '../assets/images/fair/ice-krakow.png';
-import TargiKatowice from '../assets/images/fair/katowice-mck.png';
-import TargiKielce from '../assets/images/fair/kielce.png';
-import TargiKrakówArena from '../assets/images/fair/krakow-tauron-arena.png';
-import TargiLodz from '../assets/images/fair/lodz-expo.png';
-import TargiRybnik from '../assets/images/fair/rybnik-zseu.png';
-import TargiHalaOrbita from '../assets/images/fair/spartan-hala-orbita.png';
+import targikrakow from 'data/fair/targikrakow';
+import targikatowice from 'data/fair/targikatowice';
+import targikielce from 'data/fair/targikielce';
+import targikrakowarena from 'data/fair/targikrakowarena';
+import targilodz from 'data/fair/targilodz';
+import targirybnik from 'data/fair/targirybnik';
+import targihalaorbita from 'data/fair/targihalaorbita';
 
-import acces2 from '../assets/images/accesories/no2.jpg';
-import acces3 from '../assets/images/accesories/no3.jpg';
-import acces4 from '../assets/images/accesories/no4.jpg';
-import acces5 from '../assets/images/accesories/no5.jpg';
+import accesories from 'data/accesories/accesories';
 
 const initialState = {
-  mlodapara: [
-    {
-      id: 1,
-      url: press1,
-      title: 'Młoda Para Od A-Z',
-      number: '1/2020 (259)',
-    },
-  ],
-  pannamloda: [
-    {
-      id: 1,
-      url: press5,
-      title: 'PANNA MŁODA',
-      number: '1/2018 (48)',
-    },
-  ],
-  uroczystosc: [
-    {
-      id: 1,
-      url: press4,
-      title: 'Uroczystość',
-      number: '11-12/2019 (88)',
-    },
-  ],
-  wedding: [
-    {
-      id: 1,
-      url: press3,
-      title: 'Wedding',
-      number: '2/2019 (24)',
-    },
-  ],
-  omsvadba: [
-    {
-      id: 1,
-      url: press2,
-      title: 'Twój ślub',
-      number: '2/2019 (40)',
-    },
-  ],
-  targikrakow: [
-    {
-      id: 1,
-      url: TargiKraków,
-      city: 'Kraków',
-      street: 'ul. Stanisława Lema 7',
-      place: 'Tauron Arena Kraków',
-      data: '11.10.2020',
-    },
-  ],
-  targikatowice: [
-    {
-      id: 1,
-      url: TargiKatowice,
-      city: 'Katowice',
-      street: 'plac Sławika i Antalla 1',
-      place: 'MCK Międzynarodowe Centrum Kongresowe',
-      data: '29.11.2020',
-    },
-  ],
-  targikielce: [
-    {
-      id: 1,
-      url: TargiKielce,
-      city: 'Kielce',
-      street: 'ul. Zakładowa 1',
-      place: 'Targi Kielce exhibition & congress centre',
-      data: '6.12.2020',
-    },
-  ],
-  targikrakowarena: [
-    {
-      id: 1,
-      url: TargiKrakówArena,
-      city: 'Kraków',
-      street: 'ul. Stanisława Lema 7',
-      place: 'Tauron Arena Kraków',
-      data: '11.10.2020',
-    },
-  ],
-  targilodz: [
-    {
-      id: 1,
-      url: TargiLodz,
-      city: 'Łódź',
-      street: 'al. Politechniki 4',
-      place: 'expo Łódź',
-      data: '18.10.2020',
-    },
-  ],
-  targirybnik: [
-    {
-      id: 1,
-      url: TargiRybnik,
-      city: 'Rybnik',
-      street: 'ul. Św. Józefa 30',
-      place: 'ZSEU Rybnik',
-      data: '15.11.2020',
-    },
-  ],
-  targihalaorbita: [
-    {
-      id: 1,
-      url: TargiHalaOrbita,
-      city: '',
-      street: '',
-      place: '',
-      data: '',
-    },
-  ],
-  accesories: [
-      {
-      id: 2,
-      url: acces2,
-      name: '',
-    },
-    {
-      id: 3,
-      url: acces3,
-      name: '',
-    },
-    {
-      id: 4,
-      url: acces4,
-      name: '',
-    },
-    {
-      id: 5,
-      url: acces5,
-      name: '',
-    },
-  ],
+  mlodapara,
+  pannamloda,
+  uroczystosc,
+  wedding,
+  omsvadba,
+  targikrakow,
+  targikatowice,
+  targikielce,
+  targikrakowarena,
+  targilodz,
+  targirybnik,
+  targihalaorbita,
+  accesories,
 };
 
 const rootReducer = (state = initialState, action) => {
