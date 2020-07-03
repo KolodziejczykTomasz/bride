@@ -11,41 +11,41 @@ import PreparePage from 'views/PreparePage';
 import ChurchReadingsPage from 'views/ChurchReadingsPage';
 import TravelPage from 'views/TravelPage';
 
-import Post1 from 'posts/church/Post1';
-import Post2 from 'posts/church/Post2';
-import Post3 from 'posts/church/Post3';
-import Post4 from 'posts/church/Post4';
-import Post5 from 'posts/church/Post5';
-import Post6 from 'posts/church/Post6';
-import Post7 from 'posts/church/Post7';
-import Post8 from 'posts/church/Post8';
-import Post9 from 'posts/church/Post9';
-import Post10 from 'posts/church/Post10';
-import Post11 from 'posts/church/Post11';
-import Post12 from 'posts/church/Post12';
-import Post13 from 'posts/church/Post13';
-import Post14 from 'posts/church/Post14';
-import Post15 from 'posts/church/Post15';
-import Post16 from 'posts/church/Post16';
-import Post17 from 'posts/church/Post17';
-import Post18 from 'posts/church/Post18';
-import Post19 from 'posts/church/Post19';
-import Post20 from 'posts/church/Post20';
-import Post21 from 'posts/church/Post21';
-import Post22 from 'posts/church/Post22';
-import Post23 from 'posts/church/Post23';
-import Post24 from 'posts/church/Post24';
-import Post25 from 'posts/church/Post25';
-import Post26 from 'posts/church/Post26';
-import Post27 from 'posts/church/Post27';
-import Post28 from 'posts/church/Post28';
-import PostE1 from 'posts/extras/post1';
-import PostE2 from 'posts/extras/post2';
-import PostE3 from 'posts/extras/post3';
-import PostE4 from 'posts/extras/post4';
+import Post1 from 'data/posts/church/Post1';
+import Post2 from 'data/posts/church/Post2';
+import Post3 from 'data/posts/church/Post3';
+import Post4 from 'data/posts/church/Post4';
+import Post5 from 'data/posts/church/Post5';
+import Post6 from 'data/posts/church/Post6';
+import Post7 from 'data/posts/church/Post7';
+import Post8 from 'data/posts/church/Post8';
+import Post9 from 'data/posts/church/Post9';
+import Post10 from 'data/posts/church/Post10';
+import Post11 from 'data/posts/church/Post11';
+import Post12 from 'data/posts/church/Post12';
+import Post13 from 'data/posts/church/Post13';
+import Post14 from 'data/posts/church/Post14';
+import Post15 from 'data/posts/church/Post15';
+import Post16 from 'data/posts/church/Post16';
+import Post17 from 'data/posts/church/Post17';
+import Post18 from 'data/posts/church/Post18';
+import Post19 from 'data/posts/church/Post19';
+import Post20 from 'data/posts/church/Post20';
+import Post21 from 'data/posts/church/Post21';
+import Post22 from 'data/posts/church/Post22';
+import Post23 from 'data/posts/church/Post23';
+import Post24 from 'data/posts/church/Post24';
+import Post25 from 'data/posts/church/Post25';
+import Post26 from 'data/posts/church/Post26';
+import Post27 from 'data/posts/church/Post27';
+import Post28 from 'data/posts/church/Post28';
+import PostE1 from 'data/posts/extras/post1';
+import PostE2 from 'data/posts/extras/post2';
+import PostE3 from 'data/posts/extras/post3';
+import PostE4 from 'data/posts/extras/post4';
 
-import PostB1 from 'posts/bride/post1';
-import PostB2 from 'posts/bride/post2';
+
+
 
 const Root = () => (
   <>
@@ -93,8 +93,8 @@ const Root = () => (
           <Route path="/extras/post3" component={PostE3} />
           <Route path="/extras/post4" component={PostE4} />
 
-          <Route path="/bride/post1" component={PostB1} />
-          <Route path="/bride/post2" component={PostB2} />
+        
+        
         </Switch>
       </BrowserRouter>
     </Provider>
