@@ -39,10 +39,7 @@ import Post25 from 'data/posts/church/Post25';
 import Post26 from 'data/posts/church/Post26';
 import Post27 from 'data/posts/church/Post27';
 import Post28 from 'data/posts/church/Post28';
-import PostE1 from 'data/posts/extras/post1';
-import PostE2 from 'data/posts/extras/post2';
-import PostE3 from 'data/posts/extras/post3';
-import PostE4 from 'data/posts/extras/post4';
+
 
 
 
@@ -88,10 +85,8 @@ const Root = () => (
           <Route exact path="/church/post27" component={Post27} />
           <Route exact path="/church/post28" component={Post28} />      
 
-          <Route path="/extras/post1" component={PostE1} />
-          <Route path="/extras/post2" component={PostE2} />
-          <Route path="/extras/post3" component={PostE3} />
-          <Route path="/extras/post4" component={PostE4} />
+         
+     
 
         
         

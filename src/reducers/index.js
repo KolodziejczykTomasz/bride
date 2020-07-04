@@ -14,7 +14,12 @@ import targihalaorbita from 'data/fair/targihalaorbita';
 
 import accesories from 'data/accesories/accesories';
 
+import postbride from 'data/posts/bride/post';
+import postextras from 'data/posts/extras/post';
+
 const initialState = {
+  postextras,
+  postbride,
   mlodapara,
   pannamloda,
   uroczystosc,

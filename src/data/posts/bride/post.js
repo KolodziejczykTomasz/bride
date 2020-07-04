@@ -9,46 +9,46 @@ import Pic8 from 'assets/images/dresspost/7.jpg';
 import Pic9 from 'assets/images/dresspost/8.jpg';
 import Pic10 from 'assets/images/dresspost/9.jpg';
 
-import pic1 from '../assets/images/hair/1.jpg';
-import pic2 from '../assets/images/hair/2.jpg';
-import pic3 from '../assets/images/hair/3.jpg';
-import pic4 from '../assets/images/hair/4.jpg';
-import pic5 from '../assets/images/hair/5.jpg';
-import pic6 from '../assets/images/hair/6.jpg';
-import pic7 from '../assets/images/hair/7.jpg';
-import pic8 from '../assets/images/hair/8.jpg';
-import pic9 from '../assets/images/hair/9.jpg';
-import pic10 from '../assets/images/hair/10.jpg';
-import pic11 from '../assets/images/hair/11.jpg';
-import pic12 from '../assets/images/hair/12.jpg';
-import pic13 from '../assets/images/hair/13.jpg';
-import pic14 from '../assets/images/hair/14.jpg';
-import pic15 from '../assets/images/hair/15.jpg';
-import pic16 from '../assets/images/hair/16.jpg';
-import pic17 from '../assets/images/hair/17.jpg';
-import pic18 from '../assets/images/hair/18.jpg';
-import pic19 from '../assets/images/hair/19.jpg';
-import pic20 from '../assets/images/hair/20.jpg';
-import pic21 from '../assets/images/hair/21.jpg';
-import pic22 from '../assets/images/hair/22.jpg';
-import pic23 from '../assets/images/hair/23.jpg';
-import pic24 from '../assets/images/hair/24.jpg';
-import pic25 from '../assets/images/hair/25.jpg';
-import pic26 from '../assets/images/hair/26.jpg';
-import pic27 from '../assets/images/hair/27.jpg';
-import pic28 from '../assets/images/hair/28.jpg';
-import pic29 from '../assets/images/hair/29.jpg';
-import pic30 from '../assets/images/hair/30.jpg';
-import pic31 from '../assets/images/hair/31.jpg';
-import pic32 from '../assets/images/hair/32.jpg';
-import pic33 from '../assets/images/hair/33.jpg';
-import pic34 from '../assets/images/hair/34.jpg';
+import pic1 from 'assets/images/hair/1.jpg';
+import pic2 from 'assets/images/hair/2.jpg';
+import pic3 from 'assets/images/hair/3.jpg';
+import pic4 from 'assets/images/hair/4.jpg';
+import pic5 from 'assets/images/hair/5.jpg';
+import pic6 from 'assets/images/hair/6.jpg';
+import pic7 from 'assets/images/hair/7.jpg';
+import pic8 from 'assets/images/hair/8.jpg';
+import pic9 from 'assets/images/hair/9.jpg';
+import pic10 from 'assets/images/hair/10.jpg';
+import pic11 from 'assets/images/hair/11.jpg';
+import pic12 from 'assets/images/hair/12.jpg';
+import pic13 from 'assets/images/hair/13.jpg';
+import pic14 from 'assets/images/hair/14.jpg';
+import pic15 from 'assets/images/hair/15.jpg';
+import pic16 from 'assets/images/hair/16.jpg';
+import pic17 from 'assets/images/hair/17.jpg';
+import pic18 from 'assets/images/hair/18.jpg';
+import pic19 from 'assets/images/hair/19.jpg';
+import pic20 from 'assets/images/hair/20.jpg';
+import pic21 from 'assets/images/hair/21.jpg';
+import pic22 from 'assets/images/hair/22.jpg';
+import pic23 from 'assets/images/hair/23.jpg';
+import pic24 from 'assets/images/hair/24.jpg';
+import pic25 from 'assets/images/hair/25.jpg';
+import pic26 from 'assets/images/hair/26.jpg';
+import pic27 from 'assets/images/hair/27.jpg';
+import pic28 from 'assets/images/hair/28.jpg';
+import pic29 from 'assets/images/hair/29.jpg';
+import pic30 from 'assets/images/hair/30.jpg';
+import pic31 from 'assets/images/hair/31.jpg';
+import pic32 from 'assets/images/hair/32.jpg';
+import pic33 from 'assets/images/hair/33.jpg';
+import pic34 from 'assets/images/hair/34.jpg';
 
 export default [
   {
     id: 1,
     title: 'Jak dobrać suknię?',
-    sutitle:
+    subtitle:
       'Przed tym jak zaczniemy przegląd internet w poszukiwaniu wymarzonej sukni, musimy poznać swoją figurę. Gdybyśmy mieli problem z ustaleniem kształtu naszej figury, udajmy się do salonu sukien ślubnych. Wiedza i doświadczenie pracowników salonu rozwieje nasze wątpliwości.',
     p1: '',
     pic1: Pic1,
@@ -58,35 +58,35 @@ export default [
       'Dla kogo? Dla dziewczyn, które chcą ukryć szerokie biodra, brzuszek, masywne uda lub łydki. A także dla panien młodych z niewielkim biustem, który bardzo korzystnie eksponowany jest w gorsecie. Kto powinien unikać? Panny młode o masywnych ramionach i obfitym biuście, a także – filigranowe dziewczyny.',
     pic2: Pic2,
     header2: '2. SUKNIA ŚLUBNA O KROJU LITERY A',
-    p3:
+    p4:
       'To najbardziej uniwersalny fason – korzystnie wygląda na większości sylwetek. Gdy myślimy o „klasycznej sukni ślubnej”, najczęściej mamy właśnie przed oczami suknię o kroju litery A Dla kogo? Praktycznie dla każdej sylwetki! Z tym, że warto, by panny młode o obfitym biuście wybierały dekolt łódkę lub w kształcie litery V.',
     pic3: Pic3,
     header3: '3. SUKNIA TYPU EMPIRE',
-    p4:
+    p5:
       'Cechą charakterystyczną, jest wysoki stan – suknia jest odcinana pod biustem, a jej dół wykonany jest z lejącego się materiału, często – zwiewnego. Suknie tego typu mogą Wam kojarzyć się z sukniami a la „grecka bogini”. Nie jestem fanką empire, wydaje mi się, że mnie by    pogrubiał. Ale są oczywiście panny młode, którym taki fason przypadnie do gustu. Dla kogo? Dla dziewczyn, które chcą zatuszować brzuszek, są w ciąży, albo są niskiego wzrostu: odcięcie pod biustem wydłuży sylwetkę.',
     pic4: Pic4,
     header4: '4. SUKNIA „TRĄBKA”',
-    p5:
+    p6:
       'Często pomijana w opisach, na rzecz syreny/rybki – faktycznie jednak bez problemu można znaleźć w salonach sukni ślubnych przykłady tego fasonu. To jeden z najpiękniejszych fasonów sukni ślubnych, a co ważne – jest on o wiele bardziej łaskawy dla niedoskonałości sylwetki niż klasyczna syrena Dla kogo? Dla panien młodych, które chcą podkreślić figurę – biust i biodra, ale które chcą zachować równowagę proporcji "(dlatego przyda się szeroki dół sukni)" Suknie tego typu to także „czarny koń” w poszukiwaniach tej jedynej sukni dla filigranowych panien młodych lub panien młodych plus size.',
     pic5: Pic5,
     header5: '5. SUKNIA TYPU SYRENA "(RYBKA)"',
-    p6:
+    p7:
       'Często jej mianem określa się, niesłusznie, także opisane wyżej „trąbki”. Różnica polega na tym, że spódnica w przypadku syreny zaczyna rozszerzać się na poziomie kolan, a nie połowy ud. Dla kogo ta suknia? Dla panien młodych o figurze klepsydry, które chcą podkreślić swoje krągłości. Kto powinien unikać? Panny młode, które chcą zatuszować to i owo: dużo korzystniejszym fasonem będzie dla nich „trąbka”',
     pic6: Pic6,
     header6: '6. SUKNIA PROSTA "(CYGARO/SHEATH)"',
-    p7:
+    p8:
       'Jeden z najbardziej niedocenianych modeli, ale też i najbardziej wymagających, jeśli chodzi o figurę. Suknie tego typu, zwłaszcza wykonane z koronki, to prawdziwe dzieła sztuki Dla kogo? Dla panien młodych o wąskich biodrach, a także – dla niskich, filigranowych dziewczyn. Kto powinien unikać? Wszyscy pozostali',
     pic7: Pic7,
     header7: '7. SUKNIA TEA LENGTH',
-    p8:
+    p9:
       'Uroczy fason, który pięknie eksponuje nogi i pozwala pochwalić się oryginalnymi butami ślubnymi Dla kogo? Dla panny młodej, która dobrze czuje się w tej długości. I chce wyeksponować zgrabne łydki',
     pic8: Pic8,
     header8: '8. Boho',
-    p9:
+    p10:
       'Styl łączący swobodę artystycznej bohemy, hipisowskiego luzu z nutą romantyczności. Charakteryzuje się swobodnymi fasonami, delikatnymi tkaninami oraz mnogością dodatków. Idealnie nadaje się na ślub w plenerze, ale również sprawdzi się podczas kościelnej uroczystości.',
     pic9: Pic9,
     header9: '9. Krótka',
-    p10:
+    p11:
       'Krótkie suknie ślubne potrafią być bardzo dziewczęce, zmysłowe i romantyczne. Oczywiście takie suknie są zarezerwowane dla Pań, które mogą pochwalić się zgrabnymi nogami. Przy takim kroju to właśnie nogi są maksymalnie wyeksponowane i na nie wszyscy będą zwracać uwagę.',
     pic10: Pic10,
   },
@@ -126,6 +126,6 @@ export default [
     url31: pic31,
     url32: pic32,
     url33: pic33,
-    url34: pic34,    
+    url34: pic34,
   },
 ];

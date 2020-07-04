@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Post = ({ children }) => (
-  <>
-    <h1>{children}</h1>
-    <img  alt="" />
-    <p>{children}</p>
-  </>
-);
+
+class Post extends Component {
+
+  render() {
+     const {       
+       title,
+       subtitle
+     } = this.props;
+    return (
+      <>
+        <h1>{title}</h1>
+        <h2>{subtitle}</h2>
+      </>
+    );  
+  }
+
+}
 
 export default Post;
