@@ -1,20 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
-import suknia from '../assets/images/main/suknia.jpg';
 
 const Card = styled.div`
   display: flex;
   flex-shrink: 1;
   width: 100%;
-  max-height: 10rem;
   margin-top: 2rem;
   margin-bottom: 4rem;
 `;
 const CardImg = styled.img`
-  width: 15%;
+  width: 20%;
 `;
 const CardText = styled.p`
   padding: 0 1.5rem;
+  font-size: 1.1rem;
 `;
 const CardBody = styled.div``;
 const CardSubtitle = styled.h1`
@@ -26,23 +25,26 @@ const Button = styled.button`
   float: right;
   margin-top: 0.5rem;
   margin-right: 5rem;
-  padding: 0.2rem 1rem;
+  padding: 1.5rem 4rem;
 `;
 
-const MainBarItem = () => (
-  <Card>
-    <CardImg top width="100%" src={suknia} alt="Card image cap" />
-    <CardBody>
-      <CardSubtitle>Card subtitle</CardSubtitle>
-      <CardText>
-        Some quick example text to build on the card title and make up the bulk of the card's
-        content.
-      </CardText>
-      <WarpperButton>
-        <Button>Button</Button>
-      </WarpperButton>
-    </CardBody>
-  </Card>
-);
+class MainBarItem extends Component {
+  render() {
+    const { title, subtitle, picHero } = this.props;
+
+    return (
+      <Card>
+        <CardImg top width="100%" src={picHero} alt="Card image cap" />
+        <CardBody>
+          <CardSubtitle>{title}</CardSubtitle>
+          <CardText>{subtitle}</CardText>
+          <WarpperButton>
+            <Button>Zobacz więcej</Button>
+          </WarpperButton>
+        </CardBody>
+      </Card>
+    );
+  }
+}
 
 export default MainBarItem;

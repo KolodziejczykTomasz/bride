@@ -10,6 +10,7 @@ import CompanyPage from 'views/CompanyPage';
 import PreparePage from 'views/PreparePage';
 import ChurchReadingsPage from 'views/ChurchReadingsPage';
 import TravelPage from 'views/TravelPage';
+import DetailsPage from 'views/DetailsPage';
 
 import Post1 from 'data/posts/church/Post1';
 import Post2 from 'data/posts/church/Post2';
@@ -83,13 +84,10 @@ const Root = () => (
           <Route exact path="/church/post25" component={Post25} />
           <Route exact path="/church/post26" component={Post26} />
           <Route exact path="/church/post27" component={Post27} />
-          <Route exact path="/church/post28" component={Post28} />      
+          <Route exact path="/church/post28" component={Post28} />
 
-         
-     
+          <Route path="/extras/:id" component={DetailsPage} />
 
-        
-        
         </Switch>
       </BrowserRouter>
     </Provider>

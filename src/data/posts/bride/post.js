@@ -44,10 +44,13 @@ import pic32 from 'assets/images/hair/32.jpg';
 import pic33 from 'assets/images/hair/33.jpg';
 import pic34 from 'assets/images/hair/34.jpg';
 
+import suknia from 'assets/images/main/suknia.jpg';
+
 export default [
   {
     id: 1,
     title: 'Jak dobrać suknię?',
+    picHero: suknia,
     subtitle:
       'Przed tym jak zaczniemy przegląd internet w poszukiwaniu wymarzonej sukni, musimy poznać swoją figurę. Gdybyśmy mieli problem z ustaleniem kształtu naszej figury, udajmy się do salonu sukien ślubnych. Wiedza i doświadczenie pracowników salonu rozwieje nasze wątpliwości.',
     p1: '',

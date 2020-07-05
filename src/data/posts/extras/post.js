@@ -13,30 +13,33 @@ import pic4 from 'assets/images/post/2/pic4.png';
 import pic5 from 'assets/images/post/4/fontanna.jpg';
 import pic6 from 'assets/images/post/4/fontanna2.png';
 
+import brokenglassses from 'assets/images/post/3/brokenglasses.jpg';
+
 export default [
   {
     id: 1,
     title: 'Balonowe dekoracje',
-    pic1: PicDel,
+    picHero: PicDel,
     subtitle:
       'Większość z was Jeśli uważa, że dekoracje sali weselnej do relikt przeszłości. I pewnie coś w tym jest, ale dekoracje tego typu przeżywają pewnego rodzaju swoje 5 minut. Ich największą zaletą jest cena i wybór kolorów. Dostępność gazu typu hel, przenosi dawne dekoracje w nowy wymiar. Gaz ten jest lżejszy od powietrza i powoduje unoszenie się balonów. Balony te stają się nośnikiem innych dekoracji np. liter czy serduszek.',
-    pic2: picheart,
-    pic3: picled,
+    pic1: picheart,
+    pic2: picled,
     header2: 'A ile to kosztuje?',
     p1:
       'Butlę jednorazową wypełnioną helem kupimy już za około 87zł. Ilość to pozwala na wypełnienie 30 sztuk balonów. A jeżeli potrzebujemy tylko napełnić kilka balonów, to dobrą propozycją jest hel w puszce. Taka przyjemność kosztuje od 28zł i pozwala napełnić około 10 balonów.',
-    pic4: gazhel,
+    pic3: gazhel,
     p2:
       'Od pewnego czasu dostępne są również balony oświetlane od wewnątrz diodami led. Diody te posiadają własne bateryjne zasilane, które wystarczy na co najmniej 12 godzin. Wraz ze zużywaniem baterii jasność led spada do zera. Za kwotę około 10 złotych kupimy 5 balonów z wkładem led w wybranym kolorze.',
     p3:
       'Jeżeli nie znajdziemy podświetlanych balonów w danych kolorze, możemy posłużyć się samą wkładką led. W ten sposób stworzymy własne nie powtarzalne kompozycje.',
-    pic5: leditem,
-    pic6: leditem2,
+    pic4: leditem,
+    pic5: leditem2,
     p4: 'Pamiętajmy jednak, że jak w przypadku każdej dekoracji zalecany jest umiar.',
   },
   {
     id: 2,
     title: '4 najczęściej wybierane atrakcje',
+    picHero: pic1,
     subtitle:
       'Każdy z nas pamięta czasy kiedy jedyną w większych atrakcji na weselu był tort. Jego dekoracja, wysokość oraz sposób prezentacji wzbudzał ciekawość przybyłych na uroczystość gości. Po torcie, pora przyszła na pokazy sztucznych ogni. Teraz pary młode mają do wyboru kilkanaście propozycji gotowych atrakcji weselnych.',
     header1: '1. Taniec w chmurach',
@@ -69,6 +72,7 @@ export default [
   {
     id: 3,
     title: 'Polter przed ślubem - co to i czy warto?',
+    picHero: brokenglassses,
     subtitle:
       ' Czy słyszał ktoś o polterze? - pod tą tajemniczą nazwą kryje się rytualne rozbijanie szkła przed domem panny młodej stosowane w różnych zakątkach Polski, na wsiach i w dużych miastach, od Śląska po Pomorze. Przyjmuje odmienne nazwy, ale ideę zachowuje tę samą - dobrze się bawić O jaką dokładnie zabawę chodzi, przeczytacie poniżej, zapraszam serdecznie do lektury!',
     header1: 'Polter dla rozrywki i na szczęście!',
@@ -86,6 +90,7 @@ export default [
   {
     id: 4,
     title: 'Fontanna na weselu?',
+    picHero: pic5,
     subtitle:
       'Jedną z atrakcja, jaką możemy zaproponować swoim gościom weselnym jest fontanna. Dwa najczęściej rodzaje fontann to fontanna czekoladowa – coś dla dzieci oraz fontanna alkoholowa – coś dla dorosłych.',
     p1:
