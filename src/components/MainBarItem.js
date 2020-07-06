@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+
 import styled from 'styled-components';
 
 const Card = styled.div`
@@ -29,17 +31,27 @@ const Button = styled.button`
 `;
 
 class MainBarItem extends Component {
-  render() {
-    const { title, subtitle, picHero } = this.props;
+  state = {
+    redirect: false,
+  };
 
+  handleCardClick = () => this.setState({ redirect: true });
+
+  render() {
+    const { id, title, subtitle, picHero, pageType } = this.props;
+const { redirect } = this.state;
+
+if (redirect) {
+  return <Redirect to={`${pageType}/${id}`} />;
+}
     return (
-      <Card>
+      <Card pageType={pageType}>
         <CardImg top width="100%" src={picHero} alt="Card image cap" />
         <CardBody>
           <CardSubtitle>{title}</CardSubtitle>
           <CardText>{subtitle}</CardText>
           <WarpperButton>
-            <Button>Zobacz więcej</Button>
+            <Button onClick={this.handleCardClick}>Zobacz więcej</Button>
           </WarpperButton>
         </CardBody>
       </Card>

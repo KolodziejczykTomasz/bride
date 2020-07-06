@@ -27,22 +27,47 @@ const Aside = styled.div`
   padding-left: 2rem;
 `;
 
-const MainBar = ({ postbride, postextras }) => (
+const MainBar = ({ postbride, postextras, extras, brides }) => (
   <Wrapper>
     <Main>
-      <MainWrapper>
+      <MainWrapper pageType={extras}>
         {postextras.slice(2, 3).map(({ id, title, subtitle, picHero }) => (
-          <MainBarHero id={id} key={id} title={title} subtitle={subtitle} picHero={picHero} />
+          <MainBarHero
+            id={id}
+            key={id}
+            title={title}
+            subtitle={subtitle}
+            picHero={picHero}
+            pageType="extras"
+          />
         ))}
       </MainWrapper>
     </Main>
     <Aside>
-      {postbride.slice(0, -1).map(({ id, title, subtitle, picHero }) => (
-        <MainBarItem id={id} key={id} title={title} subtitle={subtitle} picHero={picHero} />
-      ))}
-      {postextras.slice(0, 1).map(({ id, title, subtitle, picHero }) => (
-        <MainBarItem id={id} key={id} title={title} subtitle={subtitle} picHero={picHero} />
-      ))}
+      <div pageType={brides}>
+        {postbride.slice(0, -1).map(({ id, title, subtitle, picHero }) => (
+          <MainBarItem
+            id={id}
+            key={id}
+            title={title}
+            subtitle={subtitle}
+            picHero={picHero}
+            pageType="brides"
+          />
+        ))}
+      </div>
+      <div pageType={extras}>
+        {postextras.slice(0, 1).map(({ id, title, subtitle, picHero }) => (
+          <MainBarItem
+            id={id}
+            key={id}
+            title={title}
+            subtitle={subtitle}
+            picHero={picHero}
+            pageType="extras"
+          />
+        ))}
+      </div>
     </Aside>
   </Wrapper>
 );

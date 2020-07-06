@@ -16,7 +16,7 @@ const ExtrasBar = ({ accesories }) => (
   <Wrapper>
     {accesories.map(({ id, url, name }) => (
       <WrapperItem>
-        <ExtrasItem id={id} url={url} name={name} />
+        <ExtrasItem id={id} url={url} name={name} pageType="accesories" />
       </WrapperItem>
     ))}
   </Wrapper>

@@ -12,6 +12,8 @@ import ChurchReadingsPage from 'views/ChurchReadingsPage';
 import TravelPage from 'views/TravelPage';
 import DetailsPage from 'views/DetailsPage';
 
+
+
 import Post1 from 'data/posts/church/Post1';
 import Post2 from 'data/posts/church/Post2';
 import Post3 from 'data/posts/church/Post3';
@@ -56,38 +58,42 @@ const Root = () => (
           <Route path="/contact" component={ContactPage} />
           <Route path="/company" component={CompanyPage} />
           <Route path="/travel" component={TravelPage} />
-          <Route exact path="/church" component={ChurchReadingsPage} />
-          <Route exact path="/church/post1" component={Post1} />
-          <Route exact path="/church/post2" component={Post2} />
-          <Route exact path="/church/post3" component={Post3} />
-          <Route exact path="/church/post4" component={Post4} />
-          <Route exact path="/church/post5" component={Post5} />
-          <Route exact path="/church/post6" component={Post6} />
-          <Route exact path="/church/post7" component={Post7} />
-          <Route exact path="/church/post8" component={Post8} />
-          <Route exact path="/church/post9" component={Post9} />
-          <Route exact path="/church/post10" component={Post10} />
-          <Route exact path="/church/post11" component={Post11} />
-          <Route exact path="/church/post12" component={Post12} />
-          <Route exact path="/church/post13" component={Post13} />
-          <Route exact path="/church/post14" component={Post14} />
-          <Route exact path="/church/post15" component={Post15} />
-          <Route exact path="/church/post16" component={Post16} />
-          <Route exact path="/church/post17" component={Post17} />
-          <Route exact path="/church/post18" component={Post18} />
-          <Route exact path="/church/post19" component={Post19} />
-          <Route exact path="/church/post20" component={Post20} />
-          <Route exact path="/church/post21" component={Post21} />
-          <Route exact path="/church/post22" component={Post22} />
-          <Route exact path="/church/post23" component={Post23} />
-          <Route exact path="/church/post24" component={Post24} />
-          <Route exact path="/church/post25" component={Post25} />
-          <Route exact path="/church/post26" component={Post26} />
-          <Route exact path="/church/post27" component={Post27} />
-          <Route exact path="/church/post28" component={Post28} />
 
+          <Route exact path="/brides" component={HomePage} />
+          <Route path="/brides/:id" component={DetailsPage} />
+          <Route exact path="/extras" component={HomePage} />
           <Route path="/extras/:id" component={DetailsPage} />
+          <Route exact path="/churchs" component={ChurchReadingsPage} />
+          <Route exact path="/church/:id" component={DetailsPage} />
 
+          <Route exact path="/churchs/post1" component={Post1} />
+          <Route exact path="/churchs/post2" component={Post2} />
+          <Route exact path="/churchs/post3" component={Post3} />
+          <Route exact path="/churchs/post4" component={Post4} />
+          <Route exact path="/churchs/post5" component={Post5} />
+          <Route exact path="/churchs/post6" component={Post6} />
+          <Route exact path="/churchs/post7" component={Post7} />
+          <Route exact path="/churchs/post8" component={Post8} />
+          <Route exact path="/churchs/post9" component={Post9} />
+          <Route exact path="/churchs/post10" component={Post10} />
+          <Route exact path="/churchs/post11" component={Post11} />
+          <Route exact path="/churchs/post12" component={Post12} />
+          <Route exact path="/churchs/post13" component={Post13} />
+          <Route exact path="/churchs/post14" component={Post14} />
+          <Route exact path="/churchs/post15" component={Post15} />
+          <Route exact path="/churchs/post16" component={Post16} />
+          <Route exact path="/churchs/post17" component={Post17} />
+          <Route exact path="/churchs/post18" component={Post18} />
+          <Route exact path="/churchs/post19" component={Post19} />
+          <Route exact path="/churchs/post20" component={Post20} />
+          <Route exact path="/churchs/post21" component={Post21} />
+          <Route exact path="/churchs/post22" component={Post22} />
+          <Route exact path="/churchs/post23" component={Post23} />
+          <Route exact path="/churchs/post24" component={Post24} />
+          <Route exact path="/churchs/post25" component={Post25} />
+          <Route exact path="/churchs/post26" component={Post26} />
+          <Route exact path="/churchs/post27" component={Post27} />
+          <Route exact path="/churchs/post28" component={Post28} />
         </Switch>
       </BrowserRouter>
     </Provider>
