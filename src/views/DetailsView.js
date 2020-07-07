@@ -5,11 +5,9 @@ import NavbarTop from 'components/NavbarTop';
 import JumbotronBar from 'components/JumbotronBar';
 import Footer from 'components/Footer';
 import Post from 'components/Post';
+import ChurchItem from 'components/ChurchItem';
 
-
-
-
-class DetailsPage extends Component {
+class DetailsView extends Component {
   state = {
     pageType: 'brides',
     id: 0,
@@ -24,6 +22,9 @@ class DetailsPage extends Component {
         break;
       case routes.extra:
         this.setState({ pageType: 'extras' });
+        break;
+      case routes.church:
+        this.setState({ pageType: 'churchs' });
         break;
       default:
         console.log('Something went wrong');
@@ -69,6 +70,14 @@ class DetailsPage extends Component {
             picHero={this.props.postextras[id].picHero}
           />
         )}
+        {pageType === 'churchs' && (
+          <ChurchItem
+            key={this.props.postchurch[id].id}
+            pageType={pageType}
+            title={this.props.postchurch[id].title}
+            subtitle={this.props.postchurch[id].subtitle}
+          />
+        )}
 
         <Footer />
       </>
@@ -76,12 +85,9 @@ class DetailsPage extends Component {
   }
 }
 
-
-
 const mapStateToProps = (state) => {
-  const { postbride, postextras } = state;
-  return { postbride, postextras };
+  const { postbride, postextras, postchurch } = state;
+  return { postbride, postextras, postchurch };
 };
 
-export default connect(mapStateToProps)(DetailsPage);
-
+export default connect(mapStateToProps)(DetailsView);

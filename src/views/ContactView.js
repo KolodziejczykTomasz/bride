@@ -3,13 +3,13 @@ import NavbarTop from 'components/NavbarTop';
 import JumbotronBar from 'components/JumbotronBar';
 import Footer from 'components/Footer';
 
-const CompanyPage = () => (
+const ContactView = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    CompanyPage
+    Kontakt
     <Footer />
   </>
 );
 
-export default CompanyPage;
+export default ContactView;

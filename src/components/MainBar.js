@@ -72,11 +72,6 @@ const MainBar = ({ postbride, postextras, extras, brides }) => (
   </Wrapper>
 );
 
-MainBar.defaultProps = {
-  postbride: [],
-  postextras: [],
-};
-
 const mapStateToProps = (state) => {
   const { postbride, postextras } = state;
   return { postbride, postextras };

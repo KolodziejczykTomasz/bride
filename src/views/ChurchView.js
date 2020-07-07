@@ -2,14 +2,15 @@ import React from 'react';
 import NavbarTop from 'components/NavbarTop';
 import JumbotronBar from 'components/JumbotronBar';
 import Footer from 'components/Footer';
+import ChurchBar from 'components/ChurchBar';
 
-const ContactPage = () => (
+const ChurchView = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    Kontakt
+    <ChurchBar />
     <Footer />
   </>
 );
 
-export default ContactPage;
+export default ChurchView;

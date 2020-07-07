@@ -1,16 +1,15 @@
 import React from 'react';
 import NavbarTop from 'components/NavbarTop';
 import JumbotronBar from 'components/JumbotronBar';
-import TravelBar from 'components/TravelBar';
 import Footer from 'components/Footer';
 
-const TravelPage = () => (
+const PrepareView = () => (
   <>
     <NavbarTop />
     <JumbotronBar />
-    <TravelBar />
+    PreparePage
     <Footer />
   </>
 );
 
-export default TravelPage;
+export default PrepareView;

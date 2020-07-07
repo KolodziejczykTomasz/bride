@@ -16,7 +16,7 @@ class MainTemplate extends Component {
   }
 
   setCurrentPage = (prevState = '') => {
-    const pageTypes = ['extras', 'brides'];
+    const pageTypes = ['extras', 'brides', 'churchs'];
     const {
       location: { pathname },
     } = this.props;

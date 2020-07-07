@@ -17,7 +17,10 @@ import accesories from 'data/accesories/accesories';
 import postbride from 'data/posts/bride/post';
 import postextras from 'data/posts/extras/post';
 
+import postchurch from 'data/posts/church/post';
+
 const initialState = {
+  postchurch,
   postextras,
   postbride,
   mlodapara,

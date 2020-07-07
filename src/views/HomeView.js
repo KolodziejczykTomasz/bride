@@ -17,7 +17,7 @@ import DressBar from 'components/DressBar';
 
 const WrapperView = styled.div``;
 
-class HomePage extends Component {
+class HomeView extends Component {
   render() {
     return (
       <WrapperView>
@@ -43,4 +43,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default HomeView;

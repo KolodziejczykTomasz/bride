@@ -88,7 +88,7 @@ const Footer = () => (
         <FooterTitle>Przygotowania </FooterTitle>
         <FooterListLink>
           <FooterItemLink>
-            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/church">
+            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/churchs">
               Czytania w Kościele
             </NavLink>
           </FooterItemLink>
