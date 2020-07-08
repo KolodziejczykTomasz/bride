@@ -21,13 +21,14 @@ const Button = styled.a`
   }
 `;
 
-class Post extends Component {
+class ChurchPost extends Component {
   render() {
     const {
       title,
       subtitle,
-      picHero,
       pageType,
+      header1,
+      f1,
       p1,
       p2,
       p3,
@@ -39,45 +40,70 @@ class Post extends Component {
       p9,
       p10,
       p11,
-      pic1,
-      pic2,
-      pic3,
-      pic4,
-      pic5,
-      pic6,
-      pic7,
-      pic8,
-      pic9,
-      pic10
+      p12,
+      p13,
+      p14,
+      p15,
+      p16,
+      p17,
+      p18,
+      p19,
+      p20,
+      p21,
+      p22,
+      p23,
+      p24,
+      p25,
+      p26,
+      p27,
+      p28,
+      p29,
+      p30,
+      p31,
+      p32,
+      p33,
     } = this.props;
     return (
       <MainTemplates pageType={pageType}>
         <div>
           <div>{title}</div>
           <div>{subtitle}</div>
-          <div>{picHero}</div>
+          <div>{header1}</div>
           <div>{p1}</div>
-          <img src={pic1} alt={title} />
           <div>{p2}</div>
-          <img src={pic2} alt={title} />
           <div>{p3}</div>
-          <img src={pic3} alt={title} />
           <div>{p4}</div>
-          <img src={pic4} alt={title} />
           <div>{p5}</div>
-          <img src={pic5} alt={title} />
           <div>{p6}</div>
-          <img src={pic6} alt={title} />
           <div>{p7}</div>
-          <img src={pic7} alt={title} />
           <div>{p8}</div>
-          <img src={pic8} alt={title} />
           <div>{p9}</div>
-          <img src={pic9} alt={title} />
           <div>{p10}</div>
-          <img src={pic10} alt={title} />
           <div>{p11}</div>
-          <Button as={Link} to={`/`}>
+          <div>{p12}</div>
+          <div>{p13}</div>
+          <div>{p14}</div>
+          <div>{p15}</div>
+          <div>{p16}</div>
+          <div>{p17}</div>
+          <div>{p18}</div>
+          <div>{p19}</div>
+          <div>{p20}</div>
+          <div>{p21}</div>
+          <div>{p22}</div>
+          <div>{p23}</div>
+          <div>{p24}</div>
+          <div>{p25}</div>
+          <div>{p26}</div>
+          <div>{p27}</div>
+          <div>{p28}</div>
+          <div>{p29}</div>
+          <div>{p30}</div>
+          <div>{p31}</div>
+          <div>{p32}</div>
+          <div>{p33}</div>
+          <div>{f1}</div>
+          <Button as={Link} to={`/${pageType}`}>
             Close
           </Button>
         </div>
@@ -86,4 +112,4 @@ class Post extends Component {
   }
 }
 
-export default Post;
+export default ChurchPost;

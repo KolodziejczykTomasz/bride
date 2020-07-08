@@ -9,11 +9,9 @@ import ContactView from 'views/ContactView';
 import CompanyView from 'views/CompanyView';
 import PrepareView from 'views/PrepareView';
 import ChurchView from 'views/ChurchView';
+import ChurchPostView from 'views/ChurchPostView';
 import TravelView from 'views/TravelView';
 import DetailsView from 'views/DetailsView';
-
-
-
 
 const Root = () => (
   <>
@@ -32,10 +30,9 @@ const Root = () => (
 
           <Route exact path="/extras" component={HomeView} />
           <Route path="/extras/:id" component={DetailsView} />
-          
+
           <Route exact path="/churchs" component={ChurchView} />
-          <Route exact path="/churchs/:id" component={DetailsView} />
-          
+          <Route exact path="/churchs/:id" component={ChurchPostView} />
         </Switch>
       </BrowserRouter>
     </Provider>

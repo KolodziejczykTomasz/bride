@@ -5,7 +5,7 @@ import NavbarTop from 'components/NavbarTop';
 import JumbotronBar from 'components/JumbotronBar';
 import Footer from 'components/Footer';
 import Post from 'components/Post';
-import ChurchItem from 'components/ChurchItem';
+
 
 class DetailsView extends Component {
   state = {
@@ -22,10 +22,7 @@ class DetailsView extends Component {
         break;
       case routes.extra:
         this.setState({ pageType: 'extras' });
-        break;
-      case routes.church:
-        this.setState({ pageType: 'churchs' });
-        break;
+        break;    
       default:
         console.log('Something went wrong');
     }
@@ -59,6 +56,27 @@ class DetailsView extends Component {
             title={this.props.postbride[id].title}
             subtitle={this.props.postbride[id].subtitle}
             picHero={this.props.postbride[id].picHero}
+            p1={this.props.postbride[id].p1}
+            p2={this.props.postbride[id].p2}
+            p3={this.props.postbride[id].p3}
+            p4={this.props.postbride[id].p4}
+            p5={this.props.postbride[id].p5}
+            p6={this.props.postbride[id].p6}
+            p7={this.props.postbride[id].p7}
+            p8={this.props.postbride[id].p8}
+            p9={this.props.postbride[id].p9}
+            p10={this.props.postbride[id].p10}
+            p11={this.props.postbride[id].p11}
+            pic1={this.props.postbride[id].pic1}
+            pic2={this.props.postbride[id].pic2}
+            pic3={this.props.postbride[id].pic3}
+            pic4={this.props.postbride[id].pic4}
+            pic5={this.props.postbride[id].pic5}
+            pic6={this.props.postbride[id].pic6}
+            pic7={this.props.postbride[id].pic7}
+            pic8={this.props.postbride[id].pic8}
+            pic9={this.props.postbride[id].pic9}
+            pic10={this.props.postbride[id].pic10}
           />
         )}
         {pageType === 'extras' && (
@@ -68,14 +86,27 @@ class DetailsView extends Component {
             title={this.props.postextras[id].title}
             subtitle={this.props.postextras[id].subtitle}
             picHero={this.props.postextras[id].picHero}
-          />
-        )}
-        {pageType === 'churchs' && (
-          <ChurchItem
-            key={this.props.postchurch[id].id}
-            pageType={pageType}
-            title={this.props.postchurch[id].title}
-            subtitle={this.props.postchurch[id].subtitle}
+            p1={this.props.postextras[id].p1}
+            p2={this.props.postextras[id].p2}
+            p3={this.props.postextras[id].p3}
+            p4={this.props.postextras[id].p4}
+            p5={this.props.postextras[id].p5}
+            p6={this.props.postextras[id].p6}
+            p7={this.props.postextras[id].p7}
+            p8={this.props.postextras[id].p8}
+            p9={this.props.postextras[id].p9}
+            p10={this.props.postextras[id].p10}
+            p11={this.props.postextras[id].p11}
+            pic1={this.props.postextras[id].pic1}
+            pic2={this.props.postextras[id].pic2}
+            pic3={this.props.postextras[id].pic3}
+            pic4={this.props.postextras[id].pic4}
+            pic5={this.props.postextras[id].pic5}
+            pic6={this.props.postextras[id].pic6}
+            pic7={this.props.postextras[id].pic7}
+            pic8={this.props.postextras[id].pic8}
+            pic9={this.props.postextras[id].pic9}
+            pic10={this.props.postextras[id].pic10}
           />
         )}
 

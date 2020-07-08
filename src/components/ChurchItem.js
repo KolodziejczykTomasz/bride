@@ -35,7 +35,7 @@ class ChurchItem extends Component {
     return (
       <MainItem pageType={pageType} onClick={this.handleCardClick}>
         <MainItemText>
-          {title}         
+          {title}    
         </MainItemText>
       </MainItem>
     );

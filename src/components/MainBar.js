@@ -27,34 +27,141 @@ const Aside = styled.div`
   padding-left: 2rem;
 `;
 
-const MainBar = ({ postbride, postextras, extras, brides }) => (
+const MainBar = ({
+  postbride,
+  postextras,
+  extras,
+  brides,
+  p1,
+  p2,
+  p3,
+  p4,
+  p5,
+  p6,
+  p7,
+  p8,
+  p9,
+  p10,
+  p11,
+  pic1,
+  pic2,
+  pic3,
+  pic4,
+  pic5,
+  pic6,
+  pic7,
+  pic8,
+  pic9,
+  pic10,
+}) => (
   <Wrapper>
     <Main>
       <MainWrapper pageType={extras}>
-        {postextras.slice(2, 3).map(({ id, title, subtitle, picHero }) => (
-          <MainBarHero
-            id={id}
-            key={id}
-            title={title}
-            subtitle={subtitle}
-            picHero={picHero}
-            pageType="extras"
-          />
-        ))}
+        {postextras
+          .slice(2, 3)
+          .map(
+            ({
+              id,
+              title,
+              subtitle,
+              picHero,
+              p1,
+              p2,
+              p3,
+              p4,
+              p5,
+              p6,
+              p7,
+              p8,
+              p9,
+              p10,
+              p11,
+              pic1,
+              pic2,
+              pic3,
+              pic4,
+              pic5,
+              pic6,
+              pic7,
+              pic8,
+              pic9,
+              pic10,
+            }) => (
+              <MainBarHero
+                id={id}
+                key={id}
+                title={title}
+                subtitle={subtitle}
+                picHero={picHero}
+                pageType="extras"
+              />
+            ),
+          )}
       </MainWrapper>
     </Main>
     <Aside>
       <div pageType={brides}>
-        {postbride.slice(0, -1).map(({ id, title, subtitle, picHero }) => (
-          <MainBarItem
-            id={id}
-            key={id}
-            title={title}
-            subtitle={subtitle}
-            picHero={picHero}
-            pageType="brides"
-          />
-        ))}
+        {postbride
+          .slice(0, -1)
+          .map(
+            ({
+              id,
+              title,
+              subtitle,
+              picHero,
+              p1,
+              p2,
+              p3,
+              p4,
+              p5,
+              p6,
+              p7,
+              p8,
+              p9,
+              p10,
+              p11,
+              pic1,
+              pic2,
+              pic3,
+              pic4,
+              pic5,
+              pic6,
+              pic7,
+              pic8,
+              pic9,
+              pic10,
+            }) => (
+              <MainBarItem
+                id={id}
+                key={id}
+                title={title}
+                subtitle={subtitle}
+                picHero={picHero}
+                p1={p1}
+                p2={p2}
+                p3={p3}
+                p4={p4}
+                p5={p5}
+                p6={p6}
+                p7={p7}
+                p8={p8}
+                p9={p9}
+                p10={p10}
+                p11={p11}
+                pic1={pic1}
+                pic2={pic2}
+                pic3={pic3}
+                pic4={pic4}
+                pic5={pic5}
+                pic6={pic6}
+                pic7={pic7}
+                pic8={pic8}
+                pic9={pic9}
+                pic10={pic10}
+                pageType="brides"
+              />
+            ),
+          )}
       </div>
       <div pageType={extras}>
         {postextras.slice(0, 1).map(({ id, title, subtitle, picHero }) => (
@@ -64,6 +171,27 @@ const MainBar = ({ postbride, postextras, extras, brides }) => (
             title={title}
             subtitle={subtitle}
             picHero={picHero}
+            p1={p1}
+            p2={p2}
+            p3={p3}
+            p4={p4}
+            p5={p5}
+            p6={p6}
+            p7={p7}
+            p8={p8}
+            p9={p9}
+            p10={p10}
+            p11={p11}
+            pic1={pic1}
+            pic2={pic2}
+            pic3={pic3}
+            pic4={pic4}
+            pic5={pic5}
+            pic6={pic6}
+            pic7={pic7}
+            pic8={pic8}
+            pic9={pic9}
+            pic10={pic10}
             pageType="extras"
           />
         ))}
