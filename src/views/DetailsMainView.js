@@ -4,10 +4,10 @@ import { connect } from 'react-redux';
 import NavbarTop from 'components/NavbarTop';
 import JumbotronBar from 'components/JumbotronBar';
 import Footer from 'components/Footer';
-import Post from 'components/Post';
+import MainPost from 'components/MainPost';
 
 
-class DetailsView extends Component {
+class DetailsMainView extends Component {
   state = {
     pageType: 'brides',
     id: 0,
@@ -50,7 +50,7 @@ class DetailsView extends Component {
         <NavbarTop />
         <JumbotronBar />
         {pageType === 'brides' && (
-          <Post
+          <MainPost
             key={this.props.postbride[id].id}
             pageType={pageType}
             title={this.props.postbride[id].title}
@@ -80,7 +80,7 @@ class DetailsView extends Component {
           />
         )}
         {pageType === 'extras' && (
-          <Post
+          <MainPost
             key={this.props.postextras[id].id}
             pageType={pageType}
             title={this.props.postextras[id].title}
@@ -121,4 +121,4 @@ const mapStateToProps = (state) => {
   return { postbride, postextras, postchurch };
 };
 
-export default connect(mapStateToProps)(DetailsView);
+export default connect(mapStateToProps)(DetailsMainView);

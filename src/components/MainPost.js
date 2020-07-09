@@ -21,7 +21,7 @@ const Button = styled.a`
   }
 `;
 
-class Post extends Component {
+class MainPost extends Component {
   render() {
     const {
       title,
@@ -86,4 +86,4 @@ class Post extends Component {
   }
 }
 
-export default Post;
+export default MainPost;

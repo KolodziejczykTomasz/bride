@@ -1,5 +1,5 @@
 import React from 'react';
-import PressItem from './PressItem';
+import PressItem from 'components/PressItem';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 
@@ -16,27 +16,34 @@ const PressBar = ({ mlodapara, pannamloda, uroczystosc, wedding, omsvadba }) => 
   <Wrapper>
     {mlodapara.map(({ id, url, title, number }) => (
       <WrapperItem>
-        <PressItem id={id} url={url} key={id} title={title} number={number} />
+        <PressItem id={id} url={url} key={id} title={title} number={number} pageType="mlodapara" />
       </WrapperItem>
     ))}
     {pannamloda.map(({ id, url, title, number }) => (
       <WrapperItem>
-        <PressItem id={id} url={url} key={id} title={title} number={number} />
+        <PressItem id={id} url={url} key={id} title={title} number={number} pageType="pannamloda" />
       </WrapperItem>
     ))}
     {uroczystosc.map(({ id, url, title, number }) => (
       <WrapperItem>
-        <PressItem id={id} url={url} key={id} title={title} number={number} />
+        <PressItem
+          id={id}
+          url={url}
+          key={id}
+          title={title}
+          number={number}
+          pageType="uroczystosc"
+        />
       </WrapperItem>
     ))}
     {wedding.map(({ id, url, title, number }) => (
       <WrapperItem>
-        <PressItem id={id} url={url} key={id} title={title} number={number} />
+        <PressItem id={id} url={url} key={id} title={title} number={number} pageType="wedding" />
       </WrapperItem>
     ))}
     {omsvadba.map(({ id, url, title, number }) => (
       <WrapperItem>
-        <PressItem id={id} url={url} key={id} title={title} number={number} />
+        <PressItem id={id} url={url} key={id} title={title} number={number} pageType="omsvadba" />
       </WrapperItem>
     ))}
   </Wrapper>

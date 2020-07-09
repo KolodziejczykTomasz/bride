@@ -1,5 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { connect } from 'react-redux';
+import FooterItem from 'components/FooterItem';
+
 import styled from 'styled-components';
 
 const FooterWrapper = styled.div`
@@ -41,7 +44,7 @@ const FooterItemLink = styled.li`
   margin-left: 2.5rem;
 `;
 
-const Footer = () => (
+const Footer = ({ extras, postextras, title }) => (
   <FooterWrapper>
     <FooterWrapperMultibox>
       <FooterWrapperSingleboxFirst>
@@ -60,27 +63,19 @@ const Footer = () => (
         </FooterListLink>
       </FooterWrapperSingleboxFirst>
       <FooterWrapperSingleboxSecond>
-        <FooterTitle>Atrakcje weselne</FooterTitle>
+        <FooterTitle>Dekoracje, dodatki</FooterTitle>
         <FooterListLink>
-          <FooterItemLink>
-            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/extras/post1">
-              Balonowe dekoracje
-            </NavLink>
-          </FooterItemLink>
-          <FooterItemLink>
-            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/extras/post2">
-              4 najczęściej wybierane atrakcje
-            </NavLink>
-          </FooterItemLink>
-          <FooterItemLink>
-            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/extras/post3">
-              Polter przed ślubem - co to i czy warto?
-            </NavLink>
-          </FooterItemLink>
-          <FooterItemLink>
-            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/extras/post4">
-              Fontanna na weselu?
-            </NavLink>
+          <FooterItemLink pageType={extras}>
+            {postextras.slice(0, 3).map(({ id, title, subtitle, picHero }) => (
+              <FooterItem
+                id={id}
+                key={id}
+                title={title}
+                subtitle={subtitle}
+                picHero={picHero}
+                pageType="extras"
+              />
+            ))}
           </FooterItemLink>
         </FooterListLink>
       </FooterWrapperSingleboxSecond>
@@ -106,4 +101,9 @@ const Footer = () => (
   </FooterWrapper>
 );
 
-export default Footer;
+const mapStateToProps = (state) => {
+  const { postextras } = state;
+  return { postextras };
+};
+
+export default connect(mapStateToProps)(Footer);

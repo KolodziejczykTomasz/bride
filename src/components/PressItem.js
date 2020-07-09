@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 import styled from 'styled-components';
 
 const CardTitle = styled.p``;
@@ -41,17 +42,36 @@ const CardHeroTextTitle = styled.p`
   font-size: 2.2rem;
 `;
 
-const PressItem = ({ url, number }) => (
-  <Wrapper className="card">
-    <Card class="card-content">
-      <CardTitle className="title">
-        <ImageItem src={url} alt="press" />
-      </CardTitle>
-    </Card>
-    <CardHeroText>
-      <CardHeroTextTitle>Numer: {number}</CardHeroTextTitle>
-    </CardHeroText>
-  </Wrapper>
-);
+class PressItem extends Component {
+  state = {
+    redirect: false,
+  };
+
+  handleCardClick = () => this.setState({ redirect: true });
+
+  render() {
+    const { id, url, number, pageType } = this.props;
+    const { redirect } = this.state;
+
+    if (redirect) {
+      return <Redirect to={`${pageType}/${id}`} />;
+    }
+    return (
+        <Wrapper className="card" pageType={pageType} onClick={this.handleCardClick}>
+          <Card class="card-content">
+            <CardTitle className="title">
+              <ImageItem src={url} alt="press" />
+            </CardTitle>
+          </Card>
+          <CardHeroText>
+            <CardHeroTextTitle>Numer: {number}</CardHeroTextTitle>
+          </CardHeroText>
+        </Wrapper>    
+    );
+  }
+}
+
+
+
 
 export default PressItem;

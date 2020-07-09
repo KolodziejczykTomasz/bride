@@ -6,4 +6,11 @@ export const routes = {
          extra: '/extras/:id',
          churchs: '/churchs',
          church: '/churchs/:id',
+         mlodapara: '/mlodapara/:id',
+         pannamloda: '/pannamloda/:id',
+         uroczystosc: '/uroczystosc/:id',
+         wedding: '/wedding/:id',
+         omsvadba: '/omsvadba/:id',
+         accesories: '/accesories',
+         accesorie: '/accesories/:id',
        };

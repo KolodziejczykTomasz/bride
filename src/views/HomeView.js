@@ -10,7 +10,7 @@ import FairBar from 'components/FairBar';
 import FairMain from 'components/FairMain';
 import CompaniesDatabase from 'components/CompaniesDatabase';
 import GlobalStyle from 'theme/GlobalStyle';
-import ExtrasBar from 'components/ExtrasBar';
+import AccesoriesBar from 'components/AccesoriesBar';
 import MainBar from 'components/MainBar';
 import DressBar from 'components/DressBar';
 
@@ -28,7 +28,7 @@ class HomeView extends Component {
         <HeaderBreake>Suknie ślubne</HeaderBreake>
         <DressBar />
         <HeaderBreake>Dodatki ślubne</HeaderBreake>
-        <ExtrasBar />
+        <AccesoriesBar />
         <HeaderBreake>Targi ślubne</HeaderBreake>
         <FairMain />
         <FairBar />

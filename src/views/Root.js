@@ -9,9 +9,11 @@ import ContactView from 'views/ContactView';
 import CompanyView from 'views/CompanyView';
 import PrepareView from 'views/PrepareView';
 import ChurchView from 'views/ChurchView';
-import ChurchPostView from 'views/ChurchPostView';
+import DetailsChurchView from 'views/DetailsChurchView';
 import TravelView from 'views/TravelView';
-import DetailsView from 'views/DetailsView';
+import DetailsMainView from 'views/DetailsMainView';
+import DetailsPressView from 'views/DetailsPressView';
+import DetailsAccesoriesView from 'views/DetailsAccesoriesView';
 
 const Root = () => (
   <>
@@ -26,13 +28,22 @@ const Root = () => (
           <Route path="/travel" component={TravelView} />
 
           <Route exact path="/brides" component={HomeView} />
-          <Route path="/brides/:id" component={DetailsView} />
+          <Route path="/brides/:id" component={DetailsMainView} />
 
           <Route exact path="/extras" component={HomeView} />
-          <Route path="/extras/:id" component={DetailsView} />
+          <Route path="/extras/:id" component={DetailsMainView} />
+
+          <Route exact path="/accesories" component={HomeView} />
+          <Route path="/accesories/:id" component={DetailsAccesoriesView} />
 
           <Route exact path="/churchs" component={ChurchView} />
-          <Route exact path="/churchs/:id" component={ChurchPostView} />
+          <Route exact path="/churchs/:id" component={DetailsChurchView} />
+
+          <Route exact path="/mlodapara/:id" component={DetailsPressView} />
+          <Route exact path="/pannamloda/:id" component={DetailsPressView} />
+          <Route exact path="/uroczystosc/:id" component={DetailsPressView} />
+          <Route exact path="/wedding/:id" component={DetailsPressView} />
+          <Route exact path="/omsvadba/:id" component={DetailsPressView} />
         </Switch>
       </BrowserRouter>
     </Provider>

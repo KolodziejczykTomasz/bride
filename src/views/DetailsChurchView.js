@@ -6,10 +6,10 @@ import JumbotronBar from 'components/JumbotronBar';
 import Footer from 'components/Footer';
 import ChurchPost from 'components/ChurchPost';
 
-class ChurchPostView extends Component {
+class DetailsChurchView extends Component {
   state = {
     pageType: 'churchs',
-    id: 1
+    id: 1,
   };
 
   componentDidMount() {
@@ -107,7 +107,7 @@ class ChurchPostView extends Component {
         break;
       case '28':
         this.setState({ id: 27 });
-        break;     
+        break;
       default:
         console.log('Something went wrong');
     }
@@ -173,4 +173,4 @@ const mapStateToProps = (state) => {
   return { postchurch };
 };
 
-export default connect(mapStateToProps)(ChurchPostView);
+export default connect(mapStateToProps)(DetailsChurchView);
