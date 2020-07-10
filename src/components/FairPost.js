@@ -21,14 +21,15 @@ const Button = styled.a`
   }
 `;
 
-class AccesoriesPost extends Component {
+class FairPost extends Component {
   render() {
-    const { name, url, pageType } = this.props;
+    const { name, url, city, data, place, year, pageType } = this.props;
     return (
       <MainTemplates pageType={pageType}>
         <div>
           <div>{name}</div>
           <div>{url}</div>
+          <div>{city}, {data}, {place}, {year}</div>
 
           <Button as={Link} to={`/`}>
             Close
@@ -39,4 +40,4 @@ class AccesoriesPost extends Component {
   }
 }
 
-export default AccesoriesPost;
+export default FairPost;

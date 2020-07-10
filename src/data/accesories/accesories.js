@@ -8,21 +8,21 @@ export default [
   {
     id: 2,
     url: acces2,
-    name: '',
+    name: 'Dodatki',
   },
   {
     id: 3,
     url: acces3,
-    name: '',
+    name: '......',
   },
   {
     id: 4,
     url: acces4,
-    name: '',
+    name: '...',
   },
   {
     id: 5,
     url: acces5,
-    name: '',
+    name: '..',
   },
 ];

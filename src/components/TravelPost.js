@@ -21,14 +21,18 @@ const Button = styled.a`
   }
 `;
 
-class AccesoriesPost extends Component {
+class TravelPost extends Component {
   render() {
-    const { name, url, pageType } = this.props;
+    const { url, pleace, price, description, pageType } = this.props;
     return (
       <MainTemplates pageType={pageType}>
         <div>
-          <div>{name}</div>
-          <div>{url}</div>
+          <div>{pleace}</div>
+          <div>{price}</div>
+          <div>
+            <img src={url} alt={pleace} />{' '}
+          </div>
+          <div>{description}</div>
 
           <Button as={Link} to={`/`}>
             Close
@@ -39,4 +43,4 @@ class AccesoriesPost extends Component {
   }
 }
 
-export default AccesoriesPost;
+export default TravelPost;

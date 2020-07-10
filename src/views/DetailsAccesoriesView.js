@@ -50,9 +50,8 @@ class DetailsAccesoriesView extends Component {
           <AccesoriesPost
             key={this.props.accesories[id].id}
             pageType={pageType}
-            picHero={this.props.accesories[id].picHero}
-            title={this.props.accesories[id].title}
-            subtitle={this.props.accesories[id].subtitle}
+            name={this.props.accesories[id].name}
+            url={this.props.accesories[id].url}
           />
         )}
 

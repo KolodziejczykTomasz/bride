@@ -8,5 +8,7 @@ export default [
     street: 'ul. Zakładowa 1',
     place: 'Targi Kielce exhibition & congress centre',
     data: '6.12.2020',
+    year: '2020',
+    name: 'Targi Ślubne',
   },
 ];

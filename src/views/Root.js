@@ -14,6 +14,8 @@ import TravelView from 'views/TravelView';
 import DetailsMainView from 'views/DetailsMainView';
 import DetailsPressView from 'views/DetailsPressView';
 import DetailsAccesoriesView from 'views/DetailsAccesoriesView';
+import DetailsFairView from 'views/DetailsFairView';
+import DetailsTravelView from 'views/DetailsTravelView';
 
 const Root = () => (
   <>
@@ -25,7 +27,9 @@ const Root = () => (
           <Route path="/prepare" component={PrepareView} />
           <Route path="/contact" component={ContactView} />
           <Route path="/company" component={CompanyView} />
+
           <Route path="/travel" component={TravelView} />
+          <Route path="/travel/pleace:id" component={DetailsTravelView} />
 
           <Route exact path="/brides" component={HomeView} />
           <Route path="/brides/:id" component={DetailsMainView} />
@@ -44,6 +48,14 @@ const Root = () => (
           <Route exact path="/uroczystosc/:id" component={DetailsPressView} />
           <Route exact path="/wedding/:id" component={DetailsPressView} />
           <Route exact path="/omsvadba/:id" component={DetailsPressView} />
+
+          <Route exact path="/targikrakow/:id" component={DetailsFairView} />
+          <Route exact path="/targikatowice/:id" component={DetailsFairView} />
+          <Route exact path="/targikielce/:id" component={DetailsFairView} />
+          <Route exact path="/targikrakowarena/:id" component={DetailsFairView} />
+          <Route exact path="/targilodz/:id" component={DetailsFairView} />
+          <Route exact path="/targirybnik/:id" component={DetailsFairView} />
+          <Route exact path="/targihalaorbita/:id" component={DetailsFairView} />
         </Switch>
       </BrowserRouter>
     </Provider>

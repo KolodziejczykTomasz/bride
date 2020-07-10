@@ -26,17 +26,41 @@ const FairBar = ({
   <Wrapper>
     {targikrakow.map(({ id, url, place, data, city }) => (
       <WrapperItem>
-        <FairItem id={id} url={url} key={id} place={place} data={data} city={city} />
+        <FairItem
+          id={id}
+          url={url}
+          key={id}
+          place={place}
+          data={data}
+          city={city}
+          pageType="targikrakow"
+        />
       </WrapperItem>
     ))}
     {targikatowice.map(({ id, url, place, data, city }) => (
       <WrapperItem>
-        <FairItem id={id} url={url} key={id} place={place} data={data} city={city} />
+        <FairItem
+          id={id}
+          url={url}
+          key={id}
+          place={place}
+          data={data}
+          city={city}
+          pageType="targikatowice"
+        />
       </WrapperItem>
     ))}
     {targikielce.map(({ id, url, place, data, city }) => (
       <WrapperItem>
-        <FairItem id={id} url={url} key={id} place={place} data={data} city={city} />
+        <FairItem
+          id={id}
+          url={url}
+          key={id}
+          place={place}
+          data={data}
+          city={city}
+          pageType="targikielce"
+        />
       </WrapperItem>
     ))}
   </Wrapper>

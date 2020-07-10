@@ -1,9 +1,10 @@
 import React from 'react';
-import TravelItem from './TravelItem';
+import { connect } from 'react-redux';
+import TravelItem from 'components/TravelItem';
 
 import styled from 'styled-components';
 
-import travel from 'data/travel/travel';
+
 
 
 const Wrapper = styled.div`
@@ -16,7 +17,7 @@ const WrapperItem = styled.div`
   width: 33%;
 `;
 
-const TravelBar = () => (
+const TravelBar = ({travel}) => (
   <Wrapper>
     {travel.map(({ id, url, pleace, price, description }) => (
       <WrapperItem>
@@ -27,10 +28,16 @@ const TravelBar = () => (
           pleace={pleace}
           description={description}
           price={price}
+          pageType="travel"
         />
       </WrapperItem>
     ))}
   </Wrapper>
 );
 
-export default TravelBar;
+const mapStateToProps = (state) => {
+  const { travel } = state;
+  return { travel };
+};
+
+export default connect(mapStateToProps)(TravelBar);

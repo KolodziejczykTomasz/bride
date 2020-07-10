@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
 import styled from 'styled-components';
 
 const Card = styled.div`
@@ -40,21 +42,43 @@ const ImageItem = styled.img`
   margin: 0 auto;
 `;
 
-const TravelItem = ({ url, pleace, price, description }) => (
-  <Wrapper className="card">
-    <Card class="card-content">
-      <CardText className="title">
-        <ImageItem src={url} alt={pleace} />
-      </CardText>
-    </Card>
-    <CardHeroText>
-      <CardHeroTextTitle>{pleace}</CardHeroTextTitle>
-    </CardHeroText>
-    <CardHeroText>
-      <CardHeroTextTitle>{description}</CardHeroTextTitle>
-      <CardHeroTextTitle>{price}</CardHeroTextTitle>
-    </CardHeroText>
-  </Wrapper>
-);
+class TravelItem extends Component {
+  state = {
+    redirect: false,
+  };
 
-export default TravelItem;
+  handleCardClick = () => this.setState({ redirect: true });
+
+  render() {
+    const { id, url, pleace, price, description, pageType } = this.props;
+    const { redirect } = this.state;
+
+    if (redirect) {
+      return <Redirect to={`${pageType}/pleace/${id}`} />;
+    }
+
+    return (
+      <Wrapper className="card">
+        <Card class="card-content" onClick={this.handleCardClick}>
+          <CardText className="title">
+            <ImageItem src={url} alt={pleace} />
+          </CardText>
+        </Card>
+        <CardHeroText>
+          <CardHeroTextTitle>{pleace}</CardHeroTextTitle>
+        </CardHeroText>
+        <CardHeroText>
+          <CardHeroTextTitle>{description}</CardHeroTextTitle>
+          <CardHeroTextTitle>{price}</CardHeroTextTitle>
+        </CardHeroText>
+      </Wrapper>
+    );
+  }
+}
+
+const mapStateToProps = (state) => {
+  const { travel } = state;
+  return { travel };
+};
+
+export default connect(mapStateToProps)(TravelItem);

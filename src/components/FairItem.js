@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
 import { Card, CardImg, CardText, CardBody, CardTitle, Button } from 'reactstrap';
 import styled from 'styled-components';
 
@@ -16,24 +18,58 @@ const CardImgWrapper = styled.div`
   margin: 15px auto;
 `;
 
-const CompanyItem = ({ url, city, data, place }) => {
-  return (
-    <Wrapper>
-      <Card>
-        <CardImgWrapper>
-          <CardImg src={url} alt={city} />
-        </CardImgWrapper>
-        <hr />
-        <CardBody>
-          <CardText>{place}</CardText>
-          <CardTitle>
-            {city} - {data}
-          </CardTitle>
-          <Button>Więcej</Button>
-        </CardBody>
-      </Card>
-    </Wrapper>
-  );
+class FairItem extends Component {
+  state = {
+    redirect: false,
+  };
+
+  handleCardClick = () => this.setState({ redirect: true });
+
+  render() {
+    const { id, url, city, data, place, pageType } = this.props;
+    const { redirect } = this.state;
+
+    if (redirect) {
+      return <Redirect to={`${pageType}/${id}`} />;
+    }
+    return (
+      <Wrapper>
+        <Card onClick={this.handleCardClick}>
+          <CardImgWrapper>
+            <CardImg src={url} alt={city} />
+          </CardImgWrapper>
+          <hr />
+          <CardBody>
+            <CardText>{place}</CardText>
+            <CardTitle>
+              {city} - {data}
+            </CardTitle>
+            <Button>Więcej</Button>
+          </CardBody>
+        </Card>
+      </Wrapper>
+    );
+  }
+}
+const mapStateToProps = (state) => {
+  const {
+    targikrakow,
+    targikatowice,
+    targikielce,
+    targikrakowarena,
+    targilodz,
+    targirybnik,
+    targihalaorbita,
+  } = state;
+  return {
+    targikrakow,
+    targikatowice,
+    targikielce,
+    targikrakowarena,
+    targilodz,
+    targirybnik,
+    targihalaorbita,
+  };
 };
 
-export default CompanyItem;
+export default connect(mapStateToProps)(FairItem);

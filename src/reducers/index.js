@@ -18,6 +18,7 @@ import postbride from 'data/posts/bride/post';
 import postextras from 'data/posts/extras/post';
 
 import postchurch from 'data/posts/church/post';
+import travel from 'data/travel/travel';
 
 const initialState = {
   postchurch,
@@ -36,6 +37,7 @@ const initialState = {
   targirybnik,
   targihalaorbita,
   accesories,
+  travel
 };
 
 const rootReducer = (state = initialState, action) => {
