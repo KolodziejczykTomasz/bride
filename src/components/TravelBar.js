@@ -28,7 +28,7 @@ const TravelBar = ({travel}) => (
           pleace={pleace}
           description={description}
           price={price}
-          pageType="travel"
+          pageType="travels"
         />
       </WrapperItem>
     ))}

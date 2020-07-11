@@ -16,6 +16,8 @@ import DetailsPressView from 'views/DetailsPressView';
 import DetailsAccesoriesView from 'views/DetailsAccesoriesView';
 import DetailsFairView from 'views/DetailsFairView';
 import DetailsTravelView from 'views/DetailsTravelView';
+import DetailsDressView from 'views/DetailsDressView';
+
 
 const Root = () => (
   <>
@@ -28,8 +30,8 @@ const Root = () => (
           <Route path="/contact" component={ContactView} />
           <Route path="/company" component={CompanyView} />
 
-          <Route path="/travel" component={TravelView} />
-          <Route path="/travel/pleace:id" component={DetailsTravelView} />
+          <Route exact path="/travels" component={TravelView} />
+          <Route path="/travels/pleace/:id" component={DetailsTravelView} />
 
           <Route exact path="/brides" component={HomeView} />
           <Route path="/brides/:id" component={DetailsMainView} />
@@ -56,6 +58,9 @@ const Root = () => (
           <Route exact path="/targilodz/:id" component={DetailsFairView} />
           <Route exact path="/targirybnik/:id" component={DetailsFairView} />
           <Route exact path="/targihalaorbita/:id" component={DetailsFairView} />
+
+          <Route exact path="/dresses" component={HomeView} />
+          <Route path="/dresses/:id" component={DetailsDressView} />
         </Switch>
       </BrowserRouter>
     </Provider>

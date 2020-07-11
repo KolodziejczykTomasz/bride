@@ -88,7 +88,7 @@ const Footer = ({ extras, postextras, title }) => (
             </NavLink>
           </FooterItemLink>
           <FooterItemLink>
-            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/travel">
+            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/travels">
               Podróż poślubna
             </NavLink>
           </FooterItemLink>

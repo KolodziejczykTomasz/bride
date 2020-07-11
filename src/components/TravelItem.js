@@ -19,7 +19,7 @@ const CardHeroText = styled.div`
   background-color: rgba(192, 192, 192, 0.8);
 `;
 const Wrapper = styled.div`
-  height: 65rem;
+  height: 30rem;
   margin-bottom: 10rem;
   cursor: pointer;
   transition: 0.5s;
@@ -32,11 +32,12 @@ const CardHeroTextTitle = styled.p`
   display: block;
   text-align: center;
   margin: 12% auto;
-  font-size: 1.2rem;
+  font-size: 2rem;
 `;
 
 const ImageItem = styled.img`
   display: block;
+  width: 100%;
   height: 28rem;
   padding: 5px 5px;
   margin: 0 auto;
@@ -50,7 +51,7 @@ class TravelItem extends Component {
   handleCardClick = () => this.setState({ redirect: true });
 
   render() {
-    const { id, url, pleace, price, description, pageType } = this.props;
+    const { id, url, pleace, pageType } = this.props;
     const { redirect } = this.state;
 
     if (redirect) {
@@ -58,19 +59,15 @@ class TravelItem extends Component {
     }
 
     return (
-      <Wrapper className="card">
-        <Card class="card-content" onClick={this.handleCardClick}>
+      <Wrapper className="card" onClick={this.handleCardClick}>
+        <Card class="card-content">
           <CardText className="title">
             <ImageItem src={url} alt={pleace} />
           </CardText>
         </Card>
         <CardHeroText>
           <CardHeroTextTitle>{pleace}</CardHeroTextTitle>
-        </CardHeroText>
-        <CardHeroText>
-          <CardHeroTextTitle>{description}</CardHeroTextTitle>
-          <CardHeroTextTitle>{price}</CardHeroTextTitle>
-        </CardHeroText>
+        </CardHeroText>      
       </Wrapper>
     );
   }

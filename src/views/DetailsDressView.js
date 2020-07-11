@@ -4,11 +4,11 @@ import { connect } from 'react-redux';
 import NavbarTop from 'components/NavbarTop';
 import JumbotronBar from 'components/JumbotronBar';
 import Footer from 'components/Footer';
-import TravelPost from 'components/TravelPost';
+import DressPost from 'components/DressPost';
 
-class DetailsTravelView extends Component {
+class DetailsDressView extends Component {
   state = {
-    pageType: 'travels',
+    pageType: 'dresses',
     id: 0,
   };
 
@@ -16,8 +16,8 @@ class DetailsTravelView extends Component {
     const { match } = this.props;
 
     switch (match.path) {
-      case routes.travel:
-        this.setState({ pageType: 'travels' });
+      case routes.dress:
+        this.setState({ pageType: 'dresses' });
         break;
       default:
         console.log('Something went wrong');
@@ -45,18 +45,7 @@ class DetailsTravelView extends Component {
       case '7':
         this.setState({ id: 6 });
         break;
-      case '8':
-        this.setState({ id: 7 });
-        break;
-      case '9':
-        this.setState({ id: 8 });
-        break;
-      case '10':
-        this.setState({ id: 9 });
-        break;
-      case '11':
-        this.setState({ id: 10 });
-        break;
+     
       default:
         console.log('Something went wrong');
     }
@@ -69,14 +58,11 @@ class DetailsTravelView extends Component {
       <>
         <NavbarTop />
         <JumbotronBar />
-        {pageType === 'travels' && (
-          <TravelPost
-            key={this.props.travel[id].id}
+        {pageType === 'dresses' && (
+          <DressPost
+            key={this.props.dress[id].id}
             pageType={pageType}
-            url={this.props.travel[id].url}
-            pleace={this.props.travel[id].pleace}
-            price={this.props.travel[id].price}
-            description={this.props.travel[id].description}
+            url={this.props.dress[id].url}
           />
         )}
         <Footer />
@@ -86,8 +72,8 @@ class DetailsTravelView extends Component {
 }
 
 const mapStateToProps = (state) => {
-  const { travel } = state;
-  return { travel };
+  const { dress } = state;
+  return { dress };
 };
 
-export default connect(mapStateToProps)(DetailsTravelView);
+export default connect(mapStateToProps)(DetailsDressView);

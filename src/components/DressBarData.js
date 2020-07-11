@@ -1,15 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
+
 import Carousel from 'react-multi-carousel';
-import { Image } from 'semantic-ui-react';
-
-import suknia_slubna_1 from 'assets/images/dress/suknia_slubna_1.jpg';
-import suknia_slubna_2 from 'assets/images/dress/suknia_slubna_2.jpg';
-import suknia_slubna_3 from 'assets/images/dress/suknia_slubna_3.jpg';
-import suknia_slubna_4 from 'assets/images/dress/suknia_slubna_4.jpg';
-import suknia_slubna_5 from 'assets/images/dress/suknia_slubna_5.jpg';
-import suknia_slubna_6 from 'assets/images/dress/suknia_slubna_6.jpg';
-import suknia_slubna_7 from 'assets/images/dress/suknia_slubna_7.jpg';
-
+import DressItem from 'components/DressItem';
 
 const responsive = {
   desktop: {
@@ -29,32 +23,50 @@ const responsive = {
   },
 };
 
+class DressBarData extends Component {
+  state = {
+    pageType: 'dresses',
+    id: 0,
+    redirect: false,
+  };
 
-const images = [
-  suknia_slubna_1,
-  suknia_slubna_2,
-  suknia_slubna_3,
-  suknia_slubna_4,
-  suknia_slubna_5,
-  suknia_slubna_6,
-  suknia_slubna_7,
-];
+  handleCardClick = () => this.setState({ redirect: true });
 
+  render() {
+    const { id, deviceType, dress } = this.props;
+    const { redirect } = this.state;
 
-const DressBarData = ({ deviceType }) => {
-  return (
-    <Carousel
-      ssr
-      partialVisbile
-      deviceType={deviceType}
-      itemClass="image-item"
-      responsive={responsive}
-    >
-      {images.slice(0, 7).map((image) => {
-        return <Image draggable={false} style={{ width: '96%', height: '90%', cursor: 'pointer'}} src={image} />;
-      })}
-    </Carousel>
-  );
+    if (redirect) {
+      return <Redirect to={`dresses/${id}`} />;
+    }
+
+    return (
+      <Carousel
+        ssr
+        partialVisbile
+        deviceType={deviceType}
+        itemClass="image-item"
+        responsive={responsive}
+        pageType="dresses"
+      >
+        {dress.slice(0, 7).map(({ id, url }) => {
+          return (
+            <DressItem             
+              pageType="dresses"
+              id={id}
+              key={id} 
+              url={url}
+            />
+          );
+        })}
+      </Carousel>
+    );
+  }
+}
+
+const mapStateToProps = (state) => {
+  const { dress } = state;
+  return { dress };
 };
 
-export default DressBarData;
+export default connect(mapStateToProps)(DressBarData);
