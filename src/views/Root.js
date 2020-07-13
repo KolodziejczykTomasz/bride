@@ -17,7 +17,7 @@ import DetailsAccesoriesView from 'views/DetailsAccesoriesView';
 import DetailsFairView from 'views/DetailsFairView';
 import DetailsTravelView from 'views/DetailsTravelView';
 import DetailsDressView from 'views/DetailsDressView';
-
+import DetailsCompanyView from 'views/DetailsCompanyView';
 
 const Root = () => (
   <>
@@ -43,13 +43,13 @@ const Root = () => (
           <Route path="/accesories/:id" component={DetailsAccesoriesView} />
 
           <Route exact path="/churchs" component={ChurchView} />
-          <Route exact path="/churchs/:id" component={DetailsChurchView} />
+          <Route path="/churchs/:id" component={DetailsChurchView} />
 
-          <Route exact path="/mlodapara/:id" component={DetailsPressView} />
-          <Route exact path="/pannamloda/:id" component={DetailsPressView} />
-          <Route exact path="/uroczystosc/:id" component={DetailsPressView} />
-          <Route exact path="/wedding/:id" component={DetailsPressView} />
-          <Route exact path="/omsvadba/:id" component={DetailsPressView} />
+          <Route path="/mlodapara/:id" component={DetailsPressView} />
+          <Route path="/pannamloda/:id" component={DetailsPressView} />
+          <Route path="/uroczystosc/:id" component={DetailsPressView} />
+          <Route path="/wedding/:id" component={DetailsPressView} />
+          <Route path="/omsvadba/:id" component={DetailsPressView} />
 
           <Route exact path="/targikrakow/:id" component={DetailsFairView} />
           <Route exact path="/targikatowice/:id" component={DetailsFairView} />
@@ -58,6 +58,14 @@ const Root = () => (
           <Route exact path="/targilodz/:id" component={DetailsFairView} />
           <Route exact path="/targirybnik/:id" component={DetailsFairView} />
           <Route exact path="/targihalaorbita/:id" component={DetailsFairView} />
+
+          <Route exact path="/dekoracje/:id" component={DetailsCompanyView} />
+          <Route exact path="/atrakcje/:id" component={DetailsCompanyView} />
+          <Route exact path="/moda/:id" component={DetailsCompanyView} />
+          <Route exact path="/zespoly/:id" component={DetailsCompanyView} />
+          <Route exact path="/foto/:id" component={DetailsCompanyView} />
+          <Route exact path="/lokale/:id" component={DetailsCompanyView} />
+          <Route exact path="/pozostale/:id" component={DetailsCompanyView} />
 
           <Route exact path="/dresses" component={HomeView} />
           <Route path="/dresses/:id" component={DetailsDressView} />

@@ -8,7 +8,7 @@ import PressBar from 'components/PressBar';
 import HeaderBreake from 'components/HeaderBreake';
 import FairBar from 'components/FairBar';
 import FairMain from 'components/FairMain';
-import CompaniesDatabase from 'components/CompaniesDatabase';
+import CompaniesBar from 'components/CompaniesBar';
 import GlobalStyle from 'theme/GlobalStyle';
 import AccesoriesBar from 'components/AccesoriesBar';
 import MainBar from 'components/MainBar';
@@ -35,7 +35,7 @@ class HomeView extends Component {
         <HeaderBreake>Inspiracje</HeaderBreake>
         <PressBar />
         <HeaderBreake>Katalog firm</HeaderBreake>
-        <CompaniesDatabase />
+        <CompaniesBar />
         <SocialMediaBar />
         <Footer />
       </WrapperView>

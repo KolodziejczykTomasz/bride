@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
 import {
   TabContent,
   TabPane,
@@ -14,8 +15,9 @@ import {
 } from 'reactstrap';
 import classnames from 'classnames';
 import styled from 'styled-components';
+import CompaniesItem from 'components/CompaniesItem';
 import DekoracjeNo1 from 'assets/images/companies/slubnaalejka.png';
-import dekor1 from 'assets/images/companies/dekor1.jpg';
+
 
 const WrapperTabContent = styled.div`
   margin-top: 1.2rem;
@@ -25,7 +27,7 @@ const WrapperTabRow = styled.div`
   margin-top: 1.2rem;
 `;
 
-const CompaniesDatabase = (props) => {
+const CompaniesBar = ({dekoracje}) => {
   const [activeTab, setActiveTab] = useState('1');
 
   const toggle = (tab) => {
@@ -72,7 +74,7 @@ const CompaniesDatabase = (props) => {
               toggle('4');
             }}
           >
-            Atrakcje
+            Zespoły
           </NavLink>
         </NavItem>
         <NavItem>
@@ -82,7 +84,7 @@ const CompaniesDatabase = (props) => {
               toggle('5');
             }}
           >
-            Zespoły
+            Fotografia, film
           </NavLink>
         </NavItem>
         <NavItem>
@@ -92,7 +94,7 @@ const CompaniesDatabase = (props) => {
               toggle('6');
             }}
           >
-            Fotografia, film
+            Lokale
           </NavLink>
         </NavItem>
         <NavItem>
@@ -100,16 +102,6 @@ const CompaniesDatabase = (props) => {
             className={classnames({ active: activeTab === '7' })}
             onClick={() => {
               toggle('7');
-            }}
-          >
-            Lokale
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === '8' })}
-            onClick={() => {
-              toggle('8');
             }}
           >
             Pozostałe
@@ -121,58 +113,18 @@ const CompaniesDatabase = (props) => {
           <TabPane tabId="1">
             <WrapperTabRow>
               <Row>
-                <Col sm="4">
-                  <Card body>
-                    <CardTitle>
-                      <h1>Dekoracja Światłem</h1>
-                    </CardTitle>
-                    <img src={dekor1} alt="DekoracjeNo2" />
-                    <CardText>
-                      Ciężki dym na pierwszy taniec Młodych - GRATIS. Zapraszamy do skorzystania z
-                      gotowych pakietów (small, brown, silver, golden), które zaczynają się już od
-                      900 zł. Usługi realizujemy w całym kraju jak i po za granicami. Pracą w branży
-                      zajmujemy się już ponad 10 lat. Jako firma eventowa oferujemy profesjonalną
-                      obsługę wszelkiego rodzaju imprez okolicznościowych - wesela, studniówki,
-                      eventy, urodziny, bale oraz inne. Dzięki współpracy z nami uzyskają Państwo
-                      niepowtarzalne efekty oraz wyjątkową atmosferę. Przy pomocy świateł nadamy
-                      sali bankietowej bajkowy wygląd.
-                    </CardText>
-                    <Button>Przejdź</Button>
-                  </Card>
-                </Col>
-                <Col sm="4">
-                  <Card body>
-                    <CardTitle>
-                      <h1>Dekoracje ślubne</h1>
-                    </CardTitle>
-                    <img src={DekoracjeNo1} alt="DekoracjeNo1" />
-                    <CardText>
-                      Ozdoby weselne, które znaleźć można w naszej ofercie to także latające
-                      lampiony, które tworzą niesamowity klimat. Dekoracje na wesele dostępne w
-                      naszym sklepie to także szalenie modne gadżety do Fotobudki. Mogą to być usta,
-                      wąsy, okulary lub różnego rodzaju napisy, które rozbawiają gości. Warto
-                      zwrócić uwagę na wszystkie dekoracje na wesele, które dostępne są w
-                      prezentowanym przez nas asortymencie.
-                    </CardText>
-                    <Button>Przejdź</Button>
-                  </Card>
-                </Col>
-                <Col sm="4">
-                  <Card body>
-                    <CardTitle>
-                      <h1>Dekoracje ślubne</h1>
-                    </CardTitle>
-                    <img src={DekoracjeNo1} alt="DekoracjeNo1" />
-                    <CardText>
-                      Ozdoby weselne, które znaleźć można w naszej ofercie to także latające
-                      lampiony, które tworzą niesamowity klimat. Dekoracje na wesele dostępne w
-                      naszym sklepie to także szalenie modne gadżety do Fotobudki. Mogą to być usta,
-                      wąsy, okulary lub różnego rodzaju napisy, które rozbawiają gości. Warto
-                      zwrócić uwagę na wszystkie dekoracje na wesele, które dostępne są w
-                      prezentowanym przez nas asortymencie.
-                    </CardText>
-                    <Button>Przejdź</Button>
-                  </Card>
+                <Col sm="6">
+                  {dekoracje.map(({ id, url, title, subtitle, price }) => (
+                    <CompaniesItem
+                      id={id}
+                      url={url}
+                      key={id}
+                      price={price}
+                      title={title}
+                      subtitle={subtitle}
+                      pageType="dekoracje"
+                    />
+                  ))}
                 </Col>
               </Row>
             </WrapperTabRow>
@@ -464,56 +416,17 @@ const CompaniesDatabase = (props) => {
               </Row>
             </WrapperTabRow>
           </TabPane>
-          <TabPane tabId="8">
-            <WrapperTabRow>
-              <Row>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-              </Row>
-            </WrapperTabRow>
-            <WrapperTabRow>
-              <Row>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-              </Row>
-            </WrapperTabRow>
-          </TabPane>
         </TabContent>
       </WrapperTabContent>
     </div>
   );
+  }
+
+
+
+const mapStateToProps = (state) => {
+  const { pozostale, lokale, foto, zespoly, moda, atrakcje, dekoracje } = state;
+  return { pozostale, lokale, foto, zespoly, moda, atrakcje, dekoracje };
 };
 
-export default CompaniesDatabase;
+export default connect(mapStateToProps)(CompaniesBar);

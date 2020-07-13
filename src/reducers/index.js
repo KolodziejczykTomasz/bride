@@ -21,6 +21,14 @@ import postchurch from 'data/posts/church/post';
 import travel from 'data/travel/travel';
 import dress from 'data/dress/dress';
 
+import dekoracje from 'data/company/dekoracje';
+import atrakcje from 'data/company/atrakcje';
+import foto from 'data/company/foto';
+import lokale from 'data/company/lokale';
+import moda from 'data/company/moda';
+import pozostale from 'data/company/pozostale';
+import zespoly from 'data/company/zespoly';
+
 const initialState = {
   postchurch,
   postextras,
@@ -39,7 +47,14 @@ const initialState = {
   targihalaorbita,
   accesories,
   travel,
-  dress
+  dress,
+  pozostale,
+  lokale,
+  foto,
+  zespoly,
+  moda,
+  atrakcje,
+  dekoracje,
 };
 
 const rootReducer = (state = initialState, action) => {
