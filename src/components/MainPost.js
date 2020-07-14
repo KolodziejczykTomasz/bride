@@ -28,6 +28,14 @@ class MainPost extends Component {
       subtitle,
       picHero,
       pageType,
+      header1,
+      header2,
+      header3,
+      header4,
+      header6,
+      header7,
+      header8,
+      header9,
       p1,
       p2,
       p3,
@@ -48,35 +56,78 @@ class MainPost extends Component {
       pic7,
       pic8,
       pic9,
-      pic10
+      pic10,
     } = this.props;
     return (
       <MainTemplates pageType={pageType}>
         <div>
           <div>{title}</div>
           <div>{subtitle}</div>
-          <div>{picHero}</div>
-          <div>{p1}</div>
-          <img src={pic1} alt={title} />
-          <div>{p2}</div>
-          <img src={pic2} alt={title} />
-          <div>{p3}</div>
-          <img src={pic3} alt={title} />
-          <div>{p4}</div>
-          <img src={pic4} alt={title} />
-          <div>{p5}</div>
-          <img src={pic5} alt={title} />
-          <div>{p6}</div>
-          <img src={pic6} alt={title} />
-          <div>{p7}</div>
-          <img src={pic7} alt={title} />
-          <div>{p8}</div>
-          <img src={pic8} alt={title} />
-          <div>{p9}</div>
-          <img src={pic9} alt={title} />
-          <div>{p10}</div>
-          <img src={pic10} alt={title} />
-          <div>{p11}</div>
+          <div>
+            <img src={picHero} alt={title} />
+          </div>
+          {p1 === '' ? null : <>{p1}</>}
+          {pic1 === '' ? (
+            <>
+              <img src={pic1} alt={title} />
+            </>
+          ) : null}
+          {p2 !== '' ? <>{p2}</> : null}
+          {pic2 === '' ? (
+            <>
+              <img src={pic2} alt={title} />
+            </>
+          ) : null}
+          {header1}
+          {p3 !== '' ? <>{p3}</> : null}
+          {pic3 !== null ? (
+            <>
+              <img src={pic3} alt={title} />
+            </>
+          ) : null}
+          {p4 !== '' ? <>{p4}</> : null}
+          {pic4 === '' ? (
+            <>
+              <img src={pic4} alt={title} />
+            </>
+          ) : null}
+          {p5 !== '' ? <>{p5}</> : null}
+          {pic5 !== null ? (
+            <>
+              <img src={pic5} alt={title} />
+            </>
+          ) : null}
+          {p6 !== '' ? <>{p6}</> : null}
+          {pic6 === '' ? (
+            <>
+              <img src={pic6} alt={title} />
+            </>
+          ) : null}
+          {p7 !== '' ? <>{p7}</> : null}
+          {pic7 === null ? (
+            <>
+              <img src={pic7} alt={title} />
+            </>
+          ) : null}
+          {p8 !== '' ? <>{p8}</> : null}
+          {pic8 === '' ? (
+            <>
+              <img src={pic8} alt={title} />
+            </>
+          ) : null}
+          {p9 !== '' ? <>{p9}</> : null}
+          {pic9 === '' ? (
+            <>
+              <img src={pic9} alt={title} />
+            </>
+          ) : null}
+          {p10 !== '' ? <>{p10}</> : null}
+          {pic10 === '' ? (
+            <>
+              <img src={pic10} alt={title} />
+            </>
+          ) : null}
+          {p11 === '' ? <>{p11}</> : null}
           <Button as={Link} to={`/`}>
             Close
           </Button>

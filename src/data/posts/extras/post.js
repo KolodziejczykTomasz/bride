@@ -29,7 +29,7 @@ export default [
       'Butlę jednorazową wypełnioną helem kupimy już za około 87zł. Ilość to pozwala na wypełnienie 30 sztuk balonów. A jeżeli potrzebujemy tylko napełnić kilka balonów, to dobrą propozycją jest hel w puszce. Taka przyjemność kosztuje od 28zł i pozwala napełnić około 10 balonów.',
     pic3: gazhel,
     p2:
-      'Od pewnego czasu dostępne są również balony oświetlane od wewnątrz diodami led. Diody te posiadają własne bateryjne zasilane, które wystarczy na co najmniej 12 godzin. Wraz ze zużywaniem baterii jasność led spada do zera. Za kwotę około 10 złotych kupimy 5 balonów z wkładem led w wybranym kolorze.',
+      'Od pewnego czasu dostępne są również balony oświetlane od wewnątrz diodami led. Diody te posiadają własne bateryjne zasilane, które wystarczy na co najmniej 12 godzin. Wraz ze zużywaniem baterii jasność led spada do zera. Za kwotę około 10 złotych kupimy 5 balonów z wkładem led w wybranym kolorze.',      
     p3:
       'Jeżeli nie znajdziemy podświetlanych balonów w danych kolorze, możemy posłużyć się samą wkładką led. W ten sposób stworzymy własne nie powtarzalne kompozycje.',
     pic4: leditem,

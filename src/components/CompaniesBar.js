@@ -1,23 +1,9 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import {
-  TabContent,
-  TabPane,
-  Nav,
-  NavItem,
-  NavLink,
-  Card,
-  Button,
-  CardTitle,
-  CardText,
-  Row,
-  Col,
-} from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap';
 import classnames from 'classnames';
 import styled from 'styled-components';
 import CompaniesItem from 'components/CompaniesItem';
-import DekoracjeNo1 from 'assets/images/companies/slubnaalejka.png';
-
 
 const WrapperTabContent = styled.div`
   margin-top: 1.2rem;
@@ -27,7 +13,7 @@ const WrapperTabRow = styled.div`
   margin-top: 1.2rem;
 `;
 
-const CompaniesBar = ({dekoracje}) => {
+const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekoracje }) => {
   const [activeTab, setActiveTab] = useState('1');
 
   const toggle = (tab) => {
@@ -113,306 +99,168 @@ const CompaniesBar = ({dekoracje}) => {
           <TabPane tabId="1">
             <WrapperTabRow>
               <Row>
-                <Col sm="6">
-                  {dekoracje.map(({ id, url, title, subtitle, price }) => (
-                    <CompaniesItem
-                      id={id}
-                      url={url}
-                      key={id}
-                      price={price}
-                      title={title}
-                      subtitle={subtitle}
-                      pageType="dekoracje"
-                    />
-                  ))}
-                </Col>
+                {dekoracje.length ? (
+                  <>
+                    {dekoracje.map(({ id, url, title, subtitle, price, city }) => (
+                      <CompaniesItem
+                        id={id}
+                        url={url}
+                        key={id}
+                        price={price}
+                        title={title}
+                        subtitle={subtitle}
+                        city={city}
+                        pageType="dekoracje"
+                      />
+                    ))}
+                  </>
+                ) : (
+                  <p>Brak firm w danej kategorii</p>
+                )}
               </Row>
             </WrapperTabRow>
           </TabPane>
           <TabPane tabId="2">
             <WrapperTabRow>
               <Row>
-                <Col sm="4">
-                  <Card body>
-                    <CardTitle>
-                      <h1>Dekoracje ślubne</h1>
-                    </CardTitle>
-                    <img src={DekoracjeNo1} alt="DekoracjeNo1" />
-                    <CardText>
-                      Ozdoby weselne, które znaleźć można w naszej ofercie to także latające
-                      lampiony, które tworzą niesamowity klimat. Dekoracje na wesele dostępne w
-                      naszym sklepie to także szalenie modne gadżety do Fotobudki. Mogą to być usta,
-                      wąsy, okulary lub różnego rodzaju napisy, które rozbawiają gości. Warto
-                      zwrócić uwagę na wszystkie dekoracje na wesele, które dostępne są w
-                      prezentowanym przez nas asortymencie.
-                    </CardText>
-                    <Button>Przejdź</Button>
-                  </Card>
-                </Col>
-                <Col sm="4">
-                  <Card body>
-                    <CardTitle>
-                      <h1>Dekoracje ślubne</h1>
-                    </CardTitle>
-                    <img src={DekoracjeNo1} alt="DekoracjeNo1" />
-                    <CardText>
-                      Ozdoby weselne, które znaleźć można w naszej ofercie to także latające
-                      lampiony, które tworzą niesamowity klimat. Dekoracje na wesele dostępne w
-                      naszym sklepie to także szalenie modne gadżety do Fotobudki. Mogą to być usta,
-                      wąsy, okulary lub różnego rodzaju napisy, które rozbawiają gości. Warto
-                      zwrócić uwagę na wszystkie dekoracje na wesele, które dostępne są w
-                      prezentowanym przez nas asortymencie.
-                    </CardText>
-                    <Button>Przejdź</Button>
-                  </Card>
-                </Col>
-                <Col sm="4">
-                  <Card body>
-                    <CardTitle>
-                      <h1>Dekoracje ślubne</h1>
-                    </CardTitle>
-                    <img src={DekoracjeNo1} alt="DekoracjeNo1" />
-                    <CardText>
-                      Ozdoby weselne, które znaleźć można w naszej ofercie to także latające
-                      lampiony, które tworzą niesamowity klimat. Dekoracje na wesele dostępne w
-                      naszym sklepie to także szalenie modne gadżety do Fotobudki. Mogą to być usta,
-                      wąsy, okulary lub różnego rodzaju napisy, które rozbawiają gości. Warto
-                      zwrócić uwagę na wszystkie dekoracje na wesele, które dostępne są w
-                      prezentowanym przez nas asortymencie.
-                    </CardText>
-                    <Button>Przejdź</Button>
-                  </Card>
-                </Col>
+                {atrakcje.length ? (
+                  <>
+                    {atrakcje.map(({ id, url, title, subtitle, price, city }) => (
+                      <CompaniesItem
+                        id={id}
+                        url={url}
+                        key={id}
+                        price={price}
+                        title={title}
+                        subtitle={subtitle}
+                        city={city}
+                        pageType="atrakcje"
+                      />
+                    ))}
+                  </>
+                ) : (
+                  <p>Brak firm w danej kategorii</p>
+                )}
               </Row>
             </WrapperTabRow>
           </TabPane>
           <TabPane tabId="3">
             <WrapperTabRow>
               <Row>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-              </Row>
-            </WrapperTabRow>
-            <WrapperTabRow>
-              <Row>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
+                {moda.length ? (
+                  <>
+                    {moda.map(({ id, url, title, subtitle, price, city }) => (
+                      <CompaniesItem
+                        id={id}
+                        url={url}
+                        key={id}
+                        price={price}
+                        title={title}
+                        subtitle={subtitle}
+                        city={city}
+                        pageType="moda"
+                      />
+                    ))}
+                  </>
+                ) : (
+                  <p>Brak firm w danej kategorii</p>
+                )}
               </Row>
             </WrapperTabRow>
           </TabPane>
           <TabPane tabId="4">
             <WrapperTabRow>
               <Row>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-              </Row>
-            </WrapperTabRow>
-            <WrapperTabRow>
-              <Row>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
+                {zespoly.length ? (
+                  <>
+                    {zespoly.map(({ id, url, title, subtitle, price, city }) => (
+                      <CompaniesItem
+                        id={id}
+                        url={url}
+                        key={id}
+                        price={price}
+                        title={title}
+                        subtitle={subtitle}
+                        city={city}
+                        pageType="zespoly"
+                      />
+                    ))}
+                  </>
+                ) : (
+                  <p>Brak firm w danej kategorii</p>
+                )}
               </Row>
             </WrapperTabRow>
           </TabPane>
           <TabPane tabId="5">
             <WrapperTabRow>
               <Row>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-              </Row>
-            </WrapperTabRow>
-            <WrapperTabRow>
-              <Row>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
+                {foto.length ? (
+                  <>
+                    {foto.map(({ id, url, title, subtitle, price, city }) => (
+                      <CompaniesItem
+                        id={id}
+                        url={url}
+                        key={id}
+                        price={price}
+                        title={title}
+                        subtitle={subtitle}
+                        city={city}
+                        pageType="foto"
+                      />
+                    ))}
+                  </>
+                ) : (
+                  <p>Brak firm w danej kategorii</p>
+                )}
               </Row>
             </WrapperTabRow>
           </TabPane>
           <TabPane tabId="6">
             <WrapperTabRow>
               <Row>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-              </Row>
-            </WrapperTabRow>
-            <WrapperTabRow>
-              <Row>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
+                {lokale.length ? (
+                  <>
+                    {lokale.map(({ id, url, title, subtitle, price, city }) => (
+                      <CompaniesItem
+                        id={id}
+                        url={url}
+                        key={id}
+                        price={price}
+                        title={title}
+                        subtitle={subtitle}
+                        city={city}
+                        pageType="lokale"
+                      />
+                    ))}
+                  </>
+                ) : (
+                  <p>Brak firm w danej kategorii</p>
+                )}
               </Row>
             </WrapperTabRow>
           </TabPane>
           <TabPane tabId="7">
             <WrapperTabRow>
               <Row>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-              </Row>
-            </WrapperTabRow>
-            <WrapperTabRow>
-              <Row>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
-                <Col sm="6">
-                  <Card body>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>
-                      With supporting text below as a natural lead-in to additional content.
-                    </CardText>
-                    <Button>Go somewhere</Button>
-                  </Card>
-                </Col>
+                {pozostale.length ? (
+                  <>
+                    {pozostale.map(({ id, url, title, subtitle, price, city }) => (
+                      <CompaniesItem
+                        id={id}
+                        url={url}
+                        key={id}
+                        price={price}
+                        title={title}
+                        subtitle={subtitle}
+                        city={city}
+                        pageType="pozostale"
+                      />
+                    ))}
+                  </>
+                ) : (
+                  <p>Brak firm w danej kategorii</p>
+                )}
               </Row>
             </WrapperTabRow>
           </TabPane>
@@ -420,9 +268,7 @@ const CompaniesBar = ({dekoracje}) => {
       </WrapperTabContent>
     </div>
   );
-  }
-
-
+};
 
 const mapStateToProps = (state) => {
   const { pozostale, lokale, foto, zespoly, moda, atrakcje, dekoracje } = state;

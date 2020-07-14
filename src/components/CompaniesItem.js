@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
-import { Card, Button, CardTitle, CardText } from 'reactstrap';
+import { Card, Button, CardTitle, CardText, Col } from 'reactstrap';
 
 class CompaniesItem extends Component {
   state = {
@@ -17,6 +17,8 @@ class CompaniesItem extends Component {
       return <Redirect to={`${pageType}/${id}`} />;
     }
     return (
+    
+                <Col sm="6">
       <Card body>
         <CardTitle>
           <h1>{title}</h1>
@@ -25,7 +27,7 @@ class CompaniesItem extends Component {
         <img src={url} alt={title} />
         <CardText>{price}</CardText>
         <Button onClick={this.handleCardClick}>Przejdź</Button>
-      </Card>
+      </Card></Col>
     );
   }
 }
