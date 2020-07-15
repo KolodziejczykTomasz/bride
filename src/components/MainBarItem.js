@@ -11,11 +11,13 @@ const Card = styled.div`
   margin-bottom: 4rem;
 `;
 const CardImg = styled.img`
-  width: 20%;
+  width: 30vw;
+  max-width: 110px;
 `;
 const CardText = styled.p`
   padding: 0 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
+  line-height: 20px;
 `;
 const CardBody = styled.div``;
 const CardSubtitle = styled.h1`
@@ -38,7 +40,7 @@ class MainBarItem extends Component {
   handleCardClick = () => this.setState({ redirect: true });
 
   render() {
-    const { id, title, subtitle, picHero, pageType } = this.props;
+    const { id, title, subtitle, picHeader, header, pageType } = this.props;
 const { redirect } = this.state;
 
 if (redirect) {
@@ -46,10 +48,11 @@ if (redirect) {
 }
     return (
       <Card pageType={pageType}>
-        <CardImg top width="100%" src={picHero} alt="Card image cap" />
+        <CardImg top width="100%" src={picHeader} alt="Card image cap" />
         <CardBody>
           <CardSubtitle>{title}</CardSubtitle>
           <CardText>{subtitle}</CardText>
+          <CardText>{header}</CardText>
           <WarpperButton>
             <Button onClick={this.handleCardClick}>Zobacz więcej</Button>
           </WarpperButton>

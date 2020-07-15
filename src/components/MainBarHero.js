@@ -39,7 +39,7 @@ class MainBarHero extends Component {
   handleCardClick = () => this.setState({ redirect: true });
 
   render() {
-    const { id, title, subtitle, picHero, pageType, extras } = this.props;
+    const { id, title, subtitle, header, picHeader, pageType, extras } = this.props;
     const { redirect } = this.state;
 
     if (redirect) {
@@ -48,13 +48,14 @@ class MainBarHero extends Component {
     return (
       <MainTemplates>
         <Card pageType={extras}>
-          <CardImg top width="100%" src={picHero} alt="Card image cap" />
+          <CardImg top width="100%" src={picHeader} alt="Card image cap" />
           <CardBody>
             <CardTitle>{title}</CardTitle>
             <CardSubtitle>
               <hr />
             </CardSubtitle>
             <CardText>{subtitle}</CardText>
+            <CardText>{header}</CardText>
             <Button onClick={this.handleCardClick}>Zobacz więcej</Button>
           </CardBody>
         </Card>
