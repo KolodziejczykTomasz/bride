@@ -2,7 +2,7 @@ import PicDel from 'assets/images/post/1/ledbalon.png';
 import gazhel from 'assets/images/post/1/gazhel.jpg';
 import leditem from 'assets/images/post/1/leditem.png';
 import leditem2 from 'assets/images/post/1/leditem2.png';
-
+import picled from 'assets/images/post/1/picled.jpg';
 import pic1 from 'assets/images/post/2/pic1.png';
 
 import pic5 from 'assets/images/post/4/fontanna.jpg';
@@ -17,25 +17,25 @@ export default [
     subtitle: '',
     picHeader: PicDel,
     header:
-      '1 Większość z was Jeśli uważa, że dekoracje sali weselnej do relikt przeszłości. I pewnie coś w tym jest, ale dekoracje tego typu przeżywają pewnego rodzaju swoje 5 minut.',
+      'Większość z was Jeśli uważa, że dekoracje sali weselnej do relikt przeszłości. I pewnie coś w tym jest, ale dekoracje tego typu przeżywają pewnego rodzaju swoje 5 minut.',
     header1: 'A ile to kosztuje?',
     p1:
-      '2 Ich największą zaletą jest cena i wybór kolorów. Dostępność gazu typu hel, przenosi dawne dekoracje w nowy wymiar. Gaz ten jest lżejszy od powietrza i powoduje unoszenie się balonów. Balony te stają się nośnikiem innych dekoracji np. liter czy serduszek.',
-    pic1: 'picled',
+      'Ich największą zaletą jest cena i wybór kolorów. Dostępność gazu typu hel, przenosi dawne dekoracje w nowy wymiar. Gaz ten jest lżejszy od powietrza i powoduje unoszenie się balonów. Balony te stają się nośnikiem innych dekoracji np. liter czy serduszek.',
+    pic1: picled,
     header2: '',
     p2:
-      '3 Butlę jednorazową wypełnioną helem kupimy już za około 87zł. Ilość to pozwala na wypełnienie 30 sztuk balonów. A jeżeli potrzebujemy tylko napełnić kilka balonów, to dobrą propozycją jest hel w puszce. Taka przyjemność kosztuje od 28zł i pozwala napełnić około 10 balonów.',
+      'Butlę jednorazową wypełnioną helem kupimy już za około 87zł. Ilość to pozwala na wypełnienie 30 sztuk balonów. A jeżeli potrzebujemy tylko napełnić kilka balonów, to dobrą propozycją jest hel w puszce. Taka przyjemność kosztuje od 28zł i pozwala napełnić około 10 balonów.',
     pic2: gazhel,
     header3: '',
     p3:
-      '4 Od pewnego czasu dostępne są również balony oświetlane od wewnątrz diodami led. Diody te posiadają własne bateryjne zasilane, które wystarczy na co najmniej 12 godzin. Wraz ze zużywaniem baterii jasność led spada do zera. Za kwotę około 10 złotych kupimy 5 balonów z wkładem led w wybranym kolorze.',
+      'Od pewnego czasu dostępne są również balony oświetlane od wewnątrz diodami led. Diody te posiadają własne bateryjne zasilane, które wystarczy na co najmniej 12 godzin. Wraz ze zużywaniem baterii jasność led spada do zera. Za kwotę około 10 złotych kupimy 5 balonów z wkładem led w wybranym kolorze.',
     pic3: leditem,
     header4: '',
     p4:
-      '4 Jeżeli nie znajdziemy podświetlanych balonów w danych kolorze, możemy posłużyć się samą wkładką led. W ten sposób stworzymy własne nie powtarzalne kompozycje.',
+      'Jeżeli nie znajdziemy podświetlanych balonów w danych kolorze, możemy posłużyć się samą wkładką led. W ten sposób stworzymy własne nie powtarzalne kompozycje.',
     pic4: leditem2,
     header5: '',
-    p5: '5 Pamiętajmy jednak, że jak w przypadku każdej dekoracji zalecany jest umiar.',
+    p5: 'Pamiętajmy jednak, że jak w przypadku każdej dekoracji zalecany jest umiar.',
     pic5: '',
     header6: '',
     p6: '',
@@ -55,6 +55,7 @@ export default [
     header11: '',
     p11: '',
     pic11: '',
+    gallery: [{}],
   },
   {
     id: 2,
@@ -105,6 +106,7 @@ export default [
     header11: '',
     p11: 'Ile kosztuje? Ceny zaczynają się od 350 a mogą wynieść nawet ponad 1500 zł',
     pic11: 'pic4',
+    gallery: [{}],
   },
   {
     id: 3,
@@ -150,6 +152,7 @@ export default [
     header11: '',
     p11: '',
     pic11: '',
+    gallery: [{}],
   },
   {
     id: '4',
@@ -193,5 +196,6 @@ export default [
     header11: '',
     p11: '',
     pic11: '',
+    gallery: [{}],
   },
 ];

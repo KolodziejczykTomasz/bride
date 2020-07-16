@@ -66,6 +66,7 @@ const MainBar = ({
   pic9,
   pic10,
   pic11,
+  gallery
 }) => (
   <Wrapper>
     <Main>
@@ -113,6 +114,7 @@ const MainBar = ({
               pic9,
               pic10,
               pic11,
+              gallery
             }) => (
               <MainBarHero
                 id={id}
@@ -154,6 +156,7 @@ const MainBar = ({
                 header11={header11}
                 p11={p11}
                 pic11={pic11}
+                gallery={gallery}
                 pageType="extras"
               />
             ),
@@ -204,6 +207,7 @@ const MainBar = ({
               pic9,
               pic10,
               pic11,
+              gallery,
             }) => (
               <MainBarItem
                 id={id}
@@ -245,6 +249,7 @@ const MainBar = ({
                 header11={header11}
                 p11={p11}
                 pic11={pic11}
+                gallery={gallery}
                 pageType="brides"
               />
             ),
@@ -335,6 +340,7 @@ const MainBar = ({
                 header11={header11}
                 p11={p11}
                 pic11={pic11}
+                gallery={gallery}
                 pageType="extras"
               />
             ),

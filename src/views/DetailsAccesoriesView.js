@@ -34,6 +34,12 @@ class DetailsAccesoriesView extends Component {
       case '3':
         this.setState({ id: 2 });
         break;
+      case '4':
+        this.setState({ id: 3 });
+        break;
+      case '5':
+        this.setState({ id: 4 });
+        break;
       default:
         console.log('Something went wrong');
     }
@@ -54,7 +60,6 @@ class DetailsAccesoriesView extends Component {
             url={this.props.accesories[id].url}
           />
         )}
-
         <Footer />
       </>
     );

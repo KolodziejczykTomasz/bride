@@ -89,6 +89,7 @@ class DetailsMainView extends Component {
             header11={this.props.postbride[id].header11}
             p11={this.props.postbride[id].p11}
             pic11={this.props.postbride[id].pic11}
+            gallery={this.props.postbride[id].gallery}
           />
         )}
         {pageType === 'extras' && (
@@ -132,9 +133,9 @@ class DetailsMainView extends Component {
             header11={this.props.postextras[id].header11}
             p11={this.props.postextras[id].p11}
             pic11={this.props.postextras[id].pic11}
+            gallery={this.props.postextras[id].gallery}
           />
         )}
-
         <Footer />
       </>
     );

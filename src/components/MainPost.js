@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MainTemplates from 'templates/MainTemplates';
 import styled from 'styled-components';
+import BreakeHeader from 'components/BreakeHeader';
+import BreakeFooter from 'components/BreakeFooter';
 
 const Button = styled.a`
   display: grid;
@@ -20,6 +22,37 @@ const Button = styled.a`
     color: white;
   }
 `;
+
+const Wrapper = styled.div`
+  width: 80vw;
+  margin: 2rem auto;
+  padding: 2rem 5rem;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+`;
+
+const Header = styled.div``;
+const Title = styled.h2``;
+const Subtitle = styled.h3``;
+
+const PhotoBox = styled.div``;
+const Photo = styled.img`
+  display: block;
+  width: 40rem;
+  margin: 5rem auto;
+`;
+
+const Section = styled.div`
+  margin: 4rem 0;
+`;
+
+const TextHeader = styled.div``;
+const Text = styled.p`
+  font-size: 1.4rem;
+`;
+const TextPhoto = styled.div``;
+
+const GalleryPhotoItem = styled.img``;
+const GalleryWrapper = styled.div``;
 
 class MainPost extends Component {
   render() {
@@ -62,123 +95,161 @@ class MainPost extends Component {
       pic9,
       pic10,
       pic11,
+      gallery,
     } = this.props;
+
     return (
       <MainTemplates pageType={pageType}>
-        <div>
-          <div>{title}</div>
-          <div>{subtitle}</div>
-          <div>
-            {picHeader !== '' ? (
-              <>              
-                <img src={picHeader} alt={title} />
-              </>
-            ) : null}
-          </div>
-          <div>{header}</div>
-          <div>
-            {header1}
-            {p1}
-            {pic1 !== '' ? (
-              <>
-                <img src={pic1} alt={title} />
-              </>
-            ) : null}
-          </div>
-          <div>
-            {header2}
-            {p2}
-            {pic2 !== '' ? (
-              <>
-                <img src={pic2} alt={title} />
-              </>
-            ) : null}
-          </div>
-          <div>
-            {header3}
-            {p3}
-            {pic3 !== '' ? (
-              <>
-                <img src={pic3} alt={title} />
-              </>
-            ) : null}
-          </div>
-          <div>
-            {header4}
-            {p4}
-            {pic4 !== '' ? (
-              <>
-                <img src={pic4} alt={title} />
-              </>
-            ) : null}
-          </div>
-          <div>
-            {header5}
-            {p5}
-            {pic5 !== '' ? (
-              <>
-                <img src={pic5} alt={title} />
-              </>
-            ) : null}
-          </div>
-          <div>
-            {header6}
-            {p6}
-            {pic6 !== '' ? (
-              <>
-                <img src={pic6} alt={title} />
-              </>
-            ) : null}
-          </div>
-          <div>
-            {header7}
-            {p7}
-            {pic7 !== '' ? (
-              <>
-                <img src={pic7} alt={title} />
-              </>
-            ) : null}
-          </div>
-          <div>
-            {header8}
-            {p8}
-            {pic8 !== '' ? (
-              <>
-                <img src={pic8} alt={title} />
-              </>
-            ) : null}
-          </div>
-          <div>
-            {header9}
-            {p9}
-            {pic9 !== '' ? (
-              <>
-                <img src={pic9} alt={title} />
-              </>
-            ) : null}
-          </div>
-          <div>
-            {header10}
-            {p10}
-            {pic10 !== '' ? (
-              <>
-                <img src={pic10} alt={title} />
-              </>
-            ) : null}
-          </div>
-          <div>
-            {header11}
-            {p11}
-            {pic11 !== '' ? (
-              <>
-                <img src={pic11} alt={title} />{' '}
-              </>
-            ) : null}
-          </div>
+        <Wrapper>
+          <Header>
+            <BreakeHeader>{title}</BreakeHeader>
+            <Title>{subtitle}</Title>
+            <Subtitle>{header}</Subtitle>
+            <PhotoBox>
+              {picHeader !== '' ? (
+                <>
+                  <Photo src={picHeader} alt={title} />
+                </>
+              ) : null}
+            </PhotoBox>
+          </Header>
+          <Section>
+            <TextHeader>{header1}</TextHeader>
+            <Text>{p1}</Text>
+            <TextPhoto>
+              {pic1 !== '' ? (
+                <>
+                  <Photo src={pic1} alt={title} />
+                </>
+              ) : null}
+            </TextPhoto>
+          </Section>
+          <Section>
+            <TextHeader>{header2}</TextHeader>
+            <Text>{p2}</Text>
+            <TextPhoto>
+              {pic2 !== '' ? (
+                <>
+                  <Photo src={pic2} alt={title} />
+                </>
+              ) : null}
+            </TextPhoto>
+          </Section>
+          <Section>
+            <TextHeader>{header3}</TextHeader>
+            <Text>{p3}</Text>
+            <TextPhoto>
+              {pic3 !== '' ? (
+                <>
+                  <Photo src={pic3} alt={title} />
+                </>
+              ) : null}
+            </TextPhoto>
+          </Section>
+          <Section>
+            <TextHeader>{header4}</TextHeader>
+            <Text>{p4}</Text>
+            <TextPhoto>
+              {pic4 !== '' ? (
+                <>
+                  <Photo src={pic4} alt={title} />
+                </>
+              ) : null}
+            </TextPhoto>
+          </Section>
+          <Section>
+            <TextHeader>{header5}</TextHeader>
+            <Text>{p5}</Text>
+            <TextPhoto>
+              {pic5 !== '' ? (
+                <>
+                  <Photo src={pic5} alt={title} />
+                </>
+              ) : null}
+            </TextPhoto>
+          </Section>
+          <Section>
+            <TextHeader>{header6}</TextHeader>
+            <Text>{p6}</Text>
+            <TextPhoto>
+              {pic6 !== '' ? (
+                <>
+                  <Photo src={pic6} alt={title} />
+                </>
+              ) : null}
+            </TextPhoto>
+          </Section>
+          <Section>
+            <TextHeader>{header7}</TextHeader>
+            <Text>{p7}</Text>
+            <TextPhoto>
+              {pic7 !== '' ? (
+                <>
+                  <Photo src={pic7} alt={title} />
+                </>
+              ) : null}
+            </TextPhoto>
+          </Section>
+          <Section>
+            <TextHeader>{header8}</TextHeader>
+            <Text>{p8}</Text>
+            <TextPhoto>
+              {pic8 !== '' ? (
+                <>
+                  <Photo src={pic8} alt={title} />
+                </>
+              ) : null}
+            </TextPhoto>
+          </Section>
+          <Section>
+            <TextHeader>{header9}</TextHeader>
+            <Text>{p9}</Text>
+            <TextPhoto>
+              {pic9 !== '' ? (
+                <>
+                  <Photo src={pic9} alt={title} />
+                </>
+              ) : null}
+            </TextPhoto>
+          </Section>
+          <Section>
+            <TextHeader>{header10}</TextHeader>
+            <Text>{p10}</Text>
+            <TextPhoto>
+              {pic10 !== '' ? (
+                <>
+                  <Photo src={pic10} alt={title} />
+                </>
+              ) : null}
+            </TextPhoto>
+          </Section>
+          <Section>
+            <TextHeader>{header11}</TextHeader>
+            <Text>{p11}</Text>
+            <TextPhoto>
+              {pic11 !== '' ? (
+                <>
+                  <Photo src={pic11} alt={title} />
+                </>
+              ) : null}
+            </TextPhoto>
+          </Section>
+          <Section>
+            <GalleryWrapper>
+              {gallery.length !== '' ? (
+                <>
+                  {gallery.map(({ url, title }) => (
+                    <GalleryPhotoItem src={url} alt={title} />
+                  ))}
+                </>
+              ) : null}
+            </GalleryWrapper>
+          </Section>
           <Button as={Link} to={`/`}>
             Close
           </Button>
-        </div>
+          <BreakeFooter>TAGI:</BreakeFooter>          
+        </Wrapper>
       </MainTemplates>
     );
   }

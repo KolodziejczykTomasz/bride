@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import NavbarTop from 'components/NavbarTop';
 import JumbotronBar from 'components/JumbotronBar';
 import Footer from 'components/Footer';
-import ExtrasPost from 'components/ExtrasPost';
+import MainPost from 'components/MainPost';
 
 
 class DetailsExtrasView extends Component {
@@ -47,7 +47,7 @@ class DetailsExtrasView extends Component {
         <NavbarTop />
         <JumbotronBar />
         {pageType === 'postextras' && (
-          <ExtrasPost
+          <MainPost
             key={this.props.postextras[id].id}
             pageType={pageType}
             picHeader={this.props.postextras[id].picHeader}
@@ -87,6 +87,7 @@ class DetailsExtrasView extends Component {
             header11={this.props.postextras[id].header11}
             p11={this.props.postextras[id].p11}
             pic11={this.props.postextras[id].pic11}
+            gallery={this.props.postextras[id].gallery}
           />
         )}
 

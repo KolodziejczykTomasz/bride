@@ -3,7 +3,7 @@ export default [
     id: 1,
     title: 'Stworzenie mężczyzny i niewiasty',
     subtitle: 'Rdz 1,26-28.31',
-    header1: 'A Czytanie z Księgi Rodzaju',
+    header1: 'Czytanie z Księgi Rodzaju',
     p1:
       'Bóg rzekł: „Uczyńmy człowieka na Nasz obraz, podobnego Nam. Niech panuje nad rybami morskimi, nad ptactwem powietrznym, nad bydłem, nad całą ziemią i nad wszelkim zwierzęciem pełzającym po ziemi”.',
     p2:

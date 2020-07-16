@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MainTemplates from 'templates/MainTemplates';
+import BreakeHeader from 'components/BreakeHeader';
 import styled from 'styled-components';
 
 const Button = styled.a`
@@ -21,20 +22,48 @@ const Button = styled.a`
   }
 `;
 
+const Wrapper = styled.div`
+  width: 81vw;
+  margin: 2rem auto;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+`;
+
+const Body = styled.div`
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.2fr 0.8fr;
+  width: 90vw;
+  margin: 5rem 0;
+`;
+const Main = styled.div``;
+const Aside = styled.div``;
+const Picture = styled.div``;
+
 class FairPost extends Component {
   render() {
-    const { name, url, city, data, place, year, pageType } = this.props;
+    const { name, url, city, data, place, pageType } = this.props;
     return (
       <MainTemplates pageType={pageType}>
-        <div>
-          <div>{name}</div>
-          <div>{url}</div>
-          <div>{city}, {data}, {place}, {year}</div>
-
-          <Button as={Link} to={`/`}>
-            Close
-          </Button>
-        </div>
+        <BreakeHeader>Targi ślubne</BreakeHeader>
+        <Wrapper>         
+          <Body>
+            <Main>
+              <Picture>
+                <img src={url} alt={name} />
+              </Picture>
+            </Main>
+            <Aside>
+              <ul>
+                <li>{city}</li>
+                <li>{data}</li>
+                <li>{place}</li>
+              </ul>
+            </Aside>
+          </Body>
+        </Wrapper>
+        <Button as={Link} to={`/`}>
+          Close
+        </Button>
       </MainTemplates>
     );
   }

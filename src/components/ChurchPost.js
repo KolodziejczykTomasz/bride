@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+
+import BreakeHeader from 'components/BreakeHeader';
+import BreakeFooter from 'components/BreakeFooter';
+
 import MainTemplates from 'templates/MainTemplates';
 import styled from 'styled-components';
 
@@ -19,6 +23,36 @@ const Button = styled.a`
     text-decoration-line: none;
     color: white;
   }
+`;
+
+const Wrapper = styled.div`
+  width: 80vw;
+  margin: 2rem auto;
+  padding: 2rem 5rem;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+`;
+
+const Header = styled.h1`
+  text-align: center;
+`;
+const SubHeader = styled.h2`
+  text-align: center;
+`;
+
+const Section = styled.div`
+  margin: 4rem 0;
+`;
+const SectionHeader = styled.h3`
+  text-align: left;
+  font-weight: 600;
+`;
+const SectionText = styled.p`
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+`;
+
+const SectionFooter = styled.h3`
+  text-align: left;
 `;
 
 class ChurchPost extends Component {
@@ -65,48 +99,52 @@ class ChurchPost extends Component {
     } = this.props;
     return (
       <MainTemplates pageType={pageType}>
-        <div>
-          <div>{title}</div>
-          <div>{subtitle}</div>
-          <div>{header1}</div>
-          <div>{p1}</div>
-          <div>{p2}</div>
-          <div>{p3}</div>
-          <div>{p4}</div>
-          <div>{p5}</div>
-          <div>{p6}</div>
-          <div>{p7}</div>
-          <div>{p8}</div>
-          <div>{p9}</div>
-          <div>{p10}</div>
-          <div>{p11}</div>
-          <div>{p12}</div>
-          <div>{p13}</div>
-          <div>{p14}</div>
-          <div>{p15}</div>
-          <div>{p16}</div>
-          <div>{p17}</div>
-          <div>{p18}</div>
-          <div>{p19}</div>
-          <div>{p20}</div>
-          <div>{p21}</div>
-          <div>{p22}</div>
-          <div>{p23}</div>
-          <div>{p24}</div>
-          <div>{p25}</div>
-          <div>{p26}</div>
-          <div>{p27}</div>
-          <div>{p28}</div>
-          <div>{p29}</div>
-          <div>{p30}</div>
-          <div>{p31}</div>
-          <div>{p32}</div>
-          <div>{p33}</div>
-          <div>{f1}</div>
+        <BreakeHeader>Kościół - czytania</BreakeHeader>
+        <Wrapper>
+          <Header>{title}</Header>
+          <SubHeader>{subtitle}</SubHeader>
+          <Section>
+            <SectionHeader>{header1}</SectionHeader>
+            <SectionText>{p1}</SectionText>
+            <SectionText>{p2}</SectionText>
+            <SectionText>{p3}</SectionText>
+            <SectionText>{p4}</SectionText>
+            <SectionText>{p5}</SectionText>
+            <SectionText>{p6}</SectionText>
+            <SectionText>{p7}</SectionText>
+            <SectionText>{p8}</SectionText>
+            <SectionText>{p9}</SectionText>
+            <SectionText>{p10}</SectionText>
+            <SectionText>{p11}</SectionText>
+            <SectionText>{p12}</SectionText>
+            <SectionText>{p13}</SectionText>
+            <SectionText>{p14}</SectionText>
+            <SectionText>{p15}</SectionText>
+            <SectionText>{p16}</SectionText>
+            <SectionText>{p17}</SectionText>
+            <SectionText>{p18}</SectionText>
+            <SectionText>{p19}</SectionText>
+            <SectionText>{p20}</SectionText>
+            <SectionText>{p21}</SectionText>
+            <SectionText>{p22}</SectionText>
+            <SectionText>{p23}</SectionText>
+            <SectionText>{p24}</SectionText>
+            <SectionText>{p25}</SectionText>
+            <SectionText>{p26}</SectionText>
+            <SectionText>{p27}</SectionText>
+            <SectionText>{p28}</SectionText>
+            <SectionText>{p29}</SectionText>
+            <SectionText>{p30}</SectionText>
+            <SectionText>{p31}</SectionText>
+            <SectionText>{p32}</SectionText>
+            <SectionText>{p33}</SectionText>
+            <SectionFooter>{f1}</SectionFooter>
+          </Section>
           <Button as={Link} to={`/${pageType}`}>
             Close
           </Button>
-        </div>
+        </Wrapper>
+        <BreakeFooter>TAGI:</BreakeFooter>
       </MainTemplates>
     );
   }

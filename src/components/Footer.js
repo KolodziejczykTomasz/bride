@@ -31,7 +31,7 @@ const FooterWrapperCopyright = styled.div`
 
 const FooterWrapperCopyrightText = styled.p`
   text-align: center;
-  line-height: 3rem;
+  line-height: 7rem;
 `;
 
 const FooterTitle = styled.h1`
@@ -44,21 +44,23 @@ const FooterItemLink = styled.li`
   margin-left: 2.5rem;
 `;
 
-const Footer = ({ extras, postextras, title }) => (
+const Footer = ({ extras, postextras, brides, postbride }) => (
   <FooterWrapper>
     <FooterWrapperMultibox>
       <FooterWrapperSingleboxFirst>
         <FooterTitle>Panna Młoda</FooterTitle>
         <FooterListLink>
-          <FooterItemLink>
-            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/bride/post1">
-              Jak dobrać suknię?
-            </NavLink>
-          </FooterItemLink>
-          <FooterItemLink>
-            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/bride/post2">
-              Fryzury na 2020
-            </NavLink>
+          <FooterItemLink pageType={brides}>
+            {postbride.slice(0, 3).map(({ id, title, subtitle, picHeader }) => (
+              <FooterItem
+                id={id}
+                key={id}
+                title={title}
+                subtitle={subtitle}
+                picHeader={picHeader}
+                pageType="brides"
+              />
+            ))}
           </FooterItemLink>
         </FooterListLink>
       </FooterWrapperSingleboxFirst>
@@ -102,8 +104,8 @@ const Footer = ({ extras, postextras, title }) => (
 );
 
 const mapStateToProps = (state) => {
-  const { postextras } = state;
-  return { postextras };
+  const { postextras, postbride } = state;
+  return { postextras, postbride };
 };
 
 export default connect(mapStateToProps)(Footer);

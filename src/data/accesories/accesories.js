@@ -6,22 +6,22 @@ import acces5 from 'assets/images/accesories/no5.jpg';
 
 export default [
   {
-    id: 2,
+    id: 1,
     url: acces2,
     name: 'Dodatki',
   },
   {
-    id: 3,
+    id: 2,
     url: acces3,
     name: '......',
   },
   {
-    id: 4,
+    id: 3,
     url: acces4,
     name: '...',
   },
   {
-    id: 5,
+    id: 4,
     url: acces5,
     name: '..',
   },

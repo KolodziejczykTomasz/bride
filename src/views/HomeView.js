@@ -5,7 +5,7 @@ import Footer from 'components/Footer';
 import SliderBar from 'components/SliderBar';
 import SocialMediaBar from 'components/SocialMediaBar';
 import PressBar from 'components/PressBar';
-import HeaderBreake from 'components/HeaderBreake';
+import BreakeHeader from 'components/BreakeHeader';
 import FairBar from 'components/FairBar';
 import FairMain from 'components/FairMain';
 import CompaniesBar from 'components/CompaniesBar';
@@ -25,16 +25,16 @@ class HomeView extends Component {
         <NavbarTop />
         <SliderBar />
         <MainBar />
-        <HeaderBreake>Suknie ślubne</HeaderBreake>
+        <BreakeHeader>Suknie ślubne</BreakeHeader>
         <DressBar />
-        <HeaderBreake>Dodatki ślubne</HeaderBreake>
+        <BreakeHeader>Dodatki ślubne</BreakeHeader>
         <AccesoriesBar />
-        <HeaderBreake>Targi ślubne</HeaderBreake>
+        <BreakeHeader>Targi ślubne</BreakeHeader>
         <FairMain />
         <FairBar />
-        <HeaderBreake>Inspiracje</HeaderBreake>
+        <BreakeHeader>Inspiracje</BreakeHeader>
         <PressBar />
-        <HeaderBreake>Katalog firm</HeaderBreake>
+        <BreakeHeader>Katalog firm</BreakeHeader>
         <CompaniesBar />
         <SocialMediaBar />
         <Footer />

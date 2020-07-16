@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import HeaderBreake from 'components/HeaderBreake';
+import BreakeHeader from 'components/BreakeHeader';
 import MainTemplates from 'templates/MainTemplates';
 import ChurchItem from 'components/ChurchItem';
 import styled from 'styled-components';
@@ -14,7 +14,7 @@ const MainWarpper = styled.div`
 
 const ChurchBar = ({ postchurch }) => (
   <MainTemplates pageType="churchs">
-    <HeaderBreake>Pierwsze czytanie</HeaderBreake>
+    <BreakeHeader>Pierwsze czytanie</BreakeHeader>
     <MainWarpper>
       {postchurch
         .slice(0, 9)
@@ -104,7 +104,7 @@ const ChurchBar = ({ postchurch }) => (
           ),
         )}
     </MainWarpper>
-    <HeaderBreake>Drugie czytanie</HeaderBreake>
+    <BreakeHeader>Drugie czytanie</BreakeHeader>
     <MainWarpper>
       {postchurch
         .slice(10, 19)
@@ -194,7 +194,7 @@ const ChurchBar = ({ postchurch }) => (
           ),
         )}
     </MainWarpper>
-    <HeaderBreake>Ewangelie</HeaderBreake>
+    <BreakeHeader>Ewangelie</BreakeHeader>
     <MainWarpper>
       {postchurch
         .slice(20, 28)

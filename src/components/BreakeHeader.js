@@ -31,7 +31,7 @@ const WrapperText = styled.p`
   font-weight: 500;
 `;
 
-const HeaderBreake = ({children}) => (
+const BreakeHeader = ({ children }) => (
   <Wrapper>
     <WrapperItemLeft>
       <hr />
@@ -45,4 +45,4 @@ const HeaderBreake = ({children}) => (
   </Wrapper>
 );
 
-export default HeaderBreake;
+export default BreakeHeader;
