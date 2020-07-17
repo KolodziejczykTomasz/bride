@@ -29,6 +29,14 @@ const Wrapper = styled.div`
   padding: 2rem 5rem;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 `;
+
+const Title = styled.h1`
+  text-align: center;
+`;
+const Subtitle = styled.h2`
+  text-align: center;
+`;
+
 const PhotoBox = styled.div``;
 const Photo = styled.img`
   display: block;
@@ -36,19 +44,46 @@ const Photo = styled.img`
   margin: 5rem auto;
 `;
 
+const Details = styled.div`
+width: 50vw;
+margin: 5rem auto;
+`;
+const Price = styled.div``;
+const Category = styled.div``;
+const Descripion = styled.div``;
+const Shop = styled.div``;
 
-
+const TextBold = styled.span`
+text-transform: uppercase;
+font-weight: 600;
+padding-right: 1rem;
+`;
 
 class DressPost extends Component {
   render() {
-    const { url, pageType } = this.props;
+    const { url, pageType, name, model, price, shop, category, descripion } = this.props;
     return (
       <MainTemplates pageType={pageType}>
         <BreakeHeader>Suknie ślubne</BreakeHeader>
         <Wrapper>
-          <PhotoBox> 
+          <Title>{name}</Title>
+          <Subtitle>{model}</Subtitle>
+          <PhotoBox>
             <Photo src={url} alt="pic name" />
-            </PhotoBox>
+          </PhotoBox>
+          <Details>            
+              {price !== '' ? (<><Price><TextBold>Cena:</TextBold> {price}
+            </Price></>) : null}              
+            <Category>
+              <TextBold>Kategoria:</TextBold> {category}
+            </Category>
+            <Descripion>
+              <TextBold>Opis:</TextBold> {descripion}
+            </Descripion>
+            <Shop>
+              <TextBold>Sklep:</TextBold> {shop}
+            </Shop>
+          </Details>
           <Button as={Link} to={`/`}>
             Close
           </Button>

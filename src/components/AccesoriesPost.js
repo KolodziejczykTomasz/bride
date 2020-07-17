@@ -36,24 +36,38 @@ const Card = styled.div`
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 0.3fr 0.7fr;
-  margin: 5rem 0;
+  margin: .5rem 0;
 `;
-const Main = styled.div``;
-const Title = styled.h1`
-  margin: 5rem 0;
-`;
-const Aside = styled.div``;
 
+
+const Main = styled.div``;
 const PhotoBox = styled.div``;
 const Photo = styled.img`
   display: block;
-  width: 50rem;
-  margin: 1rem auto;
+  width: 100%;
+  margin: .2rem auto;
 `;
+
+
+const Aside = styled.div`
+padding-left: 2rem;
+`;
+const Name = styled.h1`
+  margin: .5rem 0;  
+`;
+const Price = styled.h2``;
+const Description = styled.p`
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+`;
+const Shop = styled.h3``;
+
+
+
 
 class AccesoriesPost extends Component {
   render() {
-    const { name, url, pageType } = this.props;
+    const { name, description, price, shop, url, pageType } = this.props;
     return (
       <MainTemplates pageType={pageType}>
         <BreakeHeader>Akcesoria ślubne</BreakeHeader>
@@ -65,7 +79,10 @@ class AccesoriesPost extends Component {
               </PhotoBox>
             </Main>
             <Aside>
-              <Title>{name}</Title>
+              <Name>{name}</Name>
+              <Price>{price}</Price>
+              <Description>{description}</Description>
+              <Shop>{shop}</Shop>              
             </Aside>
           </Card>
 

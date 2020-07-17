@@ -45,7 +45,7 @@ class DetailsDressView extends Component {
       case '7':
         this.setState({ id: 6 });
         break;
-     
+
       default:
         console.log('Something went wrong');
     }
@@ -63,6 +63,12 @@ class DetailsDressView extends Component {
             key={this.props.dress[id].id}
             pageType={pageType}
             url={this.props.dress[id].url}
+            shop={this.props.dress[id].shop}
+            name={this.props.dress[id].name}
+            model={this.props.dress[id].model}
+            price={this.props.dress[id].price}
+            category={this.props.dress[id].category}
+            descripion={this.props.dress[id].descripion}
           />
         )}
         <Footer />

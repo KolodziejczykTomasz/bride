@@ -51,8 +51,23 @@ const Text = styled.p`
 `;
 const TextPhoto = styled.div``;
 
-const GalleryPhotoItem = styled.img``;
-const GalleryWrapper = styled.div``;
+const GalleryPhotoItem = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.7s; 
+   :hover {
+    scale: 1.4;
+  }
+`;
+const GalleryWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 25vw);
+  grid-gap: 15px; 
+
+`;
 
 class MainPost extends Component {
   render() {
@@ -248,7 +263,7 @@ class MainPost extends Component {
           <Button as={Link} to={`/`}>
             Close
           </Button>
-          <BreakeFooter>TAGI:</BreakeFooter>          
+          <BreakeFooter>TAGI:</BreakeFooter>
         </Wrapper>
       </MainTemplates>
     );

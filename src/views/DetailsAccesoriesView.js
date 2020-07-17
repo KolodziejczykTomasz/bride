@@ -57,7 +57,10 @@ class DetailsAccesoriesView extends Component {
             key={this.props.accesories[id].id}
             pageType={pageType}
             name={this.props.accesories[id].name}
-            url={this.props.accesories[id].url}
+            url={this.props.accesories[id].url}            
+            price={this.props.accesories[id].price}
+            description={this.props.accesories[id].description}
+            shop={this.props.accesories[id].shop}
           />
         )}
         <Footer />
