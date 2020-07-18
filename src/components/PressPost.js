@@ -51,7 +51,7 @@ const Photo = styled.img`
 
 class PressPost extends Component {
   render() {
-    const { title, number, url, pageType } = this.props;
+    const { title, number, description, price, download, publisher, shop, url, pageType } = this.props;
     return (
       <MainTemplates pageType={pageType}>
         <BreakeHeader>Prasa ślubna</BreakeHeader>
@@ -66,6 +66,30 @@ class PressPost extends Component {
             <Aside>
               <Title> {title}</Title>
               {number}
+              <div>
+                {description.length !== '' ? (
+                  <>
+                    {description.map(({ url, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10 }) => (
+                      <ul>
+                        <li>{p1}</li>
+                        <li>{p2}</li>
+                        <li>{p3}</li>
+                        <li>{p4}</li>
+                        <li>{p5}</li>
+                        <li>{p6}</li>
+                        <li>{p7}</li>
+                        <li>{p8}</li>
+                        <li>{p9}</li>
+                        <li>{p10}</li>
+                      </ul>
+                    ))}
+                  </>
+                ) : null}
+              </div>
+              <div>{publisher}</div>
+              <div>{price}</div>
+              <div>{shop}</div>
+              <div>{download}</div>
             </Aside>
           </Card>
           <Button as={Link} to={`/`}>
