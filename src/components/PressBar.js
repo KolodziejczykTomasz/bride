@@ -14,17 +14,17 @@ const WrapperItem = styled.div`
 
 const PressBar = ({ mlodapara, pannamloda, uroczystosc, wedding, omsvadba }) => (
   <Wrapper>
-    {mlodapara.map(({ id, url, title, number }) => (
+    {mlodapara.slice(0, 1).map(({ id, url, title, number }) => (
       <WrapperItem>
         <PressItem id={id} url={url} key={id} title={title} number={number} pageType="mlodapara" />
       </WrapperItem>
     ))}
-    {pannamloda.map(({ id, url, title, number }) => (
+    {pannamloda.slice(0, 1).map(({ id, url, title, number }) => (
       <WrapperItem>
         <PressItem id={id} url={url} key={id} title={title} number={number} pageType="pannamloda" />
       </WrapperItem>
     ))}
-    {uroczystosc.map(({ id, url, title, number }) => (
+    {uroczystosc.slice(0, 1).map(({ id, url, title, number }) => (
       <WrapperItem>
         <PressItem
           id={id}
@@ -36,12 +36,12 @@ const PressBar = ({ mlodapara, pannamloda, uroczystosc, wedding, omsvadba }) => 
         />
       </WrapperItem>
     ))}
-    {wedding.map(({ id, url, title, number }) => (
+    {wedding.slice(0, 1).map(({ id, url, title, number }) => (
       <WrapperItem>
         <PressItem id={id} url={url} key={id} title={title} number={number} pageType="wedding" />
       </WrapperItem>
     ))}
-    {omsvadba.map(({ id, url, title, number }) => (
+    {omsvadba.slice(0, 1).map(({ id, url, title, number }) => (
       <WrapperItem>
         <PressItem id={id} url={url} key={id} title={title} number={number} pageType="omsvadba" />
       </WrapperItem>

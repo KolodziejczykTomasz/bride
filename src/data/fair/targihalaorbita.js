@@ -8,7 +8,7 @@ export default [
     street: '',
     place: '',
     data: '',
-    year: '2020',
+    year: 2020,
     name: 'Targi Ślubne'
   },
 ];

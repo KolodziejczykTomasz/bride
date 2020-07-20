@@ -71,17 +71,34 @@ class DressPost extends Component {
           <PhotoBox>
             <Photo src={url} alt="pic name" />
           </PhotoBox>
-          <Details>            
-              {price !== '' ? (<><Price><TextBold>Cena:</TextBold> {price}
-            </Price></>) : null}              
+          <Details>
+            {price !== '' ? (
+              <>
+                <Price>
+                  <TextBold>Cena:</TextBold> {price}
+                </Price>
+              </>
+            ) : null}
             <Category>
-              <TextBold>Kategoria:</TextBold> {category}
+              {category !== '' ? (
+                <>
+                  <TextBold>Kategoria:</TextBold> {category}
+                </>
+              ) : null}
             </Category>
             <Descripion>
-              <TextBold>Opis:</TextBold> {descripion}
+              {descripion !== '' ? (
+                <>
+                  <TextBold>Opis:</TextBold> {descripion}
+                </>
+              ) : null}
             </Descripion>
             <Shop>
-              <TextBold>Sklep:</TextBold> {shop}
+              {shop !== '' ? (
+                <>
+                  <TextBold>Sklep:</TextBold> {shop}
+                </>
+              ) : null}
             </Shop>
           </Details>
           <Button as={Link} to={`/`}>

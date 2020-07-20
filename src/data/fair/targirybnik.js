@@ -8,7 +8,7 @@ export default [
     street: 'ul. Św. Józefa 30',
     place: 'ZSEU Rybnik',
     data: '15.11.2020',
-    year: '2020',
+    year: 2020,
     name: 'Targi Ślubne',
   },
 ];

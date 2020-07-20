@@ -8,7 +8,7 @@ export default [
     street: 'ul. Stanisława Lema 7',
     place: 'Tauron Arena Kraków',
     data: '11.10.2020',
-    year: '2020',
+    year: 2020,
     name: 'Targi Ślubne',
   },
 ];

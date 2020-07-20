@@ -29,28 +29,21 @@ const Root = () => (
           <Route path="/prepare" component={PrepareView} />
           <Route path="/contact" component={ContactView} />
           <Route path="/company" component={CompanyView} />
-
           <Route exact path="/travels" component={TravelView} />
           <Route path="/travels/pleace/:id" component={DetailsTravelView} />
-
           <Route exact path="/brides" component={HomeView} />
           <Route path="/brides/:id" component={DetailsMainView} />
-
           <Route exact path="/extras" component={HomeView} />
           <Route path="/extras/:id" component={DetailsMainView} />
-
           <Route exact path="/accesories" component={HomeView} />
           <Route path="/accesories/:id" component={DetailsAccesoriesView} />
-
           <Route exact path="/churchs" component={ChurchView} />
           <Route path="/churchs/:id" component={DetailsChurchView} />
-
-          <Route path="/mlodapara/:id" component={DetailsPressView} />
+          <Route path="/mlodapara/:id" component={DetailsPressView} />         
           <Route path="/pannamloda/:id" component={DetailsPressView} />
           <Route path="/uroczystosc/:id" component={DetailsPressView} />
           <Route path="/wedding/:id" component={DetailsPressView} />
           <Route path="/omsvadba/:id" component={DetailsPressView} />
-
           <Route exact path="/targikrakow/:id" component={DetailsFairView} />
           <Route exact path="/targikatowice/:id" component={DetailsFairView} />
           <Route exact path="/targikielce/:id" component={DetailsFairView} />
@@ -58,7 +51,6 @@ const Root = () => (
           <Route exact path="/targilodz/:id" component={DetailsFairView} />
           <Route exact path="/targirybnik/:id" component={DetailsFairView} />
           <Route exact path="/targihalaorbita/:id" component={DetailsFairView} />
-
           <Route exact path="/dekoracje/:id" component={DetailsCompanyView} />
           <Route exact path="/atrakcje/:id" component={DetailsCompanyView} />
           <Route exact path="/moda/:id" component={DetailsCompanyView} />
@@ -66,7 +58,6 @@ const Root = () => (
           <Route exact path="/foto/:id" component={DetailsCompanyView} />
           <Route exact path="/lokale/:id" component={DetailsCompanyView} />
           <Route exact path="/pozostale/:id" component={DetailsCompanyView} />
-
           <Route exact path="/dresses" component={HomeView} />
           <Route path="/dresses/:id" component={DetailsDressView} />
         </Switch>

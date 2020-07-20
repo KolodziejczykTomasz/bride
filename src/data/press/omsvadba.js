@@ -15,43 +15,43 @@ export default [
     description: [
       {
         id: 1,
-        p1: '',
+        p1: 'Wesele na 5+',
       },
       {
         id: 2,
-        p1: '',
+        p2: 'Dzieci na weselu za i przeciw',
       },
       {
         id: 3,
-        p1: '',
+        p3: 'Moda i styl',
       },
       {
         id: 4,
-        p1: '',
+        p4: 'Doskonałe wesele',
       },
       {
         id: 5,
-        p1: '',
+        p5: 'Nowe pomysły i inspiracje',
       },
       {
         id: 6,
-        p1: '',
+        p6: '',
       },
       {
         id: 7,
-        p1: '',
+        p7: '',
       },
       {
         id: 8,
-        p1: '',
+        p8: '',
       },
       {
         id: 9,
-        p1: '',
+        p9: '',
       },
       {
         id: 10,
-        p1: '',
+        p10: '',
       },
     ],
   },

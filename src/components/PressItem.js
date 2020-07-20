@@ -56,6 +56,7 @@ class PressItem extends Component {
     if (redirect) {
       return <Redirect to={`${pageType}/${id}`} />;
     }
+    
     return (
         <Wrapper className="card" pageType={pageType} onClick={this.handleCardClick}>
           <Card class="card-content">
