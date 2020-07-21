@@ -58,8 +58,8 @@ class PressItem extends Component {
     }
     
     return (
-        <Wrapper className="card" pageType={pageType} onClick={this.handleCardClick}>
-          <Card class="card-content">
+        <Wrapper className="card" pageType={pageType}>
+          <Card class="card-content" onClick={this.handleCardClick}>
             <CardTitle className="title">
               <ImageItem src={url} alt="press" />
             </CardTitle>

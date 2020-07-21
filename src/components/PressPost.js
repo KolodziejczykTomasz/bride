@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import MainTemplates from 'templates/MainTemplates';
 import BreakeHeader from 'components/BreakeHeader';
-import BreakeFooter from 'components/BreakeFooter';
-import PressItem from 'components/PressItem';
+import PressSimilarItems from 'components/PressSimilarItems';
 import styled from 'styled-components';
 
 const Button = styled.a`
@@ -55,14 +53,7 @@ const Photo = styled.img`
   margin: 1rem auto;
 `;
 
-const WrapperFooter = styled.div`
-  display: flexbox;
-  justify-content: space-between;
-`;
 
-const WrapperFooterItem = styled.div`
-  width: 17%;
-`;
 
 const DataItem = styled.div`
 margin-left: 1rem;
@@ -83,27 +74,23 @@ const TextBold = styled.span`
 
 class PressPost extends Component {
   state = {
-    redirect: false,
-    pageType: '',
-    id: 0,
+    redirect: false, 
   };
 
-  handleCardClick = () => this.setState({ redirect: true });
+  handleCardClick = () =>
+    this.setState({
+      redirect: true,
+    });
 
   render() {
-    const { id, pageType } = this.props;
     const { redirect } = this.state;
+    const { id, pageType } = this.props;
 
     if (redirect) {
       return <Redirect to={`${pageType}/${id}`} />;
     }
 
-    const {
-      mlodapara,
-      pannamloda,
-      uroczystosc,
-      wedding,
-      omsvadba,
+    const {     
       title,
       number,
       description,
@@ -182,99 +169,7 @@ class PressPost extends Component {
               </Section>
             </Aside>
           </Card>
-          <BreakeFooter>Poprzednie wydania</BreakeFooter>
-          {pageType === 'mlodapara' ? (
-            <>
-              <WrapperFooter>
-                {mlodapara.slice(1, 6).map(({ id, url, title, number }) => (
-                  <WrapperFooterItem onClick={this.handleCardClick}>
-                    <PressItem
-                      id={id}
-                      url={url}
-                      key={id}
-                      title={title}
-                      number={number}
-                      pageType="mlodapara"
-                    />
-                  </WrapperFooterItem>
-                ))}
-              </WrapperFooter>
-            </>
-          ) : null}
-          {pageType === 'pannamloda' ? (
-            <>
-              <WrapperFooter>
-                {pannamloda.slice(1, 6).map(({ id, url, title, number }) => (
-                  <WrapperFooterItem>
-                    <PressItem
-                      id={id}
-                      url={url}
-                      key={id}
-                      title={title}
-                      number={number}
-                      pageType="pannamloda"
-                      onClick={this.handleCardClick}
-                    />
-                  </WrapperFooterItem>
-                ))}
-              </WrapperFooter>
-            </>
-          ) : null}
-          {pageType === 'uroczystosc' ? (
-            <>
-              <WrapperFooter>
-                {uroczystosc.slice(1, 6).map(({ id, url, title, number }) => (
-                  <WrapperFooterItem onClick={this.handleCardClick}>
-                    <PressItem
-                      id={id}
-                      url={url}
-                      key={id}
-                      title={title}
-                      number={number}
-                      pageType="uroczystosc"
-                    />
-                  </WrapperFooterItem>
-                ))}
-              </WrapperFooter>
-            </>
-          ) : null}
-          {pageType === 'wedding' ? (
-            <>
-              <WrapperFooter>
-                {wedding.slice(1, 6).map(({ id, url, title, number }) => (
-                  <WrapperFooterItem onClick={this.handleCardClick}>
-                    <PressItem
-                      id={id}
-                      url={url}
-                      key={id}
-                      title={title}
-                      number={number}
-                      pageType="wedding"
-                    />
-                  </WrapperFooterItem>
-                ))}
-              </WrapperFooter>
-            </>
-          ) : null}
-          {pageType === 'omsvadba' ? (
-            <>
-              <WrapperFooter>
-                {omsvadba.slice(1, 6).map(({ id, url, title, number }) => (
-                  <WrapperFooterItem onClick={this.handleCardClick}>
-                    <PressItem
-                      id={id}
-                      url={url}
-                      key={id}
-                      title={title}
-                      number={number}
-                      pageType="omsvadba"
-                    />
-                  </WrapperFooterItem>
-                ))}
-              </WrapperFooter>
-            </>
-          ) : null}
-
+          <PressSimilarItems pageType={pageType} />
           <Button as={Link} to={`/`}>
             Close
           </Button>
@@ -284,9 +179,5 @@ class PressPost extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  const { mlodapara, pannamloda, uroczystosc, wedding, omsvadba } = state;
-  return { mlodapara, pannamloda, uroczystosc, wedding, omsvadba };
-};
 
-export default connect(mapStateToProps)(PressPost);
+export default PressPost;

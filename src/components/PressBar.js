@@ -12,11 +12,13 @@ const WrapperItem = styled.div`
   width: 17%;
 `;
 
+
+
 const PressBar = ({ mlodapara, pannamloda, uroczystosc, wedding, omsvadba }) => (
   <Wrapper>
     {mlodapara.slice(0, 1).map(({ id, url, title, number }) => (
       <WrapperItem>
-        <PressItem id={id} url={url} key={id} title={title} number={number} pageType="mlodapara" />
+        <PressItem id={id} url={url} key={id} title={title} number={number} pageType="mlodapara" />        
       </WrapperItem>
     ))}
     {pannamloda.slice(0, 1).map(({ id, url, title, number }) => (

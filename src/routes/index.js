@@ -7,7 +7,7 @@ export const routes = {
          churchs: '/churchs',
          church: '/churchs/:id',
          mlodapara: '/mlodapara/:id',
-         mlodapara2: '/mlodapara/:id/',
+         mlodapara2: '/details/:id',
          pannamloda: '/pannamloda/:id',
          uroczystosc: '/uroczystosc/:id',
          wedding: '/wedding/:id',
