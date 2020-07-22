@@ -1,15 +1,23 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PressItem from 'components/PressItem';
 import styled from 'styled-components';
-import { connect } from 'react-redux';
+
 
 const Wrapper = styled.div`
-  display: flexbox;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-auto-flow: column;
+  grid-column-gap: 1rem;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-flow: unset;
+    grid-row-gap: 2rem;
+  }
 `;
 
 const WrapperItem = styled.div`
-  width: 17%;
+  width: 100%;
 `;
 
 

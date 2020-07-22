@@ -17,6 +17,11 @@ const CardHeroText = styled.div`
 const ImageItem = styled.img`
   height: 28rem;
   filter: grayscale(80%) blur(0.5px);
+  margin: 0 auto;
+  @media (max-width: 600px) {    
+    display: flex;
+    justify-self: center;
+  }
 `;
 const Wrapper = styled.div`
   cursor: pointer;

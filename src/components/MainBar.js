@@ -11,12 +11,18 @@ const Wrapper = styled.div`
   margin: 2rem 0;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   height: 50rem;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+  }
 `;
 const Main = styled.div`
   margin-bottom: 3rem;
 `;
 
-const MainWrapper = styled.div``;
+const MainWrapper = styled.div`
+  
+`;
 
 const Aside = styled.div`
   display: flex;
@@ -31,41 +37,7 @@ const MainBar = ({
   postbride,
   postextras,
   extras,
-  brides,
-  header,
-  header1,
-  header2,
-  header3,
-  header4,
-  header5,
-  header6,
-  header7,
-  header8,
-  header9,
-  header10,
-  header11,
-  p1,
-  p2,
-  p3,
-  p4,
-  p5,
-  p6,
-  p7,
-  p8,
-  p9,
-  p10,
-  p11,
-  pic1,
-  pic2,
-  pic3,
-  pic4,
-  pic5,
-  pic6,
-  pic7,
-  pic8,
-  pic9,
-  pic10,
-  pic11,
+  brides,  
   gallery
 }) => (
   <Wrapper>
@@ -78,8 +50,7 @@ const MainBar = ({
               id,
               title,
               subtitle,
-              picHeader,
-              pageType,
+              picHeader,           
               header,
               header1,
               header2,

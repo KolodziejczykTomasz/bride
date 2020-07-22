@@ -1,9 +1,21 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-
 import Carousel from 'react-multi-carousel';
 import DressItem from 'components/DressItem';
+
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-auto-flow: column;
+  grid-column-gap: 1rem;
+`;
+
+const WrapperItem = styled.div`
+  width: 100%;
+`;
 
 const responsive = {
   desktop: {
@@ -41,25 +53,24 @@ class DressBarData extends Component {
     }
 
     return (
-      <Carousel
-        ssr
-        partialVisbile
-        deviceType={deviceType}
-        itemClass="image-item"
-        responsive={responsive}
-        pageType="dresses"
-      >
-        {dress.slice(0, 7).map(({ id, url }) => {
-          return (
-            <DressItem             
-              pageType="dresses"
-              id={id}
-              key={id} 
-              url={url}
-            />
-          );
-        })}
-      </Carousel>
+      <Wrapper>
+        <Carousel
+          ssr
+          partialVisbile
+          deviceType={deviceType}
+          itemClass="image-item"
+          responsive={responsive}
+          pageType="dresses"
+        >
+          {dress.slice(0, 7).map(({ id, url }) => {
+            return (
+              <WrapperItem>
+                <DressItem pageType="dresses" id={id} key={id} url={url} />
+              </WrapperItem>
+            );
+          })}
+        </Carousel>
+      </Wrapper>
     );
   }
 }

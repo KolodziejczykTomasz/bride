@@ -8,8 +8,12 @@ import styled from 'styled-components';
 const MainWarpper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 3rem;
   margin-top: 3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 3rem;   }
 `;
 
 const ChurchBar = ({ postchurch }) => (

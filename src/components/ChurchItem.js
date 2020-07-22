@@ -3,14 +3,19 @@ import { Redirect } from 'react-router-dom';
 import styled from 'styled-components';
 
 const MainItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr 1fr);
+  grid-column-gap: 1rem;
   width: 90%;
   margin: 1rem 0 1rem 0;
   border: 1px solid grey;
   height: 6rem;
+  margin: 0 auto;
   cursor: pointer;
+  :hover  {
+    background-color: orange;
+    color: white;
+  }
 `;
 
 const MainItemText = styled.span`
@@ -34,9 +39,7 @@ class ChurchItem extends Component {
     }
     return (
       <MainItem pageType={pageType} onClick={this.handleCardClick}>
-        <MainItemText>
-          {title}    
-        </MainItemText>
+        <MainItemText>{title}</MainItemText>
       </MainItem>
     );
   }

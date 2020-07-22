@@ -65,8 +65,10 @@ const GalleryWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(8, 25vw);
-  grid-gap: 15px; 
-
+  grid-gap: 15px;
+  @media (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 class MainPost extends Component {

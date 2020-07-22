@@ -5,23 +5,23 @@ import { connect } from 'react-redux';
 
 
 const Wrapper = styled.div`
-  display: flexbox;
-  justify-content:space-between;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1rem;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const WrapperItem = styled.div`
-  width: 33%;
-  
+  width: 100%;
 `;
 
 const FairBar = ({
   targikrakow,
   targikatowice,
   targikielce,
-  targikrakowarena,
-  targilodz,
-  targirybnik,
-  targihalaorbita,
 }) => (
   <Wrapper>
     {targikrakow.map(({ id, url, place, data, city }) => (

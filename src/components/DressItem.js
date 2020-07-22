@@ -33,9 +33,7 @@ class DressItem extends Component {
 }
 const mapStateToProps = (state) => {
   const { dress } = state;
-  return {
-    dress,
-  };
+  return { dress };
 };
 
 export default connect(mapStateToProps)(DressItem);

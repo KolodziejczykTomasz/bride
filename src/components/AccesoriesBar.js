@@ -5,12 +5,17 @@ import styled from 'styled-components';
 
 
 const Wrapper = styled.div`
-  display: flexbox;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1rem;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const WrapperItem = styled.div`
-  width: 24%;
+  width: 100%;
 `;
 
 class AccesoriesBar extends Component {
