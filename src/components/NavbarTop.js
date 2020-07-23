@@ -1,18 +1,24 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { FaPhone } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import BarndMark from '../assets/images/logotypy/brendmark.jpg';
 
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  max-width: 1250px;
+`;
 
 
 const NavbarTop = () => (
-  <Fragment>
+  <Wrapper>
     <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
       <NavLink to="/">
-      <Navbar.Brand style={{ width: '130px', textTransform: 'uppercase' }} >
-        <img src={BarndMark} alt="BarndMark" /> Ślub z Klasą
-      </Navbar.Brand></NavLink>
+        <Navbar.Brand style={{ width: '130px', textTransform: 'uppercase' }}>
+          <img src={BarndMark} alt="BarndMark" /> Ślub z Klasą
+        </Navbar.Brand>
+      </NavLink>
 
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
@@ -44,6 +50,6 @@ const NavbarTop = () => (
         </Navbar.Text>
       </Navbar.Collapse>
     </Navbar>
-  </Fragment>
+  </Wrapper>
 );
 export default NavbarTop;

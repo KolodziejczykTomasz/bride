@@ -96,7 +96,7 @@ export default [
     p11:
       'Krótkie suknie ślubne potrafią być bardzo dziewczęce, zmysłowe i romantyczne. Oczywiście takie suknie są zarezerwowane dla Pań, które mogą pochwalić się zgrabnymi nogami. Przy takim kroju to właśnie nogi są maksymalnie wyeksponowane i na nie wszyscy będą zwracać uwagę.',
     pic11: Pic10,
-    gallery: [{}]
+    gallery: []
   },
   {
     id: 2,

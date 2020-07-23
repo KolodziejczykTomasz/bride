@@ -11,7 +11,7 @@ const CardHeroText = styled.div`
   display: block;
   position: absolute;
   width: 80%;
-  height: 20%;
+  height: 50%;
   top: 50%;
   left: 10%;
   background-color: rgba(192, 192, 192, 0.8);

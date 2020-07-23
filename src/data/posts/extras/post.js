@@ -55,7 +55,7 @@ export default [
     header11: '',
     p11: '',
     pic11: '',
-    gallery: [{}],
+    gallery: [],
   },
   {
     id: 2,
@@ -106,7 +106,7 @@ export default [
     header11: '',
     p11: 'Ile kosztuje? Ceny zaczynają się od 350 a mogą wynieść nawet ponad 1500 zł',
     pic11: 'pic4',
-    gallery: [{}],
+    gallery: [],
   },
   {
     id: 3,
@@ -152,7 +152,7 @@ export default [
     header11: '',
     p11: '',
     pic11: '',
-    gallery: [{}],
+    gallery: [],
   },
   {
     id: '4',
@@ -196,6 +196,6 @@ export default [
     header11: '',
     p11: '',
     pic11: '',
-    gallery: [{}],
+    gallery: []
   },
 ];

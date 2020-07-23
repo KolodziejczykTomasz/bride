@@ -7,10 +7,10 @@ const CardTitle = styled.p``;
 const CardHeroText = styled.div`
   display: block;
   position: absolute;
-  width: 100%;
-  height: 20%;
+  width: 80%;
+  height: 50%;
   top: 50%;
-  left: 0%;
+  left: 10%;
   background-color: rgba(192, 192, 192, 0.8);
   opacity: 0;
 `;
@@ -18,16 +18,24 @@ const ImageItem = styled.img`
   height: 28rem;
   filter: grayscale(80%) blur(0.5px);
   margin: 0 auto;
-  @media (max-width: 600px) {    
+  @media (max-width: 600px) {
+    display: flex;
+    justify-self: center;
+  }
+  @media (min-width: 600px) {
+    display: flex;
+    justify-self: center;
+  }
+  @media (min-width: 768px) {
     display: flex;
     justify-self: center;
   }
 `;
 const Wrapper = styled.div`
   cursor: pointer;
-  transition: 0.7s;
+  transition: 0.5s;
   :hover {
-    scale: 1.2;
+    scale: 1.1;
   }
   :hover ${CardHeroText} {
     opacity: 1;
@@ -44,7 +52,7 @@ const CardHeroTextTitle = styled.p`
   display: block;
   text-align: center;
   margin: 12% auto;
-  font-size: 2.2rem;
+  font-size: 2rem;
 `;
 
 class PressItem extends Component {

@@ -108,6 +108,27 @@ class DetailsChurchView extends Component {
       case '28':
         this.setState({ id: 27 });
         break;
+      case '29':
+        this.setState({ id: 28 });
+        break;
+      case '30':
+        this.setState({ id: 29 });
+        break;
+      case '31':
+        this.setState({ id: 30 });
+        break;
+      case '32':
+        this.setState({ id: 31 });
+        break;
+      case '33':
+        this.setState({ id: 32 });
+        break;
+      case '34':
+        this.setState({ id: 33 });
+        break;
+      case '35':
+        this.setState({ id: 34 });
+        break;
       default:
         console.log('Something went wrong');
     }

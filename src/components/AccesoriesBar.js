@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import AccesoriesItem from './AccesoriesItem';
 import styled from 'styled-components';
 
-
 const Wrapper = styled.div`
   display: grid;
   grid-template-rows: 1fr;
@@ -12,6 +11,18 @@ const Wrapper = styled.div`
   @media (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
   }
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (min-width: 1224px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 `;
 
 const WrapperItem = styled.div`
@@ -19,33 +30,24 @@ const WrapperItem = styled.div`
 `;
 
 class AccesoriesBar extends Component {
-  
   render() {
-    const { accesories} = this.props;
-    
+    const { accesories } = this.props;
+
     return (
       <Wrapper>
         {accesories.map(({ id, url, name }) => (
           <WrapperItem>
-            <AccesoriesItem
-              id={id}
-              url={url}
-              name={name}
-              pageType="accesories"            
-            />
+            <AccesoriesItem id={id} url={url} name={name} pageType="accesories" />
           </WrapperItem>
         ))}
       </Wrapper>
     );
   }
-};
-
-
-
+}
 
 const mapStateToProps = (state) => {
   const { accesories } = state;
   return { accesories };
-}
+};
 
 export default connect(mapStateToProps)(AccesoriesBar);

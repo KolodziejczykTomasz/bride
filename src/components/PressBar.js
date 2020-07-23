@@ -14,6 +14,31 @@ const Wrapper = styled.div`
     grid-auto-flow: unset;
     grid-row-gap: 2rem;
   }
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: unset;
+    grid-row-gap: 2rem;
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: unset;
+    grid-row-gap: 2rem;
+  }
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: unset;
+    grid-row-gap: 2rem;
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: unset;
+    grid-row-gap: 2rem;
+  }
+  @media (min-width: 1224px) {
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+    grid-column-gap: 1rem;
+  }
 `;
 
 const WrapperItem = styled.div`

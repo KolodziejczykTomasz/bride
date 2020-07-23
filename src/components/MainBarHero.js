@@ -4,30 +4,45 @@ import MainTemplates from 'templates/MainTemplates';
 
 import styled from 'styled-components';
 
-const Card = styled.div`
-  display: flex;
-  flex-shrink: 1;
-  width: 100%;  
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto 1fr);
 `;
-const CardImg = styled.img`
-  min-width: 40%;
-  padding: 2rem 2rem;
+
+const PhotoBox = styled.div`
+  margin-top: 1rem;
+  width: 100%;
 `;
-const CardBody = styled.div``;
-const CardTitle = styled.h1`
-  margin-top: 2rem;
+
+const Photo = styled.img`
+  display: block;
+  width: 65%;
+  margin: auto auto;
+`;
+
+const Description = styled.div`
+  width: 100%;
+`;
+
+const Title = styled.h1`
+  margin: 3rem 0 1rem 0;
+  padding: 0 1rem;
+`;
+const Subtitle = styled.h2`
+  padding: 0 1rem;
+`;
+const Text = styled.p`
   padding: 0 1.5rem;
-`;
-const CardSubtitle = styled.h2`
-  padding: 0 1.5rem;
-`;
-const CardText = styled.p`
-  padding: 1.5rem 1.5rem;
+  font-size: 1.6rem;
+  line-height: 24px;
 `;
 const Button = styled.button`
-  float: right;
-  margin-top: 2rem;
+  display: flex;
+  justify-self: right;
+  width: 19rem;
   margin-right: 5rem;
+  margin-bottom: 2rem;
   padding: 1.5rem 4rem;
 `;
 
@@ -47,18 +62,22 @@ class MainBarHero extends Component {
     }
     return (
       <MainTemplates>
-        <Card pageType={extras}>
-          <CardImg top width="100%" src={picHeader} alt="Card image cap" />
-          <CardBody>
-            <CardTitle>{title}</CardTitle>
-            <CardSubtitle>
-              <hr />
-            </CardSubtitle>
-            <CardText>{subtitle}</CardText>
-            <CardText>{header}</CardText>
+        <Description>
+          <Title>{title}</Title>
+          <Subtitle>
+            <hr />
+          </Subtitle>
+        </Description>
+        <Wrapper pageType={extras}>
+          <PhotoBox>
+            <Photo src={picHeader} alt={title} />
+          </PhotoBox>
+          <Description>
+            <Text>{subtitle}</Text>
+            <Text>{header}</Text>
             <Button onClick={this.handleCardClick}>Zobacz więcej</Button>
-          </CardBody>
-        </Card>
+          </Description>
+        </Wrapper>
       </MainTemplates>
     );
   }

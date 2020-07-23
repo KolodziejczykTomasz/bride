@@ -5,6 +5,56 @@ import styled from 'styled-components';
 import BreakeHeader from 'components/BreakeHeader';
 import BreakeFooter from 'components/BreakeFooter';
 
+const Wrapper = styled.div`
+  width: 80vw;
+  margin: 2rem auto;
+  padding: 2rem 5rem;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+`;
+
+const Header = styled.div``;
+const Title = styled.h2``;
+const Subtitle = styled.h3``;
+
+const PhotoBox = styled.div`
+  width: 100%;
+`;
+const Photo = styled.img`
+  display: block;
+  width: 50%;
+  margin: 5rem auto;
+`;
+
+const Section = styled.div`
+  margin: 2rem 0;
+`;
+
+const TextHeader = styled.div``;
+const Text = styled.p`
+  font-size: 1.4rem;
+`;
+const TextPhoto = styled.div``;
+
+const GalleryPhotoItem = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.7s;
+     :hover {
+    scale: 1.4;
+  }
+`;
+const GalleryWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 25vw);
+  grid-gap: 15px;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+
 const Button = styled.a`
   display: grid;
   position: fixed;
@@ -20,54 +70,6 @@ const Button = styled.a`
   :hover {
     text-decoration-line: none;
     color: white;
-  }
-`;
-
-const Wrapper = styled.div`
-  width: 80vw;
-  margin: 2rem auto;
-  padding: 2rem 5rem;
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
-`;
-
-const Header = styled.div``;
-const Title = styled.h2``;
-const Subtitle = styled.h3``;
-
-const PhotoBox = styled.div``;
-const Photo = styled.img`
-  display: block;
-  width: 40rem;
-  margin: 5rem auto;
-`;
-
-const Section = styled.div`
-  margin: 4rem 0;
-`;
-
-const TextHeader = styled.div``;
-const Text = styled.p`
-  font-size: 1.4rem;
-`;
-const TextPhoto = styled.div``;
-
-const GalleryPhotoItem = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  cursor: pointer;
-  transition: 0.7s; 
-   :hover {
-    scale: 1.4;
-  }
-`;
-const GalleryWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(8, 25vw);
-  grid-gap: 15px;
-  @media (max-width: 600px) {
-        grid-template-columns: repeat(1, 1fr);
   }
 `;
 
