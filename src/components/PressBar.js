@@ -7,42 +7,33 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   display: grid;
   grid-template-rows: 1fr;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 1rem;
   @media (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-flow: unset;
-    grid-row-gap: 2rem;
   }
   @media (min-width: 600px) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-flow: unset;
-    grid-row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);    
   }
   @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-flow: unset;
-    grid-row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);   
+    
   }
   @media (min-width: 992px) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: unset;
-    grid-row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);   
+    
   }
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: unset;
-    grid-row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);   
   }
   @media (min-width: 1224px) {
-    grid-template-rows: 1fr;
-    grid-auto-flow: column;
-    grid-column-gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
   }
 `;
 
 const WrapperItem = styled.div`
   width: 100%;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 `;
 
 

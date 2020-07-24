@@ -2,57 +2,67 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import styled from 'styled-components';
 
-const CardTitle = styled.p``;
-
-const CardHeroText = styled.div`
-  display: block;
-  position: absolute;
-  width: 80%;
-  height: 50%;
-  top: 50%;
-  left: 10%;
-  background-color: rgba(192, 192, 192, 0.8);
-  opacity: 0;
-`;
-const ImageItem = styled.img`
-  height: 28rem;
-  filter: grayscale(80%) blur(0.5px);
-  margin: 0 auto;
-  @media (max-width: 600px) {
-    display: flex;
-    justify-self: center;
-  }
-  @media (min-width: 600px) {
-    display: flex;
-    justify-self: center;
-  }
-  @media (min-width: 768px) {
-    display: flex;
-    justify-self: center;
-  }
-`;
 const Wrapper = styled.div`
+  position: relative;
+  height: 30rem;
   cursor: pointer;
+  transition: 0.5s;
+  border: 1px solid black;
   transition: 0.5s;
   :hover {
     scale: 1.1;
-  }
-  :hover ${CardHeroText} {
-    opacity: 1;
-  }
-  :hover ${ImageItem} {
-    filter: none;
+    z-index: 999;
   }
 `;
+
 const Card = styled.div`
-  position: relative;
+  position: relative  
 `;
 
 const CardHeroTextTitle = styled.p`
   display: block;
   text-align: center;
   margin: 12% auto;
-  font-size: 2rem;
+  font-size: 2.2rem;
+`;
+
+const CardHeroText = styled.div`
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background: rgba(90, 0, 10, 0.4);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  :hover {
+    opacity: 1;
+  }
+`;
+
+const PhotoBox = styled.div`
+  width: 100%;
+`;
+
+const ImageItem = styled.img`
+  display: block;
+  width: 100%;
+  height: 28rem;
+  padding: 5px 5px;
+  margin: 0 auto;
+  :hover {
+    scale: 1.2;
+    z-index: 999;
+    filter: blur(2px);
+  }
 `;
 
 class PressItem extends Component {
@@ -69,23 +79,20 @@ class PressItem extends Component {
     if (redirect) {
       return <Redirect to={`${pageType}/${id}`} />;
     }
-    
+
     return (
-        <Wrapper className="card" pageType={pageType}>
-          <Card class="card-content" onClick={this.handleCardClick}>
-            <CardTitle className="title">
-              <ImageItem src={url} alt="press" />
-            </CardTitle>
-          </Card>
-          <CardHeroText>
-            <CardHeroTextTitle>Numer: {number}</CardHeroTextTitle>
-          </CardHeroText>
-        </Wrapper>    
+      <Wrapper pageType={pageType} onClick={this.handleCardClick}>
+        <Card>
+          <PhotoBox>
+            <ImageItem src={url} alt="press" />
+          </PhotoBox>
+        </Card>
+        <CardHeroText>
+          <CardHeroTextTitle>Numer: {number}</CardHeroTextTitle>
+        </CardHeroText>
+      </Wrapper>
     );
   }
 }
-
-
-
 
 export default PressItem;

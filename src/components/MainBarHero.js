@@ -19,6 +19,8 @@ const Photo = styled.img`
   display: block;
   width: 65%;
   margin: auto auto;
+  border: 1px solid #d2d0d0;
+  box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
 `;
 
 const Description = styled.div`

@@ -23,6 +23,8 @@ const Photo = styled.img`
   display: block;
   width: 50%;
   margin: 5rem auto;
+  border: 1px solid #d2d0d0;
+  box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
 `;
 
 const Section = styled.div`
@@ -39,6 +41,8 @@ const GalleryPhotoItem = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: 0.7s;
      :hover {
@@ -47,13 +51,24 @@ const GalleryPhotoItem = styled.img`
 `;
 const GalleryWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-template-rows: repeat(8, 25vw);
   grid-gap: 15px;
+  align-items: stretch;
   @media (max-width: 600px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
   }
 `;
+
 
 const Button = styled.a`
   display: grid;
@@ -253,17 +268,20 @@ class MainPost extends Component {
               ) : null}
             </TextPhoto>
           </Section>
-          <Section>
-            <GalleryWrapper>
-              {gallery.length !== '' ? (
-                <>
-                  {gallery.map(({ url, title }) => (
+          {gallery.length ? (
+            <>
+              <GalleryWrapper>
+                {gallery.map(({ url, title }) => (
+                  <>
                     <GalleryPhotoItem src={url} alt={title} />
-                  ))}
-                </>
-              ) : null}
-            </GalleryWrapper>
-          </Section>
+                  </>
+                ))}
+              </GalleryWrapper>
+            </>
+          ) : (
+            null
+          )}
+
           <Button as={Link} to={`/`}>
             Close
           </Button>

@@ -6,25 +6,37 @@ import styled from 'styled-components';
 const Card = styled.div`
   position: relative;
 `;
-const CardText = styled.p`
-  height: auto;
-`;
+
 const CardHeroText = styled.div`
-  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
   position: absolute;
-  width: 80%;
-  height: 50%;
-  top: 50%;
-  left: 10%;
-  background-color: rgba(192, 192, 192, 0.8);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background: rgba(90, 0, 10, 0.4);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  :hover {
+    opacity: 1;
+  }
 `;
 const Wrapper = styled.div`
+  position: relative;
   height: 30rem;
   margin-bottom: 10rem;
   cursor: pointer;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   transition: 0.5s;
   :hover {
-    scale: 1.1;
+    scale: 1.2;
     z-index: 999;
   }
 `;
@@ -35,12 +47,21 @@ const CardHeroTextTitle = styled.p`
   font-size: 2rem;
 `;
 
+const PhotoBox = styled.div`
+  width: 100%;
+`;
+
 const ImageItem = styled.img`
   display: block;
   width: 100%;
   height: 28rem;
   padding: 5px 5px;
-  margin: 0 auto;
+  margin: 0 auto; 
+  :hover {
+    scale: 1.1;
+    z-index: 999;
+    filter: blur(2px);
+  }
 `;
 
 class TravelItem extends Component {
@@ -59,11 +80,11 @@ class TravelItem extends Component {
     }
 
     return (
-      <Wrapper className="card" onClick={this.handleCardClick}>
-        <Card class="card-content">
-          <CardText className="title">
+      <Wrapper>
+        <Card onClick={this.handleCardClick}>
+          <PhotoBox>
             <ImageItem src={url} alt={pleace} />
-          </CardText>
+          </PhotoBox>
         </Card>
         <CardHeroText>
           <CardHeroTextTitle>{pleace}</CardHeroTextTitle>

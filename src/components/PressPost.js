@@ -53,8 +53,6 @@ const Photo = styled.img`
   margin: 1rem auto;
 `;
 
-
-
 const DataItem = styled.div`
 margin-left: 1rem;
 `;

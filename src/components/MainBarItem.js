@@ -43,6 +43,8 @@ const Photo = styled.img`
   margin-top: 3rem;
   width: 40vw;
   max-width: 110px;
+  border: 1px solid #d2d0d0;
+  box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
 `;
 
 const Button = styled.button`
