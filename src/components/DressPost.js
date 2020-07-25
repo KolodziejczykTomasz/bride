@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import MainTemplates from 'templates/MainTemplates';
 import BreakeHeader from 'components/BreakeHeader';
 import BreakeFooter from 'components/BreakeFooter';
+
 import styled from 'styled-components';
 
 const Button = styled.a`
@@ -61,7 +62,7 @@ padding-right: 1rem;
 
 class DressPost extends Component {
   render() {
-    const { url, pageType, name, model, price, shop, category, descripion } = this.props;
+    const { url, pageType, name, model, price, shop, category, descripion, tags } = this.props;
     return (
       <MainTemplates pageType={pageType}>
         <BreakeHeader>Suknie ślubne</BreakeHeader>
@@ -104,8 +105,8 @@ class DressPost extends Component {
           <Button as={Link} to={`/`}>
             Close
           </Button>
-        </Wrapper>
-        <BreakeFooter>TAGI:</BreakeFooter>
+        </Wrapper>                  
+            {tags.length !== '' ? (<><BreakeFooter>TAGI:{tags.map(({ tag }) => (<p>{tag}</p>))}</BreakeFooter></>) : null}    
       </MainTemplates>
     );
   }

@@ -38,6 +38,9 @@ const NavbarTop = () => (
           <NavLink style={{ width: '140px', textDecoration: 'none', color: 'black' }} to="/company">
             Katalog firm
           </NavLink>
+          <NavLink style={{ width: '140px', textDecoration: 'none', color: 'black' }} to="/fairlist">
+            Targi ślubne
+          </NavLink>
           <NavLink style={{ width: '120px', textDecoration: 'none', color: 'black' }} to="/contact">
             Kontakt
           </NavLink>

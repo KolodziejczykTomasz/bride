@@ -13,7 +13,16 @@ const WrapperTabRow = styled.div`
   margin-top: 1.2rem;
 `;
 
-const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekoracje }) => {
+const CompaniesBar = ({
+  pozostale,
+  lokale,
+  foto,
+  zespoly,
+  moda,
+  atrakcje,
+  dekoracje,
+  description,
+}) => {
   const [activeTab, setActiveTab] = useState('1');
 
   const toggle = (tab) => {
@@ -101,7 +110,7 @@ const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekora
               <Row>
                 {dekoracje.length ? (
                   <>
-                    {dekoracje.map(({ id, url, title, subtitle, price, city }) => (
+                    {dekoracje.map(({ id, url, title, subtitle, price, city, description }) => (
                       <CompaniesItem
                         id={id}
                         url={url}
@@ -109,6 +118,7 @@ const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekora
                         price={price}
                         title={title}
                         subtitle={subtitle}
+                        description={description}
                         city={city}
                         pageType="dekoracje"
                       />
@@ -125,7 +135,7 @@ const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekora
               <Row>
                 {atrakcje.length ? (
                   <>
-                    {atrakcje.map(({ id, url, title, subtitle, price, city }) => (
+                    {atrakcje.map(({ id, url, title, subtitle, price, city, description }) => (
                       <CompaniesItem
                         id={id}
                         url={url}
@@ -134,6 +144,7 @@ const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekora
                         title={title}
                         subtitle={subtitle}
                         city={city}
+                        description={description}
                         pageType="atrakcje"
                       />
                     ))}
@@ -149,7 +160,7 @@ const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekora
               <Row>
                 {moda.length ? (
                   <>
-                    {moda.map(({ id, url, title, subtitle, price, city }) => (
+                    {moda.map(({ id, url, title, subtitle, price, city, description }) => (
                       <CompaniesItem
                         id={id}
                         url={url}
@@ -158,6 +169,7 @@ const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekora
                         title={title}
                         subtitle={subtitle}
                         city={city}
+                        description={description}
                         pageType="moda"
                       />
                     ))}
@@ -173,7 +185,7 @@ const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekora
               <Row>
                 {zespoly.length ? (
                   <>
-                    {zespoly.map(({ id, url, title, subtitle, price, city }) => (
+                    {zespoly.map(({ id, url, title, subtitle, price, city, description }) => (
                       <CompaniesItem
                         id={id}
                         url={url}
@@ -182,6 +194,7 @@ const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekora
                         title={title}
                         subtitle={subtitle}
                         city={city}
+                        description={description}
                         pageType="zespoly"
                       />
                     ))}
@@ -197,7 +210,7 @@ const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekora
               <Row>
                 {foto.length ? (
                   <>
-                    {foto.map(({ id, url, title, subtitle, price, city }) => (
+                    {foto.map(({ id, url, title, subtitle, price, city, description }) => (
                       <CompaniesItem
                         id={id}
                         url={url}
@@ -206,6 +219,7 @@ const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekora
                         title={title}
                         subtitle={subtitle}
                         city={city}
+                        description={description}
                         pageType="foto"
                       />
                     ))}
@@ -221,7 +235,7 @@ const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekora
               <Row>
                 {lokale.length ? (
                   <>
-                    {lokale.map(({ id, url, title, subtitle, price, city }) => (
+                    {lokale.map(({ id, url, title, subtitle, price, city, description }) => (
                       <CompaniesItem
                         id={id}
                         url={url}
@@ -230,6 +244,7 @@ const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekora
                         title={title}
                         subtitle={subtitle}
                         city={city}
+                        description={description}
                         pageType="lokale"
                       />
                     ))}
@@ -245,7 +260,7 @@ const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekora
               <Row>
                 {pozostale.length ? (
                   <>
-                    {pozostale.map(({ id, url, title, subtitle, price, city }) => (
+                    {pozostale.map(({ id, url, title, subtitle, price, city, description }) => (
                       <CompaniesItem
                         id={id}
                         url={url}
@@ -254,6 +269,7 @@ const CompaniesBar = ({ pozostale, lokale, foto, zespoly, moda, atrakcje, dekora
                         title={title}
                         subtitle={subtitle}
                         city={city}
+                        description={description}
                         pageType="pozostale"
                       />
                     ))}

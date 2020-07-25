@@ -55,9 +55,15 @@ const Text = styled.p`
   line-height: 2.4rem;
 `;
 
+const DescriptionItemList = styled.ul`
+  margin-left: 3rem;
+`;
+const DescriptionItemListItem = styled.li``;
+
+
 class TravelPost extends Component {
   render() {
-    const { url, pleace, price, description, pageType } = this.props;
+    const { url, pleace, price, description, pageType, tags } = this.props;
     return (
       <MainTemplates pageType={pageType}>
         <BreakeHeader>Podróż poślubna</BreakeHeader>
@@ -65,7 +71,26 @@ class TravelPost extends Component {
           <Header>{pleace}</Header>
           <SubHeader>{price}</SubHeader>
           <Section>
-            <Text>{description}</Text>
+            <Text>
+              {description.length !== '' ? (
+                <>
+                  {description.map(({ p1, p2, p3, p4, p5, p6, p7, p8, p9, p10 }) => (
+                    <DescriptionItemList>
+                      <DescriptionItemListItem>{p1}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p2}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p3}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p4}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p5}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p6}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p7}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p8}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p9}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p10}</DescriptionItemListItem>
+                    </DescriptionItemList>
+                  ))}
+                </>
+              ) : null}
+            </Text>
           </Section>
           <PhotoBox>
             <Photo src={url} alt={pleace} />
@@ -74,7 +99,16 @@ class TravelPost extends Component {
             Close
           </Button>
         </Wrapper>
-        <BreakeFooter>TAGI:</BreakeFooter>
+        {tags.length !== '' ? (
+          <>
+            <BreakeFooter>
+              TAGI:
+              {tags.map(({ tag }) => (
+                <p>{tag}</p>
+              ))}
+            </BreakeFooter>
+          </>
+        ) : null}         
       </MainTemplates>
     );
   }

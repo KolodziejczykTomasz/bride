@@ -74,6 +74,10 @@ class DetailsFairView extends Component {
             data={this.props.targikrakow[id].data}
             year={this.props.targikrakow[id].year}
             name={this.props.targikrakow[id].name}
+            description={this.props.targikrakow[id].description}
+            tags={this.props.targikrakow[id].tags}
+            category={this.props.targikrakow[id].category}
+            gallery={this.props.targikrakow[id].gallery}
           />
         )}
         {pageType === 'targikatowice' && (
@@ -87,6 +91,10 @@ class DetailsFairView extends Component {
             data={this.props.targikatowice[id].data}
             year={this.props.targikatowice[id].year}
             name={this.props.targikatowice[id].name}
+            tags={this.props.targikatowice[id].tags}
+            description={this.props.targikatowice[id].description}
+            category={this.props.targikatowice[id].category}
+            gallery={this.props.targikatowice[id].gallery}
           />
         )}
         {pageType === 'targikielce' && (
@@ -100,6 +108,10 @@ class DetailsFairView extends Component {
             data={this.props.targikielce[id].data}
             year={this.props.targikielce[id].year}
             name={this.props.targikielce[id].name}
+            tags={this.props.targikielce[id].tags}
+            description={this.props.targikielce[id].description}
+            category={this.props.targikielce[id].category}
+            gallery={this.props.targikielce[id].gallery}
           />
         )}
         {pageType === 'targikrakowarena' && (
@@ -113,11 +125,14 @@ class DetailsFairView extends Component {
             data={this.props.targikrakowarena[id].data}
             year={this.props.targikrakowarena[id].year}
             name={this.props.targikrakowarena[id].name}
+            tags={this.props.targikrakowarena[id].tags}
+            description={this.props.targikrakowarena[id].description}
+            category={this.props.targikrakowarena[id].category}
+            gallery={this.props.targikrakowarena[id].gallery}
           />
         )}
         {pageType === 'targilodz' && (
           <FairPost
-            key={this.props.targilodz[id].id}
             pageType={pageType}
             url={this.props.targilodz[id].url}
             city={this.props.targilodz[id].city}
@@ -126,6 +141,10 @@ class DetailsFairView extends Component {
             data={this.props.targilodz[id].data}
             year={this.props.targilodz[id].year}
             name={this.props.targilodz[id].name}
+            tags={this.props.targilodz[id].tags}
+            description={this.props.targilodz[id].description}
+            category={this.props.targilodz[id].category}
+            gallery={this.props.targilodz[id].gallery}
           />
         )}
         {pageType === 'targirybnik' && (
@@ -139,6 +158,10 @@ class DetailsFairView extends Component {
             data={this.props.targirybnik[id].data}
             year={this.props.targirybnik[id].year}
             name={this.props.targirybnik[id].name}
+            description={this.props.targirybnik[id].description}
+            tags={this.props.targirybnik[id].tags}
+            category={this.props.targirybnik[id].category}
+            gallery={this.props.targirybnik[id].gallery}
           />
         )}
         {pageType === 'targihalaorbita' && (
@@ -152,6 +175,10 @@ class DetailsFairView extends Component {
             data={this.props.targihalaorbita[id].data}
             year={this.props.targihalaorbita[id].year}
             name={this.props.targihalaorbita[id].name}
+            tags={this.props.targihalaorbita[id].tags}
+            description={this.props.targihalaorbita[id].description}
+            category={this.props.targihalaorbita[id].category}
+            gallery={this.props.targihalaorbita[id].gallery}
           />
         )}
         <Footer />

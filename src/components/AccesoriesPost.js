@@ -36,7 +36,7 @@ const Card = styled.div`
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 0.3fr 0.7fr;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 `;
 
 

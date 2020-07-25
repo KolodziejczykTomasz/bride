@@ -9,13 +9,15 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 1rem;
   @media (max-width: 600px) {
-    grid-template-columns: repeat(1, .5fr);
+    grid-template-columns: 0.6fr;
+    justify-content: center;
+    
   }
   @media (min-width: 600px) {
-    grid-template-columns: repeat(2, .5fr);
+    grid-template-columns: repeat(3, 0.5fr);
   }
   @media (min-width: 768px) {
-    grid-template-columns: repeat(2, .5fr);
+    grid-template-columns: repeat(3, 0.5fr);
   }
   @media (min-width: 1024px) {
     grid-template-columns: repeat(4, 1fr);

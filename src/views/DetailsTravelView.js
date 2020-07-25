@@ -77,6 +77,9 @@ class DetailsTravelView extends Component {
             pleace={this.props.travel[id].pleace}
             price={this.props.travel[id].price}
             description={this.props.travel[id].description}
+            tags={this.props.travel[id].tags}
+            category={this.props.travel[id].category}
+            gallery={this.props.travel[id].gallery}
           />
         )}
         <Footer />

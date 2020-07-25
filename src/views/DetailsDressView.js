@@ -69,6 +69,7 @@ class DetailsDressView extends Component {
             price={this.props.dress[id].price}
             category={this.props.dress[id].category}
             descripion={this.props.dress[id].descripion}
+            tags={this.props.dress[id].tags}
           />
         )}
         <Footer />

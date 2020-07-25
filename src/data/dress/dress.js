@@ -16,6 +16,10 @@ export default [
     price: '',
     category: ' Litera A / Princessa / Księżniczka ',
     descripion: 'Tkaniny: Koronka / Tiul',
+    tags: [
+      { id: 1, tag: 'test1' },
+      { id: 2, tag: 'test1' },
+    ],
   },
   {
     id: 2,
@@ -26,6 +30,10 @@ export default [
     price: 'Wyprzedaż: 2990 zł',
     category: ' Bez zdobień / Boho / Litera A / Princessa / Księżniczka / Romantyczne',
     descripion: 'Tkaniny: Koronka / Tiul',
+    tags: [
+      { id: 1, tag: 'test1' },
+      { id: 2, tag: 'test1' },
+    ],
   },
   {
     id: 3,
@@ -36,6 +44,10 @@ export default [
     price: 'Wyprzedaż: 2490 zł',
     category: 'Litera A / Proste / Romantyczne / Skromne',
     descripion: 'Tkaniny: Koronka / Tiul',
+    tags: [
+      { id: 1, tag: 'test1' },
+      { id: 2, tag: 'test1' },
+    ],
   },
   {
     id: 4,
@@ -46,6 +58,10 @@ export default [
     price: 'Wyprzedaż: 2390 zł',
     category: 'Do cywilnego / Princessa / ',
     descripion: 'Tkaniny: Satyna',
+    tags: [
+      { id: 1, tag: 'test1' },
+      { id: 2, tag: 'test1' },
+    ],
   },
   {
     id: 5,
@@ -56,6 +72,10 @@ export default [
     price: '',
     category: 'Romantyczne / Zwiewne',
     descripion: 'Tkaniny: Koronka / Muślin / Szyfon',
+    tags: [
+      { id: 1, tag: 'test1' },
+      { id: 2, tag: 'test1' },
+    ],
   },
   {
     id: 6,
@@ -66,6 +86,10 @@ export default [
     price: '',
     category: ' Bez zdobień / Boho / Do cywilnego',
     descripion: 'Tkaniny: Koronka / Tiul',
+    tags: [
+      { id: 1, tag: 'test1' },
+      { id: 2, tag: 'test1' },
+    ],
   },
   {
     id: 7,
@@ -76,5 +100,9 @@ export default [
     price: '',
     category: ' Proste',
     descripion: 'Tkaniny: Koronka / Tiul',
+    tags: [
+      { id: 1, tag: 'test1' },
+      { id: 2, tag: 'test1' },
+    ],
   },
 ];

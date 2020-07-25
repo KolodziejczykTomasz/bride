@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const Card = styled.div`
   position: relative;
 `;
-const CardText = styled.p``;
+
 const CardHeroText = styled.div`
   font-size: 1.5em;
   font-weight: bold;
@@ -33,6 +33,7 @@ const Wrapper = styled.div`
   height: 30rem;
   margin-bottom: 10rem;
   cursor: pointer;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   transition: 0.5s;
   :hover {
     scale: 1;
@@ -59,6 +60,10 @@ const ImageItem = styled.img`
   }
 `;
 
+const PhotoBox = styled.div`
+  width: 100%;
+`;
+
 class AccesoriesItem extends Component {
   state = {
     redirect: false,
@@ -75,11 +80,11 @@ class AccesoriesItem extends Component {
     }
 
     return (
-      <Wrapper className="card">
-        <Card class="card-content" onClick={this.handleCardClick}>
-          <CardText className="title">
+      <Wrapper onClick={this.handleCardClick}>
+        <Card>
+          <PhotoBox>
             <ImageItem src={url} alt={name} />
-          </CardText>
+          </PhotoBox>
         </Card>
         <CardHeroText>
           <CardHeroTextTitle>{name}</CardHeroTextTitle>

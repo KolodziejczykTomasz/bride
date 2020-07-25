@@ -80,8 +80,8 @@ class TravelItem extends Component {
     }
 
     return (
-      <Wrapper>
-        <Card onClick={this.handleCardClick}>
+      <Wrapper onClick={this.handleCardClick}>
+        <Card>
           <PhotoBox>
             <ImageItem src={url} alt={pleace} />
           </PhotoBox>

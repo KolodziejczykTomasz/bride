@@ -6,7 +6,6 @@ export default [
     url: press3,
     title: 'Wedding',
     number: '2/2019 (24)',
-    category: 'Prasa ślubna',
     year: '',
     download: '',
     shop: '',
@@ -54,5 +53,10 @@ export default [
         p10: '',
       },
     ],
+    tags: [
+      { id: 1, tag: 'Wedding' },
+      { id: 2, tag: 'prasa ślubna' },
+    ],
+    category: 'Prasa ślubna',
   },
 ];

@@ -62,10 +62,19 @@ class DressBarData extends Component {
           responsive={responsive}
           pageType="dresses"
         >
-          {dress.slice(0, 7).map(({ id, url }) => {
+          {dress.slice(0, 7).map(({ id, url, name, model, tags, description }) => {
             return (
               <WrapperItem>
-                <DressItem pageType="dresses" id={id} key={id} url={url} />
+                <DressItem
+                  pageType="dresses"
+                  id={id}
+                  key={id}
+                  url={url}
+                  description={description}
+                  name={name}
+                  model={model}
+                  tags={tags}
+                />
               </WrapperItem>
             );
           })}

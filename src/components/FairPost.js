@@ -39,13 +39,20 @@ const Main = styled.div``;
 const Aside = styled.div``;
 const Picture = styled.div``;
 
+const DescriptionItemList = styled.ul`
+  margin-left: 3rem;
+`;
+const DescriptionItemListItem = styled.li``;
+
+
+
 class FairPost extends Component {
   render() {
-    const { name, url, city, data, place, pageType } = this.props;
+    const { name, url, city, data, place, pageType, description } = this.props;
     return (
       <MainTemplates pageType={pageType}>
         <BreakeHeader>Targi ślubne</BreakeHeader>
-        <Wrapper>         
+        <Wrapper>
           <Body>
             <Main>
               <Picture>
@@ -53,6 +60,24 @@ class FairPost extends Component {
               </Picture>
             </Main>
             <Aside>
+              {description.length !== '' ? (
+                <>
+                  {description.map(({ p1, p2, p3, p4, p5, p6, p7, p8, p9, p10 }) => (
+                    <DescriptionItemList>
+                      <DescriptionItemListItem>{p1}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p2}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p3}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p4}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p5}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p6}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p7}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p8}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p9}</DescriptionItemListItem>
+                      <DescriptionItemListItem>{p10}</DescriptionItemListItem>
+                    </DescriptionItemList>
+                  ))}
+                </>
+              ) : null}
               <ul>
                 <li>{city}</li>
                 <li>{data}</li>

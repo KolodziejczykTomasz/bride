@@ -4,9 +4,8 @@ export default [
   {
     id: 1,
     url: press2,
-    title: 'Twój ślub',
-    number: '2/2019 (40)',
-    category: 'Prasa ślubna',
+    title: 'Свадьба в Москве',
+    number: '2/2019 (40)',    
     year: '',
     download: '',
     shop: '',
@@ -54,5 +53,10 @@ export default [
         p10: '',
       },
     ],
+    tags: [
+      { id: 1, tag: 'Свадьба в Москве' },
+      { id: 2, tag: 'prasa ślubna' },
+    ],
+    category: 'Prasa ślubna',
   },
 ];

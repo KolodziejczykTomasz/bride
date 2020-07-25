@@ -47,6 +47,7 @@ margin-left: 2rem;
 `;
 
 const PhotoBox = styled.div``;
+
 const Photo = styled.img`
   display: block;
   width: 50rem;

@@ -63,6 +63,11 @@ const Description = styled.p`
 const Details = styled.ul``;
 const DetailsItem = styled.li``;
 
+const DescriptionItemList = styled.ul`
+  margin-left: 3rem;
+`;
+const DescriptionItemListItem = styled.li``;
+
 class CompaniesPost extends Component {
   render() {
     const { title, subtitle, url, pageType, description, price, city } = this.props;
@@ -79,7 +84,26 @@ class CompaniesPost extends Component {
             <Aside>
               <Title>{title}</Title>
               <Subtitle>{subtitle}</Subtitle>
-              <Description>{description}</Description>
+              <Description>
+                {description.length !== '' ? (
+                  <>
+                    {description.map(({ p1, p2, p3, p4, p5, p6, p7, p8, p9, p10 }) => (
+                      <DescriptionItemList>
+                        <DescriptionItemListItem>{p1}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p2}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p3}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p4}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p5}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p6}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p7}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p8}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p9}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p10}</DescriptionItemListItem>
+                      </DescriptionItemList>
+                    ))}
+                  </>
+                ) : null}
+              </Description>
               <Details>
                 <DetailsItem>Cena: {price}</DetailsItem>
                 <DetailsItem>Miasto: {city}</DetailsItem>
