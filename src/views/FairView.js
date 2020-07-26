@@ -1,9 +1,9 @@
 import React from 'react';
-import NavbarTop from 'components/NavbarTop';
-import JumbotronBar from 'components/JumbotronBar';
-import BreakeHeader from 'components/BreakeHeader';
-import FairList from 'components/FairList';
-import Footer from 'components/Footer';
+import NavbarTop from 'components/organisms/NavbarTop';
+import JumbotronBar from 'components/molecules/JumbotronBar';
+import BreakeHeader from 'components/atoms/BreakeHeader';
+import FairList from 'components/molecules/FairList';
+import Footer from 'components/organisms/Footer';
 
 const FairView = () => (
   <>

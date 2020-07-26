@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import TravelItem from 'components/TravelItem';
+import TravelItem from 'components/molecules/TravelItem';
 
 import styled from 'styled-components';
 

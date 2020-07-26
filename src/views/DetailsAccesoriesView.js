@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { routes } from 'routes';
 import { connect } from 'react-redux';
-import NavbarTop from 'components/NavbarTop';
-import JumbotronBar from 'components/JumbotronBar';
-import Footer from 'components/Footer';
-import AccesoriesPost from 'components/AccesoriesPost';
+import NavbarTop from 'components/organisms/NavbarTop';
+import JumbotronBar from 'components/molecules/JumbotronBar';
+import Footer from 'components/organisms/Footer';
+import AccesoriesPost from 'components/molecules/AccesoriesPost';
 
 
 class DetailsAccesoriesView extends Component {

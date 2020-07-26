@@ -1,8 +1,7 @@
 import React from 'react';
-import FairItem from './FairItem';
+import FairItem from 'components/molecules/FairItem';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
-
 
 const Wrapper = styled.div`
   display: grid;
@@ -18,7 +17,15 @@ const WrapperItem = styled.div`
   width: 100%;
 `;
 
-const FairBar = ({ targikrakow, targikatowice, targikielce }) => (
+const FairBar = ({
+  targikrakow,
+  targikatowice,
+  targikielce,
+  targikrakowarena,
+  targilodz,
+  targirybnik,
+  targihalaorbita,
+}) => (
   <Wrapper>
     {targikrakow.map(({ id, url, place, data, city, description }) => (
       <WrapperItem>
@@ -62,9 +69,64 @@ const FairBar = ({ targikrakow, targikatowice, targikielce }) => (
         />
       </WrapperItem>
     ))}
+    {targikrakowarena.map(({ id, url, place, data, city, description }) => (
+      <WrapperItem>
+        <FairItem
+          id={id}
+          url={url}
+          key={id}
+          place={place}
+          data={data}
+          city={city}
+          description={description}
+          pageType="targikrakowarena"
+        />
+      </WrapperItem>
+    ))}
+    {targilodz.map(({ id, url, place, data, city, description }) => (
+      <WrapperItem>
+        <FairItem
+          id={id}
+          url={url}
+          key={id}
+          place={place}
+          data={data}
+          city={city}
+          description={description}
+          pageType="targilodz"
+        />
+      </WrapperItem>
+    ))}
+    {targirybnik.map(({ id, url, place, data, city, description }) => (
+      <WrapperItem>
+        <FairItem
+          id={id}
+          url={url}
+          key={id}
+          place={place}
+          data={data}
+          city={city}
+          description={description}
+          pageType="targirybnik"
+        />
+      </WrapperItem>
+    ))}
+    {targihalaorbita.map(({ id, url, place, data, city, description }) => (
+      <WrapperItem>
+        <FairItem
+          id={id}
+          url={url}
+          key={id}
+          place={place}
+          data={data}
+          city={city}
+          description={description}
+          pageType="targihalaorbita"
+        />
+      </WrapperItem>
+    ))}
   </Wrapper>
 );
-
 
 const mapStateToProps = (state) => {
   const {

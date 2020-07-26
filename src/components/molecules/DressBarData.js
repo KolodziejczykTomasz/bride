@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import Carousel from 'react-multi-carousel';
-import DressItem from 'components/DressItem';
+import DressItem from 'components/molecules/DressItem';
 
 import styled from 'styled-components';
 

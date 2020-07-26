@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import AccesoriesItem from './AccesoriesItem';
+import AccesoriesItem from 'components/molecules/AccesoriesItem';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`

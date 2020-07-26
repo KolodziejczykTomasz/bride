@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import PressItem from 'components/PressItem';
+import PressItem from 'components/molecules/PressItem';
 import styled from 'styled-components';
 
 

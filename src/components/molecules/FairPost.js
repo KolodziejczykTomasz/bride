@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MainTemplates from 'templates/MainTemplates';
-import BreakeHeader from 'components/BreakeHeader';
+import BreakeHeader from 'components/atoms/BreakeHeader';
+import BreakeFooter from 'components/atoms/BreakeFooter';
 import styled from 'styled-components';
 
 const Button = styled.a`
@@ -89,6 +90,7 @@ class FairPost extends Component {
         <Button as={Link} to={`/`}>
           Close
         </Button>
+        <BreakeFooter>TAGI:</BreakeFooter>
       </MainTemplates>
     );
   }

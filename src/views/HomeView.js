@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
-import NavbarTop from 'components/NavbarTop';
-import Footer from 'components/Footer';
-import SliderBar from 'components/SliderBar';
-import SocialMediaBar from 'components/SocialMediaBar';
-import PressBar from 'components/PressBar';
-import BreakeHeader from 'components/BreakeHeader';
-import FairBar from 'components/FairBar';
-import FairMain from 'components/FairMain';
-import CompaniesBar from 'components/CompaniesBar';
+import NavbarTop from 'components/organisms/NavbarTop';
+import Footer from 'components/organisms/Footer';
+import SliderBar from 'components/atoms/SliderBar';
+import SocialMediaBar from 'components/molecules/SocialMediaBar';
+import PressBar from 'components/molecules/PressBar';
+import BreakeHeader from 'components/atoms/BreakeHeader';
+import FairBar from 'components/molecules/FairBar';
+import FairMain from 'components/molecules/FairMain';
+import CompaniesBar from 'components/molecules/CompaniesBar';
+import AccesoriesBar from 'components/molecules/AccesoriesBar';
+import MainBar from 'components/molecules/MainBar';
+import DressBar from 'components/molecules/DressBar';
 import GlobalStyle from 'theme/GlobalStyle';
-import AccesoriesBar from 'components/AccesoriesBar';
-import MainBar from 'components/MainBar';
-import DressBar from 'components/DressBar';
-
+import styled from 'styled-components';
 
 const WrapperView = styled.div``;
 

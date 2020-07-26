@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap';
 import classnames from 'classnames';
 import styled from 'styled-components';
-import CompaniesItem from 'components/CompaniesItem';
+import CompaniesItem from 'components/molecules/CompaniesItem';
 
 const WrapperTabContent = styled.div`
   margin-top: 1.2rem;

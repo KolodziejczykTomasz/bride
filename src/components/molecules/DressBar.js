@@ -1,5 +1,5 @@
 import React from 'react';
-import DressBarData from './DressBarData';
+import DressBarData from 'components/molecules/DressBarData';
 import UAParser from 'ua-parser-js';
 import 'react-multi-carousel/lib/styles.css';
 

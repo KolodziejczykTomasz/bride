@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import BreakeFooter from 'components/BreakeFooter';
-import PressItem from 'components/PressItem';
+import BreakeFooter from 'components/atoms/BreakeFooter';
+import PressItem from 'components/molecules/PressItem';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`

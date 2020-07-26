@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
-import MainBarHero from 'components/MainBarHero';
-import MainBarItem from 'components/MainBarItem';
+import MainBarHero from 'components/molecules/MainBarHero';
+import MainBarItem from 'components/molecules/MainBarItem';
 
 const Wrapper = styled.div`
   display: grid;

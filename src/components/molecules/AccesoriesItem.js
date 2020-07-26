@@ -102,4 +102,3 @@ const mapStateToProps = (state) => {
 export default connect(mapStateToProps)(AccesoriesItem);
 
 
-

@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import BreakeHeader from 'components/BreakeHeader';
+import BreakeHeader from 'components/atoms/BreakeHeader';
 import MainTemplates from 'templates/MainTemplates';
-import ChurchItem from 'components/ChurchItem';
+import ChurchItem from 'components/molecules/ChurchItem';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Jumbotron, Button } from 'reactstrap';
 import styled from 'styled-components';
-import Image from '../assets/images/slider/slider2.jpg';
+import Image from 'assets/images/slider/slider2.jpg';
 
 const Wrapper = styled.div``;
 

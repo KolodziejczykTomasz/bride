@@ -1,9 +1,9 @@
 import React from 'react';
-import NavbarTop from 'components/NavbarTop';
-import JumbotronBar from 'components/JumbotronBar';
-import BreakeHeader from 'components/BreakeHeader';
-import TravelBar from 'components/TravelBar';
-import Footer from 'components/Footer';
+import NavbarTop from 'components/organisms/NavbarTop';
+import JumbotronBar from 'components/molecules/JumbotronBar';
+import BreakeHeader from 'components/atoms/BreakeHeader';
+import TravelBar from 'components/molecules/TravelBar';
+import Footer from 'components/organisms/Footer';
 
 const TravelView = () => (
   <>

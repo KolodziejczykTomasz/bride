@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MainTemplates from 'templates/MainTemplates';
 import styled from 'styled-components';
-import BreakeHeader from 'components/BreakeHeader';
-import BreakeFooter from 'components/BreakeFooter';
+import BreakeHeader from 'components/atoms/BreakeHeader';
+import BreakeFooter from 'components/atoms/BreakeFooter';
 
 const Wrapper = styled.div`
   width: 80vw;

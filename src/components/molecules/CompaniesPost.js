@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Redirect } from 'react-router-dom';
+
+import BreakeHeader from 'components/atoms/BreakeHeader';
+import BreakeFooter from 'components/atoms/BreakeFooter';
+
 import MainTemplates from 'templates/MainTemplates';
-import BreakeHeader from 'components/BreakeHeader';
-import PressSimilarItems from 'components/PressSimilarItems';
 import styled from 'styled-components';
 
 const Button = styled.a`
@@ -27,83 +28,53 @@ const Button = styled.a`
 const Wrapper = styled.div`
   width: 80vw;
   margin: 2rem auto;
+  padding: 2rem 5rem;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 `;
-const Header = styled.div`
-  margin: 5rem 0;
-`;
-const Title = styled.h1`
-  margin: 2rem 0;
-`;
+
 const Card = styled.div`
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 0.3fr 0.7fr;
-  margin: 5rem 0;
+  margin: 2rem 0;
 `;
 const Main = styled.div``;
+const Title = styled.h1`
+  margin: 0.5rem 0;
+`;
+const Subtitle = styled.h2``;
+
 const Aside = styled.div`
-margin-left: 2rem;
+  padding-left: 2rem;
 `;
 
 const PhotoBox = styled.div``;
-
 const Photo = styled.img`
   display: block;
   width: 50rem;
-  margin: 1rem auto;
+  margin: 0 auto;
 `;
 
-const DataItem = styled.div`
-margin-left: 1rem;
+const Description = styled.p`
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 `;
+
+const Details = styled.ul``;
+const DetailsItem = styled.li``;
 
 const DescriptionItemList = styled.ul`
-margin-left: 3rem;
+  margin-left: 3rem;
 `;
 const DescriptionItemListItem = styled.li``;
 
-const Section = styled.div``;
-
-const TextBold = styled.span`
-  text-transform: uppercase;
-  font-weight: 400;
-  padding-right: 1rem;
-`;
-
-class PressPost extends Component {
-  state = {
-    redirect: false, 
-  };
-
-  handleCardClick = () =>
-    this.setState({
-      redirect: true,
-    });
-
+class CompaniesPost extends Component {
   render() {
-    const { redirect } = this.state;
-    const { id, pageType } = this.props;
-
-    if (redirect) {
-      return <Redirect to={`${pageType}/${id}`} />;
-    }
-
-    const {     
-      title,
-      number,
-      description,
-      price,
-      download,
-      publisher,
-      shop,
-      url,
-    } = this.props;
+    const { title, subtitle, url, pageType, description, price, city } = this.props;
     return (
       <MainTemplates pageType={pageType}>
-        <BreakeHeader>Prasa ślubna</BreakeHeader>
+        <BreakeHeader>Katalog firm</BreakeHeader>
         <Wrapper>
-          <Header></Header>
           <Card>
             <Main>
               <PhotoBox>
@@ -111,14 +82,9 @@ class PressPost extends Component {
               </PhotoBox>
             </Main>
             <Aside>
-              <Title> {title}</Title>
-              <DataItem>
-                <TextBold>Wydanie nr:</TextBold> {number}
-              </DataItem>
-              <Section>
-                <DataItem>
-                  <TextBold>W numerze:</TextBold>
-                </DataItem>
+              <Title>{title}</Title>
+              <Subtitle>{subtitle}</Subtitle>
+              <Description>
                 {description.length !== '' ? (
                   <>
                     {description.map(({ p1, p2, p3, p4, p5, p6, p7, p8, p9, p10 }) => (
@@ -137,46 +103,21 @@ class PressPost extends Component {
                     ))}
                   </>
                 ) : null}
-                {publisher !== '' ? (
-                  <>
-                    <DataItem>
-                      <TextBold>Wydawca:</TextBold> {publisher}
-                    </DataItem>
-                  </>
-                ) : null}
-                {price !== '' ? (
-                  <>
-                    <DataItem>
-                      <TextBold>Cena:</TextBold> {price}
-                    </DataItem>
-                  </>
-                ) : null}
-                {shop !== '' ? (
-                  <>
-                    <DataItem>
-                      <TextBold>Sklep:</TextBold> {shop}
-                    </DataItem>
-                  </>
-                ) : null}
-                {download !== '' ? (
-                  <>
-                    <DataItem>
-                      <TextBold>Pobierz:</TextBold> {download}
-                    </DataItem>
-                  </>
-                ) : null}
-              </Section>
+              </Description>
+              <Details>
+                <DetailsItem>Cena: {price}</DetailsItem>
+                <DetailsItem>Miasto: {city}</DetailsItem>
+              </Details>
             </Aside>
           </Card>
-          <PressSimilarItems pageType={pageType} />
-          <Button as={Link} to={`/`}>
-            Close
-          </Button>
         </Wrapper>
+        <BreakeFooter>TAGI:</BreakeFooter>
+        <Button as={Link} to={`/`}>
+          Close
+        </Button>
       </MainTemplates>
     );
   }
 }
 
-
-export default PressPost;
+export default CompaniesPost;

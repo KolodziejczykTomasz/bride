@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
-import FooterItem from 'components/FooterItem';
+import FooterItem from 'components/molecules/FooterItem';
 
 import styled from 'styled-components';
 
