@@ -99,6 +99,7 @@ const MainBar = ({ postbride, postextras, extras, brides, gallery }) => (
             pic10,
             pic11,
             gallery,
+            tags
           }) => (
             <MainBarHero
               id={id}
@@ -140,7 +141,8 @@ const MainBar = ({ postbride, postextras, extras, brides, gallery }) => (
               header11={header11}
               p11={p11}
               pic11={pic11}
-              gallery={gallery}
+                gallery={gallery}
+                tags={tags}
               pageType="extras"
             />
           ),

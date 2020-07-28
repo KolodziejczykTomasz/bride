@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import BreakeHeader from 'components/atoms/BreakeHeader';
-import BreakeFooter from 'components/atoms/BreakeFooter';
+import Tags from 'components/atoms/Tags';
 
 import MainTemplates from 'templates/MainTemplates';
 import styled from 'styled-components';
@@ -67,7 +67,7 @@ const Shop = styled.h3``;
 
 class AccesoriesPost extends Component {
   render() {
-    const { name, description, price, shop, url, pageType } = this.props;
+    const { name, description, price, shop, url, pageType, tags } = this.props;
     return (
       <MainTemplates pageType={pageType}>
         <BreakeHeader>Akcesoria ślubne</BreakeHeader>
@@ -82,7 +82,7 @@ class AccesoriesPost extends Component {
               <Name>{name}</Name>
               <Price>{price}</Price>
               <Description>{description}</Description>
-              <Shop>{shop}</Shop>              
+              <Shop>{shop}</Shop>
             </Aside>
           </Card>
 
@@ -90,7 +90,7 @@ class AccesoriesPost extends Component {
             Close
           </Button>
         </Wrapper>
-        <BreakeFooter>TAGI:</BreakeFooter>
+        <Tags tags={tags} />
       </MainTemplates>
     );
   }

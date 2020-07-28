@@ -11,6 +11,7 @@ import CompaniesBar from 'components/molecules/CompaniesBar';
 import AccesoriesBar from 'components/molecules/AccesoriesBar';
 import MainBar from 'components/molecules/MainBar';
 import DressBar from 'components/molecules/DressBar';
+
 import GlobalStyle from 'theme/GlobalStyle';
 import styled from 'styled-components';
 
@@ -23,6 +24,7 @@ class HomeView extends Component {
         <GlobalStyle />
         <NavbarTop />
         <SliderBar />
+        <BreakeHeader>Aktualności</BreakeHeader>
         <MainBar />
         <BreakeHeader>Suknie ślubne</BreakeHeader>
         <DressBar />

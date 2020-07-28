@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MainTemplates from 'templates/MainTemplates';
-import styled from 'styled-components';
 import BreakeHeader from 'components/atoms/BreakeHeader';
-import BreakeFooter from 'components/atoms/BreakeFooter';
+import Tags from 'components/atoms/Tags';
+
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   width: 80vw;
@@ -69,7 +70,6 @@ const GalleryWrapper = styled.div`
   }
 `;
 
-
 const Button = styled.a`
   display: grid;
   position: fixed;
@@ -130,6 +130,7 @@ class MainPost extends Component {
       pic10,
       pic11,
       gallery,
+      tags
     } = this.props;
 
     return (
@@ -278,14 +279,12 @@ class MainPost extends Component {
                 ))}
               </GalleryWrapper>
             </>
-          ) : (
-            null
-          )}
+          ) : null}
 
           <Button as={Link} to={`/`}>
             Close
           </Button>
-          <BreakeFooter>TAGI:</BreakeFooter>
+          <Tags tags={tags} />
         </Wrapper>
       </MainTemplates>
     );

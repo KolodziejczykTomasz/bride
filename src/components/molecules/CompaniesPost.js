@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import BreakeHeader from 'components/atoms/BreakeHeader';
-import BreakeFooter from 'components/atoms/BreakeFooter';
+import Tags from 'components/atoms/Tags';
 
 import MainTemplates from 'templates/MainTemplates';
 import styled from 'styled-components';
@@ -70,7 +70,7 @@ const DescriptionItemListItem = styled.li``;
 
 class CompaniesPost extends Component {
   render() {
-    const { title, subtitle, url, pageType, description, price, city } = this.props;
+    const { title, subtitle, url, pageType, description, price, city, tags } = this.props;
     return (
       <MainTemplates pageType={pageType}>
         <BreakeHeader>Katalog firm</BreakeHeader>
@@ -111,7 +111,7 @@ class CompaniesPost extends Component {
             </Aside>
           </Card>
         </Wrapper>
-        <BreakeFooter>TAGI:</BreakeFooter>
+        <Tags tags={tags} />
         <Button as={Link} to={`/`}>
           Close
         </Button>

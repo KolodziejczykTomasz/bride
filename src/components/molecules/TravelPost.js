@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import BreakeHeader from 'components/atoms/BreakeHeader';
-import BreakeFooter from 'components/atoms/BreakeFooter';
+import Tags from 'components/atoms/Tags';
 
 import MainTemplates from 'templates/MainTemplates';
 import styled from 'styled-components';
@@ -99,16 +99,7 @@ class TravelPost extends Component {
             Close
           </Button>
         </Wrapper>
-        {tags.length !== '' ? (
-          <>
-            <BreakeFooter>
-              TAGI:
-              {tags.map(({ tag }) => (
-                <p>{tag}</p>
-              ))}
-            </BreakeFooter>
-          </>
-        ) : null}         
+        <Tags tags={tags} />
       </MainTemplates>
     );
   }

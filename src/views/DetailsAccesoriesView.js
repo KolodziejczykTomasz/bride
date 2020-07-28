@@ -63,7 +63,7 @@ class DetailsAccesoriesView extends Component {
             shop={this.props.accesories[id].shop}
             tags={this.props.accesories[id].tags}
             category={this.props.accesories[id].category}
-            gallery={this.props.accesories[id].gallery}
+            gallery={this.props.accesories[id].gallery}            
           />
         )}
         <Footer />
