@@ -91,6 +91,7 @@ class DetailsMainView extends Component {
             pic11={this.props.postbride[id].pic11}
             gallery={this.props.postbride[id].gallery}
             tags={this.props.postbride[id].tags}
+            category={this.props.postbride[id].category}
           />
         )}
         {pageType === 'extras' && (
@@ -136,6 +137,7 @@ class DetailsMainView extends Component {
             pic11={this.props.postextras[id].pic11}
             gallery={this.props.postextras[id].gallery}
             tags={this.props.postextras[id].tags}
+            category={this.props.postextras[id].category}
           />
         )}
         <Footer />

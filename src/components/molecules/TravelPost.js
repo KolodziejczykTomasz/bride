@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import BreakeHeader from 'components/atoms/BreakeHeader';
-import Tags from 'components/atoms/Tags';
+import PostFooter from 'components/organisms/PostFooter';
 
 import MainTemplates from 'templates/MainTemplates';
 import styled from 'styled-components';
@@ -63,7 +63,7 @@ const DescriptionItemListItem = styled.li``;
 
 class TravelPost extends Component {
   render() {
-    const { url, pleace, price, description, pageType, tags } = this.props;
+    const { url, pleace, price, description, pageType, tags, category } = this.props;
     return (
       <MainTemplates pageType={pageType}>
         <BreakeHeader>Podróż poślubna</BreakeHeader>
@@ -99,7 +99,7 @@ class TravelPost extends Component {
             Close
           </Button>
         </Wrapper>
-        <Tags tags={tags} />
+        <PostFooter category={category} tags={tags} />
       </MainTemplates>
     );
   }

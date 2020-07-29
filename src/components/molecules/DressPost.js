@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MainTemplates from 'templates/MainTemplates';
 import BreakeHeader from 'components/atoms/BreakeHeader';
-import Tags from 'components/atoms/Tags';
+import PostFooter from 'components/organisms/PostFooter';
 
 import styled from 'styled-components';
 
@@ -105,8 +105,8 @@ class DressPost extends Component {
           <Button as={Link} to={`/`}>
             Close
           </Button>
-        </Wrapper>                  
-        <Tags tags={tags}/>
+        </Wrapper>
+        <PostFooter category={category} tags={tags} />
       </MainTemplates>
     );
   }

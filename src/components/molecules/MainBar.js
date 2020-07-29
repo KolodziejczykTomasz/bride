@@ -99,7 +99,8 @@ const MainBar = ({ postbride, postextras, extras, brides, gallery }) => (
             pic10,
             pic11,
             gallery,
-            tags
+            tags,
+            category,
           }) => (
             <MainBarHero
               id={id}
@@ -141,8 +142,9 @@ const MainBar = ({ postbride, postextras, extras, brides, gallery }) => (
               header11={header11}
               p11={p11}
               pic11={pic11}
-                gallery={gallery}
-                tags={tags}
+              gallery={gallery}
+              tags={tags}
+              category={category}
               pageType="extras"
             />
           ),
@@ -193,6 +195,7 @@ const MainBar = ({ postbride, postextras, extras, brides, gallery }) => (
               pic10,
               pic11,
               gallery,
+              category,
             }) => (
               <MainBarItem
                 id={id}
@@ -235,6 +238,7 @@ const MainBar = ({ postbride, postextras, extras, brides, gallery }) => (
                 p11={p11}
                 pic11={pic11}
                 gallery={gallery}
+                category={category}
                 pageType="brides"
               />
             ),
@@ -284,6 +288,7 @@ const MainBar = ({ postbride, postextras, extras, brides, gallery }) => (
               pic9,
               pic10,
               pic11,
+              category,
             }) => (
               <MainBarItem
                 id={id}
@@ -326,6 +331,7 @@ const MainBar = ({ postbride, postextras, extras, brides, gallery }) => (
                 p11={p11}
                 pic11={pic11}
                 gallery={gallery}
+                category={category}
                 pageType="extras"
               />
             ),

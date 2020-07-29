@@ -134,6 +134,7 @@ const FairBar = ({
         />
       </WrapperItem>
     ))}
+   
   </Wrapper>
 );
 

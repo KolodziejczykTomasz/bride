@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 import MainTemplates from 'templates/MainTemplates';
 import BreakeHeader from 'components/atoms/BreakeHeader';
 import PressSimilarItems from 'components/molecules/PressSimilarItems';
-import Tags from 'components/atoms/Tags';
+import PostFooter from 'components/organisms/PostFooter';
 
 import styled from 'styled-components';
 
@@ -100,7 +100,8 @@ class PressPost extends Component {
       publisher,
       shop,
       url,
-      tags
+      tags,
+      category
     } = this.props;
     return (
       <MainTemplates pageType={pageType}>
@@ -172,7 +173,7 @@ class PressPost extends Component {
             </Aside>
           </Card>
           <PressSimilarItems pageType={pageType} />
-          <Tags tags={tags} />
+          <PostFooter category={category} tags={tags} />
           <Button as={Link} to={`/`}>
             Close
           </Button>

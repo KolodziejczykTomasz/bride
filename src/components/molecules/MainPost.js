@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MainTemplates from 'templates/MainTemplates';
 import BreakeHeader from 'components/atoms/BreakeHeader';
-import Tags from 'components/atoms/Tags';
+import PostFooter from 'components/organisms/PostFooter';
+
 
 import styled from 'styled-components';
 
@@ -130,7 +131,8 @@ class MainPost extends Component {
       pic10,
       pic11,
       gallery,
-      tags
+      tags,
+      category
     } = this.props;
 
     return (
@@ -284,7 +286,7 @@ class MainPost extends Component {
           <Button as={Link} to={`/`}>
             Close
           </Button>
-          <Tags tags={tags} />
+          <PostFooter category={category} tags={tags} />
         </Wrapper>
       </MainTemplates>
     );

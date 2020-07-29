@@ -57,10 +57,10 @@ export default [
     pic11: '',
     gallery: [],
     tags: [
-      { id: 1, tag: '' },
-      { id: 2, tag: '' },
+      { id: 1, tag: 'dekoracje' },
+      { id: 2, tag: 'balony' },
     ],
-    category: '',
+    category: 'Atrakcje weselne',
   },
   {
     id: 2,
@@ -99,24 +99,24 @@ export default [
     pic7: '',
     header8: '',
     p8: 'Ile kosztuje? Ceny zaczynają się już od 150zł w zależności od lokalizacji przyjęcia.',
-    pic8: 'pic1',
+    pic8: '',
     header9: '4. Dekoracja światłem',
     p9:
       'Oświetlamy pomieszczenie nie tylko wewnątrz ale i na zewnątrz wybranymi przez parę młodą przez co dekoracja staje się elegancka a zarazem spektakularna.',
-    pic9: 'pic2',
+    pic9: '',
     header10: '',
     p10:
       'Do dekoracji używamy mocnych, wysokiej klasy urządzeń świecących w technologii LED dzięki czemu uzyskujemy żywe i realistyczne kolory i są widoczne nie tylko po zgaszeniu świateł na sali ale i przy pierwszym wejściu na nią co można zobaczyć na załączonych zdjęciach. Posiadamy jeden wariant dekoracji dzięki czemu nie rozbijamy ceny na 50 czy 200 gości a także nie mamy ograniczonej ilości świateł, które używamy.',
-    pic10: 'pic3',
+    pic10: '',
     header11: '',
     p11: 'Ile kosztuje? Ceny zaczynają się od 350 a mogą wynieść nawet ponad 1500 zł',
-    pic11: 'pic4',
+    pic11: '',
     gallery: [],
     tags: [
-      { id: 1, tag: '' },
-      { id: 2, tag: '' },
+      { id: 1, tag: 'Taniec w chmurach' },
+      { id: 2, tag: 'Dekoracja światłem' },
     ],
-    category: '',
+    category: 'Atrakcje weselne',
   },
   {
     id: 3,
@@ -164,10 +164,10 @@ export default [
     pic11: '',
     gallery: [],
     tags: [
-      { id: 1, tag: '' },
-      { id: 2, tag: '' },
+      { id: 1, tag: 'Polter' },
+      { id: 2, tag: 'panna młoda' },
     ],
-    category: '',
+    category: 'Przgotowania do ślubu',
   },
   {
     id: '4',
@@ -213,9 +213,10 @@ export default [
     pic11: '',
     gallery: [],
     tags: [
-      { id: 1, tag: '' },
-      { id: 2, tag: '' },
+      { id: 1, tag: 'weselne atracje' },
+      { id: 2, tag: 'Fontanna czekoladowa' },
+      { id: 3, tag: 'Fontanna alkoholowa' },
     ],
-    category: '',
+    category: 'Atrakcje weselne',
   },
 ];

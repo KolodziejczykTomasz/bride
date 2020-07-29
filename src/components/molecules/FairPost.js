@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MainTemplates from 'templates/MainTemplates';
 import BreakeHeader from 'components/atoms/BreakeHeader';
-import Tags from 'components/atoms/Tags';
+import PostFooter from 'components/organisms/PostFooter';
+
 import styled from 'styled-components';
 
 const Button = styled.a`
@@ -49,7 +50,7 @@ const DescriptionItemListItem = styled.li``;
 
 class FairPost extends Component {
   render() {
-    const { name, url, city, data, place, pageType, description, tags } = this.props;
+    const { name, url, city, data, place, pageType, description, tags, category } = this.props;
     return (
       <MainTemplates pageType={pageType}>
         <BreakeHeader>Targi ślubne</BreakeHeader>
@@ -86,11 +87,11 @@ class FairPost extends Component {
               </ul>
             </Aside>
           </Body>
+          <PostFooter category={category} tags={tags} />
         </Wrapper>
         <Button as={Link} to={`/`}>
           Close
         </Button>
-        <Tags tags={tags} />
       </MainTemplates>
     );
   }

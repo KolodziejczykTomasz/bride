@@ -20,7 +20,7 @@ const WrapperItem = styled.div`
 
 const FairBar = ({ targikrakow, targikatowice, targikielce }) => (
   <Wrapper>
-    {targikrakow.map(({ id, url, place, data, city, description }) => (
+    {targikrakow.map(({ id, url, place, data, city, description, tags }) => (
       <WrapperItem>
         <FairItem
           id={id}
@@ -29,12 +29,13 @@ const FairBar = ({ targikrakow, targikatowice, targikielce }) => (
           place={place}
           data={data}
           city={city}
+          tags={tags}
           description={description}
           pageType="targikrakow"
         />
       </WrapperItem>
     ))}
-    {targikatowice.map(({ id, url, place, data, city, description }) => (
+    {targikatowice.map(({ id, url, place, data, city, description, tags }) => (
       <WrapperItem>
         <FairItem
           id={id}
@@ -43,12 +44,13 @@ const FairBar = ({ targikrakow, targikatowice, targikielce }) => (
           place={place}
           data={data}
           city={city}
+          tags={tags}
           description={description}
           pageType="targikatowice"
         />
       </WrapperItem>
     ))}
-    {targikielce.map(({ id, url, place, data, city, description }) => (
+    {targikielce.map(({ id, url, place, data, city, description, tags }) => (
       <WrapperItem>
         <FairItem
           id={id}
@@ -57,6 +59,7 @@ const FairBar = ({ targikrakow, targikatowice, targikielce }) => (
           place={place}
           data={data}
           city={city}
+          tags={tags}
           description={description}
           pageType="targikielce"
         />
