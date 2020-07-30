@@ -124,10 +124,10 @@ export default [
     subtitle: '',
     picHeader: brokenglassses,
     header:
-      'Czy słyszał ktoś o polterze? - pod tą tajemniczą nazwą kryje się rytualne rozbijanie szkła przed domem panny młodej stosowane w różnych zakątkach Polski, na wsiach i w dużych miastach, od Śląska po Pomorze. Przyjmuje odmienne nazwy, ale ideę zachowuje tę samą - dobrze się bawić O jaką dokładnie zabawę chodzi, przeczytacie poniżej, zapraszam serdecznie do lektury!',
+      'Czy słyszał ktoś o polterze? - pod tą tajemniczą nazwą kryje się rytualne rozbijanie szkła przed domem panny młodej stosowane w różnych zakątkach Polski, na wsiach i w dużych miastach, od Śląska po Pomorze.',
     header1: 'Polter dla rozrywki i na szczęście!',
     p1:
-      'Polter to nic innego, jak impreza czy spotkanie osób z okazji planowanych zaślubin dwojga narzeczonych, ale w dość nietypowym wydaniu. Przeważnie goście zjawiają się w domu Panny Młodej, gdzie u jego wejścia... tłuką szkło lub porcelanę, co ma przynieść Młodym szczęście. Dalej przekraczają gromadnie i wesoło próg, by zacząć mocno zakrapianą zabawę - w końcu udane pożycie przyszłych małżonków trzeba należycie opić. Tłuczenie szkła jest silnie zakorzenione w tradycji, wywodzi się bodaj z praktyk stosowanych jeszcze przez ludy słowiańskie i germańskie.',
+      'Przyjmuje odmienne nazwy, ale ideę zachowuje tę samą - dobrze się bawić O jaką dokładnie zabawę chodzi, przeczytacie poniżej, zapraszam serdecznie do lektury! Polter to nic innego, jak impreza czy spotkanie osób z okazji planowanych zaślubin dwojga narzeczonych, ale w dość nietypowym wydaniu. Przeważnie goście zjawiają się w domu Panny Młodej, gdzie u jego wejścia... tłuką szkło lub porcelanę, co ma przynieść Młodym szczęście. Dalej przekraczają gromadnie i wesoło próg, by zacząć mocno zakrapianą zabawę - w końcu udane pożycie przyszłych małżonków trzeba należycie opić. Tłuczenie szkła jest silnie zakorzenione w tradycji, wywodzi się bodaj z praktyk stosowanych jeszcze przez ludy słowiańskie i germańskie.',
     pic1: '',
     header2: 'Plusy czy minusy polterowego zwyczaju?',
     p2:

@@ -53,7 +53,7 @@ export default [
     subtitle: '',
     picHeader: suknia,
     header:
-      'Przed tym jak zaczniemy przegląd internet w poszukiwaniu wymarzonej sukni, musimy poznać swoją figurę. Gdybyśmy mieli problem z ustaleniem kształtu naszej figury, udajmy się do salonu sukien ślubnych. Wiedza i doświadczenie pracowników salonu rozwieje nasze wątpliwości.',
+      'Przed tym jak zaczniemy przegląd internet w poszukiwaniu wymarzonej sukni, musimy poznać swoją figurę. Gdybyśmy mieli problem z ustaleniem kształtu naszej figury, udajmy się do salonu sukien ślubnych.',
     header1: '',
     p1: 'A teraz poznajmy kroje sukni:',
     pic1: Pic1,

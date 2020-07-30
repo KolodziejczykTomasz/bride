@@ -4,56 +4,30 @@ import { Redirect } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  width: 100%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 5rem;
 `;
 
-const Subtitle = styled.h1`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  padding: 0 1.5rem;
+const Title = styled.h1`
+  display: block;
+  margin: 3rem 0 3rem 3rem;
 `;
 
 const Section = styled.div`
-  display: grid;
-  grid-template-columns: 0.3fr 0.7fr;
-  grid-template-rows: 1fr;
-`;
-
-const Description = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-row-gap: 3rem;
+  position: relative;
+  height: 100%;
+  padding: 20px 40px 40px;
+  cursor: pointer;
+  margin-bottom: 5rem;
 `;
 
 const Text = styled.p`
-  padding: 0 1rem;
-  font-size: 1.6rem;
-  line-height: 24px;
+  display: inline;
 `;
 
-const PhotoBox = styled.div``;
 const Photo = styled.img`
-  margin-top: 3rem;
-  width: 40vw;
-  max-width: 110px;
-  border: 1px solid #d2d0d0;
-  box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
-`;
-
-const Button = styled.button`
-  display: flex;
-  justify-self: right;  
-  width: 19rem;
-  margin-right: 5rem;
-  margin-bottom: 2rem;
-  padding: 1.5rem 4rem;
+  width: 100px;
+  margin: 5px 30px 0 0;
+  float: left;
 `;
 
 class MainBarItem extends Component {
@@ -64,7 +38,7 @@ class MainBarItem extends Component {
   handleCardClick = () => this.setState({ redirect: true });
 
   render() {
-    const { id, title, subtitle, picHeader, header, pageType } = this.props;
+    const { id, title, header, picHeader, pageType } = this.props;
     const { redirect } = this.state;
 
     if (redirect) {
@@ -72,16 +46,10 @@ class MainBarItem extends Component {
     }
     return (
       <Wrapper pageType={pageType}>
-        <Subtitle>{title}</Subtitle>
-        <Section>
-          <PhotoBox>
-            <Photo src={picHeader} alt={title} />
-          </PhotoBox>
-          <Description>
-            <Text>{subtitle}</Text>
-            <Text>{header}</Text>
-            <Button onClick={this.handleCardClick}>Zobacz więcej</Button>
-          </Description>
+        <Title>{title}</Title>
+        <Section onClick={this.handleCardClick}>
+          <Photo src={picHeader} alt={title} />
+          <Text>{header}</Text>
         </Section>
       </Wrapper>
     );
