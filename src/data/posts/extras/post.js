@@ -17,10 +17,10 @@ export default [
     subtitle: '',
     picHeader: PicDel,
     header:
-      'Większość z was Jeśli uważa, że dekoracje sali weselnej do relikt przeszłości. I pewnie coś w tym jest, ale dekoracje tego typu przeżywają pewnego rodzaju swoje 5 minut.',
+      'Większość z was Jeśli uważa, że dekoracje sali weselnej do relikt przeszłości. I pewnie coś w tym jest, ale dekoracje tego typu przeżywają pewnego rodzaju swoje 5 minut. Ich największą zaletą jest cena i wybór kolorów. Dostępność gazu typu hel, przenosi dawne dekoracje w nowy wymiar.',
     header1: 'A ile to kosztuje?',
     p1:
-      'Ich największą zaletą jest cena i wybór kolorów. Dostępność gazu typu hel, przenosi dawne dekoracje w nowy wymiar. Gaz ten jest lżejszy od powietrza i powoduje unoszenie się balonów. Balony te stają się nośnikiem innych dekoracji np. liter czy serduszek.',
+      'Gaz ten jest lżejszy od powietrza i powoduje unoszenie się balonów. Balony te stają się nośnikiem innych dekoracji np. liter czy serduszek.',
     pic1: picled,
     header2: '',
     p2:

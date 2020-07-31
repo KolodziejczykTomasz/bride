@@ -4,12 +4,18 @@ import { Redirect } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
- 
+  
 `;
 
 const Title = styled.h1`
   display: block;
-  padding: 2rem 0 .5rem 1rem;
+  padding: 2rem 0 0.5rem 1rem;
+`;
+
+const Header = styled.h2`
+  display: block;
+  padding: 4rem 1rem;
+  line-height: 2.8rem;
 `;
 
 const Section = styled.div`
@@ -30,7 +36,7 @@ const Photo = styled.img`
   object-fit: cover;
 `;
 
-class MainBarItem extends Component {
+class MainBarItemHero extends Component {
   state = {
     redirect: false,
   };
@@ -38,7 +44,7 @@ class MainBarItem extends Component {
   handleCardClick = () => this.setState({ redirect: true });
 
   render() {
-    const { id, title, picHeader, pageType } = this.props;
+    const { id, title, picHeader, pageType, header } = this.props;
     const { redirect } = this.state;
 
     if (redirect) {
@@ -47,13 +53,16 @@ class MainBarItem extends Component {
     return (
       <Wrapper pageType={pageType}>
         <Section onClick={this.handleCardClick}>
-          <PhotoBox><Photo src={picHeader} alt={title} /></PhotoBox>
-          
-          <Title>{title}</Title>
+          <PhotoBox>
+            <Photo src={picHeader} alt={title} />
+          </PhotoBox>
+
+                <Title>{title}</Title>
+                <Header>{header}</Header>
         </Section>
       </Wrapper>
     );
   }
 }
 
-export default MainBarItem;
+export default MainBarItemHero;

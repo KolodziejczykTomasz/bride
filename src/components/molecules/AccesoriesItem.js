@@ -31,7 +31,6 @@ const CardHeroText = styled.div`
 const Wrapper = styled.div`
   position: relative;
   height: 30rem;
-  margin-bottom: 10rem;
   cursor: pointer;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   transition: 0.5s;

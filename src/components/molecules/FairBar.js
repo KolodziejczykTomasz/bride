@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1rem;
+  grid-column-gap: 1rem; 
   @media (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
   }

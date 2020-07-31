@@ -30,8 +30,7 @@ const CardHeroText = styled.div`
   }
 `;
 const Wrapper = styled.div`
-  position: relative;
-  margin-bottom: 10rem;
+  position: relative;  
   cursor: pointer;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   transition: 0.5s;
@@ -57,6 +56,7 @@ const ImageItem = styled.img`
   height: auto;
   padding: 5px 5px;
   margin: 0 auto;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   :hover {
     z-index: 999;
     filter: blur(2px);
