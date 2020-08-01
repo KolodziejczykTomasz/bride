@@ -11,6 +11,7 @@ import targikrakowarena from 'data/fair/targikrakowarena';
 import targilodz from 'data/fair/targilodz';
 import targirybnik from 'data/fair/targirybnik';
 import targihalaorbita from 'data/fair/targihalaorbita';
+import fair from 'data/fair/fair';
 
 import accesories from 'data/accesories/accesories';
 
@@ -55,6 +56,7 @@ const initialState = {
   moda,
   atrakcje,
   dekoracje,
+  fair
 };
 
 const rootReducer = (state = initialState, action) => {

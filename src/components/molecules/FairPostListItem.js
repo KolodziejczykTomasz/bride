@@ -1,10 +1,32 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MainTemplates from 'templates/MainTemplates';
-import BreakeHeader from 'components/atoms/BreakeHeader';
-import PostFooter from 'components/organisms/PostFooter';
 
 import styled from 'styled-components';
+
+
+const Wrapper = styled.div`
+  width: 90vw;
+  margin: 2rem auto;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+`;
+
+const Body = styled.div`
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.2fr 0.8fr;
+  width: 90vw;
+  margin: 5rem 0;
+`;
+
+const Main = styled.div``;
+const Aside = styled.div``;
+const Picture = styled.div``;
+
+const DescriptionItemList = styled.ul`
+  margin-left: 3rem;
+`;
+const DescriptionItemListItem = styled.li``;
 
 const Button = styled.a`
   display: grid;
@@ -24,36 +46,11 @@ const Button = styled.a`
   }
 `;
 
-const Wrapper = styled.div`
-  width: 81vw;
-  margin: 2rem auto;
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
-`;
-
-const Body = styled.div`
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 0.2fr 0.8fr;
-  width: 90vw;
-  margin: 5rem 0;
-`;
-const Main = styled.div``;
-const Aside = styled.div``;
-const Picture = styled.div``;
-
-const DescriptionItemList = styled.div`
-  margin-left: 3rem;
-`;
-const DescriptionItemListItem = styled.div``;
-
-
-
-class FairPost extends Component {
+class FairPostListItem extends Component {
   render() {
-    const { name, url, city, data, place, pageType, description, tags, category } = this.props;
+    const { name, url, city, data, place, pageType, description } = this.props;
     return (
       <MainTemplates pageType={pageType}>
-        <BreakeHeader>Targi ślubne</BreakeHeader>
         <Wrapper>
           <Body>
             <Main>
@@ -87,7 +84,6 @@ class FairPost extends Component {
               </ul>
             </Aside>
           </Body>
-          <PostFooter category={category} tags={tags} />
         </Wrapper>
         <Button as={Link} to={`/`}>
           Close
@@ -97,4 +93,4 @@ class FairPost extends Component {
   }
 }
 
-export default FairPost;
+export default FairPostListItem;

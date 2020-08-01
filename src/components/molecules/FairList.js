@@ -1,25 +1,27 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FairPost from 'components/molecules/FairPost';
+import MainTemplates from 'templates/MainTemplates';
+import FairPostListItem from 'components/molecules/FairPostListItem';
 
 import styled from 'styled-components';
 
-
 const Wrapper = styled.div`
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1rem;
-  @media (max-width: 600px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
+  margin-bottom: 20rem;
 `;
 
 const WrapperItem = styled.div`
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 3rem;
+  }
 `;
 
-const FairBar = ({
+const FairList = ({
   targikrakow,
   targikatowice,
   targikielce,
@@ -28,114 +30,122 @@ const FairBar = ({
   targirybnik,
   targihalaorbita,
 }) => (
-  <Wrapper>
-    {targikrakow.map(({ id, url, place, data, city, description, tags }) => (
-      <WrapperItem>
-        <FairPost
-          id={id}
-          url={url}
-          key={id}
-          place={place}
-          data={data}
-          city={city}
-          tags={tags}
-          description={description}
-          pageType="targikrakow"
-        />
-      </WrapperItem>
-    ))}
-    {targikatowice.map(({ id, url, place, data, city, description, tags }) => (
-      <WrapperItem>
-        <FairPost
-          id={id}
-          url={url}
-          key={id}
-          place={place}
-          data={data}
-          city={city}
-          tags={tags}
-          description={description}
-          pageType="targikatowice"
-        />
-      </WrapperItem>
-    ))}
-    {targikielce.map(({ id, url, place, data, city, description, tags }) => (
-      <WrapperItem>
-        <FairPost
-          id={id}
-          url={url}
-          key={id}
-          place={place}
-          data={data}
-          city={city}
-          tags={tags}
-          description={description}
-          pageType="targikielce"
-        />
-      </WrapperItem>
-    ))}
-    {targikrakowarena.map(({ id, url, place, data, city, description, tags }) => (
-      <WrapperItem>
-        <FairPost
-          id={id}
-          url={url}
-          key={id}
-          place={place}
-          data={data}
-          city={city}
-          tags={tags}
-          description={description}
-          pageType="targikrakowarena"
-        />
-      </WrapperItem>
-    ))}
-    {targilodz.map(({ id, url, place, data, city, description, tags }) => (
-      <WrapperItem>
-        <FairPost
-          id={id}
-          url={url}
-          key={id}
-          place={place}
-          data={data}
-          city={city}
-          tags={tags}
-          description={description}
-          pageType="targilodz"
-        />
-      </WrapperItem>
-    ))}
-    {targirybnik.map(({ id, url, place, data, city, description, tags }) => (
-      <WrapperItem>
-        <FairPost
-          id={id}
-          url={url}
-          key={id}
-          place={place}
-          data={data}
-          city={city}
-          tags={tags}
-          description={description}
-          pageType="targirybnik"
-        />
-      </WrapperItem>
-    ))}
-    {targihalaorbita.map(({ id, url, place, data, city, description, tags }) => (
-      <WrapperItem>
-        <FairPost
-          id={id}
-          url={url}
-          key={id}
-          place={place}
-          data={data}
-          city={city}
-          tags={tags}
-          description={description}
-          pageType="targihalaorbita"
-        />
-      </WrapperItem>
-    ))}
-   
-  </Wrapper>
+  <MainTemplates>
+    <Wrapper>
+      {targikrakow.map(({ id, url, place, data, city, description, tags, category }) => (
+        <WrapperItem>
+          <FairPostListItem
+            id={id}
+            url={url}
+            key={id}
+            place={place}
+            data={data}
+            city={city}
+            tags={tags}
+            category={category}
+            description={description}
+            pageType="targikrakow"
+          />
+        </WrapperItem>
+      ))}
+      {targikatowice.map(({ id, url, place, data, city, description, tags, category }) => (
+        <WrapperItem>
+          <FairPostListItem
+            id={id}
+            url={url}
+            key={id}
+            place={place}
+            data={data}
+            city={city}
+            tags={tags}
+            description={description}
+            category={category}
+            pageType="targikatowice"
+          />
+        </WrapperItem>
+      ))}
+      {targikielce.map(({ id, url, place, data, city, description, tags, category }) => (
+        <WrapperItem>
+          <FairPostListItem
+            id={id}
+            url={url}
+            key={id}
+            place={place}
+            data={data}
+            city={city}
+            tags={tags}
+            description={description}
+            category={category}
+            pageType="targikielce"
+          />
+        </WrapperItem>
+      ))}
+      {targikrakowarena.map(({ id, url, place, data, city, description, tags, category }) => (
+        <WrapperItem>
+          <FairPostListItem
+            id={id}
+            url={url}
+            key={id}
+            place={place}
+            data={data}
+            city={city}
+            tags={tags}
+            description={description}
+            category={category}
+            pageType="targikrakowarena"
+          />
+        </WrapperItem>
+      ))}
+      {targilodz.map(({ id, url, place, data, city, description, tags, category }) => (
+        <WrapperItem>
+          <FairPostListItem
+            id={id}
+            url={url}
+            key={id}
+            place={place}
+            data={data}
+            city={city}
+            tags={tags}
+            description={description}
+            category={category}
+            pageType="targilodz"
+          />
+        </WrapperItem>
+      ))}
+      {targirybnik.map(({ id, url, place, data, city, description, tags, category }) => (
+        <WrapperItem>
+          <FairPostListItem
+            id={id}
+            url={url}
+            key={id}
+            place={place}
+            data={data}
+            city={city}
+            tags={tags}
+            description={description}
+            category={category}
+            pageType="targirybnik"
+          />
+        </WrapperItem>
+      ))}
+      {targihalaorbita.map(({ id, url, place, data, city, description, tags, category }) => (
+        <WrapperItem>
+          <FairPostListItem
+            id={id}
+            url={url}
+            key={id}
+            place={place}
+            data={data}
+            city={city}
+            tags={tags}
+            description={description}
+            category={category}
+            pageType="targihalaorbita"
+          />
+        </WrapperItem>
+      ))}
+    </Wrapper>
+  </MainTemplates>
 );
 
 const mapStateToProps = (state) => {
@@ -159,4 +169,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(FairBar);
+export default connect(mapStateToProps)(FairList);

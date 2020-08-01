@@ -50,18 +50,48 @@ const CardHeroText = styled.div`
 
 const PhotoBox = styled.div`
   width: 100%;
+  margin: 0 auto;
 `;
 
 const ImageItem = styled.img`
-  display: block;
+display: block;
   width: 100%;
-  height: 28rem;
+  height: 100%;
+  max-height: 28rem;
+  object-fit: cover;
   padding: 5px 5px;
   margin: 0 auto;
   :hover {
     scale: 1.2;
     z-index: 999;
     filter: blur(2px);
+  }
+  @media (max-width: 600px) {
+  }
+  @media (min-width: 600px) {
+  }
+  @media (min-width: 768px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+  @media (min-width: 992px) {
+    width: 80%;
+    max-height: 28rem;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  @media (min-width: 1024px) {
+    width: 80%;
+    max-height: 28rem;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  @media (min-width: 1224px) {
+    width: 100%;
+    height: 100%;
+    max-height: 28rem;
+    object-fit: cover;
+    margin: 0 auto;
   }
 `;
 
