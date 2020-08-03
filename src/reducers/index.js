@@ -4,13 +4,6 @@ import uroczystosc from 'data/press/uroczystosc';
 import wedding from 'data/press/wedding';
 import omsvadba from 'data/press/omsvadba';
 
-import targikrakow from 'data/fair/targikrakow';
-import targikatowice from 'data/fair/targikatowice';
-import targikielce from 'data/fair/targikielce';
-import targikrakowarena from 'data/fair/targikrakowarena';
-import targilodz from 'data/fair/targilodz';
-import targirybnik from 'data/fair/targirybnik';
-import targihalaorbita from 'data/fair/targihalaorbita';
 import fair from 'data/fair/fair';
 
 import accesories from 'data/accesories/accesories';
@@ -38,14 +31,7 @@ const initialState = {
   pannamloda,
   uroczystosc,
   wedding,
-  omsvadba,
-  targikrakow,
-  targikatowice,
-  targikielce,
-  targikrakowarena,
-  targilodz,
-  targirybnik,
-  targihalaorbita,
+  omsvadba,  
   accesories,
   travel,
   dress,

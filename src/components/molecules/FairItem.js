@@ -26,7 +26,7 @@ class FairItem extends Component {
   handleCardClick = () => this.setState({ redirect: true });
 
   render() {
-    const { id, url, city, data, place, pageType } = this.props;
+    const { id, url, city, data, place, pageType} = this.props;
     const { redirect } = this.state;
 
     if (redirect) {
@@ -52,24 +52,8 @@ class FairItem extends Component {
   }
 }
 const mapStateToProps = (state) => {
-  const {
-    targikrakow,
-    targikatowice,
-    targikielce,
-    targikrakowarena,
-    targilodz,
-    targirybnik,
-    targihalaorbita,
-  } = state;
-  return {
-    targikrakow,
-    targikatowice,
-    targikielce,
-    targikrakowarena,
-    targilodz,
-    targirybnik,
-    targihalaorbita,
-  };
+  const { fair } = state;
+  return { fair };
 };
 
 export default connect(mapStateToProps)(FairItem);

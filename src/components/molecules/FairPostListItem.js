@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import MainTemplates from 'templates/MainTemplates';
 
 import styled from 'styled-components';
 
 
 const Wrapper = styled.div`
-  width: 90vw;
+  width: 80vw;
   margin: 2rem auto;
+  cursor: pointer;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 `;
 
@@ -15,8 +17,8 @@ const Body = styled.div`
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 0.2fr 0.8fr;
-  width: 90vw;
-  margin: 5rem 0;
+  width: 80vw;
+  margin: 5rem auto;
 `;
 
 const Main = styled.div``;
@@ -47,11 +49,22 @@ const Button = styled.a`
 `;
 
 class FairPostListItem extends Component {
+  state = {
+    redirect: false,
+  };
+
+  handleCardClick = () => this.setState({ redirect: true });
+
   render() {
-    const { name, url, city, data, place, pageType, description } = this.props;
+    const { id, name, url, city, data, place, pageType, description } = this.props;
+    const { redirect } = this.state;
+
+    if (redirect) {
+      return <Redirect to={`${pageType}/${id}`} />;
+    }   
     return (
       <MainTemplates pageType={pageType}>
-        <Wrapper>
+        <Wrapper onClick={this.handleCardClick}>
           <Body>
             <Main>
               <Picture>

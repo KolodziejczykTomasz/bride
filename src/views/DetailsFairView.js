@@ -17,26 +17,8 @@ class DetailsFairView extends Component {
 
     switch (match.path) {
       case routes.targikrakow:
-        this.setState({ pageType: 'targikrakow' });
-        break;
-      case routes.targikatowice:
-        this.setState({ pageType: 'targikatowice' });
-        break;
-      case routes.targikielce:
-        this.setState({ pageType: 'targikielce' });
-        break;
-      case routes.targikrakowarena:
-        this.setState({ pageType: 'targikrakowarena' });
-        break;
-      case routes.targilodz:
-        this.setState({ pageType: 'targilodz' });
-        break;
-      case routes.targirybnik:
-        this.setState({ pageType: 'targirybnik' });
-        break;
-      case routes.targihalaorbita:
-        this.setState({ pageType: 'targihalaorbita' });
-        break;
+        this.setState({ pageType: 'fairs' });
+        break;      
       default:
         console.log('Something went wrong');
     }
@@ -51,6 +33,18 @@ class DetailsFairView extends Component {
       case '3':
         this.setState({ id: 2 });
         break;
+      case '4':
+        this.setState({ id: 3 });
+        break;
+      case '5':
+        this.setState({ id: 4 });
+        break;
+      case '6':
+        this.setState({ id: 5 });
+        break;
+      case '7':
+        this.setState({ id: 6 });
+        break;
       default:
         console.log('Something went wrong');
     }
@@ -63,124 +57,21 @@ class DetailsFairView extends Component {
       <>
         <NavbarTop />
         <JumbotronBar />
-        {pageType === 'targikrakow' && (
-          <FairPost
-            key={this.props.targikrakow[id].id}
-            pageType={pageType}
-            url={this.props.targikrakow[id].url}
-            city={this.props.targikrakow[id].city}
-            street={this.props.targikrakow[id].street}
-            place={this.props.targikrakow[id].place}
-            data={this.props.targikrakow[id].data}
-            year={this.props.targikrakow[id].year}
-            name={this.props.targikrakow[id].name}
-            description={this.props.targikrakow[id].description}
-            tags={this.props.targikrakow[id].tags}
-            category={this.props.targikrakow[id].category}
-            gallery={this.props.targikrakow[id].gallery}
-          />
-        )}
-        {pageType === 'targikatowice' && (
-          <FairPost
-            key={this.props.targikatowice[id].id}
-            pageType={pageType}
-            url={this.props.targikatowice[id].url}
-            city={this.props.targikatowice[id].city}
-            street={this.props.targikatowice[id].street}
-            place={this.props.targikatowice[id].place}
-            data={this.props.targikatowice[id].data}
-            year={this.props.targikatowice[id].year}
-            name={this.props.targikatowice[id].name}
-            tags={this.props.targikatowice[id].tags}
-            description={this.props.targikatowice[id].description}
-            category={this.props.targikatowice[id].category}
-            gallery={this.props.targikatowice[id].gallery}
-          />
-        )}
-        {pageType === 'targikielce' && (
-          <FairPost
-            key={this.props.targikielce[id].id}
-            pageType={pageType}
-            url={this.props.targikielce[id].url}
-            city={this.props.targikielce[id].city}
-            street={this.props.targikielce[id].street}
-            place={this.props.targikielce[id].place}
-            data={this.props.targikielce[id].data}
-            year={this.props.targikielce[id].year}
-            name={this.props.targikielce[id].name}
-            tags={this.props.targikielce[id].tags}
-            description={this.props.targikielce[id].description}
-            category={this.props.targikielce[id].category}
-            gallery={this.props.targikielce[id].gallery}
-          />
-        )}
-        {pageType === 'targikrakowarena' && (
-          <FairPost
-            key={this.props.targikrakowarena[id].id}
-            pageType={pageType}
-            url={this.props.targikrakowarena[id].url}
-            city={this.props.targikrakowarena[id].city}
-            street={this.props.targikrakowarena[id].street}
-            place={this.props.targikrakowarena[id].place}
-            data={this.props.targikrakowarena[id].data}
-            year={this.props.targikrakowarena[id].year}
-            name={this.props.targikrakowarena[id].name}
-            tags={this.props.targikrakowarena[id].tags}
-            description={this.props.targikrakowarena[id].description}
-            category={this.props.targikrakowarena[id].category}
-            gallery={this.props.targikrakowarena[id].gallery}
-          />
-        )}
-        {pageType === 'targilodz' && (
-          <FairPost
-            pageType={pageType}
-            url={this.props.targilodz[id].url}
-            city={this.props.targilodz[id].city}
-            street={this.props.targilodz[id].street}
-            place={this.props.targilodz[id].place}
-            data={this.props.targilodz[id].data}
-            year={this.props.targilodz[id].year}
-            name={this.props.targilodz[id].name}
-            tags={this.props.targilodz[id].tags}
-            description={this.props.targilodz[id].description}
-            category={this.props.targilodz[id].category}
-            gallery={this.props.targilodz[id].gallery}
-          />
-        )}
-        {pageType === 'targirybnik' && (
-          <FairPost
-            key={this.props.targirybnik[id].id}
-            pageType={pageType}
-            url={this.props.targirybnik[id].url}
-            city={this.props.targirybnik[id].city}
-            street={this.props.targirybnik[id].street}
-            place={this.props.targirybnik[id].place}
-            data={this.props.targirybnik[id].data}
-            year={this.props.targirybnik[id].year}
-            name={this.props.targirybnik[id].name}
-            description={this.props.targirybnik[id].description}
-            tags={this.props.targirybnik[id].tags}
-            category={this.props.targirybnik[id].category}
-            gallery={this.props.targirybnik[id].gallery}
-          />
-        )}
-        {pageType === 'targihalaorbita' && (
-          <FairPost
-            key={this.props.targihalaorbita[id].id}
-            pageType={pageType}
-            url={this.props.targihalaorbita[id].url}
-            city={this.props.targihalaorbita[id].city}
-            street={this.props.targihalaorbita[id].street}
-            place={this.props.targihalaorbita[id].place}
-            data={this.props.targihalaorbita[id].data}
-            year={this.props.targihalaorbita[id].year}
-            name={this.props.targihalaorbita[id].name}
-            tags={this.props.targihalaorbita[id].tags}
-            description={this.props.targihalaorbita[id].description}
-            category={this.props.targihalaorbita[id].category}
-            gallery={this.props.targihalaorbita[id].gallery}
-          />
-        )}
+        <FairPost
+          key={this.props.fair[id].id}
+          pageType={pageType}
+          url={this.props.fair[id].url}
+          city={this.props.fair[id].city}
+          street={this.props.fair[id].street}
+          place={this.props.fair[id].place}
+          data={this.props.fair[id].data}
+          year={this.props.fair[id].year}
+          name={this.props.fair[id].name}
+          description={this.props.fair[id].description}
+          tags={this.props.fair[id].tags}
+          category={this.props.fair[id].category}
+          gallery={this.props.fair[id].gallery}
+        />
         <Footer />
       </>
     );
@@ -188,24 +79,8 @@ class DetailsFairView extends Component {
 }
 
 const mapStateToProps = (state) => {
-  const {
-    targikrakow,
-    targikatowice,
-    targikielce,
-    targikrakowarena,
-    targilodz,
-    targirybnik,
-    targihalaorbita,
-  } = state;
-  return {
-    targikrakow,
-    targikatowice,
-    targikielce,
-    targikrakowarena,
-    targilodz,
-    targirybnik,
-    targihalaorbita,
-  };
+  const { fair } = state;
+  return { fair };
 };
 
 export default connect(mapStateToProps)(DetailsFairView);

@@ -10,13 +10,13 @@ export default [
   {
     id: 1,
     url: targiHalaOrbita,
-    pageType: 'targiHalaOrbita',
+    pageType: 'fairs',
     city: 'Wrocław',
-    street: '',
-    place: '',
-    data: '',
+    street: 'ul. Wejherowska 34, 54-239 Wrocław',
+    place: 'Hala Orbita Wrocław',
+    data: '22.11.2020r.',
     year: 2020,
-    name: 'Targi Ślubne',
+    name: 'Jesienne Dolnośląskie Targi Ślubne',
     gallery: [
       {
         id: 1,
@@ -62,15 +62,15 @@ export default [
     description: [
       {
         id: 1,
-        p1: 'test1',
+        p1: '',
       },
       {
         id: 2,
-        p2: 'test2',
+        p2: '',
       },
       {
         id: 3,
-        p3: 'test3',
+        p3: '',
       },
       {
         id: 4,
@@ -101,15 +101,13 @@ export default [
         p10: '',
       },
     ],
-    tags: [
-      { id: 1, tag: 'Wrocław' },     
-    ],
+    tags: [{ id: 1, tag: 'Wrocław' }],
     category: 'Targi ślubne',
   },
   {
     id: 2,
     url: targiKatowice,
-    pageType: 'targiKatowice',
+    pageType: 'fairs',
     city: 'Katowice',
     street: 'plac Sławika i Antalla 1',
     place: 'MCK Międzynarodowe Centrum Kongresowe',
@@ -206,7 +204,7 @@ export default [
   {
     id: 3,
     url: targiKielce,
-    pageType: 'targiKielce',
+    pageType: 'fairs',
     city: 'Kielce',
     street: 'ul. Zakładowa 1',
     place: 'Targi Kielce exhibition & congress centre',
@@ -303,7 +301,7 @@ export default [
   {
     id: 4,
     url: targiKraków,
-    pageType: 'targiKraków',
+    pageType: 'fairs',
     city: 'Kraków',
     street: 'ul. Stanisława Lema 7',
     place: 'Tauron Arena Kraków',
@@ -400,7 +398,7 @@ export default [
   {
     id: 5,
     url: targiKrakówArena,
-    pageType: 'targiKrakówArena',
+    pageType: 'fairs',
     city: 'Kraków',
     street: 'ul. Stanisława Lema 7',
     place: 'Tauron Arena Kraków',
@@ -497,7 +495,7 @@ export default [
   {
     id: 6,
     url: targiLodz,
-    pageType: 'targiLodz',
+    pageType: 'fairs',
     city: 'Łódź',
     street: 'al. Politechniki 4',
     place: 'expo Łódź',
@@ -594,7 +592,7 @@ export default [
   {
     id: 7,
     url: targiRybnik,
-    pageType: 'targiRybnik',
+    pageType: 'fairs',
     city: 'Rybnik',
     street: 'ul. Św. Józefa 30',
     place: 'ZSEU Rybnik',

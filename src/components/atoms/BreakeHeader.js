@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: grid;
-  margin: 10rem 0 6rem 0;
+  margin: 6rem 0 6rem 0;
 `;
 
 const WrapperItemLeft = styled.div`

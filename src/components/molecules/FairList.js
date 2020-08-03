@@ -6,13 +6,15 @@ import FairPostListItem from 'components/molecules/FairPostListItem';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  margin-bottom: 20rem;
+  margin: 0 auto 20rem auto;
+  width: 80vw;
 `;
 
 const WrapperItem = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 3rem;
+  width: 80vw;
   margin-top: 3rem;
   margin-bottom: 3rem;
   @media (max-width: 600px) {
@@ -21,18 +23,10 @@ const WrapperItem = styled.div`
   }
 `;
 
-const FairList = ({
-  targikrakow,
-  targikatowice,
-  targikielce,
-  targikrakowarena,
-  targilodz,
-  targirybnik,
-  targihalaorbita,
-}) => (
+const FairList = ({ fair }) => (
   <MainTemplates>
     <Wrapper>
-      {targikrakow.map(({ id, url, place, data, city, description, tags, category }) => (
+      {fair.map(({ id, url, place, data, city, description, pageType, tags, category }) => (
         <WrapperItem>
           <FairPostListItem
             id={id}
@@ -44,103 +38,7 @@ const FairList = ({
             tags={tags}
             category={category}
             description={description}
-            pageType="targikrakow"
-          />
-        </WrapperItem>
-      ))}
-      {targikatowice.map(({ id, url, place, data, city, description, tags, category }) => (
-        <WrapperItem>
-          <FairPostListItem
-            id={id}
-            url={url}
-            key={id}
-            place={place}
-            data={data}
-            city={city}
-            tags={tags}
-            description={description}
-            category={category}
-            pageType="targikatowice"
-          />
-        </WrapperItem>
-      ))}
-      {targikielce.map(({ id, url, place, data, city, description, tags, category }) => (
-        <WrapperItem>
-          <FairPostListItem
-            id={id}
-            url={url}
-            key={id}
-            place={place}
-            data={data}
-            city={city}
-            tags={tags}
-            description={description}
-            category={category}
-            pageType="targikielce"
-          />
-        </WrapperItem>
-      ))}
-      {targikrakowarena.map(({ id, url, place, data, city, description, tags, category }) => (
-        <WrapperItem>
-          <FairPostListItem
-            id={id}
-            url={url}
-            key={id}
-            place={place}
-            data={data}
-            city={city}
-            tags={tags}
-            description={description}
-            category={category}
-            pageType="targikrakowarena"
-          />
-        </WrapperItem>
-      ))}
-      {targilodz.map(({ id, url, place, data, city, description, tags, category }) => (
-        <WrapperItem>
-          <FairPostListItem
-            id={id}
-            url={url}
-            key={id}
-            place={place}
-            data={data}
-            city={city}
-            tags={tags}
-            description={description}
-            category={category}
-            pageType="targilodz"
-          />
-        </WrapperItem>
-      ))}
-      {targirybnik.map(({ id, url, place, data, city, description, tags, category }) => (
-        <WrapperItem>
-          <FairPostListItem
-            id={id}
-            url={url}
-            key={id}
-            place={place}
-            data={data}
-            city={city}
-            tags={tags}
-            description={description}
-            category={category}
-            pageType="targirybnik"
-          />
-        </WrapperItem>
-      ))}
-      {targihalaorbita.map(({ id, url, place, data, city, description, tags, category }) => (
-        <WrapperItem>
-          <FairPostListItem
-            id={id}
-            url={url}
-            key={id}
-            place={place}
-            data={data}
-            city={city}
-            tags={tags}
-            description={description}
-            category={category}
-            pageType="targihalaorbita"
+            pageType={pageType}
           />
         </WrapperItem>
       ))}
@@ -149,24 +47,8 @@ const FairList = ({
 );
 
 const mapStateToProps = (state) => {
-  const {
-    targikrakow,
-    targikatowice,
-    targikielce,
-    targikrakowarena,
-    targilodz,
-    targirybnik,
-    targihalaorbita,
-  } = state;
-  return {
-    targikrakow,
-    targikatowice,
-    targikielce,
-    targikrakowarena,
-    targilodz,
-    targirybnik,
-    targihalaorbita,
-  };
+  const { fair } = state;
+  return { fair };
 };
 
 export default connect(mapStateToProps)(FairList);
