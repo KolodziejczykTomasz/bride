@@ -1,11 +1,11 @@
-import press1 from 'assets/images/press/pm_01_2020.png';
-import press2 from 'assets/images/press/pm_01_2018.jpg';
+import pm_2_2019 from 'assets/images/press/pm_01_2020.png';
+import pm_1_2018 from 'assets/images/press/pm_01_2018.jpg';
 
 
 export default [
   {
     id: 1,
-    url: press1,
+    url: pm_2_2019,
     title: 'Panna Młoda',
     number: '2/2020 (54)',  
     year: '',
@@ -63,7 +63,7 @@ export default [
   },
   {
     id: 2,
-    url: press2,
+    url: pm_1_2018,
     title: 'PANNA MŁODA',
     number: '1/2018 (48)',  
     year: '',

@@ -17,8 +17,8 @@ export default [
     category: ' Litera A / Princessa / Księżniczka ',
     descripion: 'Tkaniny: Koronka / Tiul',
     tags: [
-      { id: 1, tag: 'test1' },
-      { id: 2, tag: 'test1' },
+      { id: 1, tag: 'LIBERICA' },
+      { id: 2, tag: 'Tylko Ona' },
     ],
   },
   {
@@ -31,8 +31,8 @@ export default [
     category: ' Bez zdobień / Boho / Litera A / Princessa / Księżniczka / Romantyczne',
     descripion: 'Tkaniny: Koronka / Tiul',
     tags: [
-      { id: 1, tag: 'test1' },
-      { id: 2, tag: 'test1' },
+      { id: 1, tag: 'BEVERLY' },
+      { id: 2, tag: 'Outlet' },
     ],
   },
   {
@@ -45,8 +45,8 @@ export default [
     category: 'Litera A / Proste / Romantyczne / Skromne',
     descripion: 'Tkaniny: Koronka / Tiul',
     tags: [
-      { id: 1, tag: 'test1' },
-      { id: 2, tag: 'test1' },
+      { id: 1, tag: 'Litera A' },
+      { id: 2, tag: 'Outlet' },
     ],
   },
   {
@@ -59,8 +59,8 @@ export default [
     category: 'Do cywilnego / Princessa / ',
     descripion: 'Tkaniny: Satyna',
     tags: [
-      { id: 1, tag: 'test1' },
-      { id: 2, tag: 'test1' },
+      { id: 1, tag: 'Pronovias' },
+      { id: 2, tag: 'Tylko Ona' },
     ],
   },
   {
@@ -73,8 +73,8 @@ export default [
     category: 'Romantyczne / Zwiewne',
     descripion: 'Tkaniny: Koronka / Muślin / Szyfon',
     tags: [
-      { id: 1, tag: 'test1' },
-      { id: 2, tag: 'test1' },
+      { id: 1, tag: 'DOMINIQUE-A' },
+      { id: 2, tag: 'Outlet' },
     ],
   },
   {
@@ -87,8 +87,8 @@ export default [
     category: ' Bez zdobień / Boho / Do cywilnego',
     descripion: 'Tkaniny: Koronka / Tiul',
     tags: [
-      { id: 1, tag: 'test1' },
-      { id: 2, tag: 'test1' },
+      { id: 1, tag: 'ANDROMEDA' },
+      { id: 2, tag: 'Tylko Ona' },
     ],
   },
   {
@@ -96,13 +96,13 @@ export default [
     url: suknia_slubna_7,
     shop: 'Outlet',
     name: 'Herms Bridal',
-    model: 'ALABAMA ',
+    model: 'ALABAMA',
     price: '',
     category: ' Proste',
     descripion: 'Tkaniny: Koronka / Tiul',
     tags: [
-      { id: 1, tag: 'test1' },
-      { id: 2, tag: 'test1' },
+      { id: 1, tag: 'ALABAMA' },
+      { id: 2, tag: 'Outlet' },
     ],
   },
 ];

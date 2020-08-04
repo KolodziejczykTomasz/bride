@@ -1,9 +1,9 @@
-import press2 from 'assets/images/press/bc_2_2019.jpg';
+import oms_2_2019 from 'assets/images/press/bc_2_2019.jpg';
 
 export default [
   {
     id: 1,
-    url: press2,
+    url: oms_2_2019,
     title: 'Свадьба в Москве',
     number: '2/2019 (40)',    
     year: '',

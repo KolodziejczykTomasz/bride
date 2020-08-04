@@ -1,7 +1,8 @@
-import React from 'react';
-import FairItem from 'components/molecules/FairItem';
-import styled from 'styled-components';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import FairItem from 'components/molecules/FairItem';
+
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: grid;
@@ -17,25 +18,36 @@ const WrapperItem = styled.div`
   width: 100%;
 `;
 
-const FairBar = ({ fair }) => (
-  <Wrapper>
-    {fair.slice(0, 3).map(({ id, url, place, data, city, description, pageType, tags }) => (
-      <WrapperItem>
-        <FairItem
-          id={id}
-          url={url}
-          key={id}
-          place={place}
-          data={data}
-          city={city}
-          tags={tags}
-          description={description}
-          pageType={pageType}
-        />
-      </WrapperItem>
-    ))}
-  </Wrapper>
-);
+class FairBar extends Component {
+  state = { date: new Date() };
+
+  render() {    
+    const { fair } = this.props;
+    return (
+      <Wrapper>
+        {fair
+          .filter((item) => item.data < this.state.date.toLocaleDateString())
+          .sort((a, b) => b.data < a.data)
+          .slice(0, 3)
+          .map(({ id, url, place, data, city, description, pageType, tags }) => (
+            <WrapperItem>
+              <FairItem
+                id={id}
+                url={url}
+                key={id}
+                place={place}
+                data={data}
+                city={city}
+                tags={tags}
+                description={description}
+                pageType={pageType}
+              />
+            </WrapperItem>
+          ))}
+      </Wrapper>
+    );
+  }
+}
 
 const mapStateToProps = (state) => {
   const { fair } = state;

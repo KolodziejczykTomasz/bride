@@ -1,11 +1,11 @@
-import press1 from 'assets/images/press/u_1112_2019.jpg';
-import press2 from 'assets/images/press/u_910_2019.png';
+import uro_11_12_2019 from 'assets/images/press/u_1112_2019.jpg';
+import uro_9_10_2019 from 'assets/images/press/u_910_2019.png';
 
 
 export default [
   {
     id: 1,
-    url: press1,
+    url: uro_11_12_2019,
     title: 'Uroczystość',
     number: '11-12/2019 (88)',  
     year: '',
@@ -63,7 +63,7 @@ export default [
   },
   {
     id: 2,
-    url: press2,
+    url: uro_9_10_2019,
     title: 'Uroczystość',
     number: '9-10/2019 (87)',    
     year: '',

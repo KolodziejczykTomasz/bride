@@ -1,13 +1,13 @@
-import press1 from 'assets/images/press/mp_01_2020.jpg';
-import press2 from 'assets/images/press/mp_01_2019.png';
-import press3 from 'assets/images/press/mp_02_2019.png';
-import press4 from 'assets/images/press/mp_03_2019.png';
-import press5 from 'assets/images/press/mp_04_2019.png';
+import mp_1_2020 from 'assets/images/press/mp_01_2020.jpg';
+import mp_1_2019 from 'assets/images/press/mp_01_2019.png';
+import mp_2_2019 from'assets/images/press/mp_02_2019.png';
+import mp_3_2019 from 'assets/images/press/mp_03_2019.png';
+import mp_4_2019 from 'assets/images/press/mp_04_2019.png';
 
 export default [
   {
     id: 1,
-    url: press1,
+    url: mp_1_2020,
     title: 'Młoda Para Od A-Z',
     number: '1/2020 (259)',    
     year: '',
@@ -65,7 +65,7 @@ export default [
   },
   {
     id: 2,
-    url: press5,
+    url: mp_4_2019,
     title: 'Młoda Para Od A-Z',
     number: '4/2019 ',   
     year: '',
@@ -123,7 +123,7 @@ export default [
   },
   {
     id: 3,
-    url: press4,
+    url: mp_3_2019,
     title: 'Młoda Para Od A-Z',
     number: '3/2019 (257)', 
     year: '',
@@ -181,7 +181,7 @@ export default [
   },
   {
     id: 4,
-    url: press3,
+    url: mp_2_2019,
     title: 'Młoda Para Od A-Z',
     number: '2/2019 (256)', 
     year: '',
@@ -239,7 +239,7 @@ export default [
   },
   {
     id: 5,
-    url: press2,
+    url: mp_1_2019,
     title: 'Młoda Para Od A-Z',
     number: '1/2019 (255)', 
     year: '',

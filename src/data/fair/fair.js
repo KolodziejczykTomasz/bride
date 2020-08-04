@@ -1,7 +1,6 @@
 import targiHalaOrbita from 'assets/images/fair/spartan-hala-orbita.png';
 import targiKatowice from 'assets/images/fair/katowice-mck.png';
 import targiKielce from 'assets/images/fair/kielce.png';
-import targiKraków from 'assets/images/fair/ice-krakow.png';
 import targiKrakówArena from 'assets/images/fair/krakow-tauron-arena.png';
 import targiLodz from 'assets/images/fair/lodz-expo.png';
 import targiRybnik from 'assets/images/fair/rybnik-zseu.png';
@@ -14,7 +13,7 @@ export default [
     city: 'Wrocław',
     street: 'ul. Wejherowska 34, 54-239 Wrocław',
     place: 'Hala Orbita Wrocław',
-    data: '22.11.2020r.',
+    data: '12.11.2020',
     year: 2020,
     name: 'Jesienne Dolnośląskie Targi Ślubne',
     gallery: [
@@ -300,103 +299,6 @@ export default [
   },
   {
     id: 4,
-    url: targiKraków,
-    pageType: 'fairs',
-    city: 'Kraków',
-    street: 'ul. Stanisława Lema 7',
-    place: 'Tauron Arena Kraków',
-    data: '11.10.2020',
-    year: 2020,
-    name: 'Targi Ślubne',
-    gallery: [
-      {
-        id: 1,
-        url: '',
-      },
-      {
-        id: 2,
-        url: '',
-      },
-      {
-        id: 3,
-        url: '',
-      },
-      {
-        id: 4,
-        url: '',
-      },
-      {
-        id: 5,
-        url: '',
-      },
-      {
-        id: 6,
-        url: '',
-      },
-      {
-        id: 7,
-        url: '',
-      },
-      {
-        id: 8,
-        url: '',
-      },
-      {
-        id: 9,
-        url: '',
-      },
-      {
-        id: 10,
-        url: '',
-      },
-    ],
-    description: [
-      {
-        id: 1,
-        p1: '',
-      },
-      {
-        id: 2,
-        p2: '',
-      },
-      {
-        id: 3,
-        p3: '',
-      },
-      {
-        id: 4,
-        p4: '',
-      },
-      {
-        id: 5,
-        p5: '',
-      },
-      {
-        id: 6,
-        p6: '',
-      },
-      {
-        id: 7,
-        p7: '',
-      },
-      {
-        id: 8,
-        p8: '',
-      },
-      {
-        id: 9,
-        p9: '',
-      },
-      {
-        id: 10,
-        p10: '',
-      },
-    ],
-    tags: [{ id: 1, tag: 'Kraków' }],
-    category: 'Targi ślubne',
-  },
-  {
-    id: 5,
     url: targiKrakówArena,
     pageType: 'fairs',
     city: 'Kraków',
@@ -493,7 +395,7 @@ export default [
     category: 'Targi ślubne',
   },
   {
-    id: 6,
+    id: 5,
     url: targiLodz,
     pageType: 'fairs',
     city: 'Łódź',
@@ -590,7 +492,7 @@ export default [
     category: 'Targi ślubne',
   },
   {
-    id: 7,
+    id: 6,
     url: targiRybnik,
     pageType: 'fairs',
     city: 'Rybnik',
