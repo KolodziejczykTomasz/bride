@@ -8,7 +8,7 @@ import FairPost from 'components/molecules/FairPost';
 
 class DetailsFairView extends Component {
   state = {
-    pageType: 'targikrakow',
+    pageType: 'fairs',
     id: 0,
   };
 
@@ -16,7 +16,7 @@ class DetailsFairView extends Component {
     const { match } = this.props;
 
     switch (match.path) {
-      case routes.targikrakow:
+      case routes.fairs:
         this.setState({ pageType: 'fairs' });
         break;      
       default:

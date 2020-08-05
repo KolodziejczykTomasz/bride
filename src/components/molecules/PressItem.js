@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
+
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -16,7 +17,7 @@ const Wrapper = styled.div`
 `;
 
 const Card = styled.div`
-  position: relative  
+  position: relative;
 `;
 
 const CardHeroTextTitle = styled.p`
@@ -54,7 +55,7 @@ const PhotoBox = styled.div`
 `;
 
 const ImageItem = styled.img`
-display: block;
+  display: block;
   width: 100%;
   height: 100%;
   max-height: 28rem;

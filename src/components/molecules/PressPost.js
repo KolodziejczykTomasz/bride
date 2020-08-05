@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Redirect } from 'react-router-dom';
 import MainTemplates from 'templates/MainTemplates';
 import BreakeHeader from 'components/atoms/BreakeHeader';
-import PressSimilarItems from 'components/molecules/PressSimilarItems';
+import PressSimilar from 'components/molecules/PressSimilar';
 import PostFooter from 'components/organisms/PostFooter';
 
 import styled from 'styled-components';
@@ -101,10 +101,10 @@ class PressPost extends Component {
       shop,
       url,
       tags,
-      category
+      category    
     } = this.props;
     return (
-      <MainTemplates pageType={pageType}>
+      <MainTemplates pageType={pageType} title={title}>
         <BreakeHeader>Prasa ślubna</BreakeHeader>
         <Wrapper>
           <Header></Header>
@@ -172,7 +172,7 @@ class PressPost extends Component {
               </Section>
             </Aside>
           </Card>
-          <PressSimilarItems pageType={pageType} />
+          <PressSimilar pageType={pageType} title={title}/>
           <PostFooter category={category} tags={tags} />
           <Button as={Link} to={`/`}>
             Close

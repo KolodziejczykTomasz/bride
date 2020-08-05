@@ -37,46 +37,54 @@ const WrapperItem = styled.div`
 
 
 
-const PressBar = ({ mlodapara, pannamloda, uroczystosc, wedding, omsvadba }) => (
+const PressBar = ({ press }) => (
   <Wrapper>
-    {mlodapara.slice(0, 1).map(({ id, url, title, number }) => (
-      <WrapperItem>
-        <PressItem id={id} url={url} key={id} title={title} number={number} pageType="mlodapara" />        
-      </WrapperItem>
-    ))}
-    {pannamloda.slice(0, 1).map(({ id, url, title, number }) => (
-      <WrapperItem>
-        <PressItem id={id} url={url} key={id} title={title} number={number} pageType="pannamloda" />
-      </WrapperItem>
-    ))}
-    {uroczystosc.slice(0, 1).map(({ id, url, title, number }) => (
-      <WrapperItem>
-        <PressItem
-          id={id}
-          url={url}
-          key={id}
-          title={title}
-          number={number}
-          pageType="uroczystosc"
-        />
-      </WrapperItem>
-    ))}
-    {wedding.slice(0, 1).map(({ id, url, title, number }) => (
-      <WrapperItem>
-        <PressItem id={id} url={url} key={id} title={title} number={number} pageType="wedding" />
-      </WrapperItem>
-    ))}
-    {omsvadba.slice(0, 1).map(({ id, url, title, number }) => (
-      <WrapperItem>
-        <PressItem id={id} url={url} key={id} title={title} number={number} pageType="omsvadba" />
-      </WrapperItem>
-    ))}
+    {press
+      .filter((item) => item.title === 'Młoda Para Od A-Z')
+      .slice(0, 1)
+      .map(({ id, url, title, number, pageType }) => (
+        <WrapperItem>
+          <PressItem id={id} url={url} key={id} title={title} number={number} pageType={pageType} />
+        </WrapperItem>
+      ))}
+    {press
+      .filter((item) => item.title === 'Свадьба в Москве')
+      .slice(0, 1)
+      .map(({ id, url, title, number, pageType }) => (
+        <WrapperItem>
+          <PressItem id={id} url={url} key={id} title={title} number={number} pageType={pageType} />
+        </WrapperItem>
+      ))}
+    {press
+      .filter((item) => item.title === 'Panna Młoda')
+      .slice(0, 1)
+      .map(({ id, url, title, number, pageType }) => (
+        <WrapperItem>
+          <PressItem id={id} url={url} key={id} title={title} number={number} pageType={pageType} />
+        </WrapperItem>
+      ))}
+    {press
+      .filter((item) => item.title === 'Uroczystość')
+      .slice(0, 1)
+      .map(({ id, url, title, number, pageType }) => (
+        <WrapperItem>
+          <PressItem id={id} url={url} key={id} title={title} number={number} pageType={pageType} />
+        </WrapperItem>
+      ))}
+    {press
+      .filter((item) => item.title === 'Wedding')
+      .slice(0, 1)
+      .map(({ id, url, title, number, pageType }) => (
+        <WrapperItem>
+          <PressItem id={id} url={url} key={id} title={title} number={number} pageType={pageType} />
+        </WrapperItem>
+      ))}
   </Wrapper>
 );
 
 const mapStateToProps = (state) => {
-  const { mlodapara, pannamloda, uroczystosc, wedding, omsvadba } = state;
-  return { mlodapara, pannamloda, uroczystosc, wedding, omsvadba };
+  const { press } = state;
+  return { press };
 };
 
 export default connect(mapStateToProps)(PressBar);

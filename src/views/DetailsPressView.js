@@ -6,10 +6,9 @@ import JumbotronBar from 'components/molecules/JumbotronBar';
 import Footer from 'components/organisms/Footer';
 import PressPost from 'components/molecules/PressPost';
 
-
 class DetailsPressView extends Component {
   state = {
-    pageType: 'mlodapara',
+    pageType: 'presses',
     id: 0,
   };
 
@@ -17,20 +16,8 @@ class DetailsPressView extends Component {
     const { match } = this.props;
 
     switch (match.path) {
-      case routes.mlodapara:
-        this.setState({ pageType: 'mlodapara' });
-        break;
-      case routes.pannamloda:
-        this.setState({ pageType: 'pannamloda' });
-        break;
-      case routes.uroczystosc:
-        this.setState({ pageType: 'uroczystosc' });
-        break;
-      case routes.wedding:
-        this.setState({ pageType: 'wedding' });
-        break;
-      case routes.omsvadba:
-        this.setState({ pageType: 'omsvadba' });
+      case routes.press:
+        this.setState({ pageType: 'presses' });
         break;
       default:
         console.log('Something went wrong');
@@ -46,6 +33,36 @@ class DetailsPressView extends Component {
       case '3':
         this.setState({ id: 2 });
         break;
+      case '4':
+        this.setState({ id: 3 });
+        break;
+      case '5':
+        this.setState({ id: 4 });
+        break;
+      case '6':
+        this.setState({ id: 5 });
+        break;
+      case '7':
+        this.setState({ id: 6 });
+        break;
+      case '8':
+        this.setState({ id: 7 });
+        break;
+      case '9':
+        this.setState({ id: 8 });
+        break;
+      case '10':
+        this.setState({ id: 9 });
+        break;
+      case '11':
+        this.setState({ id: 10 });
+        break;
+      case '12':
+        this.setState({ id: 11 });
+        break;
+      case '13':
+        this.setState({ id: 12 });
+        break;
       default:
         console.log('Something went wrong');
     }
@@ -58,97 +75,22 @@ class DetailsPressView extends Component {
       <>
         <NavbarTop />
         <JumbotronBar />
-        {pageType === 'mlodapara' && (
-          <PressPost
-            key={this.props.mlodapara[id].id}
-            pageType={pageType}
-            url={this.props.mlodapara[id].url}
-            title={this.props.mlodapara[id].title}
-            number={this.props.mlodapara[id].number}          
-            year={this.props.mlodapara[id].year}
-            download={this.props.mlodapara[id].download}
-            shop={this.props.mlodapara[id].shop}
-            price={this.props.mlodapara[id].price}
-            publisher={this.props.mlodapara[id].publisher}
-            description={this.props.mlodapara[id].description}
-            tags={this.props.mlodapara[id].tags}
-            category={this.props.mlodapara[id].category}
-            gallery={this.props.mlodapara[id].gallery}
-          />
-        )}
-        {pageType === 'pannamloda' && (
-          <PressPost
-            key={this.props.pannamloda[id].id}
-            pageType={pageType}
-            url={this.props.pannamloda[id].url}
-            title={this.props.pannamloda[id].title}
-            number={this.props.pannamloda[id].number}           
-            year={this.props.pannamloda[id].year}
-            download={this.props.pannamloda[id].download}
-            shop={this.props.pannamloda[id].shop}
-            price={this.props.pannamloda[id].price}
-            publisher={this.props.pannamloda[id].publisher}
-            description={this.props.pannamloda[id].description}
-            tags={this.props.pannamloda[id].tags}
-            category={this.props.pannamloda[id].category}
-            gallery={this.props.pannamloda[id].gallery}
-          />
-        )}
-        {pageType === 'uroczystosc' && (
-          <PressPost
-            key={this.props.uroczystosc[id].id}
-            pageType={pageType}
-            url={this.props.uroczystosc[id].url}
-            title={this.props.uroczystosc[id].title}
-            number={this.props.uroczystosc[id].number}        
-            year={this.props.uroczystosc[id].year}
-            download={this.props.uroczystosc[id].download}
-            shop={this.props.uroczystosc[id].shop}
-            price={this.props.uroczystosc[id].price}
-            publisher={this.props.uroczystosc[id].publisher}
-            description={this.props.uroczystosc[id].description}
-            tags={this.props.uroczystosc[id].tags}
-            category={this.props.uroczystosc[id].category}
-            gallery={this.props.uroczystosc[id].gallery}
-          />
-        )}
-        {pageType === 'wedding' && (
-          <PressPost
-            key={this.props.wedding[id].id}
-            pageType={pageType}
-            url={this.props.wedding[id].url}
-            title={this.props.wedding[id].title}
-            number={this.props.wedding[id].number}           
-            year={this.props.wedding[id].year}
-            download={this.props.wedding[id].download}
-            shop={this.props.wedding[id].shop}
-            price={this.props.wedding[id].price}
-            publisher={this.props.wedding[id].publisher}
-            description={this.props.wedding[id].description}
-            tags={this.props.wedding[id].tags}
-            category={this.props.wedding[id].category}
-            gallery={this.props.wedding[id].gallery}
-          />
-        )}
-        {pageType === 'omsvadba' && (
-          <PressPost
-            key={this.props.omsvadba[id].id}
-            pageType={pageType}
-            url={this.props.omsvadba[id].url}
-            title={this.props.omsvadba[id].title}
-            number={this.props.omsvadba[id].number}          
-            year={this.props.omsvadba[id].year}
-            download={this.props.omsvadba[id].download}
-            shop={this.props.omsvadba[id].shop}
-            price={this.props.omsvadba[id].price}
-            publisher={this.props.omsvadba[id].publisher}
-            description={this.props.omsvadba[id].description}
-            tags={this.props.omsvadba[id].tags}
-            category={this.props.omsvadba[id].category}
-            gallery={this.props.omsvadba[id].gallery}
-          />
-        )}
-
+        <PressPost
+          key={this.props.press[id].id}
+          pageType={pageType}
+          url={this.props.press[id].url}
+          title={this.props.press[id].title}
+          number={this.props.press[id].number}
+          year={this.props.press[id].year}
+          download={this.props.press[id].download}
+          shop={this.props.press[id].shop}
+          price={this.props.press[id].price}
+          publisher={this.props.press[id].publisher}
+          description={this.props.press[id].description}
+          tags={this.props.press[id].tags}
+          category={this.props.press[id].category}
+          gallery={this.props.press[id].gallery}
+        />
         <Footer />
       </>
     );
@@ -156,8 +98,8 @@ class DetailsPressView extends Component {
 }
 
 const mapStateToProps = (state) => {
-  const { omsvadba, wedding, uroczystosc, pannamloda, mlodapara } = state;
-  return { omsvadba, wedding, uroczystosc, pannamloda, mlodapara };
+  const { press } = state;
+  return { press };
 };
 
 export default connect(mapStateToProps)(DetailsPressView);

@@ -68,6 +68,7 @@ export default [
       { id: 2, tag: 'prasa ślubna' },
     ],
     category: 'Prasa ślubna',
+    pageType: 'presses',
   },
   {
     id: 2,
@@ -126,6 +127,7 @@ export default [
       { id: 2, tag: 'prasa ślubna' },
     ],
     category: 'Prasa ślubna',
+    pageType: 'presses',
   },
   {
     id: 3,
@@ -184,6 +186,7 @@ export default [
       { id: 2, tag: 'prasa ślubna' },
     ],
     category: 'Prasa ślubna',
+    pageType: 'presses',
   },
   {
     id: 4,
@@ -242,6 +245,7 @@ export default [
       { id: 2, tag: 'prasa ślubna' },
     ],
     category: 'Prasa ślubna',
+    pageType: 'presses',
   },
   {
     id: 5,
@@ -300,6 +304,7 @@ export default [
       { id: 2, tag: 'prasa ślubna' },
     ],
     category: 'Prasa ślubna',
+    pageType: 'presses',
   },
   {
     id: 6,
@@ -358,6 +363,7 @@ export default [
       { id: 2, tag: 'prasa ślubna' },
     ],
     category: 'Prasa ślubna',
+    pageType: 'presses',
   },
   {
     id: 7,
@@ -416,6 +422,7 @@ export default [
       { id: 2, tag: 'prasa ślubna' },
     ],
     category: 'Prasa ślubna',
+    pageType: 'presses',
   },
   {
     id: 8,
@@ -474,6 +481,7 @@ export default [
       { id: 2, tag: 'prasa ślubna' },
     ],
     category: 'Prasa ślubna',
+    pageType: 'presses',
   },
   {
     id: 9,
@@ -532,6 +540,7 @@ export default [
       { id: 2, tag: 'prasa ślubna' },
     ],
     category: 'Prasa ślubna',
+    pageType: 'presses',
   },
   {
     id: 10,
@@ -590,9 +599,10 @@ export default [
       { id: 2, tag: 'prasa ślubna' },
     ],
     category: 'Prasa ślubna',
+    pageType: 'presses',
   },
   {
-    id: 1,
+    id: 11,
     url: wed_2_2019,
     title: 'Wedding',
     number: '2/2019 (24)',
@@ -648,5 +658,6 @@ export default [
       { id: 2, tag: 'prasa ślubna' },
     ],
     category: 'Prasa ślubna',
+    pageType: 'presses',
   },
 ];

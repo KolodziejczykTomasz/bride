@@ -40,11 +40,8 @@ const Root = () => (
           <Route path="/accesories/:id" component={DetailsAccesoriesView} />
           <Route exact path="/churchs" component={ChurchView} />
           <Route path="/churchs/:id" component={DetailsChurchView} />
-          <Route path="/mlodapara/:id" component={DetailsPressView} />
-          <Route path="/pannamloda/:id" component={DetailsPressView} />
-          <Route path="/uroczystosc/:id" component={DetailsPressView} />
-          <Route path="/wedding/:id" component={DetailsPressView} />
-          <Route path="/omsvadba/:id" component={DetailsPressView} />
+          <Route path="/presses/:id" component={DetailsPressView} />
+          <Route path="/presses" component={DetailsPressView} />
           <Route exact path="/fairs" component={FairView} />
           <Route exact path="/fairs/:id" component={DetailsFairView} />
           <Route exact path="/fairlist" component={FairView} /> 

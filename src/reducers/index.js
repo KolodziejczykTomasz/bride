@@ -1,8 +1,4 @@
-import mlodapara from 'data/press/mlodapara';
-import pannamloda from 'data/press/pannamloda';
-import uroczystosc from 'data/press/uroczystosc';
-import wedding from 'data/press/wedding';
-import omsvadba from 'data/press/omsvadba';
+import press from 'data/press/press';
 
 import fair from 'data/fair/fair';
 
@@ -26,12 +22,7 @@ import zespoly from 'data/company/zespoly';
 const initialState = {
   postchurch,
   postextras,
-  postbride,
-  mlodapara,
-  pannamloda,
-  uroczystosc,
-  wedding,
-  omsvadba,  
+  postbride,   
   accesories,
   travel,
   dress,
@@ -42,7 +33,8 @@ const initialState = {
   moda,
   atrakcje,
   dekoracje,
-  fair
+  fair,
+  press
 };
 
 const rootReducer = (state = initialState, action) => {
