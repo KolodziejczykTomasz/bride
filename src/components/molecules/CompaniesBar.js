@@ -14,13 +14,7 @@ const WrapperTabRow = styled.div`
 `;
 
 const CompaniesBar = ({
-  pozostale,
-  lokale,
-  foto,
-  zespoly,
-  moda,
-  atrakcje,
-  dekoracje,
+company,
   description,
 }) => {
   const [activeTab, setActiveTab] = useState('1');
@@ -108,9 +102,9 @@ const CompaniesBar = ({
           <TabPane tabId="1">
             <WrapperTabRow>
               <Row>
-                {dekoracje.length ? (
+                
                   <>
-                    {dekoracje.map(({ id, url, title, subtitle, price, city, description }) => (
+                  {company.filter((item) => item.category === 'Dekoracje').map(({ id, url, title, subtitle, price, city, description, pageType }) => (
                       <CompaniesItem
                         id={id}
                         url={url}
@@ -120,22 +114,20 @@ const CompaniesBar = ({
                         subtitle={subtitle}
                         description={description}
                         city={city}
-                        pageType="dekoracje"
+                        pageType={pageType}
                       />
                     ))}
                   </>
-                ) : (
-                  <p>Brak firm w danej kategorii</p>
-                )}
+              
               </Row>
             </WrapperTabRow>
           </TabPane>
           <TabPane tabId="2">
             <WrapperTabRow>
               <Row>
-                {atrakcje.length ? (
+             
                   <>
-                    {atrakcje.map(({ id, url, title, subtitle, price, city, description }) => (
+                  {company.filter((item) => item.category === 'Atrakcje').map(({ id, url, title, subtitle, price, city, description, pageType }) => (
                       <CompaniesItem
                         id={id}
                         url={url}
@@ -145,22 +137,20 @@ const CompaniesBar = ({
                         subtitle={subtitle}
                         city={city}
                         description={description}
-                        pageType="atrakcje"
+                        pageType={pageType}
                       />
                     ))}
                   </>
-                ) : (
-                  <p>Brak firm w danej kategorii</p>
-                )}
+           
               </Row>
             </WrapperTabRow>
           </TabPane>
           <TabPane tabId="3">
             <WrapperTabRow>
               <Row>
-                {moda.length ? (
+               
                   <>
-                    {moda.map(({ id, url, title, subtitle, price, city, description }) => (
+                  {company.filter((item) => item.category === 'Moda').map(({ id, url, title, subtitle, price, city, description, pageType }) => (
                       <CompaniesItem
                         id={id}
                         url={url}
@@ -170,22 +160,20 @@ const CompaniesBar = ({
                         subtitle={subtitle}
                         city={city}
                         description={description}
-                        pageType="moda"
+                        pageType={pageType}
                       />
                     ))}
                   </>
-                ) : (
-                  <p>Brak firm w danej kategorii</p>
-                )}
+              
               </Row>
             </WrapperTabRow>
           </TabPane>
           <TabPane tabId="4">
             <WrapperTabRow>
               <Row>
-                {zespoly.length ? (
+            
                   <>
-                    {zespoly.map(({ id, url, title, subtitle, price, city, description }) => (
+                  {company.filter((item) => item.category === 'Zespoły').map(({ id, url, title, subtitle, price, city, description, pageType }) => (
                       <CompaniesItem
                         id={id}
                         url={url}
@@ -195,22 +183,20 @@ const CompaniesBar = ({
                         subtitle={subtitle}
                         city={city}
                         description={description}
-                        pageType="zespoly"
+                        pageType={pageType}
                       />
                     ))}
                   </>
-                ) : (
-                  <p>Brak firm w danej kategorii</p>
-                )}
+            
               </Row>
             </WrapperTabRow>
           </TabPane>
           <TabPane tabId="5">
             <WrapperTabRow>
               <Row>
-                {foto.length ? (
+               
                   <>
-                    {foto.map(({ id, url, title, subtitle, price, city, description }) => (
+                  {company.filter((item) => item.category === 'Foto').map(({ id, url, title, subtitle, price, city, description, pageType }) => (
                       <CompaniesItem
                         id={id}
                         url={url}
@@ -220,22 +206,20 @@ const CompaniesBar = ({
                         subtitle={subtitle}
                         city={city}
                         description={description}
-                        pageType="foto"
+                        pageType={pageType}
                       />
                     ))}
                   </>
-                ) : (
-                  <p>Brak firm w danej kategorii</p>
-                )}
+           
               </Row>
             </WrapperTabRow>
           </TabPane>
           <TabPane tabId="6">
             <WrapperTabRow>
               <Row>
-                {lokale.length ? (
+               
                   <>
-                    {lokale.map(({ id, url, title, subtitle, price, city, description }) => (
+                  {company.filter((item) => item.category === 'Lokale').map(({ id, url, title, subtitle, price, city, description, pageType }) => (
                       <CompaniesItem
                         id={id}
                         url={url}
@@ -245,22 +229,19 @@ const CompaniesBar = ({
                         subtitle={subtitle}
                         city={city}
                         description={description}
-                        pageType="lokale"
+                        pageType={pageType}
                       />
                     ))}
-                  </>
-                ) : (
-                  <p>Brak firm w danej kategorii</p>
-                )}
+                  </>                
               </Row>
             </WrapperTabRow>
           </TabPane>
           <TabPane tabId="7">
             <WrapperTabRow>
               <Row>
-                {pozostale.length ? (
+               
                   <>
-                    {pozostale.map(({ id, url, title, subtitle, price, city, description }) => (
+                    {company.filter((item) => item.category === 'Pozostałe').map(({ id, url, title, subtitle, price, city, description, pageType }) => (
                       <CompaniesItem
                         id={id}
                         url={url}
@@ -270,13 +251,10 @@ const CompaniesBar = ({
                         subtitle={subtitle}
                         city={city}
                         description={description}
-                        pageType="pozostale"
+                        pageType={pageType}
                       />
                     ))}
-                  </>
-                ) : (
-                  <p>Brak firm w danej kategorii</p>
-                )}
+                  </>               
               </Row>
             </WrapperTabRow>
           </TabPane>
@@ -287,8 +265,8 @@ const CompaniesBar = ({
 };
 
 const mapStateToProps = (state) => {
-  const { pozostale, lokale, foto, zespoly, moda, atrakcje, dekoracje } = state;
-  return { pozostale, lokale, foto, zespoly, moda, atrakcje, dekoracje };
+  const { company } = state;
+  return { company };
 };
 
 export default connect(mapStateToProps)(CompaniesBar);

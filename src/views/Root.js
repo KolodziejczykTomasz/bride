@@ -45,13 +45,8 @@ const Root = () => (
           <Route exact path="/fairs" component={FairView} />
           <Route exact path="/fairs/:id" component={DetailsFairView} />
           <Route exact path="/fairlist" component={FairView} /> 
-          <Route exact path="/dekoracje/:id" component={DetailsCompanyView} />
-          <Route exact path="/atrakcje/:id" component={DetailsCompanyView} />
-          <Route exact path="/moda/:id" component={DetailsCompanyView} />
-          <Route exact path="/zespoly/:id" component={DetailsCompanyView} />
-          <Route exact path="/foto/:id" component={DetailsCompanyView} />
-          <Route exact path="/lokale/:id" component={DetailsCompanyView} />
-          <Route exact path="/pozostale/:id" component={DetailsCompanyView} />
+          <Route exact path="/companies/:id" component={DetailsCompanyView} />
+          <Route exact path="/companies" component={CompanyView} /> 
           <Route exact path="/dresses" component={HomeView} />
           <Route path="/dresses/:id" component={DetailsDressView} />
         </Switch>

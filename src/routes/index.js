@@ -16,11 +16,6 @@ export const routes = {
   travels: '/travels',
   dresses: '/dresses',
   dress: 'dresses/:id',  
-  dekoracje: '/dekoracje/:id',
-  atrakcje: '/atrakcje/:id',
-  moda: '/moda/:id',
-  zespoly: '/zespoly/:id',
-  foto: '/foto/:id',
-  lokale: '/lokale/:id',
-  pozostale: '/pozostale/:id',
+  companies: '/companies',
+  company: '/companies/:id',  
 };
