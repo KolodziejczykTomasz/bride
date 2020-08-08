@@ -105,8 +105,8 @@ class CompaniesPost extends Component {
                 ) : null}
               </Description>
               <Details>
-                <DetailsItem>Cena: {price}</DetailsItem>
-                <DetailsItem>Miasto: {city}</DetailsItem>
+                {price !== '' ?  <DetailsItem>Cena: {price}</DetailsItem> : null}
+                {city !== '' ? <DetailsItem>Miasto: {city}</DetailsItem> : null}
               </Details>
             </Aside>
           </Card>

@@ -18,7 +18,7 @@ class DetailsCompanyView extends Component {
     switch (match.path) {
       case routes.company:
         this.setState({ pageType: 'company' });
-        break;      
+        break;
       default:
         console.log('Something went wrong');
     }
@@ -57,17 +57,19 @@ class DetailsCompanyView extends Component {
     return (
       <>
         <NavbarTop />
-        <JumbotronBar />       
-          <CompaniesPost
-            key={this.props.company[id].id}
-            pageType={pageType}
-            title={this.props.company[id].title}
-            subtitle={this.props.company[id].subtitle}
-            city={this.props.company[id].city}
-            price={this.props.company[id].price}
-            url={this.props.company[id].url}
-            description={this.props.company[id].description}
-          />       
+        <JumbotronBar />
+        <CompaniesPost
+          key={this.props.company[id].id}
+          pageType={pageType}
+          title={this.props.company[id].title}
+          subtitle={this.props.company[id].subtitle}
+          city={this.props.company[id].city}
+          price={this.props.company[id].price}
+          url={this.props.company[id].url}
+          tags={this.props.company[id].tags}
+          category={this.props.company[id].category}
+          description={this.props.company[id].description}
+        />
         <Footer />
       </>
     );

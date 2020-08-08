@@ -39,8 +39,7 @@ const Main = styled.div`
 const MainContainer = styled.div`
   display: grid;
   grid-row-gap: 3rem;
-  height: 100%;
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  height: 100%;  
 `;
 
 const Aside = styled.div`
@@ -56,8 +55,7 @@ const AsideContainer = styled.div`
   display: grid;
   grid-row-gap: 3rem;
   height: 100%;
-  width: 100%;
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  width: 100%;  
 `;
 
 const WrapperItem = styled.div`
