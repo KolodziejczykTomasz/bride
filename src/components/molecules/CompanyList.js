@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import MainTemplates from 'templates/MainTemplates';
 import CompanyPostListItem from 'components/molecules/CompanyPostListItem';
-import CompanyListAsideItem from 'components/molecules/CompanyListAsideItem';
+import BreakeHeader from 'components/atoms/BreakeHeader';
 
 import styled from 'styled-components';
 
@@ -12,7 +12,8 @@ const Wrapper = styled.div`
   margin-bottom: 10rem;
   grid-template-columns: 8% auto;
   grid-column-gap: 2rem;
-  @media (max-width: 600px) {grid-template-columns: 1fr;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
   }
   @media (min-width: 600px) {
     grid-template-columns: 1fr;
@@ -38,7 +39,7 @@ const Main = styled.div`
 const MainContainer = styled.div`
   display: grid;
   grid-row-gap: 3rem;
-  height: 100%;  
+  height: 100%;
 `;
 
 const Aside = styled.div`
@@ -52,9 +53,21 @@ const Aside = styled.div`
 
 const AsideContainer = styled.div`
   display: grid;
-  grid-row-gap: 3rem;
   height: 100%;
-  width: 100%;  
+  width: 100%;
+`;
+
+const AsideCityList = styled.div`
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid rgba(10, 10, 10, 0.1);
+  :hover {
+    color: orange;
+    cursor: pointer;
+    box-shadow: 0 2px 4px #777;
+  }
 `;
 
 const WrapperItem = styled.div`
@@ -68,61 +81,159 @@ const WrapperItem = styled.div`
 `;
 
 class CompanyList extends Component {
-    state = {
-        redirect: false,
-    };
+  state = {
+    redirect: false,
+    dekoracje: false,
+    atrakcje: false,
+    lokale: false,
+  };
 
-    handleCardClick = () => this.setState({ redirect: true });
+  componentDidMount() {
+    this.setState({ lokale: true, atrakcje: true, dekoracje: true });
+  }
 
-    
-    render() {
-        const { id, pageType, company } = this.props;
-        const { redirect } = this.state;
+  handleCardClick = () => this.setState({ redirect: true });
+  handleChangeLokaleCardClick = () =>
+    this.setState({ lokale: true, atrakcje: false, dekoracje: false });
+  handleChangeAtrakcjeCardClick = () =>
+    this.setState({ lokale: false, atrakcje: true, dekoracje: false });
+  handleChangeDekoracjeCardClick = () =>
+    this.setState({ lokale: false, atrakcje: false, dekoracje: true });
 
-        if (redirect) {
-            return <Redirect to={`${pageType}/${id}`} />;
-        }
-       
-        
-        return (
-            <MainTemplates>
-                <Wrapper>
-                    <Main>
-                        <MainContainer>
-                            {company.map(({ id, url, place, data, city, description, pageType, tags, category }) => (
-                                <WrapperItem>
-                                    <CompanyPostListItem
-                                        id={id}
-                                        url={url}
-                                        key={id}
-                                        place={place}
-                                        data={data}
-                                        city={city}
-                                        tags={tags}
-                                        category={category}
-                                        description={description}
-                                        pageType={pageType}
-                                    />
-                                </WrapperItem>
-                            ))}
-                        </MainContainer>
-                    </Main>
-                    <Aside>
-                        <AsideContainer>
-                            {company.map(({ category }) => (
-                                <CompanyListAsideItem category={category} />
-                            ))}
-                        </AsideContainer>
-                    </Aside>
-                </Wrapper>
-            </MainTemplates>
-        );
+  render() {
+    const { id, pageType, company } = this.props;
+    const { redirect, dekoracje, atrakcje, lokale } = this.state;
+
+    if (redirect) {
+      return <Redirect to={`${pageType}/${id}`} />;
     }
+
+    return (
+      <MainTemplates>
+        <BreakeHeader>Katalog firm </BreakeHeader>
+        <Wrapper>
+          <Main>
+            <MainContainer>
+              {dekoracje === true ? (
+                <>
+                  {company
+                    .filter((item) => item.pageName === 'dekoracje')
+                    .map(
+                      ({
+                        id,
+                        url,
+                        title,
+                        subtitle,
+                        price,
+                        city,
+                        description,
+                        pageType,
+                        pageName,
+                      }) => (
+                        <WrapperItem>
+                          <CompanyPostListItem
+                            id={id}
+                            url={url}
+                            key={id}
+                            price={price}
+                            title={title}
+                            subtitle={subtitle}
+                            description={description}
+                            city={city}
+                            pageType={pageType}
+                            pageName={pageName}
+                          />
+                        </WrapperItem>
+                      ),
+                    )}
+                </>
+              ) : null}
+              {atrakcje === true ? (
+                <>
+                  {company
+                    .filter((item) => item.pageName === 'atrakcje')
+                    .map(
+                      ({
+                        id,
+                        url,
+                        title,
+                        subtitle,
+                        price,
+                        city,
+                        description,
+                        pageType,
+                        pageName,
+                      }) => (
+                        <WrapperItem>
+                          <CompanyPostListItem
+                            id={id}
+                            url={url}
+                            key={id}
+                            price={price}
+                            title={title}
+                            subtitle={subtitle}
+                            description={description}
+                            city={city}
+                            pageType={pageType}
+                            pageName={pageName}
+                          />
+                        </WrapperItem>
+                      ),
+                    )}
+                </>
+              ) : null}
+              {lokale === true ? (
+                <>
+                  {company
+                    .filter((item) => item.pageName === 'lokale')
+                    .map(
+                      ({
+                        id,
+                        url,
+                        title,
+                        subtitle,
+                        price,
+                        city,
+                        description,
+                        pageType,
+                        pageName,
+                      }) => (
+                        <WrapperItem>
+                          <CompanyPostListItem
+                            id={id}
+                            url={url}
+                            key={id}
+                            price={price}
+                            title={title}
+                            subtitle={subtitle}
+                            description={description}
+                            city={city}
+                            pageType={pageType}
+                            pageName={pageName}
+                          />
+                        </WrapperItem>
+                      ),
+                    )}
+                </>
+              ) : null}
+            </MainContainer>
+          </Main>
+          <Aside>
+            <AsideContainer>
+              <AsideCityList onClick={this.handleChangeDekoracjeCardClick}>Dekoracje</AsideCityList>
+              <AsideCityList onClick={this.handleChangeLokaleCardClick}>Lokale</AsideCityList>
+              <AsideCityList onClick={this.handleChangeAtrakcjeCardClick}>Atrakcje</AsideCityList>
+            </AsideContainer>
+          </Aside>
+        </Wrapper>
+      </MainTemplates>
+    );
+  }
 }
 
 const mapStateToProps = (state) => {
-    const { company } = state;
-    return { company };
+  const { company } = state;
+  return { company };
 };
 
 export default connect(mapStateToProps)(CompanyList);

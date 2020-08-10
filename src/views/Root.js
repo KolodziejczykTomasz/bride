@@ -6,6 +6,7 @@ import store from 'store';
 
 import HomeView from 'views/HomeView';
 import ContactView from 'views/ContactView';
+import DetailsCompanyView from 'views/DetailsCompanyView';
 import CompanyView from 'views/CompanyView';
 import PrepareView from 'views/PrepareView';
 import ChurchView from 'views/ChurchView';
@@ -17,7 +18,6 @@ import DetailsAccesoriesView from 'views/DetailsAccesoriesView';
 import DetailsFairView from 'views/DetailsFairView';
 import DetailsTravelView from 'views/DetailsTravelView';
 import DetailsDressView from 'views/DetailsDressView';
-import DetailsCompanyView from 'views/DetailsCompanyView';
 import FairView from 'views/FairView';
 
 const Root = () => (
@@ -29,7 +29,7 @@ const Root = () => (
           <Route exact path="/" component={HomeView} />
           <Route path="/prepare" component={PrepareView} />
           <Route path="/contact" component={ContactView} />
-          <Route path="/company" component={CompanyView} />
+
           <Route exact path="/travels" component={TravelView} />
           <Route path="/travels/pleace/:id" component={DetailsTravelView} />
           <Route exact path="/brides" component={HomeView} />
@@ -44,9 +44,10 @@ const Root = () => (
           <Route path="/presses" component={DetailsPressView} />
           <Route exact path="/fairs" component={FairView} />
           <Route exact path="/fairs/:id" component={DetailsFairView} />
-          <Route exact path="/fairlist" component={FairView} /> 
+          <Route exact path="/fairlist" component={FairView} />
           <Route exact path="/companies/:id" component={DetailsCompanyView} />
-          <Route exact path="/companies" component={CompanyView} /> 
+          <Route exact path="/companies" component={CompanyView} />
+          <Route path="/company" component={CompanyView} />          
           <Route exact path="/dresses" component={HomeView} />
           <Route path="/dresses/:id" component={DetailsDressView} />
         </Switch>

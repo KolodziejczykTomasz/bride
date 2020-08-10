@@ -102,7 +102,8 @@ export default [
             { id: 2, tag: 'atrakcje' },
         ],
         category: 'Atrakcje',
-        pageType: 'companies'
+        pageType: 'companies',
+        pageName: 'atrakcje'
     },
     {
         id: 2,
@@ -204,7 +205,8 @@ export default [
             { id: 4, tag: 'ciężki dym' },
         ],
         category: 'Atrakcje',
-        pageType: 'companies'
+        pageType: 'companies',
+        pageName: 'atrakcje'
     },
     {
         id: 3,
@@ -305,7 +307,8 @@ export default [
             { id: 2, tag: 'dekoracje' },
         ],
         category: 'Dekoracje',
-        pageType: 'companies'
+        pageType: 'companies',
+        pageName: 'dekoracje'
     },
     {
         id: 4,
@@ -405,7 +408,8 @@ export default [
             { id: 2, tag: 'dekoracje' },
         ],
         category: 'Dekoracje',
-        pageType: 'companies'
+        pageType: 'companies',
+        pageName: 'dekoracje'
     },
     {
         id: 5,
@@ -504,7 +508,8 @@ export default [
             { id: 2, tag: '' },
         ],
         category: 'Lokale',
-        pageType: 'companies'
+        pageType: 'companies',
+        pageName: 'lokale'
     },
     {
         id: 6,
@@ -605,6 +610,7 @@ export default [
             { id: 2, tag: '' },
         ],
         category: 'Lokale',
-        pageType: 'companies'
+        pageType: 'companies',
+        pageName: 'lokale'
     },
 ];

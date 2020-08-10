@@ -31,10 +31,7 @@ const NavbarTop = () => (
             backgroundColor: '#fff',
             textTransform: 'uppercase',
           }}
-        >
-          <NavLink style={{ width: '160px', textDecoration: 'none', color: 'black' }} to="/prepare">
-            Przygotowania
-          </NavLink>
+        >          
           <NavLink style={{ width: '140px', textDecoration: 'none', color: 'black' }} to="/company">
             Katalog firm
           </NavLink>

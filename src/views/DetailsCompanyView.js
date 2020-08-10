@@ -69,6 +69,7 @@ class DetailsCompanyView extends Component {
           tags={this.props.company[id].tags}
           category={this.props.company[id].category}
           description={this.props.company[id].description}
+          pageName={this.props.company[id].pageName}
         />
         <Footer />
       </>
