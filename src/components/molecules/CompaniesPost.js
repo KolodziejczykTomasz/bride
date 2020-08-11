@@ -48,6 +48,10 @@ const Aside = styled.div`
   padding-left: 2rem;
 `;
 
+const AsideWrapper = styled.div`
+  padding: 2rem 2rem;
+`;
+
 const PhotoBox = styled.div``;
 const Photo = styled.img`
   display: block;
@@ -64,7 +68,7 @@ const Details = styled.ul``;
 const DetailsItem = styled.li``;
 
 const DescriptionItemList = styled.ul`
-  margin-left: 3rem;
+  margin-left: 0.5rem;
 `;
 const DescriptionItemListItem = styled.li``;
 
@@ -82,6 +86,7 @@ class CompaniesPost extends Component {
               </PhotoBox>
             </Main>
             <Aside>
+              <AsideWrapper>
               <Title>{title}</Title>
               <Subtitle>{subtitle}</Subtitle>
               <Description>
@@ -108,11 +113,12 @@ class CompaniesPost extends Component {
                 {price !== '' ?  <DetailsItem>Cena: {price}</DetailsItem> : null}
                 {city !== '' ? <DetailsItem>Miasto: {city}</DetailsItem> : null}
               </Details>
+              </AsideWrapper>
             </Aside>
           </Card>
         </Wrapper>
         <PostFooter category={category} tags={tags} />
-        <Button as={Link} to={`/`}>
+        <Button as={Link} to={`/companies`}>
           Close
         </Button>
       </MainTemplates>

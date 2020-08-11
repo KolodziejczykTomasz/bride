@@ -27,7 +27,7 @@ const Main = styled.div`
 `;
 
 const PhotoBox = styled.div`
-width: 100%; 
+  width: 100%;
 `;
 
 const Photo = styled.img`
@@ -35,15 +35,26 @@ const Photo = styled.img`
   width: 100%;
   height: auto;
   padding: 2px 2px;
-  margin: 25% auto; 
-
+  margin: 25% auto;
 `;
 
 const Aside = styled.div``;
 const DescriptionItemList = styled.ul`
-  margin-left: 3rem;
+  margin-left: 2.3rem;
 `;
 const DescriptionItemListItem = styled.li``;
+
+const AsideWrapper = styled.div`
+  padding: 2rem 2rem;
+`;
+
+const Title = styled.h1`
+  padding: 1rem 1.8rem 0 1.8rem;
+`;
+
+const SubTitle = styled.h2`
+  padding: 1rem 2rem;
+`;
 
 const Button = styled.a`
   display: grid;
@@ -64,61 +75,67 @@ const Button = styled.a`
 `;
 
 class CompanyPostListItem extends Component {
-    state = {
-        redirect: false,
-    };
+  state = {
+    redirect: false,
+  };
 
-    handleCardClick = () => this.setState({ redirect: true });
+  handleCardClick = () => this.setState({ redirect: true });
 
-    render() {
-        const { id, name, url, city, data, place, pageType, description } = this.props;
-        const { redirect } = this.state;
+  render() {
+    const { id, name, title, subtitle, url, city, data, place, pageType, description } = this.props;
+    const { redirect } = this.state;
 
-        if (redirect) {
-            return <Redirect to={`${pageType}/${id}`} />;
-        }
-        return (
-            <MainTemplates pageType={pageType}>
-                <Wrapper onClick={this.handleCardClick}>
-                    <Body>
-                        <Main>
-                            <PhotoBox>
-                                <Photo src={url} alt={name} />
-                            </PhotoBox>
-                        </Main>
-                        <Aside>
-                            {description.length !== '' ? (
-                                <>
-                                    {description.map(({ p1, p2, p3, p4, p5, p6, p7, p8, p9, p10 }) => (
-                                        <DescriptionItemList>
-                                            <DescriptionItemListItem>{p1}</DescriptionItemListItem>
-                                            <DescriptionItemListItem>{p2}</DescriptionItemListItem>
-                                            <DescriptionItemListItem>{p3}</DescriptionItemListItem>
-                                            <DescriptionItemListItem>{p4}</DescriptionItemListItem>
-                                            <DescriptionItemListItem>{p5}</DescriptionItemListItem>
-                                            <DescriptionItemListItem>{p6}</DescriptionItemListItem>
-                                            <DescriptionItemListItem>{p7}</DescriptionItemListItem>
-                                            <DescriptionItemListItem>{p8}</DescriptionItemListItem>
-                                            <DescriptionItemListItem>{p9}</DescriptionItemListItem>
-                                            <DescriptionItemListItem>{p10}</DescriptionItemListItem>
-                                        </DescriptionItemList>
-                                    ))}
-                                </>
-                            ) : null}
-                            <ul>
-                                <li>{city}</li>
-                                <li>{data}</li>
-                                <li>{place}</li>
-                            </ul>
-                        </Aside>
-                    </Body>
-                </Wrapper>
-                <Button as={Link} to={`/`}>
-                    Close
-        </Button>
-            </MainTemplates>
-        );
+    if (redirect) {
+      return <Redirect to={`${pageType}/${id}`} />;
     }
+    return (
+      <MainTemplates pageType={pageType}>
+        <Wrapper onClick={this.handleCardClick}>
+          <Body>
+            <Main>
+              <PhotoBox>
+                <Photo src={url} alt={name} />
+              </PhotoBox>
+            </Main>
+            <Aside>
+              <AsideWrapper>
+                <Title>{title}</Title>
+                <SubTitle>{subtitle}</SubTitle>
+                {description.length !== '' ? (
+                  <>
+                    {description.map(({ p1, p2, p3, p4, p5, p6, p7, p8, p9, p10 }) => (
+                      <DescriptionItemList>
+                        <DescriptionItemListItem>{p1}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p2}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p3}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p4}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p5}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p6}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p7}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p8}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p9}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p10}</DescriptionItemListItem>
+                      </DescriptionItemList>
+                    ))}
+                  </>
+                ) : null}
+                <DescriptionItemList>
+                  {city !== '' ? (
+                    <DescriptionItemListItem>Miasto: {city}</DescriptionItemListItem>
+                  ) : null}
+                  {data !== '' ? <DescriptionItemListItem>{data}</DescriptionItemListItem> : null}
+                  {place !== '' ? <DescriptionItemListItem>{place}</DescriptionItemListItem> : null}
+                </DescriptionItemList>
+              </AsideWrapper>
+            </Aside>
+          </Body>
+        </Wrapper>
+        <Button as={Link} to={`/`}>
+          Close
+        </Button>
+      </MainTemplates>
+    );
+  }
 }
 
 export default CompanyPostListItem;

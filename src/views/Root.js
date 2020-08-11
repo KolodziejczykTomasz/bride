@@ -19,6 +19,7 @@ import DetailsFairView from 'views/DetailsFairView';
 import DetailsTravelView from 'views/DetailsTravelView';
 import DetailsDressView from 'views/DetailsDressView';
 import FairView from 'views/FairView';
+import PressView from 'views/PressView';
 
 const Root = () => (
   <>
@@ -42,6 +43,7 @@ const Root = () => (
           <Route path="/churchs/:id" component={DetailsChurchView} />
           <Route path="/presses/:id" component={DetailsPressView} />
           <Route path="/presses" component={DetailsPressView} />
+          <Route path="/presslist" component={PressView} />
           <Route exact path="/fairs" component={FairView} />
           <Route exact path="/fairs/:id" component={DetailsFairView} />
           <Route exact path="/fairlist" component={FairView} />

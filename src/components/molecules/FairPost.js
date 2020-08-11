@@ -89,7 +89,7 @@ class FairPost extends Component {
           </Body>
           <PostFooter category={category} tags={tags} />
         </Wrapper>
-        <Button as={Link} to={`/`}>
+        <Button as={Link} to={`/fairs`}>
           Close
         </Button>
       </MainTemplates>
