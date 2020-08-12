@@ -22,29 +22,33 @@ const AsideCityList = styled.div`
   }
 `;
 
+const Title = styled.div``;
+const Number= styled.div``;
+
 
 class PressListAsideItem extends Component {
-    state = {
-        redirect: false,
-    };
+  state = {
+    redirect: false,
+  };
 
-    handleCardClick = () => this.setState({ redirect: true });
+  handleCardClick = () => this.setState({ redirect: true });
 
-    render() {
-        const { id, pageType, title } = this.props;
-        const { redirect } = this.state;
+  render() {
+    const { id, pageType, title, number } = this.props;
+    const { redirect } = this.state;
 
-        if (redirect) {
-            return <Redirect to={`${pageType}/${id}`} />;
-        }
-        return (
-            <AsideContainer
-                pageType={pageType}
-                onClick={this.handleCardClick}>
-                <AsideCityList>{title}</AsideCityList>
-            </AsideContainer>
-        );
+    if (redirect) {
+      return <Redirect to={`${pageType}/${id}`} />;
     }
+    return (
+      <AsideContainer pageType={pageType} onClick={this.handleCardClick}>
+        <AsideCityList>
+          <Title>{title}</Title>
+          <Number>{number}</Number>
+        </AsideCityList>
+      </AsideContainer>
+    );
+  }
 }
 
 export default PressListAsideItem;

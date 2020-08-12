@@ -20,6 +20,7 @@ import DetailsTravelView from 'views/DetailsTravelView';
 import DetailsDressView from 'views/DetailsDressView';
 import FairView from 'views/FairView';
 import PressView from 'views/PressView';
+import AccesoriesView from 'views/AccesoriesView';
 
 const Root = () => (
   <>
@@ -38,6 +39,7 @@ const Root = () => (
           <Route exact path="/extras" component={HomeView} />
           <Route path="/extras/:id" component={DetailsMainView} />
           <Route exact path="/accesories" component={HomeView} />
+          <Route exact path="/accesorieslist" component={AccesoriesView} />
           <Route path="/accesories/:id" component={DetailsAccesoriesView} />
           <Route exact path="/churchs" component={ChurchView} />
           <Route path="/churchs/:id" component={DetailsChurchView} />

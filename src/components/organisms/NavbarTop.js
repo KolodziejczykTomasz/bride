@@ -31,12 +31,18 @@ const NavbarTop = () => (
             backgroundColor: '#fff',
             textTransform: 'uppercase',
           }}
-        >          
+        >   
+          <NavLink style={{ width: '140px', textDecoration: 'none', color: 'black' }} to="/accesorieslist">
+            Akcesoria
+          </NavLink>
+          <NavLink style={{ width: '140px', textDecoration: 'none', color: 'black' }} to="/presslist">
+            Prasa
+          </NavLink>       
           <NavLink style={{ width: '140px', textDecoration: 'none', color: 'black' }} to="/company">
             Katalog firm
           </NavLink>
           <NavLink style={{ width: '140px', textDecoration: 'none', color: 'black' }} to="/fairlist">
-            Targi ślubne
+            Targi
           </NavLink>
           <NavLink style={{ width: '120px', textDecoration: 'none', color: 'black' }} to="/contact">
             Kontakt

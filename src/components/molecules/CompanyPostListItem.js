@@ -74,6 +74,15 @@ const Button = styled.a`
   }
 `;
 
+const Footer = styled.div`
+  margin-top: 5rem;
+  font-weight: 500;
+`;
+
+const FooterSpan = styled.span`
+  color: orange;
+`;
+
 class CompanyPostListItem extends Component {
   state = {
     redirect: false,
@@ -82,7 +91,19 @@ class CompanyPostListItem extends Component {
   handleCardClick = () => this.setState({ redirect: true });
 
   render() {
-    const { id, name, title, subtitle, url, city, data, place, pageType, description } = this.props;
+    const {
+      id,
+      name,
+      title,
+      subtitle,
+      url,
+      city,
+      data,
+      place,
+      pageType,
+      category,
+      description,
+    } = this.props;
     const { redirect } = this.state;
 
     if (redirect) {
@@ -126,6 +147,10 @@ class CompanyPostListItem extends Component {
                   {data !== '' ? <DescriptionItemListItem>{data}</DescriptionItemListItem> : null}
                   {place !== '' ? <DescriptionItemListItem>{place}</DescriptionItemListItem> : null}
                 </DescriptionItemList>
+                <Footer>
+                  <hr />
+                  Kategoria: <FooterSpan>{category}</FooterSpan>
+                </Footer>
               </AsideWrapper>
             </Aside>
           </Body>

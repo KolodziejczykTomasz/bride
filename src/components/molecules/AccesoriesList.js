@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import MainTemplates from 'templates/MainTemplates';
-import PressItem from 'components/molecules/PressItem';
-import PressListAsideItem from 'components/molecules/PressListAsideItem';
+import AccesoriesItem from 'components/molecules/AccesoriesItem';
+import BreakeHeader from 'components/atoms/BreakeHeader';
 
 import styled from 'styled-components';
 
@@ -29,10 +29,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const Main = styled.div``;
+const Main = styled.div`
+`;
 
 const MainContainer = styled.div`
-  display: grid;
+    display: grid;
   grid-template-columns: repeat(4, 1fr);
 `;
 
@@ -47,55 +48,46 @@ const Aside = styled.div`
 
 const AsideContainer = styled.div`
   display: grid;
-  grid-row-gap: 3rem;
   height: 100%;
   width: 100%;
 `;
 
-class PressList extends Component {
-  state = {
-    redirect: false,
-  };
+const AsideCityList = styled.div`
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid rgba(10, 10, 10, 0.1);
+  :hover {
+    color: orange;
+    cursor: pointer;
+    box-shadow: 0 2px 4px #777;
+  }
+`;
 
-  handleCardClick = () => this.setState({ redirect: true });
 
+
+class AccesoriesList extends Component {
+  state = {};
   render() {
-    const { id, pageType, press } = this.props;
-    const { redirect } = this.state;
+    const { id, pageType, accesories } = this.props;
 
-    if (redirect) {
-      return <Redirect to={`${pageType}/${id}`} />;
-    }
+  
+
     return (
       <MainTemplates>
+        <BreakeHeader>Akcesoria, dodatki</BreakeHeader>
         <Wrapper>
           <Main>
             <MainContainer>
-              {press.map(({ id, url, pageType, title, number }) => (
-                <PressItem
-                  id={id}
-                  url={url}
-                  key={id}
-                  title={title}
-                  number={number}
-                  pageType={pageType}
-                />
+              {accesories.map(({ id, url, name, pageType, pageName, category }) => (                
+                  <AccesoriesItem id={id} url={url} name={name} pageType="accesories" />              
               ))}
             </MainContainer>
           </Main>
           <Aside>
             <AsideContainer>
-              {press
-                .sort((a, b) => b.data < a.data)
-                .map(({ id, pageType, title, number }) => (
-                  <PressListAsideItem
-                    id={id}
-                    key={id}
-                    pageType={pageType}
-                    title={title}
-                    number={number}
-                  />
-                ))}
+              <AsideCityList>SideBar</AsideCityList>
             </AsideContainer>
           </Aside>
         </Wrapper>
@@ -105,8 +97,7 @@ class PressList extends Component {
 }
 
 const mapStateToProps = (state) => {
-  const { press } = state;
-  return { press };
+  const { accesories } = state;
+  return { accesories };
 };
-
-export default connect(mapStateToProps)(PressList);
+export default connect(mapStateToProps)(AccesoriesList);

@@ -129,6 +129,7 @@ class CompanyList extends Component {
                         description,
                         pageType,
                         pageName,
+                        category
                       }) => (
                         <WrapperItem>
                           <CompanyPostListItem
@@ -142,6 +143,7 @@ class CompanyList extends Component {
                             city={city}
                             pageType={pageType}
                             pageName={pageName}
+                              category={category}
                           />
                         </WrapperItem>
                       ),
@@ -163,6 +165,7 @@ class CompanyList extends Component {
                         description,
                         pageType,
                         pageName,
+                        category
                       }) => (
                         <WrapperItem>
                           <CompanyPostListItem
@@ -176,6 +179,7 @@ class CompanyList extends Component {
                             city={city}
                             pageType={pageType}
                             pageName={pageName}
+                              category={category}
                           />
                         </WrapperItem>
                       ),
@@ -197,6 +201,7 @@ class CompanyList extends Component {
                         description,
                         pageType,
                         pageName,
+                        category
                       }) => (
                         <WrapperItem>
                           <CompanyPostListItem
@@ -210,8 +215,9 @@ class CompanyList extends Component {
                             city={city}
                             pageType={pageType}
                             pageName={pageName}
+                            category={category}
                           />
-                        </WrapperItem>
+                        </WrapperItem>                        
                       ),
                     )}
                 </>

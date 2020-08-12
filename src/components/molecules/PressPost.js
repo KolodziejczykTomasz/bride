@@ -174,7 +174,7 @@ class PressPost extends Component {
           </Card>
           <PressSimilar pageType={pageType} title={title}/>
           <PostFooter category={category} tags={tags} />
-          <Button as={Link} to={`/`}>
+          <Button as={Link} to={`/presslist`}>
             Close
           </Button>
         </Wrapper>
