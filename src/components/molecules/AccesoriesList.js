@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import MainTemplates from 'templates/MainTemplates';
-import AccesoriesItem from 'components/molecules/AccesoriesItem';
+import AccesoriesPostListItem from 'components/molecules/AccesoriesPostListItem';
 import BreakeHeader from 'components/atoms/BreakeHeader';
 
 import styled from 'styled-components';
@@ -29,12 +28,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const Main = styled.div`
-`;
+const Main = styled.div``;
 
 const MainContainer = styled.div`
-    display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-template-columns: 1fr;
 `;
 
 const Aside = styled.div`
@@ -65,14 +63,9 @@ const AsideCityList = styled.div`
   }
 `;
 
-
-
 class AccesoriesList extends Component {
-  state = {};
   render() {
-    const { id, pageType, accesories } = this.props;
-
-  
+    const { accesories } = this.props;
 
     return (
       <MainTemplates>
@@ -80,9 +73,33 @@ class AccesoriesList extends Component {
         <Wrapper>
           <Main>
             <MainContainer>
-              {accesories.map(({ id, url, name, pageType, pageName, category }) => (                
-                  <AccesoriesItem id={id} url={url} name={name} pageType="accesories" />              
-              ))}
+              {accesories.map(
+                ({
+                  id,
+                  title,
+                  subtitle,
+                  description,
+                  price,
+                  shop,
+                  url,
+                  pageType,
+                  tags,
+                  category,
+                }) => (
+                  <AccesoriesPostListItem
+                    id={id}
+                    url={url}
+                    title={title}
+                    subtitle={subtitle}
+                    description={description}
+                    pageType="accesories"
+                    price={price}
+                    category={category}
+                    tags={tags}
+                    shop={shop}
+                  />
+                ),
+              )}
             </MainContainer>
           </Main>
           <Aside>

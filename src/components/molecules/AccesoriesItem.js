@@ -71,7 +71,7 @@ class AccesoriesItem extends Component {
   handleCardClick = () => this.setState({ redirect: true });
 
   render() {
-    const { id, pageType, url, name } = this.props;
+    const { id, pageType, url, title } = this.props;
     const { redirect } = this.state;
 
     if (redirect) {
@@ -82,11 +82,11 @@ class AccesoriesItem extends Component {
       <Wrapper onClick={this.handleCardClick}>
         <Card>
           <PhotoBox>
-            <ImageItem src={url} alt={name} />
+            <ImageItem src={url} alt={title} />
           </PhotoBox>
         </Card>
         <CardHeroText>
-          <CardHeroTextTitle>{name}</CardHeroTextTitle>
+          <CardHeroTextTitle>{title}</CardHeroTextTitle>
         </CardHeroText>
       </Wrapper>
     );

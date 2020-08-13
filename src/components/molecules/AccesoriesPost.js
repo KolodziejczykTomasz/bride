@@ -39,35 +39,39 @@ const Card = styled.div`
   margin: 0.5rem 0;
 `;
 
-
 const Main = styled.div``;
 const PhotoBox = styled.div``;
 const Photo = styled.img`
   display: block;
   width: 100%;
-  margin: .2rem auto;
+  margin: 0.2rem auto;
 `;
-
 
 const Aside = styled.div`
-padding-left: 2rem;
+  padding-left: 2rem;
 `;
-const Name = styled.h1`
-  margin: .5rem 0;  
+const Title = styled.h1`
+  margin: 0.5rem 0;
 `;
+
+const SubTitle = styled.div``;
+
 const Price = styled.h2``;
 const Description = styled.p`
   font-size: 1.8rem;
   line-height: 2.4rem;
 `;
-const Shop = styled.h3``;
 
-
-
+const Details = styled.ul``;
+const DetailsItem = styled.li``;
+const DescriptionItemListItem = styled.li``;
+const DescriptionItemList = styled.ul`
+  margin-left: 0.5rem;
+`;
 
 class AccesoriesPost extends Component {
   render() {
-    const { name, description, price, shop, url, pageType, tags, category } = this.props;
+    const { title, subtitle, description, price, shop, url, pageType, tags, category } = this.props;
     return (
       <MainTemplates pageType={pageType}>
         <BreakeHeader>Akcesoria ślubne</BreakeHeader>
@@ -79,14 +83,36 @@ class AccesoriesPost extends Component {
               </PhotoBox>
             </Main>
             <Aside>
-              <Name>{name}</Name>
+              <Title>{title}</Title>
               <Price>{price}</Price>
-              <Description>{description}</Description>
-              <Shop>{shop}</Shop>
+              <Description>
+                <SubTitle>{subtitle}</SubTitle>
+                {description.length !== '' ? (
+                  <>
+                    {description.map(({ p1, p2, p3, p4, p5, p6, p7, p8, p9, p10 }) => (
+                      <DescriptionItemList>
+                        <DescriptionItemListItem>{p1}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p2}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p3}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p4}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p5}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p6}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p7}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p8}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p9}</DescriptionItemListItem>
+                        <DescriptionItemListItem>{p10}</DescriptionItemListItem>
+                      </DescriptionItemList>
+                    ))}
+                  </>
+                ) : null}
+              </Description>
+              <Details>
+                {shop !== '' ? <DetailsItem>Sklep/Firma: {shop}</DetailsItem> : null}
+              </Details>
             </Aside>
           </Card>
 
-          <Button as={Link} to={`/`}>
+          <Button as={Link} to={`/accesorieslist`}>
             Close
           </Button>
         </Wrapper>
