@@ -47,8 +47,7 @@ const Aside = styled.div`
 
 const AsideContainer = styled.div`
   display: grid;
-  grid-row-gap: 3rem;
-  height: 100%;
+  grid-row-gap: 1rem;  
   width: 100%;
 `;
 

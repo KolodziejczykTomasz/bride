@@ -68,7 +68,7 @@ class DressBarData extends Component {
                 <DressItem
                   pageType="dresses"
                   id={id}
-                  key={id}
+                  key={name}
                   url={url}
                   description={description}
                   name={name}

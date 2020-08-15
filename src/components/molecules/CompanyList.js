@@ -51,9 +51,7 @@ const Aside = styled.div`
   width: 100%;
 `;
 
-const AsideContainer = styled.div`
-  display: grid;
-  height: 100%;
+const AsideContainer = styled.div` 
   width: 100%;
 `;
 
@@ -62,6 +60,7 @@ const AsideCityList = styled.div`
   justify-items: center;
   align-items: center;
   text-transform: uppercase;
+  height: 10rem;
   border: 1px solid rgba(10, 10, 10, 0.1);
   :hover {
     color: orange;

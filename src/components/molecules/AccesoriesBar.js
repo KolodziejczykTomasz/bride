@@ -37,9 +37,9 @@ class AccesoriesBar extends Component {
 
     return (
       <Wrapper>
-        {accesories.slice(0, 8).map(({ id, url, title }) => (
+        {accesories.slice(-8).map(({ id, url, title }) => (
           <WrapperItem>
-            <AccesoriesItem id={id} url={url} title={title} pageType="accesories" />
+            <AccesoriesItem id={id} key={title} url={url} title={title} pageType="accesories" />
           </WrapperItem>
         ))}
       </Wrapper>

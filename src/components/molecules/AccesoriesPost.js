@@ -89,18 +89,18 @@ class AccesoriesPost extends Component {
                 <SubTitle>{subtitle}</SubTitle>
                 {description.length !== '' ? (
                   <>
-                    {description.map(({ p1, p2, p3, p4, p5, p6, p7, p8, p9, p10 }) => (
+                    {description.map(({ id, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10 }) => (
                       <DescriptionItemList>
-                        <DescriptionItemListItem>{p1}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p2}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p3}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p4}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p5}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p6}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p7}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p8}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p9}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p10}</DescriptionItemListItem>
+                        <DescriptionItemListItem key={id}>{p1}</DescriptionItemListItem>
+                        <DescriptionItemListItem key={id}>{p2}</DescriptionItemListItem>
+                        <DescriptionItemListItem key={id}>{p3}</DescriptionItemListItem>
+                        <DescriptionItemListItem key={id}>{p4}</DescriptionItemListItem>
+                        <DescriptionItemListItem key={id}>{p5}</DescriptionItemListItem>
+                        <DescriptionItemListItem key={id}>{p6}</DescriptionItemListItem>
+                        <DescriptionItemListItem key={id}>{p7}</DescriptionItemListItem>
+                        <DescriptionItemListItem key={id}>{p8}</DescriptionItemListItem>
+                        <DescriptionItemListItem key={id}>{p9}</DescriptionItemListItem>
+                        <DescriptionItemListItem key={id}>{p10}</DescriptionItemListItem>
                       </DescriptionItemList>
                     ))}
                   </>
