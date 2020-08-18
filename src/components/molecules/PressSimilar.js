@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import BreakeFooter from 'components/atoms/BreakeFooter';
-import PressItem from 'components/molecules/PressItem';
+import PressSimilarItem from 'components/molecules/PressSimilarItem';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -34,12 +34,12 @@ const PressSimilar = ({ id, pageType, title, press }) => (
             .map(({ id, url, title, number }) => (
               <>
                 <WrapperFooterItem>
-                  <PressItem
-                    id={id}
-                    url={url}
-                    key={id}
-                    title={title}
-                    number={number}
+                  <PressSimilarItem
+                    idSimilarItem={id}
+                    urlSimilarItem={url}
+                    keySimilarItem={id}
+                    titleSimilarItem={title}
+                    numberSimilarItem={number}
                     pageType="presses"
                   />
                 </WrapperFooterItem>
@@ -58,12 +58,12 @@ const PressSimilar = ({ id, pageType, title, press }) => (
             .map(({ id, url, title, number }) => (
               <>
                 <WrapperFooterItem>
-                  <PressItem
-                    id={id}
-                    url={url}
-                    key={id}
-                    title={title}
-                    number={number}
+                  <PressSimilarItem
+                    idSimilarItem={id}
+                    urlSimilarItem={url}
+                    keySimilarItem={id}
+                    titleSimilarItem={title}
+                    numberSimilarItem={number}
                     pageType="presses"
                   />
                 </WrapperFooterItem>
@@ -82,12 +82,12 @@ const PressSimilar = ({ id, pageType, title, press }) => (
             .map(({ id, url, title, number }) => (
               <>
                 <WrapperFooterItem>
-                  <PressItem
-                    id={id}
-                    url={url}
-                    key={id}
-                    title={title}
-                    number={number}
+                  <PressSimilarItem
+                    idSimilarItem={id}
+                    urlSimilarItem={url}
+                    keySimilarItem={id}
+                    titleSimilarItem={title}
+                    numberSimilarItem={number}
                     pageType="presses"
                   />
                 </WrapperFooterItem>
@@ -106,12 +106,12 @@ const PressSimilar = ({ id, pageType, title, press }) => (
             <>
               <WrapperFooter>
                 <WrapperFooterItem>
-                  <PressItem
-                    id={id}
-                    url={url}
-                    key={id}
-                    title={title}
-                    number={number}
+                  <PressSimilarItem
+                    idSimilarItem={id}
+                    urlSimilarItem={url}
+                    keySimilarItem={id}
+                    titleSimilarItem={title}
+                    numberSimilarItem={number}
                     pageType="presses"
                   />
                 </WrapperFooterItem>
@@ -130,7 +130,7 @@ const PressSimilar = ({ id, pageType, title, press }) => (
             <>
               <WrapperFooter>
                 <WrapperFooterItem>
-                  <PressItem
+                  <PressSimilarItem
                     id={id}
                     url={url}
                     key={id}

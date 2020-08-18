@@ -7,15 +7,15 @@ import BarndMark from 'assets/images/logotypy/brendmark.jpg';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  max-width: 1250px;
+  max-width: 100%;
 `;
 
 
 const NavbarTop = () => (
   <Wrapper>
     <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
-      <NavLink to="/">
-        <Navbar.Brand style={{ width: '130px', textTransform: 'uppercase' }}>
+      <NavLink to="/" style={{ marginRight: 20, }}>
+        <Navbar.Brand style={{ width: 'auto', textTransform: 'uppercase', marginRight: 20, }}>
           <img src={BarndMark} alt="BarndMark" /> Ślub z Klasą
         </Navbar.Brand>
       </NavLink>
@@ -27,30 +27,31 @@ const NavbarTop = () => (
           style={{
             width: '60vw',
             marginTop: 20,
+            marginLeft: 10,
             marginBottom: 20,
             backgroundColor: '#fff',
             textTransform: 'uppercase',
           }}
         >   
-          <NavLink style={{ width: '140px', textDecoration: 'none', color: 'black' }} to="/accesorieslist">
+          <NavLink style={{ width: 'auto', textDecoration: 'none', color: 'black', marginRight: 30, }} to="/accesorieslist">
             Akcesoria
           </NavLink>
-          <NavLink style={{ width: '140px', textDecoration: 'none', color: 'black' }} to="/presslist">
+          <NavLink style={{ width: 'auto', textDecoration: 'none', color: 'black', marginRight: 30, }} to="/presslist">
             Prasa
           </NavLink>       
-          <NavLink style={{ width: '140px', textDecoration: 'none', color: 'black' }} to="/company">
+          <NavLink style={{ width: 'auto', textDecoration: 'none', color: 'black', marginRight: 30, }} to="/company">
             Katalog firm
           </NavLink>
-          <NavLink style={{ width: '140px', textDecoration: 'none', color: 'black' }} to="/fairlist">
+          <NavLink style={{ width: 'auto', textDecoration: 'none', color: 'black', marginRight: 30, }} to="/fairlist">
             Targi
           </NavLink>
-          <NavLink style={{ width: '120px', textDecoration: 'none', color: 'black' }} to="/contact">
+          <NavLink style={{ width: 'auto', textDecoration: 'none', color: 'black',}} to="/contact">
             Kontakt
           </NavLink>
         </Nav>
       </Navbar.Collapse>
       <Navbar.Collapse className="mr-auto justify-content-end">
-        <Navbar.Text style={{ width: '180px', backgroundColor: '#fff' }}>
+        <Navbar.Text style={{ width: '160px', backgroundColor: '#fff', fontSize: 'auto' }}>
           <FaPhone style={{ marginRight: '15px' }} />
           +48 123 456 789
         </Navbar.Text>

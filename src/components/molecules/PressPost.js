@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Redirect } from 'react-router-dom';
+
 import MainTemplates from 'templates/MainTemplates';
 import BreakeHeader from 'components/atoms/BreakeHeader';
 import PressSimilar from 'components/molecules/PressSimilar';
@@ -45,7 +45,7 @@ const Card = styled.div`
 `;
 const Main = styled.div``;
 const Aside = styled.div`
-margin-left: 2rem;
+  margin-left: 2rem;
 `;
 
 const PhotoBox = styled.div``;
@@ -57,11 +57,11 @@ const Photo = styled.img`
 `;
 
 const DataItem = styled.div`
-margin-left: 1rem;
+  margin-left: 1rem;
 `;
 
 const DescriptionItemList = styled.ul`
-margin-left: 3rem;
+  margin-left: 3rem;
 `;
 const DescriptionItemListItem = styled.li``;
 
@@ -75,34 +75,71 @@ const TextBold = styled.span`
 
 class PressPost extends Component {
   state = {
-    redirect: false, 
+    redirect: false,
+    title: '',
+    number: '',
+    description: [],
+    id: '',
+    pageType: '',
+    price: '',
+    download: '',
+    publisher: '',
+    shop: '',
+    tags: [],
+    category: '',
+    url: '',
   };
 
-  handleCardClick = () =>
-    this.setState({
-      redirect: true,
-    });
-
-  render() {
-    const { redirect } = this.state;
-    const { id, pageType } = this.props;
-
-    if (redirect) {
-      return <Redirect to={`${pageType}/${id}`} />;
-    }
-
-    const {     
+  componentDidMount = () => {
+    const {
       title,
       number,
       description,
+      id,
+      pageType,
       price,
       download,
       publisher,
       shop,
-      url,
       tags,
-      category    
+      category,
+      url,
     } = this.props;
+    this.setState({
+      title,
+      number,
+      description,
+      id,
+      pageType,
+      price,
+      download,
+      publisher,
+      shop,
+      tags,
+      category,
+      url,
+    });
+  };
+
+  
+ 
+  render() {
+    const {
+      title,
+      number,
+      description,
+      id,
+      pageType,
+      price,
+      download,
+      publisher,
+      shop,
+      tags,
+      category,
+      url,
+    } = this.state;
+
+  
     return (
       <MainTemplates pageType={pageType} title={title}>
         <BreakeHeader>Prasa ślubna</BreakeHeader>
@@ -172,7 +209,15 @@ class PressPost extends Component {
               </Section>
             </Aside>
           </Card>
-          <PressSimilar pageType={pageType} id ={id}title={title} />
+          <PressSimilar
+            onClick={() => this.handleCardClick()}
+            pageType={pageType}
+            shop={shop}
+            id={id}
+            title={title}
+            description={description}
+            number={number}
+          />
           <PostFooter category={category} tags={tags} />
           <Button as={Link} to={`/presslist`}>
             Close
@@ -182,6 +227,5 @@ class PressPost extends Component {
     );
   }
 }
-
 
 export default PressPost;
