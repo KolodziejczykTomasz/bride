@@ -4,12 +4,33 @@ import { Card, Button, CardTitle, CardText, Col } from 'reactstrap';
 import styled from 'styled-components';
 
 const PhotoBox = styled.div`
-width: 100%;
-`;
-const Photo = styled.img`
-  display: block;  
+  width: 90%;
   margin: 0 auto;
-  max-height: 35rem;
+  min-height: 30rem;
+  @media (max-width: 600px) {
+    min-height: 30rem;
+  }
+  @media (min-width: 600px) {
+    min-height: 30rem;
+  }
+ 
+`;
+
+const Photo = styled.img`
+  display: block;
+  margin: 2rem auto 0 auto;
+   @media (min-width: 600px) {
+    min-height: 30rem;
+  }
+  @media (min-width: 768px) {
+    max-height: 35rem;
+  }
+  @media (min-width: 1024px) {
+    max-height: 35rem;
+  }
+  @media (min-width: 1224px) {
+    max-height: 35rem;
+  }
 `;
 
 class CompaniesItem extends Component {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Slider from 'react-animated-slider';
 
 import slider1 from 'assets/images/slider/slider1.jpg';
@@ -40,30 +40,35 @@ const content = [
   },
 ];
 
-const SliderBar = () => (
-  <div>    
-    <Slider className="slider-wrapper">
-      {content.map((item, index) => (
-        <div
-          key={index}
-          className="slider-content"
-          style={{ background: `url('${item.image}') no-repeat center center` }}
-        >
-          <div className="inner">
-            <h1>{item.title}</h1>
-            <p>{item.description}</p>
-            <button>{item.button}</button>
-          </div>
-          <section>
-            <img src={item.userProfile} alt={item.user} />
-            <span>
-              Redaktor naczelny <strong>{item.user}</strong>
-            </span>
-          </section>
-        </div>
-      ))}
-    </Slider>
-  </div>
-);
+class SliderBar extends Component {
+
+  render() {
+    return (
+      <div>
+        <Slider className="slider-wrapper">
+          {content.map((item, index) => (
+            <div
+              key={index}
+              className="slider-content"
+              style={{ background: `url('${item.image}') no-repeat center center` }}
+            >
+              <div className="inner">
+                <h1>{item.title}</h1>
+                <p>{item.description}</p>
+                <button onClick={this.handleCardClick}>{item.button}</button>
+              </div>
+              <section>
+                <img src={item.userProfile} alt={item.user} />
+                <span>
+                  Redaktor naczelny <strong>{item.user}</strong>
+                </span>
+              </section>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    );
+  }
+};
 
 export default SliderBar;

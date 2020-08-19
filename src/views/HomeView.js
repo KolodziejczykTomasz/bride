@@ -20,10 +20,10 @@ const WrapperView = styled.div``;
 class HomeView extends Component {
   render() {
     return (
-      <WrapperView>
+      <WrapperView id="news">
         <GlobalStyle />
         <NavbarTop />
-        <SliderBar />
+        <SliderBar  />
         <BreakeHeader>Aktualności</BreakeHeader>
         <MainBar />
         <BreakeHeader>Suknie ślubne</BreakeHeader>
