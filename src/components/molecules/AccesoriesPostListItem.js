@@ -66,7 +66,7 @@ const Button = styled.a`
   justify-content: center;
   align-content: center;
   color: black;
-  background-color: lightgray;
+  background-color: #D8C6EE;
   border-radius: 50px;
   bottom: 220px;
   right: 40px;
@@ -82,7 +82,7 @@ const Footer = styled.div`
 `;
 
 const FooterSpan = styled.span`
-  color: orange;
+  color: #6C44A2;
 `;
 
 class AccesoriesPostListItem extends Component {

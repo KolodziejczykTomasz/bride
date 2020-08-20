@@ -39,11 +39,30 @@ const CardHeroText = styled.div`
   left: 0;
   opacity: 0;
   transition: opacity 0.5s;
-  background: rgba(90, 0, 10, 0.4);
+  background: rgba(108, 68, 162, 0.6);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+ 
+    @media (max-width: 600px) {
+    height: 70%;
+    font-size: .8rem;
+  }
+  @media (min-width: 600px) {
+    height: 70%;
+    font-size: .8rem;
+  }
+  @media (min-width: 768px) {
+    height: 100%;
+    font-size: 1rem;
+  }
+  @media (min-width: 1024px) {
+    height: 100%;
+  }
+  @media (min-width: 1224px) {
+    height: 100%;
+  } 
   :hover {
     opacity: 1;
   }

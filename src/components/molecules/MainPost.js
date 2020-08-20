@@ -15,8 +15,8 @@ const Wrapper = styled.div`
 `;
 
 const Header = styled.div``;
-const Title = styled.h2``;
-const Subtitle = styled.h3``;
+const Title = styled.h1``;
+const Subtitle = styled.h2``;
 
 const PhotoBox = styled.div`
   width: 100%;
@@ -33,7 +33,8 @@ const Section = styled.div`
   margin: 2rem 0;
 `;
 
-const TextHeader = styled.div``;
+const TextHeader = styled.h3``;
+
 const Text = styled.p`
   font-size: 1.4rem;
 `;

@@ -29,6 +29,8 @@ const WrapperText = styled.p`
   text-align: center;
   font-size: 3rem;
   font-weight: 500;
+  color: #3F2B55;
+  letter-spacing: 0.2rem;
 `;
 
 const BreakeHeader = ({ children }) => (

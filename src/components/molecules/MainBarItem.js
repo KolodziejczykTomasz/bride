@@ -47,8 +47,7 @@ class MainBarItem extends Component {
     return (
       <Wrapper pageType={pageType}>
         <Section onClick={this.handleCardClick}>
-          <PhotoBox><Photo src={picHeader} alt={title} /></PhotoBox>
-          
+          <PhotoBox><Photo src={picHeader} alt={title} /></PhotoBox>          
           <Title>{title}</Title>
         </Section>
       </Wrapper>

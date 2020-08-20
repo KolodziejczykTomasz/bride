@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   :hover {
     scale: 1.1;
     z-index: 999;
+    box-shadow: 0 2px 4px #6C44A2;
   }
 `;
 

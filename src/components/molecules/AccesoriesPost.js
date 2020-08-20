@@ -29,7 +29,7 @@ const Wrapper = styled.div`
   width: 80vw;
   margin: 2rem auto;
   padding: 2rem 5rem;
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  box-shadow: 0 0.5em 1em -0.125em rgba(108, 68,  162, 0.3), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 `;
 
 const Card = styled.div`
@@ -40,7 +40,9 @@ const Card = styled.div`
 `;
 
 const Main = styled.div``;
+
 const PhotoBox = styled.div``;
+
 const Photo = styled.img`
   display: block;
   width: 100%;
@@ -48,23 +50,28 @@ const Photo = styled.img`
 `;
 
 const Aside = styled.div`
-  padding-left: 2rem;
+  padding: 1rem 2rem 0 2rem;
 `;
 const Title = styled.h1`
   margin: 0.5rem 0;
 `;
 
-const SubTitle = styled.div``;
+const SubTitle = styled.div`
+  margin: 0.5rem 0;
+`;
 
 const Price = styled.h2``;
 const Description = styled.p`
   font-size: 1.8rem;
   line-height: 2.4rem;
+  margin: 2rem .8rem 1.3rem .8rem;
 `;
 
 const Details = styled.ul``;
 const DetailsItem = styled.li``;
-const DescriptionItemListItem = styled.li``;
+const DescriptionItemListItem = styled.li`
+  margin: 1rem .8rem 1rem .8rem;
+`;
 const DescriptionItemList = styled.ul`
   margin-left: 0.5rem;
 `;

@@ -42,7 +42,8 @@ const Main = styled.div``;
 const Title = styled.h1`
   margin: 0.5rem 0;
 `;
-const Subtitle = styled.h2``;
+const Subtitle = styled.h2`
+`;
 
 const Aside = styled.div`
   padding-left: 2rem;

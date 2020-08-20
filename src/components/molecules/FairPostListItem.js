@@ -25,7 +25,8 @@ const Main = styled.div`
   margin: 0 auto;
   padding: 0.5rem 0.5rem;
 `;
-const Aside = styled.div``;
+const Aside = styled.div`
+margin-left: 2rem;`;
 const Picture = styled.div``;
 
 const DescriptionItemList = styled.ul`

@@ -34,6 +34,7 @@ const Main = styled.div`
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   grid-row-gap: 3rem;
+  margin-right: 2rem;
 `;
 
 const MainContainer = styled.div`
@@ -48,23 +49,23 @@ const Aside = styled.div`
   grid-template-columns: 1fr;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
-  width: 100%;
+  width: 100%;  
 `;
 
 const AsideContainer = styled.div`
   display: grid;
   grid-row-gap: 3rem;
   height: 100%;
-  width: 100%;  
+  width: 100%;   
 `;
 
 const WrapperItem = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 3rem;
-  width: 100%;
+  width: 100%; 
   :hover {
-    box-shadow: 0 2px 4px #777;
+    box-shadow: 0 2px 4px #6C44A2;
   }
 `;
 

@@ -54,8 +54,7 @@ class SliderBar extends Component {
             >
               <div className="inner">
                 <h1>{item.title}</h1>
-                <p>{item.description}</p>
-                <button onClick={this.handleCardClick}>{item.button}</button>
+                <p>{item.description}</p>               
               </div>
               <section>
                 <img src={item.userProfile} alt={item.user} />

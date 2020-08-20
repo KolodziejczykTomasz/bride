@@ -13,12 +13,14 @@ const AsideCityList = styled.div`
   display: grid;
   justify-items: center;
   align-items: center;
+  padding: 2rem .5rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
-  border: 1px solid rgba(10, 10, 10, 0.1);
+  border: 1px solid rgba(216, 198, 238, 0.1);
   :hover {
-    color: orange;
+    color: #6C44A2;
     cursor: pointer;
-    box-shadow: 0 2px 4px #777;
+    box-shadow: 0 2px 4px #D8C6EE;
   }
 `;
 

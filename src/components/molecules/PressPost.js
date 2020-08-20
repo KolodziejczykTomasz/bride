@@ -29,6 +29,7 @@ const Button = styled.a`
 const Wrapper = styled.div`
   width: 80vw;
   margin: 2rem auto;
+  padding: 1rem 2rem 0 2rem;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 `;
 const Header = styled.div`

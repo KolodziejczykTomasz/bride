@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaFacebook } from 'react-icons/fa';
+import BreakeHeader from 'components/atoms/BreakeHeader';
+
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -7,26 +9,24 @@ const Wrapper = styled.div`
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   height: 7rem;
-  margin: 6rem 0 6rem 0;
+  margin: 6rem 0 12rem 0;
 `;
 
 const SocialBox = styled.div`
   display: flexbox;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   margin: auto auto;
   cursor: pointer;
   :hover {
-    background-color: orange;
-  border-radius: 23px;
+    background-color: #D8C6EE;
+    border-radius: 28px;
   }
 `;
 
 const SocialMediaBar = () => (
-  <Wrapper>
-    <SocialBox>
-      <FaFacebook style={{ fontSize: 40 }} />
-    </SocialBox>
+  <Wrapper>  
+    <BreakeHeader><SocialBox><FaFacebook style={{ fontSize: 60 }} /></SocialBox></BreakeHeader> 
   </Wrapper>
 );
 

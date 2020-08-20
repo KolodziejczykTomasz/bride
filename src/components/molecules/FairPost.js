@@ -27,6 +27,7 @@ const Button = styled.a`
 const Wrapper = styled.div`
   width: 81vw;
   margin: 2rem auto;
+  padding: 1rem 2rem 0 2rem;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 `;
 
@@ -37,16 +38,27 @@ const Body = styled.div`
   width: 90vw;
   margin: 5rem 0;
 `;
-const Main = styled.div``;
-const Aside = styled.div``;
-const Picture = styled.div``;
+const Main = styled.div`
+  margin: 0 auto;
+`;
+
+const Aside = styled.div`
+  padding: 1rem 2rem 0 2rem;
+`;
+
+const PhotoBox = styled.div`
+  background-color: rgba(10, 10, 10, 0.1);
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 0.5rem 0.5rem;
+`;
+
+const Photo = styled.img``;
 
 const DescriptionItemList = styled.div`
   margin-left: 3rem;
 `;
 const DescriptionItemListItem = styled.div``;
-
-
 
 class FairPost extends Component {
   render() {
@@ -57,9 +69,9 @@ class FairPost extends Component {
         <Wrapper>
           <Body>
             <Main>
-              <Picture>
-                <img src={url} alt={name} />
-              </Picture>
+              <PhotoBox>
+                <Photo src={url} alt={name} />
+              </PhotoBox>
             </Main>
             <Aside>
               {description.length !== '' ? (

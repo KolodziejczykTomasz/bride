@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   width: 100%;
   padding: 2rem 0.5rem;
   cursor: pointer;
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  box-shadow: 0 0.5em 1em -0.125em rgba(108, 68,  162, 0.3), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 `;
 
 const Body = styled.div`
@@ -64,7 +64,7 @@ const Button = styled.a`
   justify-content: center;
   align-content: center;
   color: black;
-  background-color: lightgray;
+  background-color: #D8C6EE;
   border-radius: 50px;
   bottom: 220px;
   right: 40px;
@@ -80,7 +80,7 @@ const Footer = styled.div`
 `;
 
 const FooterSpan = styled.span`
-  color: orange;
+  color: #6C44A2;
 `;
 
 class CompanyPostListItem extends Component {

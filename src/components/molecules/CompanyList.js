@@ -63,9 +63,9 @@ const AsideCityList = styled.div`
   height: 10rem;
   border: 1px solid rgba(10, 10, 10, 0.1);
   :hover {
-    color: orange;
+    color: #6C44A2;
     cursor: pointer;
-    box-shadow: 0 2px 4px #777;
+    box-shadow: 0 2px 4px #6C44A2;
   }
 `;
 
@@ -75,7 +75,7 @@ const WrapperItem = styled.div`
   grid-row-gap: 3rem;
   width: 100%;
   :hover {
-    box-shadow: 0 2px 4px #777;
+    box-shadow: 0 2px 4px #6C44A2;
   }
 `;
 

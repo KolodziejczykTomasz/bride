@@ -39,12 +39,14 @@ const FooterWrapperCopyrightText = styled.p`
 
 const FooterTitle = styled.h1`
   margin: 2rem 0 2rem 1rem;
+  color: #3F2B55;
 `;
 
 const FooterListLink = styled.ul``;
 
 const FooterItemLink = styled.li`
   margin-left: 2.5rem;
+  color: #6C44A2;
 `;
 
 const Footer = ({ extras, postextras, brides, postbride }) => (
@@ -88,12 +90,12 @@ const Footer = ({ extras, postextras, brides, postbride }) => (
         <FooterTitle>Przygotowania </FooterTitle>
         <FooterListLink>
           <FooterItemLink>
-            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/churchs">
+            <NavLink style={{ textDecoration: 'none', color: '#6C44A2' }} to="/churchs">
               Czytania w Kościele
             </NavLink>
           </FooterItemLink>
           <FooterItemLink>
-            <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/travels">
+            <NavLink style={{ textDecoration: 'none', color: '#6C44A2' }} to="/travels">
               Podróż poślubna
             </NavLink>
           </FooterItemLink>

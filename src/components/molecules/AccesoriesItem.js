@@ -19,7 +19,7 @@ const CardHeroText = styled.div`
   left: 0;
   opacity: 0;
   transition: opacity 0.5s;
-  background: rgba(90, 0, 10, 0.4);
+  background: rgba(108, 68, 162, 0.6);
   color: white;
   display: flex;
   align-items: center;
@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   position: relative;
   height: 30rem;
   cursor: pointer;
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  box-shadow: 0 0.5em 1em -0.125em rgba(108, 68,  162, 0.3), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   transition: 0.5s;
   :hover {
     scale: 1;
