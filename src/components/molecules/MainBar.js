@@ -214,6 +214,7 @@ const MainBar = ({ postbride, postextras, extras, brides, header, gallery }) => 
                 pic10,
                 pic11,
                 gallery,
+                tags,
                 category,
               }) => (
                 <MainBarItem
@@ -257,6 +258,7 @@ const MainBar = ({ postbride, postextras, extras, brides, header, gallery }) => 
                   p11={p11}
                   pic11={pic11}
                   gallery={gallery}
+                  tags={tags}
                   category={category}
                   pageType="brides"
                 />

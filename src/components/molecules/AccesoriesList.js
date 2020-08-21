@@ -52,17 +52,17 @@ const AsideContainer = styled.div`
   width: 100%;
 `;
 
-const AsideCityList = styled.div`
+const AsideCityList = styled.p`
   display: grid;
   justify-items: center;
   align-items: center;
   height: 10rem;
   text-transform: uppercase;
-  border: 1px solid rgba(10, 10, 10, 0.1);
+   box-shadow: 0 0.5em 1em -0.125em rgba(108, 68,  162, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   :hover {
-    color: orange;
+    color: #6C44A2;
     cursor: pointer;
-    box-shadow: 0 2px 4px #777;
+    box-shadow: 0 2px 4px #6C44A2;
   }
 `;
 

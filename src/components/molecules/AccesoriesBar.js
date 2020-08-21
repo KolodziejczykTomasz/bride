@@ -33,6 +33,7 @@ const Wrapper = styled.div`
 const WrapperItem = styled.div`
   display: grid;
   width: 100%;
+  min-width: 25rem;
   align-items: center;
   justify-items: center;  
 `;

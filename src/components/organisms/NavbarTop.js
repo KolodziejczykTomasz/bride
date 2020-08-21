@@ -7,7 +7,7 @@ import BarndMark from 'assets/images/logotypy/brendmark.jpg';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  max-width: 100%;
+  max-width: 1200px;
 `;
 
 
@@ -25,9 +25,9 @@ const NavbarTop = () => (
         <Nav
           className="mr-auto justify-content-center"
           style={{
-            width: '60vw',
+           marginRight: 'auto',
             marginTop: 20,
-            marginLeft: 10,
+            marginLeft: 'auto',
             marginBottom: 20,
             backgroundColor: '#fff',
             textTransform: 'uppercase',
@@ -45,14 +45,14 @@ const NavbarTop = () => (
           <NavLink style={{ width: 'auto', textDecoration: 'none', color: 'black', marginRight: 30, }} to="/fairlist">
             Targi
           </NavLink>
-          <NavLink style={{ width: 'auto', textDecoration: 'none', color: 'black',}} to="/contact">
+          <NavLink style={{ width: 'auto', textDecoration: 'none', color: 'black', marginRight: 30,}} to="/contact">
             Kontakt
           </NavLink>
         </Nav>
       </Navbar.Collapse>
-      <Navbar.Collapse className="mr-auto justify-content-end">
-        <Navbar.Text style={{ width: '160px', backgroundColor: '#fff', fontSize: 'auto' }}>
-          <FaPhone style={{ marginRight: '15px' }} />
+      <Navbar.Collapse className="justify-content-end">
+        <Navbar.Text style={{ backgroundColor: '#fff', fontSize: '12' }}>
+          <FaPhone style={{ marginRight: '10px' }} />
           +48 123 456 789
         </Navbar.Text>
       </Navbar.Collapse>

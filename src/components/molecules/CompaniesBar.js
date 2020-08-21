@@ -13,6 +13,14 @@ const WrapperTabRow = styled.div`
   margin-top: 1.2rem;
 `;
 
+const Alert = styled.span`
+display:block;
+width: 100%;
+margin: 5rem 0 5rem 0;
+text-align: center;
+color: #6C44A2;
+`;
+
 const CompaniesBar = ({
 company,
   description,
@@ -102,8 +110,7 @@ company,
           <TabPane tabId="1">
             <WrapperTabRow>
               <Row>
-                
-                  <>
+                {company.category === 'Dekoracje'.length ? <p>brak</p> : ( <>
                   {company.filter((item) => item.category === 'Dekoracje').map(({ id, url, title, subtitle, price, city, description, pageType }) => (
                       <CompaniesItem
                         id={id}
@@ -117,7 +124,7 @@ company,
                         pageType={pageType}
                       />
                     ))}
-                  </>
+                  </>)}
               
               </Row>
             </WrapperTabRow>
@@ -125,7 +132,7 @@ company,
           <TabPane tabId="2">
             <WrapperTabRow>
               <Row>
-             
+                {company.filter((item) => item.category === 'Atrakcje').length ? (
                   <>
                   {company.filter((item) => item.category === 'Atrakcje').map(({ id, url, title, subtitle, price, city, description, pageType }) => (
                       <CompaniesItem
@@ -140,15 +147,14 @@ company,
                         pageType={pageType}
                       />
                     ))}
-                  </>
-           
+                  </>) : <Alert>Dodaj pierwszą firmę do tej kategorii</Alert>}
               </Row>
             </WrapperTabRow>
           </TabPane>
           <TabPane tabId="3">
             <WrapperTabRow>
               <Row>
-               
+                {company.filter((item) => item.category === 'Moda').length ? (
                   <>
                   {company.filter((item) => item.category === 'Moda').map(({ id, url, title, subtitle, price, city, description, pageType }) => (
                       <CompaniesItem
@@ -163,7 +169,7 @@ company,
                         pageType={pageType}
                       />
                     ))}
-                  </>
+                  </>) : <Alert>Dodaj pierwszą firmę do tej kategorii</Alert>}
               
               </Row>
             </WrapperTabRow>
@@ -171,8 +177,7 @@ company,
           <TabPane tabId="4">
             <WrapperTabRow>
               <Row>
-            
-                  <>
+                {company.filter((item) => item.category === 'Zespoły').length ? (<>
                   {company.filter((item) => item.category === 'Zespoły').map(({ id, url, title, subtitle, price, city, description, pageType }) => (
                       <CompaniesItem
                         id={id}
@@ -184,18 +189,16 @@ company,
                         city={city}
                         description={description}
                         pageType={pageType}
-                      />
+                    />
                     ))}
-                  </>
-            
+                </>) : <Alert>Dodaj pierwszą firmę do tej kategorii</Alert>}
               </Row>
             </WrapperTabRow>
           </TabPane>
           <TabPane tabId="5">
             <WrapperTabRow>
               <Row>
-               
-                  <>
+                {company.filter((item) => item.category === 'Foto').length ? (<>
                   {company.filter((item) => item.category === 'Foto').map(({ id, url, title, subtitle, price, city, description, pageType }) => (
                       <CompaniesItem
                         id={id}
@@ -207,9 +210,9 @@ company,
                         city={city}
                         description={description}
                         pageType={pageType}
-                      />
+                    />
                     ))}
-                  </>
+                </>) : <Alert>Dodaj pierwszą firmę do tej kategorii</Alert>}
            
               </Row>
             </WrapperTabRow>
@@ -217,8 +220,7 @@ company,
           <TabPane tabId="6">
             <WrapperTabRow>
               <Row>
-               
-                  <>
+                {company.filter((item) => item.category === 'Lokale').length ? (<>
                   {company.filter((item) => item.category === 'Lokale').map(({ id, url, title, subtitle, price, city, description, pageType }) => (
                       <CompaniesItem
                         id={id}
@@ -232,15 +234,14 @@ company,
                         pageType={pageType}
                       />
                     ))}
-                  </>                
+                </>) : <Alert>Dodaj pierwszą firmę do tej kategorii</Alert>}             
               </Row>
             </WrapperTabRow>
           </TabPane>
           <TabPane tabId="7">
             <WrapperTabRow>
               <Row>
-               
-                  <>
+                {company.filter((item) => item.category === 'Pozostałe').length ? (<>
                     {company.filter((item) => item.category === 'Pozostałe').map(({ id, url, title, subtitle, price, city, description, pageType }) => (
                       <CompaniesItem
                         id={id}
@@ -254,7 +255,7 @@ company,
                         pageType={pageType}
                       />
                     ))}
-                  </>               
+                </>) : <Alert>Dodaj pierwszą firmę do tej kategorii</Alert>}             
               </Row>
             </WrapperTabRow>
           </TabPane>

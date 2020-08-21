@@ -98,10 +98,9 @@ export default [
     pic11: Pic10,
     gallery: [],
     tags: [
-      { id: 1, tag: '' },
-      { id: 2, tag: '' },
+      { id: 1, tag: 'Suknia ślubna' },
     ],
-    category: '',
+    category: 'Panna Młoda',
   },
   {
     id: 2,
