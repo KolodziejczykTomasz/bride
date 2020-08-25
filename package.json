@@ -12,6 +12,7 @@
     "bootstrap": "^4.5.0",
     "bulma": "^0.8.2",
     "flickity": "^2.2.1",
+    "formik": "^2.1.5",
     "imports-loader": "^0.8.0",
     "material-components-web": "^6.0.0",
     "normalize.css": "^8.0.1",
