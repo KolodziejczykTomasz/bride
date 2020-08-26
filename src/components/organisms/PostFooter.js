@@ -12,6 +12,21 @@ const Wrapper = styled.div`
   grid-template-rows: 1fr;
   margin-bottom: 5rem;
   padding-left: 1.2rem;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;    
+  }
+  @media (min-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 768px) {
+   grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1224px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 const CategoryBox = styled.div`
