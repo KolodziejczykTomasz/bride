@@ -29,6 +29,18 @@ const Wrapper = styled.div`
   margin: 2rem auto;
   padding: 2rem 5rem;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
 `;
 
 const Title = styled.h1`
@@ -46,8 +58,8 @@ const Photo = styled.img`
 `;
 
 const Details = styled.div`
-width: 50vw;
-margin: 5rem auto;
+  width: 50vw;
+  margin: 5rem auto;
 `;
 const Price = styled.div``;
 const Category = styled.div``;
@@ -55,9 +67,9 @@ const Descripion = styled.div``;
 const Shop = styled.div``;
 
 const TextBold = styled.span`
-text-transform: uppercase;
-font-weight: 600;
-padding-right: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-right: 1rem;
 `;
 
 class DressPost extends Component {

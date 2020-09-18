@@ -29,7 +29,19 @@ const Wrapper = styled.div`
   width: 80vw;
   margin: 2rem auto;
   padding: 2rem 5rem;
-  box-shadow: 0 0.5em 1em -0.125em rgba(108, 68,  162, 0.3), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  box-shadow: 0 0.5em 1em -0.125em rgba(108, 68, 162, 0.3), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
 `;
 
 const Card = styled.div`
@@ -37,6 +49,12 @@ const Card = styled.div`
   grid-template-rows: 1fr;
   grid-template-columns: 0.3fr 0.7fr;
   margin: 0.5rem 0;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Main = styled.div``;
@@ -47,10 +65,17 @@ const Photo = styled.img`
   display: block;
   width: 100%;
   margin: 0.2rem auto;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 60vw;
+    margin: 1rem auto 2rem auto;
+  }
 `;
 
 const Aside = styled.div`
   padding: 1rem 2rem 0 2rem;
+  @media (max-width: 767px) {
+    margin: 1rem 0;
+  }
 `;
 const Title = styled.h1`
   margin: 0.5rem 0;
@@ -64,16 +89,28 @@ const Price = styled.h2``;
 const Description = styled.p`
   font-size: 1.8rem;
   line-height: 2.4rem;
-  margin: 2rem .8rem 1.3rem .8rem;
+  margin: 2rem 0.8rem 1.3rem 0.8rem;
+  @media (max-width: 767px) {
+    margin: 2rem 0 1.3rem 0;
+  }
 `;
 
 const Details = styled.ul``;
 const DetailsItem = styled.li``;
 const DescriptionItemListItem = styled.li`
-  margin: 1rem .8rem 1rem .8rem;
+  margin: 1rem 0.8rem 1rem 0.8rem;
+  @media (max-width: 767px) {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    text-align: justify;
+    hyphens: auto;
+  }
 `;
 const DescriptionItemList = styled.ul`
   margin-left: 0.5rem;
+  @media (max-width: 767px) {
+    margin-left: 0;
+  }
 `;
 
 class AccesoriesPost extends Component {

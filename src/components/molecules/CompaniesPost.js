@@ -30,6 +30,18 @@ const Wrapper = styled.div`
   margin: 2rem auto;
   padding: 2rem 5rem;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
 `;
 
 const Card = styled.div`
@@ -37,13 +49,18 @@ const Card = styled.div`
   grid-template-rows: 1fr;
   grid-template-columns: 0.3fr 0.7fr;
   margin: 2rem 0;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
 `;
 const Main = styled.div``;
 const Title = styled.h1`
   margin: 0.5rem 0;
 `;
-const Subtitle = styled.h2`
-`;
+const Subtitle = styled.h2``;
 
 const Aside = styled.div`
   padding-left: 2rem;
@@ -88,32 +105,32 @@ class CompaniesPost extends Component {
             </Main>
             <Aside>
               <AsideWrapper>
-              <Title>{title}</Title>
-              <Subtitle>{subtitle}</Subtitle>
-              <Description>
-                {description.length !== '' ? (
-                  <>
-                    {description.map(({ p1, p2, p3, p4, p5, p6, p7, p8, p9, p10 }) => (
-                      <DescriptionItemList>
-                        <DescriptionItemListItem>{p1}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p2}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p3}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p4}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p5}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p6}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p7}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p8}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p9}</DescriptionItemListItem>
-                        <DescriptionItemListItem>{p10}</DescriptionItemListItem>
-                      </DescriptionItemList>
-                    ))}
-                  </>
-                ) : null}
-              </Description>
-              <Details>
-                {price !== '' ?  <DetailsItem>Cena: {price}</DetailsItem> : null}
-                {city !== '' ? <DetailsItem>Miasto: {city}</DetailsItem> : null}
-              </Details>
+                <Title>{title}</Title>
+                <Subtitle>{subtitle}</Subtitle>
+                <Description>
+                  {description.length !== '' ? (
+                    <>
+                      {description.map(({ p1, p2, p3, p4, p5, p6, p7, p8, p9, p10 }) => (
+                        <DescriptionItemList>
+                          <DescriptionItemListItem>{p1}</DescriptionItemListItem>
+                          <DescriptionItemListItem>{p2}</DescriptionItemListItem>
+                          <DescriptionItemListItem>{p3}</DescriptionItemListItem>
+                          <DescriptionItemListItem>{p4}</DescriptionItemListItem>
+                          <DescriptionItemListItem>{p5}</DescriptionItemListItem>
+                          <DescriptionItemListItem>{p6}</DescriptionItemListItem>
+                          <DescriptionItemListItem>{p7}</DescriptionItemListItem>
+                          <DescriptionItemListItem>{p8}</DescriptionItemListItem>
+                          <DescriptionItemListItem>{p9}</DescriptionItemListItem>
+                          <DescriptionItemListItem>{p10}</DescriptionItemListItem>
+                        </DescriptionItemList>
+                      ))}
+                    </>
+                  ) : null}
+                </Description>
+                <Details>
+                  {price !== '' ? <DetailsItem>Cena: {price}</DetailsItem> : null}
+                  {city !== '' ? <DetailsItem>Miasto: {city}</DetailsItem> : null}
+                </Details>
               </AsideWrapper>
             </Aside>
           </Card>

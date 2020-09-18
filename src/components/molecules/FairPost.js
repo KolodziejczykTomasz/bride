@@ -29,6 +29,18 @@ const Wrapper = styled.div`
   margin: 2rem auto;
   padding: 1rem 2rem 0 2rem;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
 `;
 
 const Body = styled.div`
@@ -37,6 +49,12 @@ const Body = styled.div`
   grid-template-columns: 0.2fr 0.8fr;
   width: 90vw;
   margin: 5rem 0;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 const Main = styled.div`
   margin: 0 auto;

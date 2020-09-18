@@ -31,6 +31,18 @@ const Wrapper = styled.div`
   margin: 2rem auto;
   padding: 1rem 2rem 0 2rem;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
 `;
 const Header = styled.div`
   margin: 5rem 0;
@@ -43,6 +55,12 @@ const Card = styled.div`
   grid-template-rows: 1fr;
   grid-template-columns: 0.3fr 0.7fr;
   margin: 5rem 0;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
 `;
 const Main = styled.div``;
 const Aside = styled.div`
@@ -55,6 +73,10 @@ const Photo = styled.img`
   display: block;
   width: 50rem;
   margin: 1rem auto;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 50%;
+    margin: 1rem auto 2rem auto;
+  }
 `;
 
 const DataItem = styled.div`
@@ -122,8 +144,6 @@ class PressPost extends Component {
     });
   };
 
-  
- 
   render() {
     const {
       title,
@@ -140,7 +160,6 @@ class PressPost extends Component {
       url,
     } = this.state;
 
-  
     return (
       <MainTemplates pageType={pageType} title={title}>
         <BreakeHeader>Prasa ślubna</BreakeHeader>

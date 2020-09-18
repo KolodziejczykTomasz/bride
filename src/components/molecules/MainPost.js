@@ -4,7 +4,6 @@ import MainTemplates from 'templates/MainTemplates';
 import BreakeHeader from 'components/atoms/BreakeHeader';
 import PostFooter from 'components/organisms/PostFooter';
 
-
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -12,6 +11,22 @@ const Wrapper = styled.div`
   margin: 2rem auto;
   padding: 2rem 5rem;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  @media (min-width: 320px) and (max-width: 766px) {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
 `;
 
 const Header = styled.div``;
@@ -133,7 +148,7 @@ class MainPost extends Component {
       pic11,
       gallery,
       tags,
-      category
+      category,
     } = this.props;
 
     return (
