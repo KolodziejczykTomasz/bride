@@ -31,17 +31,17 @@ const Wrapper = styled.div`
   padding: 2rem 5rem;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   @media (max-width: 767px) {
-     width: 100%;
-     padding: 1rem 1rem;
+    width: 100%;
+    padding: 1rem 1rem;
   }
-   @media (min-width: 768px) and (max-width: 1024px) {
-      width: 100%;
-     padding: 1rem 1.5rem;
-}
-@media (min-width: 1025px) and (max-width: 1280px) {
-      width: 100%;
-     padding: 1rem 1.5rem;
-}
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
 `;
 
 const Header = styled.h1`
@@ -70,14 +70,13 @@ const Text = styled.p`
 const DescriptionItemList = styled.ul`
   margin-left: 3rem;
   @media (max-width: 767px) {
-     margin-left: 0;
-     font-size: 1.5rem;
-     text-align: justify;
-     hyphens: auto;
+    margin-left: 0;
+    font-size: 1.5rem;
+    text-align: justify;
+    hyphens: auto;
   }
 `;
 const DescriptionItemListItem = styled.li``;
-
 
 class TravelPost extends Component {
   render() {

@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   width: 100%;
   padding: 2rem 0.5rem;
   cursor: pointer;
-   box-shadow: 0 0.5em 1em -0.125em rgba(108, 68,  162, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  box-shadow: 0 0.5em 1em -0.125em rgba(108, 68, 162, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 `;
 
 const Body = styled.div`
@@ -26,11 +26,31 @@ const Main = styled.div`
   padding: 0.5rem 0.5rem;
 `;
 const Aside = styled.div`
-margin-left: 2rem;`;
+  margin-left: 2rem;
+`;
+
 const Picture = styled.div``;
 
 const DescriptionItemList = styled.ul`
   margin-left: 3rem;
+
+  @media (max-width: 480px) {
+    margin-left: 0.5rem;
+  }
+
+  @media (min-width: 481px) and (max-width: 766px) {
+    margin-left: 0.5rem;
+  }
+
+  @media (min-width: 767px) and (max-width: 1024px) {
+    margin-left: 3rem;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    grid-template-columns: 80% auto;
+  }
+  @media (min-width: 1281px) {
+    margin-left: 3rem;
+  }
 `;
 const DescriptionItemListItem = styled.li``;
 

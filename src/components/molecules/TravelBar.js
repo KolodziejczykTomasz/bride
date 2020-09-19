@@ -8,13 +8,38 @@ import styled from 'styled-components';
 
 
 const Wrapper = styled.div`
-  display: flexbox;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+    
+  }
+
+  @media (min-width: 481px) and (max-width: 766px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 767px) and (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  @media (min-width: 1281px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1281px;
+  }
 `;
 
 const WrapperItem = styled.div`
-  width: 33%;
+  width: 100%;
 `;
 
 const TravelBar = ({travel}) => (

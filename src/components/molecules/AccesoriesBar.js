@@ -5,37 +5,37 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: grid;
-  width: 80%;
-  margin: 0 auto; 
+  width: 100%;
+  margin: 0 auto;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
-  @media (max-width: 600px) {
-    grid-template-columns: 0.6fr;
-    justify-content: center;
-    
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
   }
-  @media (min-width: 600px) {
-    grid-template-columns: repeat(2, 0.5fr);
+
+  @media (min-width: 481px) and (max-width: 766px) {
+    grid-template-columns: 1fr 1fr;
   }
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 0.5fr);
+
+  @media (min-width: 767px) and (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 1fr);
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  @media (min-width: 1224px) {
-    grid-template-columns: repeat(4, 1fr);
+  @media (min-width: 1281px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1281px;
   }
 `;
 
 const WrapperItem = styled.div`
-  display: grid;
   width: 100%;
-  min-width: 25rem;
   align-items: center;
-  justify-items: center;  
+  justify-items: center;
 `;
 
 class AccesoriesBar extends Component {

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   position: relative;
-  height: 30rem;
+  height: 100%;
   cursor: pointer;
   transition: 0.5s;
   border: 1px solid black;
@@ -44,25 +44,6 @@ const CardHeroText = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
- 
-    @media (max-width: 600px) {
-    height: 70%;
-    font-size: .8rem;
-  }
-  @media (min-width: 600px) {
-    height: 70%;
-    font-size: .8rem;
-  }
-  @media (min-width: 768px) {
-    height: 100%;
-    font-size: 1rem;
-  }
-  @media (min-width: 1024px) {
-    height: 100%;
-  }
-  @media (min-width: 1224px) {
-    height: 100%;
-  } 
   :hover {
     opacity: 1;
   }

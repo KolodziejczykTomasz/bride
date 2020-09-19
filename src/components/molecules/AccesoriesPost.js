@@ -82,7 +82,13 @@ const Title = styled.h1`
 `;
 
 const SubTitle = styled.div`
-  margin: 0.5rem 0;
+  @media (max-width: 767px) {
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: justify;
+    hyphens: auto;
+  }
 `;
 
 const Price = styled.h2``;

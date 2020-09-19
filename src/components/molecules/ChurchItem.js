@@ -13,7 +13,7 @@ const MainItem = styled.div`
   margin: 0 auto;
   cursor: pointer;
   :hover  {
-    background-color: orange;
+    background-color: #6c44a2;
     color: white;
   }
 `;

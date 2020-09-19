@@ -17,6 +17,15 @@ const Body = styled.div`
   grid-template-rows: 1fr;
   grid-template-columns: 0.2fr 0.8fr;
   margin: 0 auto;
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 481px) and (max-width: 766px) {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 767px) and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Main = styled.div`

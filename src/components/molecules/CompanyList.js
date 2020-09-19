@@ -29,17 +29,18 @@ const Wrapper = styled.div`
   }
 `;
 
-const Main = styled.div`
+const Main = styled.div``;
+
+const MainContainer = styled.div``;
+
+const WrapperItem = styled.div`
   display: grid;
-  grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   grid-row-gap: 3rem;
-`;
-
-const MainContainer = styled.div`
-  display: grid;
-  grid-row-gap: 3rem;
-  height: 100%;
+  width: 100%;
+  :hover {
+    box-shadow: 0 2px 4px #6c44a2;
+  }
 `;
 
 const Aside = styled.div`
@@ -69,15 +70,7 @@ const AsideCityList = styled.div`
   }
 `;
 
-const WrapperItem = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap: 3rem;
-  width: 100%;
-  :hover {
-    box-shadow: 0 2px 4px #6C44A2;
-  }
-`;
+
 
 class CompanyList extends Component {
   state = {

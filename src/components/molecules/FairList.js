@@ -56,7 +56,21 @@ const AsideContainer = styled.div`
   display: grid;
   grid-row-gap: 3rem;
   height: 100%;
-  width: 100%;   
+  width: 100%;
+  @media (max-width: 480px) {
+    height: 80rem;
+    grid-row-gap: 0.3rem;
+    cursor: pointer;
+  }
+  @media (min-width: 481px) and (max-width: 766px) {
+    height: 80rem;
+    grid-row-gap: 0.3rem;
+    cursor: pointer;
+  }
+  @media (min-width: 767px) and (max-width: 1024px) {
+    height: 100%;
+    cursor: pointer;
+  }
 `;
 
 const WrapperItem = styled.div`

@@ -12,19 +12,21 @@ const Wrapper = styled.div`
   margin-bottom: 10rem;
   grid-template-columns: 8% auto;
   grid-column-gap: 2rem;
-  @media (max-width: 600px) {
+  @media (max-width: 480px) {
     grid-template-columns: 1fr;
   }
-  @media (min-width: 600px) {
+
+  @media (min-width: 481px) and (max-width: 766px) {
     grid-template-columns: 1fr;
   }
-  @media (min-width: 768px) {
+
+  @media (min-width: 767px) and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
     grid-template-columns: 80% auto;
   }
-  @media (min-width: 1024px) {
-    grid-template-columns: 80% auto;
-  }
-  @media (min-width: 1224px) {
+  @media (min-width: 1281px) {
     grid-template-columns: 80% auto;
   }
 `;
@@ -33,21 +35,36 @@ const Main = styled.div``;
 
 const MainContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 1rem;
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 481px) and (max-width: 766px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 767px) and (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (min-width: 1281px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 `;
 
-const Aside = styled.div`
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  width: 100%;
-`;
+const Aside = styled.div``;
 
 const AsideContainer = styled.div`
   display: grid;
-  grid-row-gap: 1rem;  
+  grid-row-gap: 1rem;
   width: 100%;
 `;
 

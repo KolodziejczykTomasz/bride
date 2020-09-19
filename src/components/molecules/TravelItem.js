@@ -39,6 +39,18 @@ const Wrapper = styled.div`
     scale: 1.2;
     z-index: 999;
   }
+  @media (max-width: 480px) {
+    margin-bottom: 1rem;
+  }
+  @media (min-width: 481px) and (max-width: 766px) {
+    margin-bottom: 1rem;
+  }
+  @media (min-width: 767px) and (max-width: 1024px) {
+    margin-bottom: 1rem;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    margin-bottom: 1rem;
+  }
 `;
 const CardHeroTextTitle = styled.p`
   display: block;

@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   width: 100%;
   padding: 2rem 0.5rem;
   cursor: pointer;
-  box-shadow: 0 0.5em 1em -0.125em rgba(108, 68,  162, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  box-shadow: 0 0.5em 1em -0.125em rgba(108, 68, 162, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 `;
 
 const Body = styled.div`
@@ -17,6 +17,15 @@ const Body = styled.div`
   grid-template-rows: 1fr;
   grid-template-columns: 0.2fr 0.8fr;
   margin: 0 auto;
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 481px) and (max-width: 766px) {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 767px) and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Main = styled.div`
@@ -41,6 +50,36 @@ const Photo = styled.img`
 const Aside = styled.div``;
 const DescriptionItemList = styled.ul`
   margin-left: 2.3rem;
+  @media (max-width: 480px) {
+    margin-left: 0.3rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  @media (min-width: 481px) and (max-width: 766px) {
+    margin-left: 0.3rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  @media (min-width: 767px) and (max-width: 1024px) {
+    margin-left: 0.3rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    hyphens: auto;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    margin-left: 2.3rem;
+    text-align: justify;
+    hyphens: auto;
+  }
+  @media (min-width: 1281px) {
+    margin-left: 2.3rem;
+    text-align: justify;
+    hyphens: auto;
+  }
 `;
 const DescriptionItemListItem = styled.li``;
 
@@ -50,10 +89,44 @@ const AsideWrapper = styled.div`
 
 const Title = styled.h1`
   padding: 1rem 1.8rem 0 1.8rem;
+  @media (max-width: 480px) {
+    padding: 1rem 1.8rem 0 0.3rem;
+  }
+
+  @media (min-width: 481px) and (max-width: 766px) {
+    padding: 1rem 1.8rem 0 0.3rem;
+  }
+
+  @media (min-width: 767px) and (max-width: 1024px) {
+    padding: 1rem 1.8rem 0 0.3rem;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    padding: 1rem 1.8rem 0 1.8rem;
+  }
+  @media (min-width: 1281px) {
+    padding: 1rem 1.8rem 0 1.8rem;
+  }
 `;
 
 const SubTitle = styled.h2`
-  padding: 1rem 2rem;
+  padding: 1rem 1.8rem 0 1.8rem;
+  @media (max-width: 480px) {
+    padding: 1rem 1.8rem 0 0.3rem;
+  }
+
+  @media (min-width: 481px) and (max-width: 766px) {
+    padding: 1rem 1.8rem 0 0.3rem;
+  }
+
+  @media (min-width: 767px) and (max-width: 1024px) {
+    padding: 1rem 1.8rem 0 0.3rem;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    padding: 1rem 1.8rem 0 1.8rem;
+  }
+  @media (min-width: 1281px) {
+    padding: 1rem 1.8rem 0 1.8rem;
+  }
 `;
 
 const Button = styled.a`
@@ -64,7 +137,7 @@ const Button = styled.a`
   justify-content: center;
   align-content: center;
   color: black;
-  background-color: #D8C6EE;
+  background-color: #d8c6ee;
   border-radius: 50px;
   bottom: 220px;
   right: 40px;
@@ -80,7 +153,7 @@ const Footer = styled.div`
 `;
 
 const FooterSpan = styled.span`
-  color: #6C44A2;
+  color: #6c44a2;
 `;
 
 class CompanyPostListItem extends Component {
