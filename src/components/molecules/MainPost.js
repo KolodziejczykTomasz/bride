@@ -29,7 +29,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const Header = styled.div``;
+const Header = styled.div`
+  font-size: 1.5rem;
+  text-align: justify;
+  hyphens: auto;
+`;
 const Title = styled.h1``;
 const Subtitle = styled.h2``;
 
@@ -51,7 +55,9 @@ const Section = styled.div`
 const TextHeader = styled.h3``;
 
 const Text = styled.p`
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  text-align: justify;
+  hyphens: auto;
 `;
 const TextPhoto = styled.div``;
 
