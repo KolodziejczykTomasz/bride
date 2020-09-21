@@ -1,61 +1,53 @@
-#navbarHeader {
+#wrapperNavbar{
+  box-shadow: 0 0.5em 1em -0.125em rgba(108, 68,  162, 0.2), 0 0px 0 1px rgba(10, 10, 10, 0.02);  
+}
+
+/*dropdown*/
+.navbar {
+  padding: 0rem;
+  margin-bottom: 2rem;  
+  background-color: white;
+}
+
+.dropdown .dropdown-menu {
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    border-radius: 0;
+  }
+}
+/*first line*/
+#headerNavbar {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 50px;
-}
-
-#navbarHeaderBrand {
-  justify-self: start;
-  align-self: center;
-  padding-left: 0.3rem;
-}
-
-#navbarHeaderSecondBrand {
-  width: auto;
-  text-transform: uppercase;
-  margin-right: 2px;
-  font-size: 2rem;
-  font-weight: 400;
-  color: #3f2b55;
-}
-
-#navbarHeaderBrandPhoto {
-  height: 100%;
-}
-
-#navbarHeaderPhone {
-  justify-self: end;
-  align-self: center;
-  padding-right: 0.3rem;
-  font-size: 2rem;
-  font-weight: 500;
-  color: #3f2b55;
-}
-
-#navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 7rem;
+  justify-items: center;
+  align-items: center;  
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0.7rem 0;
+  color: rgb(44, 16, 82);
   background-color: transparent;
 }
 
-#navlink {
-  width: auto;
-  font-size: 2rem;
-  font-weight: 500;
-  text-decoration: none;
+#headerNavbarSpanSecond {
+  margin-right: 2rem;
   text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1px;
-  color: #6c44a2;
-  margin: 1rem 1.5rem 1rem 3rem;  
 }
-#navlink:hover {
-    text-decoration-line: none;
-    color:#3f2b55;
-  }
 
-  .navbar{
-      border-top: 1px solid black;
-  }
+/*second line*/
+#navbutton {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid rgb(44, 16, 82);;
+}
+
+#navbutton:hover {
+  border: 1px solid rgba(10, 10, 10, 0.1);
+  box-shadow: 0 2px 4px #6c44a2;
+}
