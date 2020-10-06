@@ -3,10 +3,11 @@ import { connect } from 'react-redux';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap';
 import classnames from 'classnames';
 import styled from 'styled-components';
+import "./CompaniesBar.css";
 import CompaniesItem from 'components/molecules/CompaniesItem';
 
 const WrapperTabContent = styled.div`
-  margin-top: 1.2rem;
+  margin-top: 1.4rem;
 `;
 
 const WrapperTabRow = styled.div`
@@ -35,7 +36,7 @@ company,
     <div>
       <Nav tabs>
         <NavItem>
-          <NavLink
+          <NavLink id="companies-navlink"
             className={classnames({ active: activeTab === '1' })}
             onClick={() => {
               toggle('1');
@@ -45,7 +46,7 @@ company,
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink
+          <NavLink id="companies-navlink"
             className={classnames({ active: activeTab === '2' })}
             onClick={() => {
               toggle('2');
@@ -55,7 +56,7 @@ company,
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink
+          <NavLink id="companies-navlink"
             className={classnames({ active: activeTab === '3' })}
             onClick={() => {
               toggle('3');
@@ -65,7 +66,7 @@ company,
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink
+          <NavLink id="companies-navlink"
             className={classnames({ active: activeTab === '4' })}
             onClick={() => {
               toggle('4');
@@ -75,7 +76,7 @@ company,
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink
+          <NavLink id="companies-navlink"
             className={classnames({ active: activeTab === '5' })}
             onClick={() => {
               toggle('5');
@@ -85,7 +86,7 @@ company,
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink
+          <NavLink id="companies-navlink"
             className={classnames({ active: activeTab === '6' })}
             onClick={() => {
               toggle('6');
@@ -95,7 +96,7 @@ company,
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink
+          <NavLink id="companies-navlink"
             className={classnames({ active: activeTab === '7' })}
             onClick={() => {
               toggle('7');

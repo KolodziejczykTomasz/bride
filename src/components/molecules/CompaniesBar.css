@@ -1,0 +1,12 @@
+#companies-navlink {
+  font-size: 1.6rem;
+  color: black;
+}
+
+#companies-navlink:hover {
+  color: rgb(64, 9, 139);
+}
+
+#companies-navlink.nav-link.active {
+  color: orange;
+}

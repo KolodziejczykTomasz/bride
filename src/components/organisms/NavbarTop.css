@@ -1,32 +1,82 @@
+#nav-header {
+background: rgb(111,104,176);
+background: linear-gradient(146deg, rgba(111,104,176,1) 0%, rgba(252,254,255,1) 47%);
+box-shadow: 0 2px 4px #6d44a21c;
+  color: black;
+  text-transform: uppercase;
+  padding: 5px 0;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
 #nav-bar {
   padding: 0;
   height: auto;
+  min-height: 70px;
+  max-width: 100%;
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;  
+  margin-bottom: 1.5rem;
   background-color: white;
+  position: sticky;
 }
 
 #navbutton {
   text-decoration: none;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 1px solid rgb(64, 9, 139);;
+  border: 1px solid rgb(64, 9, 139);
 }
 
 #navbutton:hover {
   border: 1px solid rgba(10, 10, 10, 0.1);
   box-shadow: 0 2px 4px #6d44a21c;
+  color: rgb(64, 9, 139);
+  font-weight: 600;
 }
 
 .navbar-nav {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   width: 100%;
 }
 
-#nav-phone{
+#nav-phone {
   display: block;
   width: 160px;
+  color: rgb(64, 9, 139);
+  visibility: hidden;
+}
+
+#nav-brand {
+  display: flex;
+  align-items: center;
+  padding: 7px 10px 0 0;
+  width: auto;
+  height: 70px;
+  margin-right: 20px;
+}
+
+#nav-bar-span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: rgb(64, 9, 139);
+}
+
+#nav-bar-span a:link,
+a:hover {
+  text-decoration: none !important;
+}
+
+@media (min-width: 1100px) {
+  #nav-phone {
+    visibility: visible;
+  }
+  .nav-link {
+    font-size: 0.8px;
+  }
 }

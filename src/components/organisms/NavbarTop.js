@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaPhone } from 'react-icons/fa';
 import { Navbar, Nav, Form } from 'react-bootstrap';
@@ -9,10 +9,11 @@ import './NavbarTop.css';
 const NavbarTop = () => {
   return (
     <>
-      <Navbar bg="white" expand="lg" id="nav-bar" class="sticky-top">
+    <div id="nav-header">Zapraszamy</div>
+      <Navbar bg="white" expand="lg" id="nav-bar" fixed="top">
         <NavLink to="/" style={{ marginRight: 20 }}>
-          <Navbar.Brand style={{ width: 'auto', textTransform: 'uppercase', marginRight: 20 }}>
-            <img src={BarndMark} alt="BarndMark" /> Ślub z Klasą
+          <Navbar.Brand id="nav-brand">
+            <img src={BarndMark} alt="BarndMark" /> <span id="nav-bar-span">Ślub z Klasą</span>
           </Navbar.Brand>
         </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
