@@ -29,8 +29,8 @@ const Root = () => (
         <GlobalStyle />
         <Switch>
           <Route exact path="/" component={HomeView} />
-          <Route path="/prepare" component={PrepareView} />
-          <Route path="/contact" component={ContactView} />
+          <Route exact path="/prepare" component={PrepareView} />
+          <Route exact path="/contact" component={ContactView} />
 
           <Route exact path="/travels" component={TravelView} />
           <Route path="/travels/pleace/:id" component={DetailsTravelView} />
@@ -44,14 +44,14 @@ const Root = () => (
           <Route exact path="/churchs" component={ChurchView} />
           <Route path="/churchs/:id" component={DetailsChurchView} />
           <Route path="/presses/:id" component={DetailsPressView} />
-          <Route path="/presses" component={DetailsPressView} />
-          <Route path="/presslist" component={PressView} />
+          <Route exact path="/presses" component={DetailsPressView} />
+          <Route exact path="/presslist" component={PressView} />
           <Route exact path="/fairs" component={FairView} />
           <Route exact path="/fairs/:id" component={DetailsFairView} />
           <Route exact path="/fairlist" component={FairView} />
           <Route exact path="/companies/:id" component={DetailsCompanyView} />
           <Route exact path="/companies" component={CompanyView} />
-          <Route path="/company" component={CompanyView} />          
+          <Route path="/company" component={CompanyView} />
           <Route exact path="/dresses" component={HomeView} />
           <Route path="/dresses/:id" component={DetailsDressView} />
         </Switch>
