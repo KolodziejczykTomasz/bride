@@ -22,7 +22,7 @@ const NavbarTop = () => {
           <Nav className="mr-auto">
             <ul className="navbar-nav">
               <li class="nav-link">
-                <NavLink className='button' activeClassName="activeItem button" to="/" id="navbutton">
+                <NavLink className='button' exact activeClassName="activeItem button" to="/" id="navbutton">
                   Home
                 </NavLink>
               </li>
