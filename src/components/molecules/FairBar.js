@@ -21,13 +21,13 @@ const WrapperItem = styled.div`
 class FairBar extends Component {
   state = { date: new Date() };
 
-  render() {    
+  render() {
     const { fair } = this.props;
     return (
       <Wrapper>
         {fair
-          .filter((item) => item.data < this.state.date.toLocaleDateString())
-          .sort((a, b) => b.data < a.data)
+          // .filter((item) => item.data < this.state.date.toLocaleDateString())
+          //.sort((a, b) => b.data < a.data)
           .slice(0, 3)
           .map(({ id, url, place, data, city, description, pageType, tags }) => (
             <WrapperItem>

@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-background: rgb(111,104,176);
-background: linear-gradient(146deg, rgba(111,104,176,1) 0%, rgba(252,254,255,1) 47%);
-box-shadow: 0 2px 4px #6d44a21c;
+  background: rgb(111, 104, 176);
+  background: linear-gradient(146deg, rgba(111, 104, 176, 1) 0%, rgba(252, 254, 255, 1) 47%);
+  box-shadow: 0 2px 4px #6d44a21c;
   color: black;
   text-transform: uppercase;
   padding: 5px 0;
@@ -37,13 +37,12 @@ box-shadow: 0 2px 4px #6d44a21c;
 #navbutton:hover {
   border: 1px solid rgba(10, 10, 10, 0.1);
   box-shadow: 0 2px 4px #6d44a21c;
- 
 }
 
 #navbutton.activeItem {
-  color:  blueviolet;
+  background-color: rgb(64, 9, 139);
+  color: white;
 }
-
 
 .navbar-nav {
   display: flex;
