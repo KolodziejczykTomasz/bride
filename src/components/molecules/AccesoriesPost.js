@@ -14,11 +14,12 @@ const Button = styled.a`
   height: 80px;
   justify-content: center;
   align-content: center;
+  align-self: end;
   color: black;
   background-color: lightgray;
   border-radius: 50px;
-  bottom: 220px;
-  right: 40px;
+  bottom: 20vh;
+  right: 10vh;
   :hover {
     text-decoration-line: none;
     color: white;
