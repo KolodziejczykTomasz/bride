@@ -32,7 +32,7 @@
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.0.0",
-    "react-scripts": "^3.4.3",
+    "react-scripts": "^5.0.1",
     "react-simple-image-viewer": "0.0.4",
     "react-spring": "^9.0.0-rc.3",
     "react-spring-3d-carousel": "^1.2.0",
@@ -67,6 +67,6 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.0",
-    "node-sass": "^4.14.1"
+    "node-sass": "^9.0.0"
   }
 }
